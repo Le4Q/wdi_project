@@ -1,0 +1,63 @@
+<restaurants>
+<restaurant>
+	<id>restaurant1</id>
+	<name>Great Chicken Empire</name>
+	<description>cozy restaurant near the Hudson river</description>
+	<latitude>73.44853</latitude>
+	<longitude>39.5699</longitude>
+	<neighborhood>something</neighborhood>
+	<city>
+		<name>New York City</name>
+		<postalcode>30781</postalcode>
+		<state>NY</state>
+		<country>United States</country>
+	</city>
+	<reviews>
+		<count>40</count>
+		<bodies>This restaurant was amazing. I did not like it at all.</bodies>
+		<average_rating>4.56</average_rating>
+	</reviews>	
+	<hours>5am - 22pm</hours>
+	<pricerange>10\$ to 53\$</pricerange>
+	<stars>4</stars>
+	<accepts_credit_cards>yes</accepts_credit_cards>
+	<restaurant_delivery>yes</restaurant_delivery>
+	<accepts_reservations>no</accepts_reservations>
+	<drivethru>no</drivethru>
+	<wheelchari_accessibility>no</wheelchair_accessibility>
+	<has_wifi>no</has_wifi>
+	<website>http://big-chicken-empire.com</website>
+	<accepts_currency>no</accepts_currency>
+</restaurant>
+<restaurant>
+	<id>restaurant2</id>
+	<name>Italian Food Palace</name>
+	<description>cozy restaurant near the San Francisco Bay</description>
+	<latitude>71.44853</latitude>
+	<longitude>35.5699</longitude>
+	<neighborhood>something</neighborhood>
+	<city>
+		<name>San Francisco</name>
+		<postalcode>39781</postalcode>
+		<state>CA</state>
+		<country>United States</country>
+	</city>
+	<reviews>
+		<count>21</count>
+		<bodies>This restaurant was amazing. I did not like it at all.</bodies>
+		<average_rating>3.84</average_rating>
+	</reviews>	
+
+	<hours>6am - 23pm</hours>
+	<pricerange>5\$ to 35\$</pricerange>
+	<stars>3</stars>
+	<accepts_credit_cards>yes</accepts_credit_cards>
+	<restaurant_delivery>yes</restaurant_delivery>
+	<accepts_reservations>yes</accepts_reservations>
+	<drivethru>no</drivethru>
+	<wheelchari_accessibility>yes</wheelchair_accessibility>
+	<has_wifi>yes</has_wifi>
+	<website>http://italian-food-palace.com</website>
+	<accepts_currency>yes</accepts_currency>
+</restaurant>
+</restaurants>
