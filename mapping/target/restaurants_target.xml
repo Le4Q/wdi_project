@@ -6,12 +6,15 @@
 	<latitude>73.44853</latitude>
 	<longitude>39.5699</longitude>
 	<neighborhood>something</neighborhood>
+	<postaladdress>
+	<address>1150 Jackson Street</address>
 	<city>
 		<name>New York City</name>
 		<postalcode>30781</postalcode>
 		<state>NY</state>
 		<country>United States</country>
 	</city>
+	</postaladdress>
 	<reviews>
 		<count>40</count>
 		<bodies>This restaurant was amazing. I did not like it at all.</bodies>
@@ -36,12 +39,15 @@
 	<latitude>71.44853</latitude>
 	<longitude>35.5699</longitude>
 	<neighborhood>something</neighborhood>
+	<postaladdress>
+	<address>4 Someavenue</address>
 	<city>
 		<name>San Francisco</name>
 		<postalcode>39781</postalcode>
 		<state>CA</state>
 		<country>United States</country>
 	</city>
+	</postaladdress>
 	<reviews>
 		<count>21</count>
 		<bodies>This restaurant was amazing. I did not like it at all.</bodies>

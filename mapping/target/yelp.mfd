@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2018r2sp1 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="restaurants_target" library="xml" uid="6" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="720" lty="86" rbx="977" rby="286"/>
+					<data>
+						<root scrollposition="86">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="restaurants" expanded="1">
+										<entry name="restaurant" inpkey="52" expanded="1">
+											<entry name="name" inpkey="53"/>
+											<entry name="latitude" inpkey="54"/>
+											<entry name="longitude" inpkey="55"/>
+											<entry name="neighborhood" inpkey="56"/>
+											<entry name="postaladdress" expanded="1">
+												<entry name="address" inpkey="67"/>
+												<entry name="city" expanded="1">
+													<entry name="name" inpkey="68"/>
+													<entry name="postalcode" inpkey="69"/>
+													<entry name="state" inpkey="70"/>
+												</entry>
+											</entry>
+											<entry name="reviews">
+												<entry name="count" inpkey="57"/>
+											</entry>
+											<entry name="hours" inpkey="58"/>
+											<entry name="pricerange" inpkey="59"/>
+											<entry name="categories" inpkey="60"/>
+											<entry name="stars" inpkey="61"/>
+											<entry name="accepts_credit_cards" inpkey="62"/>
+											<entry name="restaurant_delivery" inpkey="63"/>
+											<entry name="accepts_reservations" inpkey="64"/>
+											<entry name="drivethru" inpkey="65"/>
+											<entry name="has_wifi" inpkey="66"/>
+											<entry name="address" expanded="1" show-schema-children="0"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
+					</data>
+				</component>
+				<component name="Yelp" library="text" uid="5" kind="16">
+					<properties/>
+					<view ltx="51" lty="-10" rbx="351" rby="490"/>
+					<data>
+						<root scrollposition="95">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" outkey="13" expanded="1">
+										<entry name="address" outkey="14"/>
+										<entry name="categories" outkey="30"/>
+										<entry name="city" outkey="31"/>
+										<entry name="hours" outkey="15"/>
+										<entry name="latitude" outkey="16"/>
+										<entry name="longitude" outkey="17"/>
+										<entry name="name" outkey="18"/>
+										<entry name="neighborhood" outkey="19"/>
+										<entry name="postal_code" outkey="32"/>
+										<entry name="review_count" outkey="33"/>
+										<entry name="stars" outkey="20"/>
+										<entry name="state" outkey="34"/>
+										<entry name="BusinessAcceptsCreditCards" outkey="35"/>
+										<entry name="RestaurantsDelivery" outkey="36"/>
+										<entry name="RestaurantsPriceRange2" outkey="37"/>
+										<entry name="RestaurantsReservations" outkey="38"/>
+										<entry name="DriveThru" outkey="39"/>
+										<entry name="WiFi" outkey="40"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" inputinstance="..\..\data\yelp_restaurant_data.csv" outputinstance="..\..\data\yelp_restaurant_data_target.csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="	" quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="Yelp" block="Zeilen">
+									<field0 name="Field1" type="string"/>
+									<field1 name="address" type="string"/>
+									<field2 name="business_id" type="string"/>
+									<field3 name="categories" type="string"/>
+									<field4 name="city" type="string"/>
+									<field5 name="hours" type="string"/>
+									<field6 name="is_open" type="integer"/>
+									<field7 name="latitude" type="string"/>
+									<field8 name="longitude" type="string"/>
+									<field9 name="name" type="string"/>
+									<field10 name="neighborhood" type="string"/>
+									<field11 name="postal_code" type="string"/>
+									<field12 name="review_count" type="integer"/>
+									<field13 name="stars" type="decimal"/>
+									<field14 name="state" type="string"/>
+									<field15 name="BikeParking" type="string"/>
+									<field16 name="BusinessAcceptsCreditCards" type="string"/>
+									<field17 name="BusinessParking" type="string"/>
+									<field18 name="GoodForKids" type="string"/>
+									<field19 name="HasTV" type="string"/>
+									<field20 name="NoiseLevel" type="string"/>
+									<field21 name="OutdoorSeating" type="string"/>
+									<field22 name="RestaurantsAttire" type="string"/>
+									<field23 name="RestaurantsDelivery" type="string"/>
+									<field24 name="RestaurantsGoodForGroups" type="string"/>
+									<field25 name="RestaurantsPriceRange2" type="integer"/>
+									<field26 name="RestaurantsReservations" type="string"/>
+									<field27 name="RestaurantsTakeOut" type="string"/>
+									<field28 name="DriveThru" type="string"/>
+									<field29 name="GoodForMeal" type="string"/>
+									<field30 name="RestaurantsTableService" type="string"/>
+									<field31 name="WheelchairAccessible" type="string"/>
+									<field32 name="WiFi" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="55"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="56"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="58"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="37">
+						<edges>
+							<edge vertexkey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="60"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="61"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="36">
+						<edges>
+							<edge vertexkey="63"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="38">
+						<edges>
+							<edge vertexkey="64"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="40">
+						<edges>
+							<edge vertexkey="66"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="68"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="34">
+						<edges>
+							<edge vertexkey="70"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

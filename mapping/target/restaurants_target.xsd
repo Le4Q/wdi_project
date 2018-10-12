@@ -12,13 +12,20 @@
 							<xs:element name="latitude" type="xs:decimal"/>
 							<xs:element name="longitude" type="xs:decimal"/>
 							<xs:element name="neighborhood" type="xs:string"/>
-							<xs:element name="city">
+							<xs:element name="postaladdress">
 								<xs:complexType>
 									<xs:sequence>
-									        <xs:element name="name" type="xs:string"/>
-									        <xs:element name="postalcode" type="xs:int"/>
-										<xs:element name="state" type="xs:string"/>
-										<xs:element name="country" type="xs:string"/>
+										<xs:element name="address" type="xs:string"/>
+										<xs:element name="city">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name" type="xs:string"/>
+													<xs:element name="postalcode" type="xs:string"/>
+													<xs:element name="state" type="xs:string"/>
+													<xs:element name="country" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -33,6 +40,7 @@
 							</xs:element>
 							<xs:element name="hours" type="xs:string"/>
 							<xs:element name="pricerange" type="xs:string"/>
+							<xs:element name="categories" type="xs:string"/>
 							<xs:element name="stars" type="xs:string"/>
 							<xs:element name="accepts_credit_cards" type="xs:string"/>
 							<xs:element name="restaurant_delivery" type="xs:string"/>
