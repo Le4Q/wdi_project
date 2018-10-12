@@ -38,9 +38,35 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="hours" type="xs:string"/>
+							<xs:element name="openinghours">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="specification">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="day" type="xs:string"/>
+													<xs:element name="hours">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="opens" type="xs:time"/>
+																<xs:element name="closes" type="xs:time"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
 							<xs:element name="pricerange" type="xs:string"/>
-							<xs:element name="categories" type="xs:string"/>
+							<xs:element name="categories">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="category" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
 							<xs:element name="stars" type="xs:string"/>
 							<xs:element name="accepts_credit_cards" type="xs:string"/>
 							<xs:element name="restaurant_delivery" type="xs:string"/>
@@ -48,7 +74,13 @@
 							<xs:element name="drivethru" type="xs:string"/>
 							<xs:element name="wheelchair_accessibility" type="xs:string"/>
 							<xs:element name="has_wifi" type="xs:string"/>
-							<xs:element name="website" type="xs:string"/>
+							<xs:element name="websites">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="website" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
 							<xs:element name="accepts_currency" type="xs:string"/>
 						</xs:sequence>
 					</xs:complexType>

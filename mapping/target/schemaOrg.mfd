@@ -6,11 +6,32 @@
 		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="29"/>
+					</targets>
+					<view ltx="293" lty="286" rbx="344" rby="303"/>
+					<data>
+						<constant value=".+" datatype="string"/>
+					</data>
+				</component>
+				<component name="match-pattern" library="lang" uid="5" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="30"/>
+						<datapoint pos="1" key="31"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="404" lty="249" rbx="504" rby="303"/>
+				</component>
 				<component name="restaurants_target" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="644" lty="30" rbx="901" rby="230"/>
 					<data>
-						<root scrollposition="243">
+						<root scrollposition="256">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -38,7 +59,9 @@
 												<entry name="average_rating" inpkey="24"/>
 											</entry>
 											<entry name="pricerange" inpkey="8"/>
-											<entry name="categories" inpkey="9"/>
+											<entry name="categories" expanded="1">
+												<entry name="category" inpkey="33"/>
+											</entry>
 											<entry name="accepts_credit_cards" inpkey="10"/>
 										</entry>
 									</entry>
@@ -158,12 +181,7 @@
 							<edge vertexkey="8"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="12">
-						<edges>
-							<edge vertexkey="9"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="15">
+					<vertex vertexkey="32">
 						<edges>
 							<edge vertexkey="10"/>
 						</edges>
@@ -186,6 +204,21 @@
 					<vertex vertexkey="28">
 						<edges>
 							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="30"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="29">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="33"/>
 						</edges>
 					</vertex>
 				</vertices>
