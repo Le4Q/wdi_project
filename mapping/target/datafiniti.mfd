@@ -6,43 +6,6 @@
 		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="restaurants_target" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="670" lty="48" rbx="927" rby="248"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="restaurants" expanded="1">
-										<entry name="restaurant" inpkey="21" expanded="1">
-											<entry name="name" inpkey="9"/>
-											<entry name="latitude" inpkey="10"/>
-											<entry name="longitude" inpkey="11"/>
-											<entry name="postaladdress" expanded="1">
-												<entry name="address" inpkey="2"/>
-												<entry name="city" expanded="1">
-													<entry name="name" inpkey="3"/>
-													<entry name="postalcode" inpkey="12"/>
-													<entry name="state" inpkey="13"/>
-													<entry name="country" inpkey="4"/>
-												</entry>
-											</entry>
-											<entry name="reviews" expanded="1"/>
-											<entry name="website" inpkey="14"/>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
-					</data>
-				</component>
 				<component name="Datafiniti" library="text" uid="3" kind="16">
 					<properties/>
 					<view ltx="10" lty="45" rbx="310" rby="248"/>
@@ -86,6 +49,66 @@
 								</names>
 							</settings>
 						</text>
+					</data>
+				</component>
+				<component name="restaurants_target" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="670" lty="48" rbx="927" rby="248"/>
+					<data>
+						<root scrollposition="311">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="restaurants" expanded="1">
+										<entry name="restaurant" inpkey="21" expanded="1">
+											<entry name="name" inpkey="9"/>
+											<entry name="latitude" inpkey="10"/>
+											<entry name="longitude" inpkey="11"/>
+											<entry name="postaladdress" expanded="1">
+												<entry name="address" inpkey="2"/>
+												<entry name="city" expanded="1">
+													<entry name="name" inpkey="3"/>
+													<entry name="postalcode" inpkey="12"/>
+													<entry name="state" inpkey="13"/>
+													<entry name="country" inpkey="4"/>
+												</entry>
+											</entry>
+											<entry name="websites" expanded="1">
+												<entry name="website" inpkey="24"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
+					</data>
+				</component>
+				<component name="tokenize-regexp" library="core" uid="5" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="25"/>
+						<datapoint pos="1" key="26"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="460" lty="231" rbx="570" rby="301"/>
+				</component>
+				<component name="constant" library="core" uid="6" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="367" lty="284" rbx="410" rby="301"/>
+					<data>
+						<constant value="," datatype="string"/>
 					</data>
 				</component>
 			</children>
@@ -132,14 +155,24 @@
 							<edge vertexkey="13"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="20">
-						<edges>
-							<edge vertexkey="14"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="5">
 						<edges>
 							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="26"/>
 						</edges>
 					</vertex>
 				</vertices>
