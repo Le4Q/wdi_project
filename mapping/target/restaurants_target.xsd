@@ -59,13 +59,14 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="pricerange"/>
+							<xs:element name="pricerange">
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="lowerBound" type="xs:int"/>
 										<xs:element name="upperBound" type="xs:int"/>
 									</xs:sequence>
 								</xs:complexType>
+							</xs:element>
 							<xs:element name="categories">
 								<xs:complexType>
 									<xs:sequence>
