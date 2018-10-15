@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="restaurants">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="restaurant" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:string"/>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="description" type="xs:string"/>
+							<xs:element name="latitude" type="xs:decimal"/>
+							<xs:element name="longitude" type="xs:decimal"/>
+							<xs:element name="neighborhood" type="xs:string"/>
+							<xs:element name="postaladdress">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="address" type="xs:string"/>
+										<xs:element name="city">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name" type="xs:string"/>
+													<xs:element name="postalcode" type="xs:string"/>
+													<xs:element name="state" type="xs:string"/>
+													<xs:element name="country" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="reviews">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="count" type="xs:int"/>
+										<xs:element name="bodies" type="xs:string"/>
+										<xs:element name="average_rating" type="xs:decimal"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="openinghours">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="specification">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="day" type="xs:string"/>
+													<xs:element name="hours">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="opens" type="xs:time"/>
+																<xs:element name="closes" type="xs:time"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="pricerange">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="lowerBound" type="xs:double"/>
+										<xs:element name="upperBound" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="categories">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="category" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="stars" type="xs:int"/>
+							<xs:element name="accepts_credit_cards" type="xs:boolean"/>
+							<xs:element name="restaurant_delivery" type="xs:boolean"/>
+							<xs:element name="accepts_reservations" type="xs:boolean"/>
+							<xs:element name="drivethru" type="xs:boolean"/>
+							<xs:element name="wheelchair_accessibility" type="xs:boolean"/>
+							<xs:element name="has_wifi" type="xs:boolean"/>
+							<xs:element name="websites">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="website" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="accepts_currency" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
