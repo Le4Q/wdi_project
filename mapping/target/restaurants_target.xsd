@@ -6,7 +6,7 @@
 				<xs:element name="restaurant" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-						        <xs:element name="id" type="xs:string"/>
+						        <xs:element name="id" type="xs:int"/>
 							<xs:element name="name" type="xs:string"/>
 							<xs:element name="description" type="xs:string"/>
 							<xs:element name="latitude" type="xs:decimal"/>
@@ -59,7 +59,13 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="pricerange" type="xs:string"/>
+							<xs:element name="pricerange"/>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="lowerBound" type="xs:int"/>
+										<xs:element name="upperBound" type="xs:int"/>
+									</xs:sequence>
+								</xs:complexType>
 							<xs:element name="categories">
 								<xs:complexType>
 									<xs:sequence>
@@ -67,13 +73,13 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							<xs:element name="stars" type="xs:string"/>
-							<xs:element name="accepts_credit_cards" type="xs:string"/>
-							<xs:element name="restaurant_delivery" type="xs:string"/>
-							<xs:element name="accepts_reservations" type="xs:string"/>
-							<xs:element name="drivethru" type="xs:string"/>
-							<xs:element name="wheelchair_accessibility" type="xs:string"/>
-							<xs:element name="has_wifi" type="xs:string"/>
+							<xs:element name="stars" type="xs:int"/>
+							<xs:element name="accepts_credit_cards" type="xs:boolean"/>
+							<xs:element name="restaurant_delivery" type="xs:boolean"/>
+							<xs:element name="accepts_reservations" type="xs:boolean"/>
+							<xs:element name="drivethru" type="xs:boolean"/>
+							<xs:element name="wheelchair_accessibility" type="xs:boolean"/>
+							<xs:element name="has_wifi" type="xs:boolean"/>
 							<xs:element name="websites">
 								<xs:complexType>
 									<xs:sequence>
