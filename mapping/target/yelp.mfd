@@ -6,66 +6,6 @@
 		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="value-map" library="core" uid="192" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="299"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="300"/>
-					</targets>
-					<view ltx="1376" lty="488" rbx="1456" rby="526"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="no" to="false"/>
-								<entry from="free" to="true"/>
-							</valuemapTable>
-							<input name="Input" type="string"/>
-							<result name="result" type="boolean"/>
-						</valuemap>
-					</data>
-				</component>
-				<component name="value-map" library="core" uid="193" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="301"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="302"/>
-					</targets>
-					<view ltx="1376" lty="436" rbx="1456" rby="474"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="False" to="false"/>
-								<entry from="True" to="true"/>
-							</valuemapTable>
-							<input name="Input" type="string"/>
-							<result name="result" type="boolean"/>
-						</valuemap>
-					</data>
-				</component>
-				<component name="value-map" library="core" uid="194" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="304"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="303"/>
-					</targets>
-					<view ltx="1376" lty="386" rbx="1456" rby="424"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="False" to="false"/>
-								<entry from="True" to="true"/>
-							</valuemapTable>
-							<input name="Input" type="string"/>
-							<result name="result" type="boolean"/>
-						</valuemap>
-					</data>
-				</component>
 				<component name="value-map" library="core" uid="195" kind="23">
 					<properties/>
 					<sources>
@@ -106,28 +46,6 @@
 						</valuemap>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="54" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="144"/>
-					</targets>
-					<view ltx="1638" lty="241" rbx="1687" rby="258"/>
-					<data>
-						<constant value="[,]" datatype="string"/>
-					</data>
-				</component>
-				<component name="tokenize-regexp" library="core" uid="53" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="145"/>
-						<datapoint pos="1" key="146"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="147"/>
-					</targets>
-					<view ltx="1723" lty="188" rbx="1833" rby="258"/>
-				</component>
 				<component name="parseHours" library="user" uid="258" kind="19" visible="0" blackbox="0">
 					<view ltx="1269" lty="535" rbx="1426" rby="603"/>
 					<data>
@@ -150,96 +68,6 @@
 							<entry name="opens" outkey="400" componentid="255"/>
 							<entry name="closes" outkey="401" componentid="256"/>
 						</root>
-					</data>
-				</component>
-				<component name="Yelp" library="text" uid="59" kind="16">
-					<properties/>
-					<view ltx="782" lty="128" rbx="1082" rby="628"/>
-					<data>
-						<root scrollposition="171">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1">
-									<entry name="Zeilen" outkey="148" expanded="1">
-										<entry name="address" outkey="149"/>
-										<entry name="categories" outkey="150"/>
-										<entry name="city" outkey="151"/>
-										<entry name="latitude" outkey="152"/>
-										<entry name="longitude" outkey="153"/>
-										<entry name="name" outkey="154"/>
-										<entry name="neighborhood" outkey="155"/>
-										<entry name="postal_code" outkey="156"/>
-										<entry name="review_count" outkey="157"/>
-										<entry name="stars" outkey="158"/>
-										<entry name="state" outkey="159"/>
-										<entry name="BusinessAcceptsCreditCards" outkey="160"/>
-										<entry name="RestaurantsDelivery" outkey="161"/>
-										<entry name="RestaurantsPriceRange2" outkey="162"/>
-										<entry name="RestaurantsReservations" outkey="163"/>
-										<entry name="DriveThru" outkey="164"/>
-										<entry name="WiFi" outkey="165"/>
-										<entry name="Monday" outkey="174"/>
-										<entry name="Tuesday" outkey="270"/>
-										<entry name="Wednesday" outkey="271"/>
-										<entry name="Thursday" outkey="272"/>
-										<entry name="Friday" outkey="273"/>
-										<entry name="Saturday" outkey="274"/>
-										<entry name="Sunday" outkey="275"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<text type="csv" inputinstance="..\..\data\yelp_restaurant_data2.csv" outputinstance="..\..\data\yelp_restaurant_data_result.csv" encoding="1000" byteorder="1" byteordermark="0">
-							<settings separator="	" quote="&quot;" firstrownames="true" removeempty="true">
-								<names root="yelp_restaurant_data2" block="Zeilen">
-									<field0 name="Field1" type="string"/>
-									<field1 name="address" type="string"/>
-									<field2 name="business_id" type="string"/>
-									<field3 name="categories" type="string"/>
-									<field4 name="city" type="string"/>
-									<field5 name="hours" type="string"/>
-									<field6 name="is_open" type="string"/>
-									<field7 name="latitude" type="string"/>
-									<field8 name="longitude" type="string"/>
-									<field9 name="name" type="string"/>
-									<field10 name="neighborhood" type="string"/>
-									<field11 name="postal_code" type="string"/>
-									<field12 name="review_count" type="string"/>
-									<field13 name="stars" type="string"/>
-									<field14 name="state" type="string"/>
-									<field15 name="BikeParking" type="string"/>
-									<field16 name="BusinessAcceptsCreditCards" type="string"/>
-									<field17 name="BusinessParking" type="string"/>
-									<field18 name="GoodForKids" type="string"/>
-									<field19 name="HasTV" type="string"/>
-									<field20 name="NoiseLevel" type="string"/>
-									<field21 name="OutdoorSeating" type="string"/>
-									<field22 name="RestaurantsAttire" type="string"/>
-									<field23 name="RestaurantsDelivery" type="string"/>
-									<field24 name="RestaurantsGoodForGroups" type="string"/>
-									<field25 name="RestaurantsPriceRange2" type="string"/>
-									<field26 name="RestaurantsReservations" type="string"/>
-									<field27 name="RestaurantsTakeOut" type="string"/>
-									<field28 name="DriveThru" type="string"/>
-									<field29 name="GoodForMeal" type="string"/>
-									<field30 name="RestaurantsTableService" type="string"/>
-									<field31 name="WheelchairAccessible" type="string"/>
-									<field32 name="WiFi" type="string"/>
-									<field33 name="Monday" type="string"/>
-									<field34 name="Tuesday" type="string"/>
-									<field35 name="Wednesday" type="string"/>
-									<field36 name="Thursday" type="string"/>
-									<field37 name="Friday" type="string"/>
-									<field38 name="Saturday" type="string"/>
-									<field39 name="Sunday" type="string"/>
-								</names>
-							</settings>
-						</text>
 					</data>
 				</component>
 				<component name="parseHours" library="user" uid="265" kind="19" visible="0" blackbox="0">
@@ -362,11 +190,236 @@
 						</root>
 					</data>
 				</component>
+				<component name="parseHours" library="user" uid="260" kind="19" visible="0" blackbox="0">
+					<view ltx="1329" lty="636" rbx="1486" rby="704"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="473" componentid="254"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="toplevelinstance" outkey="474" componentid="259"/>
+							<entry name="day" outkey="475" componentid="257"/>
+							<entry name="opens" outkey="476" componentid="255"/>
+							<entry name="closes" outkey="477" componentid="256"/>
+						</root>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="192" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="299"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="300"/>
+					</targets>
+					<view ltx="1376" lty="488" rbx="1456" rby="526"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="no" to="false"/>
+								<entry from="free" to="true"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="boolean"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="Yelp" library="text" uid="59" kind="16">
+					<properties/>
+					<view ltx="782" lty="128" rbx="1082" rby="628"/>
+					<data>
+						<root scrollposition="215">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" outkey="148" expanded="1">
+										<entry name="address" outkey="149"/>
+										<entry name="categories" outkey="150"/>
+										<entry name="city" outkey="151"/>
+										<entry name="latitude" outkey="152"/>
+										<entry name="longitude" outkey="153"/>
+										<entry name="name" outkey="154"/>
+										<entry name="neighborhood" outkey="155"/>
+										<entry name="postal_code" outkey="156"/>
+										<entry name="review_count" outkey="157"/>
+										<entry name="stars" outkey="158"/>
+										<entry name="state" outkey="159"/>
+										<entry name="BusinessAcceptsCreditCards" outkey="160"/>
+										<entry name="RestaurantsDelivery" outkey="161"/>
+										<entry name="RestaurantsPriceRange2" outkey="162"/>
+										<entry name="RestaurantsReservations" outkey="163"/>
+										<entry name="DriveThru" outkey="164"/>
+										<entry name="WiFi" outkey="165"/>
+										<entry name="Monday" outkey="174"/>
+										<entry name="Tuesday" outkey="270"/>
+										<entry name="Wednesday" outkey="271"/>
+										<entry name="Thursday" outkey="272"/>
+										<entry name="Friday" outkey="273"/>
+										<entry name="Saturday" outkey="274"/>
+										<entry name="Sunday" outkey="275"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" inputinstance="..\..\data\yelp_restaurant_data2.csv" outputinstance="..\..\data\yelp_restaurant_data_result.csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="	" quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="yelp_restaurant_data2" block="Zeilen">
+									<field0 name="Field1" type="string"/>
+									<field1 name="address" type="string"/>
+									<field2 name="business_id" type="string"/>
+									<field3 name="categories" type="string"/>
+									<field4 name="city" type="string"/>
+									<field5 name="hours" type="string"/>
+									<field6 name="is_open" type="string"/>
+									<field7 name="latitude" type="string"/>
+									<field8 name="longitude" type="string"/>
+									<field9 name="name" type="string"/>
+									<field10 name="neighborhood" type="string"/>
+									<field11 name="postal_code" type="string"/>
+									<field12 name="review_count" type="string"/>
+									<field13 name="stars" type="string"/>
+									<field14 name="state" type="string"/>
+									<field15 name="BikeParking" type="string"/>
+									<field16 name="BusinessAcceptsCreditCards" type="string"/>
+									<field17 name="BusinessParking" type="string"/>
+									<field18 name="GoodForKids" type="string"/>
+									<field19 name="HasTV" type="string"/>
+									<field20 name="NoiseLevel" type="string"/>
+									<field21 name="OutdoorSeating" type="string"/>
+									<field22 name="RestaurantsAttire" type="string"/>
+									<field23 name="RestaurantsDelivery" type="string"/>
+									<field24 name="RestaurantsGoodForGroups" type="string"/>
+									<field25 name="RestaurantsPriceRange2" type="string"/>
+									<field26 name="RestaurantsReservations" type="string"/>
+									<field27 name="RestaurantsTakeOut" type="string"/>
+									<field28 name="DriveThru" type="string"/>
+									<field29 name="GoodForMeal" type="string"/>
+									<field30 name="RestaurantsTableService" type="string"/>
+									<field31 name="WheelchairAccessible" type="string"/>
+									<field32 name="WiFi" type="string"/>
+									<field33 name="Monday" type="string"/>
+									<field34 name="Tuesday" type="string"/>
+									<field35 name="Wednesday" type="string"/>
+									<field36 name="Thursday" type="string"/>
+									<field37 name="Friday" type="string"/>
+									<field38 name="Saturday" type="string"/>
+									<field39 name="Sunday" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="266" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="478"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="479"/>
+					</targets>
+					<view ltx="1199" lty="465" rbx="1279" rby="503"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="10"/>
+								<entry from="2" to="30"/>
+								<entry from="3" to="60"/>
+								<entry from="4" to="INF"/>
+							</valuemapTable>
+							<input name="Input" type="integer"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="267" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="480"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="481"/>
+					</targets>
+					<view ltx="1199" lty="417" rbx="1279" rby="455"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="0"/>
+								<entry from="2" to="11"/>
+								<entry from="3" to="29"/>
+								<entry from="4" to="61"/>
+							</valuemapTable>
+							<input name="Input" type="integer"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="194" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="304"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="303"/>
+					</targets>
+					<view ltx="1376" lty="386" rbx="1456" rby="424"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="False" to="false"/>
+								<entry from="True" to="true"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="boolean"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="193" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="301"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="302"/>
+					</targets>
+					<view ltx="1376" lty="436" rbx="1456" rby="474"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="False" to="false"/>
+								<entry from="True" to="true"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="boolean"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="create-guid" library="lang" uid="268" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="484"/>
+					</targets>
+					<view ltx="1498" lty="322" rbx="1584" rby="360"/>
+				</component>
 				<component name="restaurants_target" library="xml" uid="6" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1639" lty="417" rbx="1896" rby="617"/>
 					<data>
-						<root scrollposition="344">
+						<root scrollposition="494">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -377,6 +430,7 @@
 								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="restaurants" expanded="1">
 										<entry name="restaurant" inpkey="350" expanded="1">
+											<entry name="id" inpkey="485"/>
 											<entry name="name" inpkey="351"/>
 											<entry name="latitude" inpkey="352"/>
 											<entry name="longitude" inpkey="353"/>
@@ -443,7 +497,10 @@
 													</entry>
 												</entry>
 											</entry>
-											<entry name="pricerange" inpkey="366"/>
+											<entry name="pricerange" expanded="1">
+												<entry name="lowerBound" inpkey="483"/>
+												<entry name="upperBound" inpkey="482"/>
+											</entry>
 											<entry name="categories" expanded="1">
 												<entry name="category" inpkey="367"/>
 											</entry>
@@ -461,8 +518,8 @@
 						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
 					</data>
 				</component>
-				<component name="parseHours" library="user" uid="260" kind="19" visible="0" blackbox="0">
-					<view ltx="1329" lty="636" rbx="1486" rby="704"/>
+				<component name="category_tokenize" library="user" uid="277" kind="19" visible="0" blackbox="0">
+					<view ltx="1611" lty="205" rbx="1728" rby="222"/>
 					<data>
 						<root>
 							<header>
@@ -470,7 +527,7 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="input" inpkey="473" componentid="254"/>
+							<entry name="input" inpkey="488" componentid="275"/>
 						</root>
 						<root>
 							<header>
@@ -478,10 +535,7 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="toplevelinstance" outkey="474" componentid="259"/>
-							<entry name="day" outkey="475" componentid="257"/>
-							<entry name="opens" outkey="476" componentid="255"/>
-							<entry name="closes" outkey="477" componentid="256"/>
+							<entry name="category" outkey="489" componentid="276"/>
 						</root>
 					</data>
 				</component>
@@ -489,16 +543,6 @@
 			<graph directed="1">
 				<edges/>
 				<vertices>
-					<vertex vertexkey="150">
-						<edges>
-							<edge vertexkey="145"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="144">
-						<edges>
-							<edge vertexkey="146"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="165">
 						<edges>
 							<edge vertexkey="299"/>
@@ -604,12 +648,7 @@
 							<edge vertexkey="365"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="162">
-						<edges>
-							<edge vertexkey="366"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="147">
+					<vertex vertexkey="489">
 						<edges>
 							<edge vertexkey="367"/>
 						</edges>
@@ -789,6 +828,32 @@
 							<edge vertexkey="473"/>
 						</edges>
 					</vertex>
+					<vertex vertexkey="162">
+						<edges>
+							<edge vertexkey="478"/>
+							<edge vertexkey="480"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="479">
+						<edges>
+							<edge vertexkey="482"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="481">
+						<edges>
+							<edge vertexkey="483"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="484">
+						<edges>
+							<edge vertexkey="485"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="150">
+						<edges>
+							<edge vertexkey="488"/>
+						</edges>
+					</vertex>
 				</vertices>
 			</graph>
 		</structure>
@@ -813,22 +878,16 @@
 	</component>
 	<component name="MultimapperHours" library="user" uid="149" editable="1" inline="1" blackbox="0">
 		<properties/>
-		<description/>
 		<structure>
 			<children>
 				<component name="document" library="xml" uid="154" kind="14">
-					<properties/>
+					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="910" rbx="1060" rby="200"/>
 					<data>
 						<root>
 							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
+								<namespaces/>
 							</header>
-							<entry name="specification" expanded="1">
-								<entry name="hours" expanded="1"/>
-							</entry>
 						</root>
 						<document schema="restaurants_target.xsd" instanceroot="{}restaurants/{}restaurant/{}openinghours/{}specification"/>
 						<parameter usageKind="output" name="restaurants_target"/>
@@ -1026,7 +1085,6 @@
 	</component>
 	<component name="parseHours" library="user" uid="244" editable="1" inline="1" blackbox="0">
 		<properties/>
-		<description/>
 		<structure>
 			<children>
 				<component name="constant" library="core" uid="245" kind="2">
@@ -1239,6 +1297,175 @@
 					<vertex vertexkey="17">
 						<edges>
 							<edge vertexkey="25"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="category_tokenize" library="user" uid="271" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<description/>
+		<structure>
+			<children>
+				<component name="category" library="core" uid="276" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+					</sources>
+					<view ltx="737" rbx="809" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="category"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="278" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="73" lty="53" rbx="119" rby="70"/>
+					<data>
+						<constant value=", " datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="281" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="103" lty="83" rbx="146" rby="100"/>
+					<data>
+						<constant value="," datatype="string"/>
+					</data>
+				</component>
+				<component name="input" library="core" uid="275" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="13"/>
+					</targets>
+					<view rbx="81" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="tokenize-regexp" library="core" uid="274" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="6"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="546" rbx="656" rby="70"/>
+				</component>
+				<component name="replace" library="lang" uid="280" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="10"/>
+						<datapoint pos="1" key="8"/>
+						<datapoint pos="2" key="11"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="12"/>
+					</targets>
+					<view ltx="193" rbx="290" rby="70"/>
+				</component>
+				<component name="constant" library="core" uid="272" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="492" lty="127" rbx="541" rby="144"/>
+					<data>
+						<constant value="[,]" datatype="string"/>
+					</data>
+				</component>
+				<component name="replace" library="lang" uid="285" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="22"/>
+						<datapoint pos="1" key="20"/>
+						<datapoint pos="2" key="24"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="21"/>
+					</targets>
+					<view ltx="337" lty="30" rbx="434" rby="100"/>
+				</component>
+				<component name="constant" library="core" uid="283" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="217" lty="83" rbx="291" rby="100"/>
+					<data>
+						<constant value="&amp;amp;" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="284" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="23"/>
+					</targets>
+					<view ltx="247" lty="113" rbx="296" rby="130"/>
+					<data>
+						<constant value="&amp;" datatype="string"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="13">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="18"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="12">
+						<edges>
+							<edge vertexkey="22"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="23">
+						<edges>
+							<edge vertexkey="24"/>
 						</edges>
 					</vertex>
 				</vertices>

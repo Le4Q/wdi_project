@@ -27,48 +27,23 @@
 					</targets>
 					<view ltx="404" lty="249" rbx="504" rby="303"/>
 				</component>
-				<component name="restaurants_target" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="644" lty="30" rbx="901" rby="230"/>
+				<component name="value-map" library="core" uid="32" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="45"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="46"/>
+					</targets>
+					<view ltx="424" lty="388" rbx="504" rby="426"/>
 					<data>
-						<root scrollposition="256">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="restaurants" expanded="1">
-										<entry name="restaurant" inpkey="1" expanded="1">
-											<entry name="name" inpkey="2"/>
-											<entry name="description" inpkey="3"/>
-											<entry name="postaladdress" expanded="1">
-												<entry name="address" inpkey="4"/>
-												<entry name="city" expanded="1">
-													<entry name="name" inpkey="5"/>
-													<entry name="postalcode" inpkey="6"/>
-													<entry name="state" inpkey="7"/>
-													<entry name="country" inpkey="21"/>
-												</entry>
-											</entry>
-											<entry name="reviews" expanded="1">
-												<entry name="count" inpkey="22"/>
-												<entry name="bodies" inpkey="23"/>
-												<entry name="average_rating" inpkey="24"/>
-											</entry>
-											<entry name="pricerange" inpkey="8"/>
-											<entry name="categories" expanded="1">
-												<entry name="category" inpkey="33"/>
-											</entry>
-											<entry name="accepts_credit_cards" inpkey="10"/>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
+						<valuemap>
+							<valuemapTable>
+								<entry from="United States" to="US"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="string"/>
+						</valuemap>
 					</data>
 				</component>
 				<component name="schemaOrg" library="json" uid="3" kind="31">
@@ -137,6 +112,125 @@
 						<json schema="C:\Users\Alexander\Desktop\schemaOrg.schema.json" inputinstance="C:\Users\Alexander\Desktop\schemaOrg.json" outputinstance="C:\Users\Alexander\Desktop\schemaOrg.json"/>
 					</data>
 				</component>
+				<component name="restaurants_target" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="668" lty="59" rbx="925" rby="259"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="restaurants" expanded="1">
+										<entry name="restaurant" inpkey="1" expanded="1">
+											<entry name="id" inpkey="54"/>
+											<entry name="name" inpkey="2"/>
+											<entry name="description" inpkey="3"/>
+											<entry name="postaladdress" expanded="1">
+												<entry name="address" inpkey="4"/>
+												<entry name="city" expanded="1">
+													<entry name="name" inpkey="5"/>
+													<entry name="postalcode" inpkey="6"/>
+													<entry name="state" inpkey="7"/>
+													<entry name="country" inpkey="21"/>
+												</entry>
+											</entry>
+											<entry name="reviews" expanded="1">
+												<entry name="count" inpkey="22"/>
+												<entry name="bodies" inpkey="23"/>
+												<entry name="average_rating" inpkey="24"/>
+											</entry>
+											<entry name="pricerange" expanded="1">
+												<entry name="lowerBound" inpkey="51"/>
+												<entry name="upperBound" inpkey="52"/>
+											</entry>
+											<entry name="categories" expanded="1">
+												<entry name="category" inpkey="33"/>
+											</entry>
+											<entry name="accepts_credit_cards" inpkey="10"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
+					</data>
+				</component>
+				<component name="adress-tokenization" library="user" uid="25" kind="19" visible="0" blackbox="0">
+					<view ltx="436" lty="-8" rbx="554" rby="26"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="42" componentid="23"/>
+							<entry name="input2" inpkey="43" componentid="26"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="address" outkey="44" componentid="24"/>
+						</root>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="34" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="50"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="48"/>
+					</targets>
+					<view ltx="456" lty="98" rbx="536" rby="136"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="$30 and under" to="0"/>
+								<entry from="$31 to $50" to="31"/>
+								<entry from="$50 and over" to="51"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="33" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="49"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="47"/>
+					</targets>
+					<view ltx="456" lty="146" rbx="536" rby="184"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="$30 and under" to="30"/>
+								<entry from="$31 to $50" to="50"/>
+								<entry from="$50 and over" to="INF"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="create-guid" library="lang" uid="36" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="596" lty="-8" rbx="682" rby="30"/>
+				</component>
 			</children>
 			<graph directed="1">
 				<edges/>
@@ -156,7 +250,7 @@
 							<edge vertexkey="3"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="17">
+					<vertex vertexkey="44">
 						<edges>
 							<edge vertexkey="4"/>
 						</edges>
@@ -164,6 +258,7 @@
 					<vertex vertexkey="18">
 						<edges>
 							<edge vertexkey="5"/>
+							<edge vertexkey="43"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="19">
@@ -176,17 +271,12 @@
 							<edge vertexkey="7"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="16">
-						<edges>
-							<edge vertexkey="8"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="32">
 						<edges>
 							<edge vertexkey="10"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="25">
+					<vertex vertexkey="46">
 						<edges>
 							<edge vertexkey="21"/>
 						</edges>
@@ -219,6 +309,195 @@
 					<vertex vertexkey="12">
 						<edges>
 							<edge vertexkey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="42"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="45"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="49"/>
+							<edge vertexkey="50"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="48">
+						<edges>
+							<edge vertexkey="51"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="52"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="54"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="adress-tokenization" library="user" uid="18" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<description/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="19" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="2"/>
+					</targets>
+					<view ltx="300" lty="53" rbx="349" rby="70"/>
+					<data>
+						<constant value="[,]" datatype="string"/>
+					</data>
+				</component>
+				<component name="tokenize-regexp" library="core" uid="22" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+						<datapoint pos="1" key="3"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="400" rbx="510" rby="70"/>
+				</component>
+				<component name="input" library="core" uid="23" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view rbx="81" rby="38"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="input2" library="core" uid="26" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="-6" lty="63" rbx="81" rby="101"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input2"/>
+					</data>
+				</component>
+				<component name="address" library="core" uid="24" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="15"/>
+					</sources>
+					<view ltx="760" rbx="828" rby="38"/>
+					<data>
+						<output datatype="IDREF"/>
+						<parameter usageKind="output" name="address"/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="20" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="8"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="549" lty="35" rbx="660" rby="89"/>
+				</component>
+				<component name="constant" library="core" uid="21" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="461" lty="84" rbx="499" rby="101"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="tokenize" library="core" uid="28" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="11"/>
+						<datapoint pos="1" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="17"/>
+					</targets>
+					<view ltx="461" lty="159" rbx="551" rby="213"/>
+				</component>
+				<component name="first-items" library="core" uid="31" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="595" lty="159" rbx="706" rby="213"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="9">
+						<edges>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="8"/>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="16"/>
 						</edges>
 					</vertex>
 				</vertices>
