@@ -6,26 +6,6 @@
 		<properties SelectedLanguage="builtin"/>
 		<structure>
 			<children>
-				<component name="value-map" library="core" uid="15" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="4"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="5"/>
-					</targets>
-					<view ltx="691" lty="354" rbx="771" rby="392"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="216" to="US"/>
-								<entry from="37" to="Canada"/>
-							</valuemapTable>
-							<input name="input" type="string"/>
-							<result name="result" type="string"/>
-						</valuemap>
-					</data>
-				</component>
 				<component name="tokenize" library="core" uid="19" kind="5">
 					<properties/>
 					<sources>
@@ -66,13 +46,33 @@
 					<targets>
 						<datapoint pos="0" key="26"/>
 					</targets>
-					<view ltx="657" lty="198" rbx="771" rby="252"/>
+					<view ltx="681" lty="184" rbx="795" rby="238"/>
+				</component>
+				<component name="value-map" library="core" uid="15" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="691" lty="300" rbx="771" rby="338"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="216" to="US"/>
+								<entry from="37" to="Canada"/>
+							</valuemapTable>
+							<input name="input" type="string"/>
+							<result name="result" type="string"/>
+						</valuemap>
+					</data>
 				</component>
 				<component name="restaurants_target" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="988" lty="63" rbx="1302" rby="568"/>
 					<data>
-						<root scrollposition="57">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -83,6 +83,7 @@
 								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="restaurants" expanded="1">
 										<entry name="restaurant" inpkey="27" expanded="1">
+											<entry name="id" inpkey="43"/>
 											<entry name="name" inpkey="28"/>
 											<entry name="latitude" inpkey="29"/>
 											<entry name="longitude" inpkey="30"/>
@@ -104,10 +105,14 @@
 													<entry name="hours" expanded="1"/>
 												</entry>
 											</entry>
-											<entry name="pricerange" inpkey="38"/>
+											<entry name="pricerange" expanded="1">
+												<entry name="lowerBound" inpkey="53"/>
+												<entry name="upperBound" inpkey="54"/>
+											</entry>
 											<entry name="categories" expanded="1">
 												<entry name="category" inpkey="39"/>
 											</entry>
+											<entry name="stars" inpkey="55"/>
 											<entry name="accepts_currency" inpkey="40"/>
 										</entry>
 									</entry>
@@ -119,9 +124,9 @@
 				</component>
 				<component name="Text file" library="text" uid="4" kind="16">
 					<properties/>
-					<view ltx="48" lty="-7" rbx="477" rby="633"/>
+					<view ltx="37" lty="-23" rbx="470" rby="630"/>
 					<data>
-						<root scrollposition="7">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -131,6 +136,7 @@
 							<entry name="FileInstance" ns="1" expanded="1">
 								<entry name="document" ns="1" expanded="1">
 									<entry name="Rows" outkey="10" expanded="1">
+										<entry name="average_cost_for_two" outkey="49"/>
 										<entry name="cuisines" outkey="11"/>
 										<entry name="currency" outkey="41"/>
 										<entry name="location.address" outkey="12"/>
@@ -141,7 +147,6 @@
 										<entry name="location.longitude" outkey="17"/>
 										<entry name="location.zipcode" outkey="18"/>
 										<entry name="name" outkey="19"/>
-										<entry name="price_range" outkey="20"/>
 										<entry name="user_rating.aggregate_rating" outkey="21"/>
 										<entry name="user_rating.votes" outkey="22"/>
 									</entry>
@@ -191,6 +196,35 @@
 							</settings>
 						</text>
 					</data>
+				</component>
+				<component name="mapPriceRange" library="user" uid="59" kind="19" visible="0" blackbox="0">
+					<view ltx="675" lty="427" rbx="782" rby="461"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="56" componentid="60"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="57" componentid="36"/>
+							<entry name="result2" outkey="58" componentid="42"/>
+						</root>
+					</data>
+				</component>
+				<component name="create-guid" library="lang" uid="25" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="42"/>
+					</targets>
+					<view ltx="691" lty="-7" rbx="777" rby="31"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -276,11 +310,6 @@
 							<edge vertexkey="37"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="20">
-						<edges>
-							<edge vertexkey="38"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="8">
 						<edges>
 							<edge vertexkey="39"/>
@@ -289,6 +318,373 @@
 					<vertex vertexkey="41">
 						<edges>
 							<edge vertexkey="40"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="42">
+						<edges>
+							<edge vertexkey="43"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="53"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58">
+						<edges>
+							<edge vertexkey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="55"/>
+							<edge vertexkey="56"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="mapPriceRange" library="user" uid="35" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<description/>
+		<structure>
+			<children>
+				<component name="constant" library="core" uid="46" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="485" lty="105" rbx="529" rby="122"/>
+					<data>
+						<constant value="10" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="result2" library="core" uid="42" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+					</sources>
+					<view ltx="1049" lty="105" rbx="1112" rby="143"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result2"/>
+					</data>
+				</component>
+				<component name="equal-or-less" library="core" uid="45" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="9"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="10"/>
+					</targets>
+					<view ltx="566" lty="41" rbx="660" rby="95"/>
+				</component>
+				<component name="equal-or-less" library="core" uid="50" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="18"/>
+						<datapoint pos="1" key="17"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="22"/>
+					</targets>
+					<view ltx="435" lty="215" rbx="529" rby="269"/>
+				</component>
+				<component name="if-else" library="core" uid="52" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="23"/>
+						<datapoint pos="1" key="21"/>
+						<datapoint pos="2" key="33"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="581" lty="215" rbx="681" rby="288"/>
+				</component>
+				<component name="result" library="core" uid="36" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<view ltx="1049" lty="41" rbx="1106" rby="79"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="equal-or-less" library="core" uid="54" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="34"/>
+						<datapoint pos="1" key="26"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="304" lty="378" rbx="398" rby="432"/>
+				</component>
+				<component name="constant" library="core" uid="39" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="35"/>
+					</targets>
+					<view ltx="85" lty="105" rbx="123" rby="122"/>
+					<data>
+						<constant value="2" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="51" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="20"/>
+					</targets>
+					<view ltx="472" lty="295" rbx="510" rby="312"/>
+					<data>
+						<constant value="2" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="48" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="603" lty="121" rbx="641" rby="138"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="55" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="29"/>
+						<datapoint pos="2" key="37"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="450" lty="378" rbx="550" rby="451"/>
+				</component>
+				<component name="constant" library="core" uid="56" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="28"/>
+					</targets>
+					<view ltx="341" lty="458" rbx="379" rby="475"/>
+					<data>
+						<constant value="3" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="57" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="371" lty="488" rbx="409" rby="505"/>
+					<data>
+						<constant value="4" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="49" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="354" lty="279" rbx="398" rby="296"/>
+					<data>
+						<constant value="30" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="47" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="13"/>
+						<datapoint pos="2" key="24"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="712" lty="41" rbx="812" rby="114"/>
+				</component>
+				<component name="value-map" library="core" uid="40" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="876" lty="41" rbx="956" rby="79"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="0"/>
+								<entry from="2" to="11"/>
+								<entry from="3" to="31"/>
+								<entry from="4" to="61"/>
+							</valuemapTable>
+							<input name="Input" type="integer"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="41" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="876" lty="105" rbx="956" rby="143"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="10"/>
+								<entry from="2" to="30"/>
+								<entry from="3" to="60"/>
+								<entry from="4" to="INF"/>
+							</valuemapTable>
+							<input name="Input" type="integer"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="divide" library="core" uid="38" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="38"/>
+						<datapoint pos="1" key="36"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="15"/>
+					</targets>
+					<view ltx="179" lty="41" rbx="257" rby="95"/>
+				</component>
+				<component name="input" library="core" uid="60" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="39"/>
+					</targets>
+					<view ltx="7" lty="41" rbx="88" rby="79"/>
+					<data>
+						<input datatype="integer"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="53" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="25"/>
+					</targets>
+					<view ltx="223" lty="442" rbx="267" rby="459"/>
+					<data>
+						<constant value="60" datatype="decimal"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="2"/>
+							<edge vertexkey="4"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="8"/>
+							<edge vertexkey="18"/>
+							<edge vertexkey="34"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="10">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="17"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="21"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="23"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="25">
+						<edges>
+							<edge vertexkey="26"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="28">
+						<edges>
+							<edge vertexkey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="30">
+						<edges>
+							<edge vertexkey="31"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="27">
+						<edges>
+							<edge vertexkey="33"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="35">
+						<edges>
+							<edge vertexkey="36"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="32">
+						<edges>
+							<edge vertexkey="37"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="39">
+						<edges>
+							<edge vertexkey="38"/>
 						</edges>
 					</vertex>
 				</vertices>
