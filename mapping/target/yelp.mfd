@@ -46,30 +46,6 @@
 						</valuemap>
 					</data>
 				</component>
-				<component name="parseHours" library="user" uid="258" kind="19" visible="0" blackbox="0">
-					<view ltx="1269" lty="535" rbx="1426" rby="603"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="input" inpkey="397" componentid="254"/>
-						</root>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="toplevelinstance" outkey="398" componentid="259"/>
-							<entry name="day" outkey="399" componentid="257"/>
-							<entry name="opens" outkey="400" componentid="255"/>
-							<entry name="closes" outkey="401" componentid="256"/>
-						</root>
-					</data>
-				</component>
 				<component name="parseHours" library="user" uid="265" kind="19" visible="0" blackbox="0">
 					<view ltx="1281" lty="936" rbx="1438" rby="1004"/>
 					<data>
@@ -190,6 +166,53 @@
 						</root>
 					</data>
 				</component>
+				<component name="value-map" library="core" uid="192" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="299"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="300"/>
+					</targets>
+					<view ltx="1376" lty="488" rbx="1456" rby="526"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="no" to="false"/>
+								<entry from="free" to="true"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="boolean"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="194" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="304"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="303"/>
+					</targets>
+					<view ltx="1376" lty="386" rbx="1456" rby="424"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="False" to="false"/>
+								<entry from="True" to="true"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="boolean"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="create-guid" library="lang" uid="268" kind="5">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="484"/>
+					</targets>
+					<view ltx="1498" lty="322" rbx="1584" rby="360"/>
+				</component>
 				<component name="parseHours" library="user" uid="260" kind="19" visible="0" blackbox="0">
 					<view ltx="1329" lty="636" rbx="1486" rby="704"/>
 					<data>
@@ -214,31 +237,56 @@
 						</root>
 					</data>
 				</component>
-				<component name="value-map" library="core" uid="192" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="299"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="300"/>
-					</targets>
-					<view ltx="1376" lty="488" rbx="1456" rby="526"/>
+				<component name="parseHours" library="user" uid="258" kind="19" visible="0" blackbox="0">
+					<view ltx="1269" lty="535" rbx="1426" rby="603"/>
 					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="no" to="false"/>
-								<entry from="free" to="true"/>
-							</valuemapTable>
-							<input name="Input" type="string"/>
-							<result name="result" type="boolean"/>
-						</valuemap>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="397" componentid="254"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="toplevelinstance" outkey="398" componentid="259"/>
+							<entry name="day" outkey="399" componentid="257"/>
+							<entry name="opens" outkey="400" componentid="255"/>
+							<entry name="closes" outkey="401" componentid="256"/>
+						</root>
+					</data>
+				</component>
+				<component name="category_tokenize" library="user" uid="277" kind="19" visible="0" blackbox="0">
+					<view ltx="1611" lty="205" rbx="1728" rby="222"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="488" componentid="275"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="category" outkey="489" componentid="276"/>
+						</root>
 					</data>
 				</component>
 				<component name="Yelp" library="text" uid="59" kind="16">
 					<properties/>
 					<view ltx="782" lty="128" rbx="1082" rby="628"/>
 					<data>
-						<root scrollposition="215">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -324,102 +372,11 @@
 						</text>
 					</data>
 				</component>
-				<component name="value-map" library="core" uid="266" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="478"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="479"/>
-					</targets>
-					<view ltx="1199" lty="465" rbx="1279" rby="503"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="1" to="10"/>
-								<entry from="2" to="30"/>
-								<entry from="3" to="60"/>
-								<entry from="4" to="INF"/>
-							</valuemapTable>
-							<input name="Input" type="integer"/>
-							<result name="result" type="double"/>
-						</valuemap>
-					</data>
-				</component>
-				<component name="value-map" library="core" uid="267" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="480"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="481"/>
-					</targets>
-					<view ltx="1199" lty="417" rbx="1279" rby="455"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="1" to="0"/>
-								<entry from="2" to="11"/>
-								<entry from="3" to="29"/>
-								<entry from="4" to="61"/>
-							</valuemapTable>
-							<input name="Input" type="integer"/>
-							<result name="result" type="double"/>
-						</valuemap>
-					</data>
-				</component>
-				<component name="value-map" library="core" uid="194" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="304"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="303"/>
-					</targets>
-					<view ltx="1376" lty="386" rbx="1456" rby="424"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="False" to="false"/>
-								<entry from="True" to="true"/>
-							</valuemapTable>
-							<input name="Input" type="string"/>
-							<result name="result" type="boolean"/>
-						</valuemap>
-					</data>
-				</component>
-				<component name="value-map" library="core" uid="193" kind="23">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="301"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="302"/>
-					</targets>
-					<view ltx="1376" lty="436" rbx="1456" rby="474"/>
-					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="False" to="false"/>
-								<entry from="True" to="true"/>
-							</valuemapTable>
-							<input name="Input" type="string"/>
-							<result name="result" type="boolean"/>
-						</valuemap>
-					</data>
-				</component>
-				<component name="create-guid" library="lang" uid="268" kind="5">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="484"/>
-					</targets>
-					<view ltx="1498" lty="322" rbx="1584" rby="360"/>
-				</component>
 				<component name="restaurants_target" library="xml" uid="6" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1639" lty="417" rbx="1896" rby="617"/>
 					<data>
-						<root scrollposition="494">
+						<root scrollposition="528">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -518,25 +475,68 @@
 						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
 					</data>
 				</component>
-				<component name="category_tokenize" library="user" uid="277" kind="19" visible="0" blackbox="0">
-					<view ltx="1611" lty="205" rbx="1728" rby="222"/>
+				<component name="value-map" library="core" uid="193" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="301"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="302"/>
+					</targets>
+					<view ltx="1376" lty="436" rbx="1456" rby="474"/>
 					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="input" inpkey="488" componentid="275"/>
-						</root>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="category" outkey="489" componentid="276"/>
-						</root>
+						<valuemap>
+							<valuemapTable>
+								<entry from="False" to="false"/>
+								<entry from="True" to="true"/>
+							</valuemapTable>
+							<input name="Input" type="string"/>
+							<result name="result" type="boolean"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="266" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="478"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="479"/>
+					</targets>
+					<view ltx="1199" lty="465" rbx="1279" rby="503"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="10"/>
+								<entry from="2" to="30"/>
+								<entry from="3" to="60"/>
+								<entry from="4" to="INF"/>
+							</valuemapTable>
+							<input name="Input" type="integer"/>
+							<result name="result" type="double"/>
+						</valuemap>
+					</data>
+				</component>
+				<component name="value-map" library="core" uid="267" kind="23">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="480"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="481"/>
+					</targets>
+					<view ltx="1199" lty="417" rbx="1279" rby="455"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="1" to="0"/>
+								<entry from="2" to="11"/>
+								<entry from="3" to="31"/>
+								<entry from="4" to="61"/>
+							</valuemapTable>
+							<input name="Input" type="integer"/>
+							<result name="result" type="double"/>
+						</valuemap>
 					</data>
 				</component>
 			</children>
@@ -1305,7 +1305,6 @@
 	</component>
 	<component name="category_tokenize" library="user" uid="271" editable="1" inline="1" blackbox="0">
 		<properties/>
-		<description/>
 		<structure>
 			<children>
 				<component name="category" library="core" uid="276" kind="7">
@@ -1466,6 +1465,127 @@
 					<vertex vertexkey="23">
 						<edges>
 							<edge vertexkey="24"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="MapCountry" library="user" uid="286" editable="1" inline="1" blackbox="0">
+		<properties/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="291" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="3"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="430" lty="169" rbx="486" rby="223"/>
+				</component>
+				<component name="input" library="core" uid="289" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="84" lty="288" rbx="165" rby="326"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="input"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="295" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view ltx="696" lty="300" rbx="734" rby="317"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="result" library="core" uid="287" kind="7">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+					</sources>
+					<view ltx="1273" rbx="1330" rby="38"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="result"/>
+					</data>
+				</component>
+				<component name="first-items" library="core" uid="294" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="768" lty="169" rbx="879" rby="223"/>
+				</component>
+				<component name="uppercase" library="lang" uid="299" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="15"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="959" lty="169" rbx="1039" rby="207"/>
+				</component>
+				<component name="filter" library="core" uid="292" kind="3">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+						<datapoint/>
+					</targets>
+					<view ltx="584" lty="169" rbx="693" rby="223"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="3"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="11">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="15"/>
 						</edges>
 					</vertex>
 				</vertices>
