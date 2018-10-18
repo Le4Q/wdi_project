@@ -261,122 +261,11 @@
 						</root>
 					</data>
 				</component>
-				<component name="category_tokenize" library="user" uid="277" kind="19" visible="0" blackbox="0">
-					<view ltx="1611" lty="205" rbx="1728" rby="222"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="input" inpkey="488" componentid="275"/>
-						</root>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="category" outkey="489" componentid="276"/>
-						</root>
-					</data>
-				</component>
-				<component name="Yelp" library="text" uid="59" kind="16">
-					<properties/>
-					<view ltx="782" lty="128" rbx="1082" rby="628"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1">
-									<entry name="Zeilen" outkey="148" expanded="1">
-										<entry name="address" outkey="149"/>
-										<entry name="categories" outkey="150"/>
-										<entry name="city" outkey="151"/>
-										<entry name="latitude" outkey="152"/>
-										<entry name="longitude" outkey="153"/>
-										<entry name="name" outkey="154"/>
-										<entry name="neighborhood" outkey="155"/>
-										<entry name="postal_code" outkey="156"/>
-										<entry name="review_count" outkey="157"/>
-										<entry name="stars" outkey="158"/>
-										<entry name="state" outkey="159"/>
-										<entry name="BusinessAcceptsCreditCards" outkey="160"/>
-										<entry name="RestaurantsDelivery" outkey="161"/>
-										<entry name="RestaurantsPriceRange2" outkey="162"/>
-										<entry name="RestaurantsReservations" outkey="163"/>
-										<entry name="DriveThru" outkey="164"/>
-										<entry name="WiFi" outkey="165"/>
-										<entry name="Monday" outkey="174"/>
-										<entry name="Tuesday" outkey="270"/>
-										<entry name="Wednesday" outkey="271"/>
-										<entry name="Thursday" outkey="272"/>
-										<entry name="Friday" outkey="273"/>
-										<entry name="Saturday" outkey="274"/>
-										<entry name="Sunday" outkey="275"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<text type="csv" inputinstance="..\..\data\yelp_restaurant_data2.csv" outputinstance="..\..\data\yelp_restaurant_data_result.csv" encoding="1000" byteorder="1" byteordermark="0">
-							<settings separator="	" quote="&quot;" firstrownames="true" removeempty="true">
-								<names root="yelp_restaurant_data2" block="Zeilen">
-									<field0 name="Field1" type="string"/>
-									<field1 name="address" type="string"/>
-									<field2 name="business_id" type="string"/>
-									<field3 name="categories" type="string"/>
-									<field4 name="city" type="string"/>
-									<field5 name="hours" type="string"/>
-									<field6 name="is_open" type="string"/>
-									<field7 name="latitude" type="string"/>
-									<field8 name="longitude" type="string"/>
-									<field9 name="name" type="string"/>
-									<field10 name="neighborhood" type="string"/>
-									<field11 name="postal_code" type="string"/>
-									<field12 name="review_count" type="string"/>
-									<field13 name="stars" type="string"/>
-									<field14 name="state" type="string"/>
-									<field15 name="BikeParking" type="string"/>
-									<field16 name="BusinessAcceptsCreditCards" type="string"/>
-									<field17 name="BusinessParking" type="string"/>
-									<field18 name="GoodForKids" type="string"/>
-									<field19 name="HasTV" type="string"/>
-									<field20 name="NoiseLevel" type="string"/>
-									<field21 name="OutdoorSeating" type="string"/>
-									<field22 name="RestaurantsAttire" type="string"/>
-									<field23 name="RestaurantsDelivery" type="string"/>
-									<field24 name="RestaurantsGoodForGroups" type="string"/>
-									<field25 name="RestaurantsPriceRange2" type="string"/>
-									<field26 name="RestaurantsReservations" type="string"/>
-									<field27 name="RestaurantsTakeOut" type="string"/>
-									<field28 name="DriveThru" type="string"/>
-									<field29 name="GoodForMeal" type="string"/>
-									<field30 name="RestaurantsTableService" type="string"/>
-									<field31 name="WheelchairAccessible" type="string"/>
-									<field32 name="WiFi" type="string"/>
-									<field33 name="Monday" type="string"/>
-									<field34 name="Tuesday" type="string"/>
-									<field35 name="Wednesday" type="string"/>
-									<field36 name="Thursday" type="string"/>
-									<field37 name="Friday" type="string"/>
-									<field38 name="Saturday" type="string"/>
-									<field39 name="Sunday" type="string"/>
-								</names>
-							</settings>
-						</text>
-					</data>
-				</component>
 				<component name="restaurants_target" library="xml" uid="6" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1639" lty="417" rbx="1896" rby="617"/>
 					<data>
-						<root scrollposition="528">
+						<root scrollposition="124">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -537,6 +426,117 @@
 							<input name="Input" type="integer"/>
 							<result name="result" type="double"/>
 						</valuemap>
+					</data>
+				</component>
+				<component name="Yelp" library="text" uid="59" kind="16">
+					<properties/>
+					<view ltx="782" lty="128" rbx="1082" rby="628"/>
+					<data>
+						<root scrollposition="18">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Zeilen" outkey="148" expanded="1">
+										<entry name="address" outkey="149"/>
+										<entry name="categories" outkey="150"/>
+										<entry name="city" outkey="151"/>
+										<entry name="latitude" outkey="152"/>
+										<entry name="longitude" outkey="153"/>
+										<entry name="name" outkey="154"/>
+										<entry name="neighborhood" outkey="155"/>
+										<entry name="postal_code" outkey="156"/>
+										<entry name="review_count" outkey="157"/>
+										<entry name="stars" outkey="158"/>
+										<entry name="state" outkey="159"/>
+										<entry name="BusinessAcceptsCreditCards" outkey="160"/>
+										<entry name="RestaurantsDelivery" outkey="161"/>
+										<entry name="RestaurantsPriceRange2" outkey="162"/>
+										<entry name="RestaurantsReservations" outkey="163"/>
+										<entry name="DriveThru" outkey="164"/>
+										<entry name="WiFi" outkey="165"/>
+										<entry name="Monday" outkey="174"/>
+										<entry name="Tuesday" outkey="270"/>
+										<entry name="Wednesday" outkey="271"/>
+										<entry name="Thursday" outkey="272"/>
+										<entry name="Friday" outkey="273"/>
+										<entry name="Saturday" outkey="274"/>
+										<entry name="Sunday" outkey="275"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" inputinstance="..\..\data\yelp_restaurant_data2.csv" outputinstance="..\..\data\yelp_restaurant_data_result.csv" encoding="1000" byteorder="1" byteordermark="0">
+							<settings separator="	" quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="yelp_restaurant_data2" block="Zeilen">
+									<field0 name="Field1" type="string"/>
+									<field1 name="address" type="string"/>
+									<field2 name="business_id" type="string"/>
+									<field3 name="categories" type="string"/>
+									<field4 name="city" type="string"/>
+									<field5 name="hours" type="string"/>
+									<field6 name="is_open" type="string"/>
+									<field7 name="latitude" type="string"/>
+									<field8 name="longitude" type="string"/>
+									<field9 name="name" type="string"/>
+									<field10 name="neighborhood" type="string"/>
+									<field11 name="postal_code" type="string"/>
+									<field12 name="review_count" type="string"/>
+									<field13 name="stars" type="string"/>
+									<field14 name="state" type="string"/>
+									<field15 name="BikeParking" type="string"/>
+									<field16 name="BusinessAcceptsCreditCards" type="string"/>
+									<field17 name="BusinessParking" type="string"/>
+									<field18 name="GoodForKids" type="string"/>
+									<field19 name="HasTV" type="string"/>
+									<field20 name="NoiseLevel" type="string"/>
+									<field21 name="OutdoorSeating" type="string"/>
+									<field22 name="RestaurantsAttire" type="string"/>
+									<field23 name="RestaurantsDelivery" type="string"/>
+									<field24 name="RestaurantsGoodForGroups" type="string"/>
+									<field25 name="RestaurantsPriceRange2" type="string"/>
+									<field26 name="RestaurantsReservations" type="string"/>
+									<field27 name="RestaurantsTakeOut" type="string"/>
+									<field28 name="DriveThru" type="string"/>
+									<field29 name="GoodForMeal" type="string"/>
+									<field30 name="RestaurantsTableService" type="string"/>
+									<field31 name="WheelchairAccessible" type="string"/>
+									<field32 name="WiFi" type="string"/>
+									<field33 name="Monday" type="string"/>
+									<field34 name="Tuesday" type="string"/>
+									<field35 name="Wednesday" type="string"/>
+									<field36 name="Thursday" type="string"/>
+									<field37 name="Friday" type="string"/>
+									<field38 name="Saturday" type="string"/>
+									<field39 name="Sunday" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="category_tokenize" library="user" uid="277" kind="19" visible="0" blackbox="0">
+					<view ltx="1549" lty="208" rbx="1666" rby="225"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="488" componentid="275"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="category" outkey="489" componentid="276"/>
+						</root>
 					</data>
 				</component>
 			</children>
