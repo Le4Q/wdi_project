@@ -27,15 +27,61 @@
 						<constant value=", " datatype="string"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="23" kind="2">
+				<component name="mapPriceRange" library="user" uid="59" kind="19" visible="0" blackbox="0">
+					<view ltx="675" lty="427" rbx="782" rby="461"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="input" inpkey="56" componentid="60"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="57" componentid="36"/>
+							<entry name="result2" outkey="58" componentid="42"/>
+						</root>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="62" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="59"/>
+						<datapoint pos="1" key="60"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="61"/>
+					</targets>
+					<view ltx="800" lty="7" rbx="878" rby="63"/>
+				</component>
+				<component name="constant" library="core" uid="63" kind="2">
 					<properties/>
 					<targets>
-						<datapoint pos="0" key="23"/>
+						<datapoint pos="0" key="62"/>
 					</targets>
-					<view ltx="580" lty="260" rbx="623" rby="277"/>
+					<view ltx="691" lty="-58" rbx="774" rby="-41"/>
 					<data>
-						<constant value="," datatype="string"/>
+						<constant value="zomato_" datatype="string"/>
 					</data>
+				</component>
+				<component name="auto-number" library="core" uid="65" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="63"/>
+					</targets>
+					<view ltx="602" lty="-23" rbx="740" rby="63"/>
 				</component>
 				<component name="substring-before" library="core" uid="22" kind="5">
 					<properties/>
@@ -48,29 +94,19 @@
 					</targets>
 					<view ltx="681" lty="184" rbx="795" rby="238"/>
 				</component>
-				<component name="value-map" library="core" uid="15" kind="23">
+				<component name="constant" library="core" uid="23" kind="2">
 					<properties/>
-					<sources>
-						<datapoint pos="0" key="4"/>
-					</sources>
 					<targets>
-						<datapoint pos="0" key="5"/>
+						<datapoint pos="0" key="23"/>
 					</targets>
-					<view ltx="691" lty="300" rbx="771" rby="338"/>
+					<view ltx="583" lty="244" rbx="626" rby="261"/>
 					<data>
-						<valuemap>
-							<valuemapTable>
-								<entry from="216" to="US"/>
-								<entry from="37" to="Canada"/>
-							</valuemapTable>
-							<input name="input" type="string"/>
-							<result name="result" type="string"/>
-						</valuemap>
+						<constant value="," datatype="string"/>
 					</data>
 				</component>
 				<component name="restaurants_target" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="988" lty="63" rbx="1302" rby="568"/>
+					<view ltx="988" lty="56" rbx="1302" rby="561"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -124,7 +160,7 @@
 				</component>
 				<component name="Text file" library="text" uid="4" kind="16">
 					<properties/>
-					<view ltx="37" lty="-23" rbx="470" rby="630"/>
+					<view ltx="19" lty="-40" rbx="452" rby="613"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -197,34 +233,26 @@
 						</text>
 					</data>
 				</component>
-				<component name="mapPriceRange" library="user" uid="59" kind="19" visible="0" blackbox="0">
-					<view ltx="675" lty="427" rbx="782" rby="461"/>
-					<data>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="input" inpkey="56" componentid="60"/>
-						</root>
-						<root>
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="result" outkey="57" componentid="36"/>
-							<entry name="result2" outkey="58" componentid="42"/>
-						</root>
-					</data>
-				</component>
-				<component name="create-guid" library="lang" uid="25" kind="5">
+				<component name="value-map" library="core" uid="15" kind="23">
 					<properties/>
+					<sources>
+						<datapoint pos="0" key="4"/>
+					</sources>
 					<targets>
-						<datapoint pos="0" key="42"/>
+						<datapoint pos="0" key="5"/>
 					</targets>
-					<view ltx="691" lty="-7" rbx="777" rby="31"/>
+					<view ltx="691" lty="300" rbx="771" rby="338"/>
+					<data>
+						<valuemap>
+							<valuemapTable>
+								<entry from="216" to="US"/>
+								<entry from="37" to="Canada"/>
+								<entry from="14" to="Denmark"/>
+							</valuemapTable>
+							<input name="input" type="string"/>
+							<result name="result" type="string"/>
+						</valuemap>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
@@ -320,7 +348,7 @@
 							<edge vertexkey="40"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="42">
+					<vertex vertexkey="61">
 						<edges>
 							<edge vertexkey="43"/>
 						</edges>
@@ -341,13 +369,22 @@
 							<edge vertexkey="56"/>
 						</edges>
 					</vertex>
+					<vertex vertexkey="62">
+						<edges>
+							<edge vertexkey="59"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="60"/>
+						</edges>
+					</vertex>
 				</vertices>
 			</graph>
 		</structure>
 	</component>
 	<component name="mapPriceRange" library="user" uid="35" editable="1" inline="1" blackbox="0">
 		<properties/>
-		<description/>
 		<structure>
 			<children>
 				<component name="constant" library="core" uid="46" kind="2">
@@ -393,18 +430,6 @@
 					</targets>
 					<view ltx="435" lty="215" rbx="529" rby="269"/>
 				</component>
-				<component name="if-else" library="core" uid="52" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="23"/>
-						<datapoint pos="1" key="21"/>
-						<datapoint pos="2" key="33"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="19"/>
-					</targets>
-					<view ltx="581" lty="215" rbx="681" rby="288"/>
-				</component>
 				<component name="result" library="core" uid="36" kind="7">
 					<properties/>
 					<sources>
@@ -447,28 +472,6 @@
 						<constant value="2" datatype="decimal"/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="48" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="11"/>
-					</targets>
-					<view ltx="603" lty="121" rbx="641" rby="138"/>
-					<data>
-						<constant value="1" datatype="decimal"/>
-					</data>
-				</component>
-				<component name="if-else" library="core" uid="55" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="31"/>
-						<datapoint pos="1" key="29"/>
-						<datapoint pos="2" key="37"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="27"/>
-					</targets>
-					<view ltx="450" lty="378" rbx="550" rby="451"/>
-				</component>
 				<component name="constant" library="core" uid="56" kind="2">
 					<properties/>
 					<targets>
@@ -498,18 +501,6 @@
 					<data>
 						<constant value="30" datatype="decimal"/>
 					</data>
-				</component>
-				<component name="if-else" library="core" uid="47" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="12"/>
-						<datapoint pos="1" key="13"/>
-						<datapoint pos="2" key="24"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="14"/>
-					</targets>
-					<view ltx="712" lty="41" rbx="812" rby="114"/>
 				</component>
 				<component name="value-map" library="core" uid="40" kind="23">
 					<properties/>
@@ -589,6 +580,52 @@
 					<data>
 						<constant value="60" datatype="decimal"/>
 					</data>
+				</component>
+				<component name="constant" library="core" uid="48" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="603" lty="121" rbx="641" rby="138"/>
+					<data>
+						<constant value="1" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="52" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="23"/>
+						<datapoint pos="1" key="21"/>
+						<datapoint pos="2" key="33"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="19"/>
+					</targets>
+					<view ltx="581" lty="215" rbx="681" rby="288"/>
+				</component>
+				<component name="if-else" library="core" uid="55" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="31"/>
+						<datapoint pos="1" key="29"/>
+						<datapoint pos="2" key="37"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="27"/>
+					</targets>
+					<view ltx="450" lty="378" rbx="550" rby="451"/>
+				</component>
+				<component name="if-else" library="core" uid="47" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="13"/>
+						<datapoint pos="2" key="24"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="712" lty="41" rbx="812" rby="114"/>
 				</component>
 			</children>
 			<graph directed="1">
