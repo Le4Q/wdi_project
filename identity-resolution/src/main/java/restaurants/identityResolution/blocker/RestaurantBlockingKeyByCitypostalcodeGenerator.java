@@ -31,7 +31,7 @@ import restaurants.identityResolution.model.Restaurant;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class RestaurantBlockingKeyByNameGenerator extends
+public class RestaurantBlockingKeyByCitypostalcodeGenerator extends
 		RecordBlockingKeyGenerator<Restaurant, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -42,8 +42,7 @@ public class RestaurantBlockingKeyByNameGenerator extends
 			Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Restaurant>> resultCollector) {
 
-		String blockingKeyValue = record.getName().substring(0, Math.min(3,record.getName().length())).toUpperCase()
-				+ record.getCity_name().substring(0, Math.min(3,record.getName().length())).toUpperCase();
+		String blockingKeyValue = record.getCity_postalcode().substring(0, Math.min(3,record.getCity_postalcode().length())).toUpperCase();
 
 		resultCollector.next(new Pair<>(blockingKeyValue, record));
 	}

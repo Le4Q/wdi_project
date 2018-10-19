@@ -25,8 +25,8 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
-import restaurant.identityResolution.comparators.RestaurantNameComparator;
-import restaurants.identityResolution.blocker.RestaurantBlockingKeyByNameGenerator;
+import restaurants.identityResolution.blocker.RestaurantBlockingKeyByCitypostalcodeGenerator;
+import restaurants.identityResolution.comparators.RestaurantNameComparator;
 import restaurants.identityResolution.model.Restaurant;
 import restaurants.identityResolution.model.RestaurantXMLReader;
 
@@ -72,7 +72,7 @@ public class ReaderTest
 		matchingRule.addComparator(new RestaurantNameComparator(), 0.5);
 		
 		// create a blocker (blocking strategy)
-		StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByNameGenerator());
+		StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCitypostalcodeGenerator());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
 		blocker.setMeasureBlockSizes(true);
