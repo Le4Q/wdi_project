@@ -224,12 +224,39 @@
 						</valuemap>
 					</data>
 				</component>
-				<component name="create-guid" library="lang" uid="36" kind="5">
+				<component name="concat" library="core" uid="39" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="57"/>
+						<datapoint pos="1" key="59"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="55"/>
+					</targets>
+					<view ltx="752" lty="-48" rbx="830" rby="8"/>
+				</component>
+				<component name="auto-number" library="core" uid="38" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="58"/>
+					</targets>
+					<view ltx="579" lty="-48" rbx="717" rby="38"/>
+				</component>
+				<component name="constant" library="core" uid="37" kind="2">
 					<properties/>
 					<targets>
-						<datapoint pos="0" key="53"/>
+						<datapoint pos="0" key="56"/>
 					</targets>
-					<view ltx="596" lty="-8" rbx="682" rby="30"/>
+					<view ltx="605" lty="-66" rbx="708" rby="-49"/>
+					<data>
+						<constant value="schemaOrg_" datatype="string"/>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
@@ -337,9 +364,19 @@
 							<edge vertexkey="52"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="53">
+					<vertex vertexkey="55">
 						<edges>
 							<edge vertexkey="54"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="56">
+						<edges>
+							<edge vertexkey="57"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="58">
+						<edges>
+							<edge vertexkey="59"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -348,7 +385,6 @@
 	</component>
 	<component name="adress-tokenization" library="user" uid="18" editable="1" inline="1" blackbox="0">
 		<properties/>
-		<description/>
 		<structure>
 			<children>
 				<component name="constant" library="core" uid="19" kind="2">

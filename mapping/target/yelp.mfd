@@ -206,13 +206,6 @@
 						</valuemap>
 					</data>
 				</component>
-				<component name="create-guid" library="lang" uid="268" kind="5">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="484"/>
-					</targets>
-					<view ltx="1498" lty="322" rbx="1584" rby="360"/>
-				</component>
 				<component name="parseHours" library="user" uid="260" kind="19" visible="0" blackbox="0">
 					<view ltx="1329" lty="636" rbx="1486" rby="704"/>
 					<data>
@@ -259,109 +252,6 @@
 							<entry name="opens" outkey="400" componentid="255"/>
 							<entry name="closes" outkey="401" componentid="256"/>
 						</root>
-					</data>
-				</component>
-				<component name="restaurants_target" library="xml" uid="6" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="1639" lty="417" rbx="1896" rby="617"/>
-					<data>
-						<root scrollposition="124">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="restaurants" expanded="1">
-										<entry name="restaurant" inpkey="350" expanded="1">
-											<entry name="id" inpkey="485"/>
-											<entry name="name" inpkey="351"/>
-											<entry name="latitude" inpkey="352"/>
-											<entry name="longitude" inpkey="353"/>
-											<entry name="neighborhood" inpkey="354"/>
-											<entry name="postaladdress" expanded="1">
-												<entry name="address" inpkey="355"/>
-												<entry name="city" expanded="1">
-													<entry name="name" inpkey="356"/>
-													<entry name="postalcode" inpkey="357"/>
-													<entry name="state" inpkey="358"/>
-												</entry>
-											</entry>
-											<entry name="reviews" expanded="1">
-												<entry name="count" inpkey="359"/>
-											</entry>
-											<entry name="openinghours" expanded="1">
-												<entry name="specification" inpkey="360">
-													<entry name="day" inpkey="361"/>
-													<entry name="hours">
-														<entry name="opens" inpkey="362"/>
-														<entry name="closes" inpkey="396"/>
-													</entry>
-												</entry>
-												<entry name="specification" inpkey="453" expanded="1" clone="1">
-													<entry name="day" inpkey="454"/>
-													<entry name="hours" expanded="1">
-														<entry name="opens" inpkey="455"/>
-														<entry name="closes" inpkey="456"/>
-													</entry>
-												</entry>
-												<entry name="specification" inpkey="457" clone="1">
-													<entry name="day" inpkey="458"/>
-													<entry name="hours">
-														<entry name="opens" inpkey="459"/>
-														<entry name="closes" inpkey="460"/>
-													</entry>
-												</entry>
-												<entry name="specification" inpkey="461" clone="1">
-													<entry name="day" inpkey="462"/>
-													<entry name="hours" expanded="1">
-														<entry name="opens" inpkey="463"/>
-														<entry name="closes" inpkey="464"/>
-													</entry>
-												</entry>
-												<entry name="specification" inpkey="465" clone="1">
-													<entry name="day" inpkey="466"/>
-													<entry name="hours" expanded="1">
-														<entry name="opens" inpkey="467"/>
-														<entry name="closes" inpkey="468"/>
-													</entry>
-												</entry>
-												<entry name="specification" inpkey="469" clone="1">
-													<entry name="day" inpkey="470"/>
-													<entry name="hours" expanded="1">
-														<entry name="opens" inpkey="471"/>
-														<entry name="closes" inpkey="472"/>
-													</entry>
-												</entry>
-												<entry name="specification" inpkey="363" clone="1">
-													<entry name="day" inpkey="364"/>
-													<entry name="hours" expanded="1">
-														<entry name="opens" inpkey="365"/>
-														<entry name="closes" inpkey="432"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="pricerange" expanded="1">
-												<entry name="lowerBound" inpkey="483"/>
-												<entry name="upperBound" inpkey="482"/>
-											</entry>
-											<entry name="categories" expanded="1">
-												<entry name="category" inpkey="367"/>
-											</entry>
-											<entry name="stars" inpkey="368"/>
-											<entry name="accepts_credit_cards" inpkey="369"/>
-											<entry name="restaurant_delivery" inpkey="370"/>
-											<entry name="accepts_reservations" inpkey="371"/>
-											<entry name="drivethru" inpkey="372"/>
-											<entry name="has_wifi" inpkey="373"/>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
 					</data>
 				</component>
 				<component name="value-map" library="core" uid="193" kind="23">
@@ -538,6 +428,143 @@
 							<entry name="category" outkey="489" componentid="276"/>
 						</root>
 					</data>
+				</component>
+				<component name="restaurants_target" library="xml" uid="6" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="1639" lty="417" rbx="1896" rby="617"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="restaurants" expanded="1">
+										<entry name="restaurant" inpkey="350" expanded="1">
+											<entry name="id" inpkey="485"/>
+											<entry name="name" inpkey="351"/>
+											<entry name="latitude" inpkey="352"/>
+											<entry name="longitude" inpkey="353"/>
+											<entry name="neighborhood" inpkey="354"/>
+											<entry name="postaladdress" expanded="1">
+												<entry name="address" inpkey="355"/>
+												<entry name="city" expanded="1">
+													<entry name="name" inpkey="356"/>
+													<entry name="postalcode" inpkey="357"/>
+													<entry name="state" inpkey="358"/>
+												</entry>
+											</entry>
+											<entry name="reviews" expanded="1">
+												<entry name="count" inpkey="359"/>
+											</entry>
+											<entry name="openinghours" expanded="1">
+												<entry name="specification" inpkey="360">
+													<entry name="day" inpkey="361"/>
+													<entry name="hours">
+														<entry name="opens" inpkey="362"/>
+														<entry name="closes" inpkey="396"/>
+													</entry>
+												</entry>
+												<entry name="specification" inpkey="453" expanded="1" clone="1">
+													<entry name="day" inpkey="454"/>
+													<entry name="hours" expanded="1">
+														<entry name="opens" inpkey="455"/>
+														<entry name="closes" inpkey="456"/>
+													</entry>
+												</entry>
+												<entry name="specification" inpkey="457" clone="1">
+													<entry name="day" inpkey="458"/>
+													<entry name="hours">
+														<entry name="opens" inpkey="459"/>
+														<entry name="closes" inpkey="460"/>
+													</entry>
+												</entry>
+												<entry name="specification" inpkey="461" clone="1">
+													<entry name="day" inpkey="462"/>
+													<entry name="hours" expanded="1">
+														<entry name="opens" inpkey="463"/>
+														<entry name="closes" inpkey="464"/>
+													</entry>
+												</entry>
+												<entry name="specification" inpkey="465" clone="1">
+													<entry name="day" inpkey="466"/>
+													<entry name="hours" expanded="1">
+														<entry name="opens" inpkey="467"/>
+														<entry name="closes" inpkey="468"/>
+													</entry>
+												</entry>
+												<entry name="specification" inpkey="469" clone="1">
+													<entry name="day" inpkey="470"/>
+													<entry name="hours" expanded="1">
+														<entry name="opens" inpkey="471"/>
+														<entry name="closes" inpkey="472"/>
+													</entry>
+												</entry>
+												<entry name="specification" inpkey="363" clone="1">
+													<entry name="day" inpkey="364"/>
+													<entry name="hours" expanded="1">
+														<entry name="opens" inpkey="365"/>
+														<entry name="closes" inpkey="432"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="pricerange" expanded="1">
+												<entry name="lowerBound" inpkey="483"/>
+												<entry name="upperBound" inpkey="482"/>
+											</entry>
+											<entry name="categories" expanded="1">
+												<entry name="category" inpkey="367"/>
+											</entry>
+											<entry name="stars" inpkey="368"/>
+											<entry name="accepts_credit_cards" inpkey="369"/>
+											<entry name="restaurant_delivery" inpkey="370"/>
+											<entry name="accepts_reservations" inpkey="371"/>
+											<entry name="drivethru" inpkey="372"/>
+											<entry name="has_wifi" inpkey="373"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="303" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="492"/>
+						<datapoint pos="1" key="493"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="494"/>
+					</targets>
+					<view ltx="1580" lty="274" rbx="1658" rby="330"/>
+				</component>
+				<component name="constant" library="core" uid="304" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="490"/>
+					</targets>
+					<view ltx="1433" lty="256" rbx="1499" rby="273"/>
+					<data>
+						<constant value="yelp_" datatype="string"/>
+					</data>
+				</component>
+				<component name="auto-number" library="core" uid="301" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="491"/>
+					</targets>
+					<view ltx="1407" lty="274" rbx="1545" rby="360"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -844,7 +871,7 @@
 							<edge vertexkey="483"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="484">
+					<vertex vertexkey="494">
 						<edges>
 							<edge vertexkey="485"/>
 						</edges>
@@ -852,6 +879,16 @@
 					<vertex vertexkey="150">
 						<edges>
 							<edge vertexkey="488"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="490">
+						<edges>
+							<edge vertexkey="492"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="491">
+						<edges>
+							<edge vertexkey="493"/>
 						</edges>
 					</vertex>
 				</vertices>

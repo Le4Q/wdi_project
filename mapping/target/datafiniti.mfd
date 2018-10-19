@@ -73,11 +73,35 @@
 						<constant value="," datatype="string"/>
 					</data>
 				</component>
+				<component name="auto-number" library="core" uid="9" kind="5">
+					<properties/>
+					<sources>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="33"/>
+					</targets>
+					<view ltx="400" lty="-52" rbx="538" rby="34"/>
+				</component>
+				<component name="concat" library="core" uid="10" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="32"/>
+						<datapoint pos="1" key="34"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="30"/>
+					</targets>
+					<view ltx="576" lty="1" rbx="654" rby="57"/>
+				</component>
 				<component name="restaurants_target" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="670" lty="48" rbx="927" rby="248"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="276">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -112,12 +136,15 @@
 						<document schema="restaurants_target.xsd" inputinstance="restaurants_target.xml" outputinstance="restaurants_target.xml" instanceroot="{}restaurants"/>
 					</data>
 				</component>
-				<component name="create-guid" library="lang" uid="7" kind="5">
+				<component name="constant" library="core" uid="8" kind="2">
 					<properties/>
 					<targets>
-						<datapoint pos="0" key="28"/>
+						<datapoint pos="0" key="31"/>
 					</targets>
-					<view ltx="484" lty="4" rbx="570" rby="42"/>
+					<view ltx="424" lty="-123" rbx="516" rby="-106"/>
+					<data>
+						<constant value="datafiniti_" datatype="string"/>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
@@ -183,9 +210,19 @@
 							<edge vertexkey="26"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="28">
+					<vertex vertexkey="30">
 						<edges>
 							<edge vertexkey="29"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="31">
+						<edges>
+							<edge vertexkey="32"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="33">
+						<edges>
+							<edge vertexkey="34"/>
 						</edges>
 					</vertex>
 				</vertices>
