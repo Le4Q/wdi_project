@@ -9,13 +9,15 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and limitations under the License.
  */
-package restaurants.identityResolution.model;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
-import java.time.LocalDateTime;
-import java.util.LinkedList;
-import java.util.List;
 import de.uni_mannheim.informatik.dws.winter.model.AbstractRecord;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
+import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+
+import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * A {@link AbstractRecord} representing a movie.
@@ -34,23 +36,23 @@ public class Restaurant implements Matchable {
 
 	protected String id;
 	protected String provenance;
-	protected String name;
-	protected String description;
-	protected double latitude;
-	protected double longitude;
-	protected String neighbourhood;
-	protected String address;
-	protected String city_name;
-	protected String city_postalcode;
-	protected String city_state;
-	protected String city_country;
-	protected int review_count;
-	protected String review_bodies;
-	protected double review_averagerating;
-	protected int pricerange_lowerbound;
-	protected int pricerange_upperbound;
-	protected List<String> categories;
-	protected int stars;
+	private String name;
+	private String neighborhood;
+	private String description;
+	private double latitude;
+	private double longitude;
+	private PostalAddress postaladdress;
+	private Reviews reviews;
+	private PriceRange pricerange;
+	private List<String> categories;
+	private OpeningHours openinghours;
+	private int stars;
+	private boolean accepts_credit_cards;
+	private boolean restaurant_delivery;
+	private boolean accepts_reservations;
+	private boolean drivethru;
+	private boolean has_wifi;
+
 
 	public Restaurant(String identifier, String provenance) {
 		id = identifier;
@@ -68,138 +70,80 @@ public class Restaurant implements Matchable {
 		return provenance;
 	}
 
-
-	@Override
-	public String toString() {
-		return String.format("[Movie %s: %s / %s / %s]", getIdentifier(), getName());
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
 	public String getName() {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+	public void setName(String name) { this.name = name; }
 
 	public String getDescription() {
 		return description;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	public void setDescription(String description) { this.description = description; }
 
-	public double getLatitude() {
-		return latitude;
-	}
+	public double getLatitude() { return latitude; }
 
 	public void setLatitude(double latitude) {
 		this.latitude = latitude;
 	}
 
-	public double getLongitude() {
-		return longitude;
+	public double getLongitude() { return longitude; }
+
+	public void setLongitude(double longitude) { this.longitude = longitude; }
+
+	public String getNeighborhood() { return neighborhood; }
+
+	public void setNeighborhood(String neighborhood) { this.neighborhood = neighborhood; }
+
+	public PostalAddress getPostalAddress() { return postaladdress; }
+
+	public void setPostalAddress(PostalAddress postaladdress) { this.postaladdress = postaladdress; }
+
+	public Reviews getReviews() { return reviews; }
+
+	public void setReviews(Reviews reviews) { this.reviews = reviews; }
+
+	public PriceRange getPriceRange() { return pricerange; }
+
+	public void setPriceRange(PriceRange pricerange) { this.pricerange = pricerange; }
+
+	public OpeningHours getOpeninghours() { return openinghours; }
+
+	public void setOpeninghours(OpeningHours openinghours) { this.openinghours = openinghours; }
+
+	public int getStars() { return stars; }
+
+	public void setStars(int stars) { this.stars = stars; }
+
+	public boolean getAcceptsCreditCards() { return accepts_credit_cards; }
+
+	public void setAcceptsCreditCards(boolean accepts_credit_cards) {
+		this.accepts_credit_cards = accepts_credit_cards;
 	}
 
-	public void setLongitude(double longitude) {
-		this.longitude = longitude;
+	public boolean getRestaurantDelivery() { return restaurant_delivery; }
+
+	public void setRestaurantDelivery(boolean restaurant_delivery) {
+		this.restaurant_delivery = restaurant_delivery;
 	}
 
-	public String getNeighbourhood() {
-		return neighbourhood;
+	public boolean getAcceptsReservations() { return accepts_reservations; }
+
+	public void setAcceptsReservations(boolean accepts_reservations) {
+		this.accepts_reservations = accepts_reservations;
 	}
 
-	public void setNeighbourhood(String neighbourhood) {
-		this.neighbourhood = neighbourhood;
+	public boolean getDrivethru() { return drivethru; }
+
+	public void setDrivethru(boolean drivethru) {
+		this.drivethru = drivethru;
 	}
 
-	public String getAddress() {
-		return address;
-	}
+	public boolean getHasWifi() { return has_wifi; }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getCity_name() {
-		return city_name;
-	}
-
-	public void setCity_name(String city_name) {
-		this.city_name = city_name;
-	}
-
-	public String getCity_postalcode() {
-		return city_postalcode;
-	}
-
-	public void setCity_postalcode(String city_postalcode) {
-		this.city_postalcode = city_postalcode;
-	}
-
-	public String getCity_state() {
-		return city_state;
-	}
-
-	public void setCity_state(String city_state) {
-		this.city_state = city_state;
-	}
-
-	public String getCity_country() {
-		return city_country;
-	}
-
-	public void setCity_country(String city_country) {
-		this.city_country = city_country;
-	}
-
-	public int getReview_count() {
-		return review_count;
-	}
-
-	public void setReview_count(int review_count) {
-		this.review_count = review_count;
-	}
-
-	public String getReview_bodies() {
-		return review_bodies;
-	}
-
-	public void setReview_bodies(String review_bodies) {
-		this.review_bodies = review_bodies;
-	}
-
-	public double getReview_averagerating() {
-		return review_averagerating;
-	}
-
-	public void setReview_averagerating(double review_averagerating) {
-		this.review_averagerating = review_averagerating;
-	}
-
-	public int getPricerange_lowerbound() {
-		return pricerange_lowerbound;
-	}
-
-	public void setPricerange_lowerbound(int pricerange_lowerbound) {
-		this.pricerange_lowerbound = pricerange_lowerbound;
-	}
-
-	public int getPricerange_upperbound() {
-		return pricerange_upperbound;
-	}
-
-	public void setPricerange_upperbound(int pricerange_upperbound) {
-		this.pricerange_upperbound = pricerange_upperbound;
+	public void setHasWifi(boolean has_wifi) {
+		this.has_wifi = has_wifi;
 	}
 
 	public List<String> getCategories() {
@@ -209,17 +153,11 @@ public class Restaurant implements Matchable {
 	public void setCategories(List<String> categories) {
 		this.categories = categories;
 	}
+	
 
-	public int getStars() {
-		return stars;
-	}
-
-	public void setStars(int stars) {
-		this.stars = stars;
-	}
-
-	public void setProvenance(String provenance) {
-		this.provenance = provenance;
+	@Override
+	public String toString() {
+		return String.format("[Restaurant %s: %s]", getIdentifier(), getName());
 	}
 
 	@Override
@@ -235,6 +173,5 @@ public class Restaurant implements Matchable {
 			return false;
 	}
 	
-	
-	
 }
+

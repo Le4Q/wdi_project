@@ -9,26 +9,29 @@
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and limitations under the License.
  */
-package restaurants.identityResolution.model;
+package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
-import java.time.temporal.ChronoField;
-import java.util.List;
-import java.util.Locale;
-
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Actor;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.ActorXMLReader;
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
+import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.*;
+import java.io.File;
+import java.io.IOException;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 /**
- * A {@link XMLMatchableReader} for {@link Restaurant}s.
+ * A {@link XMLMatchableReader} for {@link Movie}s.
  * 
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
@@ -44,114 +47,147 @@ public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribut
 		
 	}
 	
-	private Double parseDouble(String in) {
-		if (in != null)
-			return Double.parseDouble(in);
-		return null;
-	}
-	private Integer parseInt(String in) {
-		if (in != null)
-			return Integer.parseInt(in);
-		return null;
-	}
-	
-	private Node getNode(Node node, String childName) {
+	@Override
+	public Restaurant createModelFromElement(Node node, String provenanceInfo) {
+		String id = getValueFromChildElement(node, "id");
 
-			// get all child nodes
-			NodeList children = node.getChildNodes();
+		// create the object with id and provenance information
+		Restaurant restaurant = new Restaurant(id, provenanceInfo);
 
-			// iterate over the child nodes until the node with childName is found
-			for (int j = 0; j < children.getLength(); j++) {
-				Node child = children.item(j);
+		// fill the attributes
+		restaurant.setName(getValueFromChildElement(node, "name"));
+		restaurant.setNeighborhood(getValueFromChildElement(node, "neighborhood"));
+		restaurant.setDescription(getValueFromChildElement(node, "description"));
+		try { restaurant.setStars(Integer.parseInt(getValueFromChildElement(node, "stars"))); } catch (Exception e) {}
+		try { restaurant.setAcceptsCreditCards(Boolean.parseBoolean(getValueFromChildElement(node, "accepts_credit_cards"))); } catch (Exception e) {}
+		try { restaurant.setRestaurantDelivery(Boolean.parseBoolean(getValueFromChildElement(node, "restaurant_delivery"))); } catch (Exception e) {}
+		try { restaurant.setAcceptsReservations(Boolean.parseBoolean(getValueFromChildElement(node, "accepts_reservations"))); } catch (Exception e) {}
+		try { restaurant.setDrivethru(Boolean.parseBoolean(getValueFromChildElement(node, "drivethru"))); } catch (Exception e) {}
+		try { restaurant.setHasWifi(Boolean.parseBoolean(getValueFromChildElement(node, "has_wifi"))); } catch (Exception e) {}
+		try { restaurant.setLatitude(Double.parseDouble(getValueFromChildElement(node, "latitude"))); } catch (Exception e){ }
+		try { restaurant.setLongitude(Double.parseDouble(getValueFromChildElement(node, "longitude"))); }catch (Exception e){ }
 
-				// check the node type and the name
-				if (child.getNodeType() == org.w3c.dom.Node.ELEMENT_NODE
-						&& child.getNodeName().equals(childName)) {
 
-					return child;
+		if(node instanceof Element) {
+			Element nodeEle = (Element)node;
+
+
+			Node postaladdressNode = nodeEle.getElementsByTagName("postaladdress").item(0);
+			Node reviewsNode = nodeEle.getElementsByTagName("reviews").item(0);
+			Node pricerangeNode = nodeEle.getElementsByTagName("pricerange").item(0);
+			Node openinghoursNode = nodeEle.getElementsByTagName("openinghours").item(0);
+
+			PostalAddress postaladdress = new PostalAddress();
+
+			if (postaladdressNode instanceof Element) {
+				Element postaladdressEle = (Element) postaladdressNode;
+				Node address = postaladdressEle.getElementsByTagName("address").item(0);
+				Node cityNode = postaladdressEle.getElementsByTagName("city").item(0);
+				try { postaladdress.setAddress(address.getTextContent()); } catch (Exception e) { }
+
+				if (cityNode instanceof Element) {
+					Element cityEle = (Element) cityNode;
+					Node nameNode = cityEle.getElementsByTagName("name").item(0);
+					Node postalcodeNode = cityEle.getElementsByTagName("postalcode").item(0);
+					Node stateNode = cityEle.getElementsByTagName("state").item(0);
+					Node countryNode = cityEle.getElementsByTagName("country").item(0);
+
+					City city = new City(provenanceInfo);
+					try { city.setName(nameNode.getTextContent()); } catch (Exception e) { }
+					try { city.setPostalCode(postalcodeNode.getTextContent()); } catch (Exception e) { }
+					try { city.setState(stateNode.getTextContent()); } catch (Exception e) { }
+					try { city.setCountry(countryNode.getTextContent()); } catch (Exception e) { }
+					postaladdress.setCity(city);
 
 				}
 			}
 
-			return null;
-	}
-	
-	@Override
-	public Restaurant createModelFromElement(Node node, String provenanceInfo) {
-	
-		String id = getValueFromChildElement(node, "id");
-		// create the object with id and provenance information
-		Restaurant restaurant = new Restaurant(id, provenanceInfo);
-		String tmp;
-		// fill the attributes
+			restaurant.setPostalAddress(postaladdress);
 
-		tmp = getValueFromChildElement(node, "name");
-		if (tmp != null) 
-			restaurant.setName(tmp);
-		
-		tmp = getValueFromChildElement(node, "description");
-		if (tmp != null) 
-			restaurant.setDescription(tmp);
-		
-		tmp = getValueFromChildElement(node, "latitude");
-		if (tmp != null) 
-			restaurant.setLatitude(parseDouble(tmp));
+			if (reviewsNode instanceof Element) {
+				Element reviewsEle = (Element) reviewsNode;
 
-		tmp = getValueFromChildElement(node, "longitude");
-		if (tmp != null) 
-			restaurant.setLongitude(parseDouble(tmp));
-		
-		tmp = getValueFromChildElement(node, "neighbourhood");
-		if (tmp != null) 
-			restaurant.setNeighbourhood(tmp);
-		
-		tmp = getValueFromChildElement(getNode(node, "postaladdress"), "address");
-		if (tmp != null) 
-			restaurant.setAddress(tmp);
-		
-		List<String> categories = getListFromChildElement(node, "categories");
-		if (categories != null) 
-			restaurant.setCategories(categories);
-				
-		tmp = getValueFromChildElement(getNode(getNode(node, "postaladdress"), "city"), "name");
-		if (tmp != null) 
-			restaurant.setCity_name(tmp);
-		
-		tmp = getValueFromChildElement(getNode(getNode(node, "postaladdress"), "city"), "postalcode");
-		if (tmp != null) 
-			restaurant.setCity_postalcode(tmp);
-		
-		tmp = getValueFromChildElement(getNode(getNode(node, "postaladdress"), "city"), "state");
-		if (tmp != null) 
-			restaurant.setCity_state(tmp);
-		
-		tmp = getValueFromChildElement(getNode(getNode(node, "postaladdress"), "city"), "country");
-		if (tmp != null) 
-			restaurant.setCity_country(tmp);
+				Node countNode = reviewsEle.getElementsByTagName("count").item(0);
+				Node bodiesNode = reviewsEle.getElementsByTagName("bodies").item(0);
+				Node averageratingNode = reviewsEle.getElementsByTagName("average_rating").item(0);
 
-		tmp = getValueFromChildElement(node, "count");
-		if (tmp != null) 
-			restaurant.setReview_count(parseInt(tmp));
+				Reviews reviews = new Reviews();
+				try { reviews.setCount(Integer.parseInt(countNode.getTextContent())); } catch (Exception e) { }
+				try { reviews.setBodies(bodiesNode.getTextContent()); } catch (Exception e) { }
+				try { reviews.setAverageRating(Double.parseDouble(averageratingNode.getTextContent())); } catch (Exception e) { }
 
-		tmp = getValueFromChildElement(node, "bodies");
-		if (tmp != null) 
-			restaurant.setReview_bodies(tmp);
-		
-		tmp = getValueFromChildElement(node, "average_rating");
-		if (tmp!=null)
-			restaurant.setReview_averagerating(parseDouble(tmp));
+				restaurant.setReviews(reviews);
+			}
 
-		tmp = getValueFromChildElement(node, "stars");
-		if (tmp != null) 
-			restaurant.setStars(parseInt(tmp));
-		
+			if (pricerangeNode instanceof Element) {
+				Element pricerangeEle = (Element) pricerangeNode;
+
+				Node lowerboundNode = pricerangeEle.getElementsByTagName("lowerBound").item(0);
+				Node upperboundNode = pricerangeEle.getElementsByTagName("upperBound").item(0);
+
+				PriceRange pricerange = new PriceRange();
+				try { pricerange.setLowerBound(Integer.parseInt(lowerboundNode.getTextContent())); } catch (Exception e) { }
+				try { pricerange.setUpperBound(Integer.parseInt(upperboundNode.getTextContent())); } catch (Exception e) { }
+
+				restaurant.setPriceRange(pricerange);
+			}
+
+			if (openinghoursNode instanceof Element) {
+				Element openinghoursEle = (Element) openinghoursNode;
+
+				NodeList dayNodes = openinghoursEle.getElementsByTagName("specification");
+				List<Day> days = new ArrayList<Day>();
+
+				for (int i = 0; i < dayNodes.getLength(); i++) {
+					Element dayEle = (Element) dayNodes.item(i);
+					Day day = new Day();
+					day.setName(dayEle.getElementsByTagName("day").item(0).getTextContent());
+					try { day.setOpens(dayEle.getElementsByTagName("opens").item(0).getTextContent()); } catch (ParseException e) {}
+					try { day.setCloses(dayEle.getElementsByTagName("closes").item(0).getTextContent()); } catch (ParseException e) {}
+					days.add(day);
+				}
+				if (!days.isEmpty()) {
+					OpeningHours openinghours = new OpeningHours();
+					openinghours.setDays(days);
+					restaurant.setOpeninghours(openinghours);
+				}
+
+			}
+
+		}
 
 		// load the list of actors
-/*		List<Restaurant> actors = getObjectListFromChildElement(node, "actors",
-				"actor", new ActorXMLReader(), provenanceInfo);
-		restaurant.setActors(actors);*/
+		List<String> categories = getListFromChildElement(node, "categories");
+		restaurant.setCategories(categories);
 
 		return restaurant;
+	}
+
+	public static void main(String[] args) throws ParserConfigurationException, SAXException, XPathExpressionException, IOException {
+
+		HashedDataSet<Restaurant, Attribute> yelpRestaurants = new HashedDataSet<>();
+		new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelpRestaurants);
+
+		Collection<Restaurant> test = yelpRestaurants.get();
+
+		int counter = 0;
+
+		for (Restaurant res : test) {
+			System.out.println("++++++++ Restaurant " + counter +  " +++++++++++");
+			System.out.println(res.getIdentifier());
+
+			System.out.println(res.getName());
+			System.out.println(res.getPostalAddress().getCity().getName());
+			System.out.println(res.getReviews().getCount());
+			System.out.println();
+
+			counter ++;
+			if (counter > 10){
+				break;
+			}
+
+		}
+
 	}
 
 }
