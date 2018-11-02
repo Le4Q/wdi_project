@@ -12,19 +12,19 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimila
 import java.util.function.Function;
 
 
-public class RestaurantAddressComparatorLevenshtein implements Comparator<Restaurant, Attribute> {
+public class RestaurantCityNameComparatorLevenshtein implements Comparator<Restaurant, Attribute> {
 
 	private static final long serialVersionUID = 1L;
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
-	
+
 	private ComparatorLogger comparisonLog;
 
 	private Function<String,String> fn;
 
-	public RestaurantAddressComparatorLevenshtein(){
+	public RestaurantCityNameComparatorLevenshtein(){
 		this.fn = ComparatorUtils::def;
 	}
-	public RestaurantAddressComparatorLevenshtein(Function<String,String> fn){
+	public RestaurantCityNameComparatorLevenshtein(Function<String,String> fn){
 		this.fn = fn;
 	}
 
@@ -34,12 +34,12 @@ public class RestaurantAddressComparatorLevenshtein implements Comparator<Restau
 			Restaurant record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getPostalAddress().getAddress();
-		String s2 = record2.getPostalAddress().getAddress();
+		String s1 = record1.getPostalAddress().getCity().getName();
+		String s2 = record2.getPostalAddress().getCity().getName();
 
 		s1 = fn.apply(s1);
 		s2 = fn.apply(s2);
-    	
+
     	double similarity = sim.calculate(s1, s2);
     	
 		if(this.comparisonLog != null){
