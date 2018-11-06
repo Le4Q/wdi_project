@@ -12,6 +12,7 @@ import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
+import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.HashedDataSet;
@@ -24,6 +25,10 @@ import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+import java.util.Iterator;
+import java.util.function.Function;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Yelp_Schema_Linear_Rules {
@@ -41,32 +46,168 @@ public class Yelp_Schema_Linear_Rules {
         HashedDataSet<Restaurant, Attribute> yelp = new HashedDataSet<>();
         new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
 
+        ArrayList<Double> weights = new ArrayList<Double>();
+        weights.add(0.4);
+        weights.add(0.3);
+        weights.add(0.3);
+
+        /*
+        Precision: 0.8000
+        Recall: 0.8000
+        F1: 0.8000
+         */
+        simple01(schema, yelp, 0.75, weights);
+
+        /*
+        Precision: 1.0000
+        Recall: 0.6500
+        F1: 0.7879
+         */
+        // simple01(schema, yelp, 0.8, weights);
+
+        /*
+        Precision: 0.9333
+        Recall: 0.7000
+        F1: 0.8000
+         */
+        // simple01(schema, yelp, 0.78, weights);
+
+        /*
+        Precision: 0.8095
+        Recall: 0.8500
+        F1: 0.8293
+         */
+        // simple02(schema,yelp,0.75,weights);
+
+        /*
+        Precision: 0.9375
+        Recall: 0.7500
+        F1: 0.8333
+         */
+        // simple02(schema,yelp,0.8,weights);
+
+        simple03(schema, yelp, 0.75, weights);
+
+        weights = new ArrayList<Double>();
+        weights.add(0.3);
+        weights.add(0.2);
+        weights.add(0.5);
+
+        /*
+        Precision: 0.7619
+        Recall: 0.8000
+        F1: 0.7805
+         */
+        // simple01(schema, yelp, 0.75, weights);
+
+        /*
+        Precision: 1.0000
+        Recall: 0.7000
+        F1: 0.8235
+         */
+        // simple01(schema, yelp, 0.8, weights);
+
+        /*
+        Precision: 0.8235
+        Recall: 0.7000
+        F1: 0.7568
+         */
+        // simple01(schema, yelp, 0.78, weights);
+
+        /*
+        Precision: 0.6667
+        Recall: 0.8000
+        F1: 0.7273
+         */
+        // simple02(schema,yelp,0.75,weights);
+
+        /*
+        Precision: 0.8333
+        Recall: 0.7500
+        F1: 0.7895
+         */
+        //simple02(schema,yelp,0.8,weights);
+    }
+
+    public static LinearCombinationMatchingRule<Restaurant,Attribute> getMatchingRule(ArrayList<Comparator<Restaurant,Attribute>> fns,
+                                                                                      Double threshold,
+                                                                                      ArrayList<Double> weights) throws Exception{
         // simple matching rule to create the gold standard
-        LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.75);
+        LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(threshold);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorLevenshtein(ComparatorUtils::cleanLower), 0.4);
-        matchingRule.addComparator(new RestaurantCityNameComparatorLevenshtein(ComparatorUtils::cleanLower), 0.3);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(ComparatorUtils::cleanLower), 0.3);
+        Iterator<Comparator<Restaurant,Attribute>> it_fn = fns.iterator();
+        Iterator<Double> it_weights = weights.iterator();
+
+        Double weight;
+        Comparator<Restaurant,Attribute> fn;
+        while (it_fn.hasNext() && it_weights.hasNext()) {
+            fn = it_fn.next();
+            weight = it_weights.next();
+            matchingRule.addComparator(fn, weight);
+        }
+
+        return matchingRule;
+    }
+
+    public static void simple01(HashedDataSet<Restaurant, Attribute> data1,
+                                HashedDataSet<Restaurant, Attribute> data2,
+                                Double threshold,
+                                ArrayList<Double> weights) throws Exception {
+        ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
+        fns.add(new RestaurantNameComparatorLevenshtein(ComparatorUtils::cleanLower));
+        fns.add(new RestaurantCityNameComparatorLevenshtein(ComparatorUtils::cleanLower));
+        fns.add(new RestaurantAddressComparatorLevenshtein(ComparatorUtils::cleanLower));
+
+        LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
         // create a blocker (blocking strategy)
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
 
-        findCorrespondencesAndEvaluate(schema,yelp,matchingRule,blocker,"simple");
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+    }
 
+    public static void simple02(HashedDataSet<Restaurant, Attribute> data1,
+                                HashedDataSet<Restaurant, Attribute> data2,
+                                Double threshokd,
+                                ArrayList<Double> weights
+                                ) throws Exception {
 
-        // simple matching rule to create the gold standard
-        matchingRule = new LinearCombinationMatchingRule<>(0.75);
+        ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
+        fns.add(new RestaurantNameComparatorLevenshtein(ComparatorUtils::cleanLower));
+        fns.add(new RestaurantCityNameComparatorLevenshtein(ComparatorUtils::cleanLower));
+        fns.add(new RestaurantAddressComparatorLevenshtein(ComparatorUtils::unifyAddress));
 
-        // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorLevenshtein(ComparatorUtils::cleanLower), 0.4);
-        matchingRule.addComparator(new RestaurantCityNameComparatorLevenshtein(ComparatorUtils::cleanLower), 0.3);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(ComparatorUtils::unifyAddress), 0.3);
+        LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshokd, weights);
 
-        findCorrespondencesAndEvaluate(schema,yelp,matchingRule,blocker,"simple");
+        // create a blocker (blocking strategy)
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
+        blocker.setMeasureBlockSizes(true);
+        blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
 
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+
+    }
+
+    public static void simple03(HashedDataSet<Restaurant, Attribute> data1,
+                                HashedDataSet<Restaurant, Attribute> data2,
+                                Double threshold,
+                                ArrayList<Double> weights) throws Exception {
+        ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
+        fns.add(new RestaurantNameComparatorLevenshtein(ComparatorUtils::cleanLowerStopwords));
+        fns.add(new RestaurantCityNameComparatorLevenshtein(ComparatorUtils::cleanLower));
+        fns.add(new RestaurantAddressComparatorLevenshtein(ComparatorUtils::cleanLower));
+
+        LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
+
+        // create a blocker (blocking strategy)
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
+        blocker.setMeasureBlockSizes(true);
+        blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
+
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
     }
 
     public static void findCorrespondencesAndEvaluate(HashedDataSet<Restaurant, Attribute> data1,
