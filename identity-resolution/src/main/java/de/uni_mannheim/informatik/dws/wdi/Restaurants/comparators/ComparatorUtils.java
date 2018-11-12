@@ -238,27 +238,33 @@ public class ComparatorUtils {
         }
     }
 
-    public static String cleanLowerStopwords(String s){
+    public static String cleanLowerStopwords(String s) {
         s = cleanLower(s);
 
         String[] words = s.split(" ");
         ArrayList<String> wordsList = new ArrayList<String>();
 
-        for(String word : words)
-        {
+        for (String word : words) {
             String wordCompare = word.toUpperCase();
-            if(!stopwordsset.contains(wordCompare))
-            {
+            if (!stopwordsset.contains(wordCompare)) {
                 wordsList.add(word);
             }
         }
 
         String s_nostopwords = "";
-        for(String w: wordsList){
+        for (String w : wordsList) {
             s_nostopwords += w + " ";
         }
 
         return s_nostopwords.trim();
+    }
+
+    public static String removeCityName(String s){
+        String[] aS = s.split(";");
+        String restaurantName = cleanLower(aS[0]);
+        String cityName = cleanLower(aS[1]);
+        restaurantName = restaurantName.replace(cityName, "");
+        return restaurantName;
     }
 
     public static String unifyAddress(String s){

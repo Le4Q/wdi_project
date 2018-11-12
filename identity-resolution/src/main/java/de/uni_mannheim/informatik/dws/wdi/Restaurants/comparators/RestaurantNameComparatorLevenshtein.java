@@ -21,12 +21,17 @@ public class RestaurantNameComparatorLevenshtein implements Comparator<Restauran
 
 
 	private Function<String,String> fn;
+	private boolean removeCityName = false;
 
 	public RestaurantNameComparatorLevenshtein(){
 		this.fn = ComparatorUtils::def;
 	}
 	public RestaurantNameComparatorLevenshtein(Function<String,String> fn){
 		this.fn = fn;
+	}
+	public RestaurantNameComparatorLevenshtein(Function<String,String> fn, boolean removeCityName){
+		this.fn = fn;
+		this.removeCityName = removeCityName;
 	}
 
 	@Override
@@ -38,8 +43,15 @@ public class RestaurantNameComparatorLevenshtein implements Comparator<Restauran
 		String s1 = record1.getName();
 		String s2 = record2.getName();
 
+		// kind of hacky, append city name to restaurant name, will use that information to remove the city name from the restaurant name string
+		if(removeCityName){
+			s1 += ";" + record1.getPostalAddress().getCity().getName();
+			s2 += ";" + record2.getPostalAddress().getCity().getName();
+		}
+
 		s1 = fn.apply(s1);
 		s2 = fn.apply(s2);
+
 
     	double similarity = sim.calculate(s1, s2);
     	
