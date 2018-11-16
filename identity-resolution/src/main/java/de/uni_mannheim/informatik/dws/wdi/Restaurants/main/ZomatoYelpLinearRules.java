@@ -1,5 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCategoryGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.ComparatorUtils;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantAddressComparatorLevenshtein;
@@ -25,184 +26,100 @@ import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
-import java.util.Iterator;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.*;
 import java.util.function.Function;
-import java.util.ArrayList;
-import java.util.List;
 
 
-public class Yelp_Schema_Linear_Rules {
+public class ZomatoYelpLinearRules {
 
     private static final Logger logger = WinterLogManager.activateLogger("default");
 
     public static void main(String[] args) throws Exception {
 
         // load the data sets
-        HashedDataSet<Restaurant, Attribute> schemaOrg = new HashedDataSet<>();
-        new RestaurantXMLReader().loadFromXML(new File("data/input/schemaOrg_target.xml"), "/restaurants/restaurant", schemaOrg);
-        HashedDataSet<Restaurant, Attribute> schema = Utils.removeDuplicates("data/output/schemaOrg_duplicates.csv", schemaOrg);
+        HashedDataSet<Restaurant, Attribute> zomato = new HashedDataSet<>();
+        new RestaurantXMLReader().loadFromXML(new File("data/input/zomato_target.xml"), "/restaurants/restaurant", zomato);
+        HashedDataSet<Restaurant, Attribute> schema = Utils.removeDuplicates("data/output/schemaOrg_duplicates.csv", zomato);
         System.out.println(schema.size());
 
         HashedDataSet<Restaurant, Attribute> yelp = new HashedDataSet<>();
         new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
 
+
+
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCategoryGenerator());
         blocker.setMeasureBlockSizes(true);
-        blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/gs_zomato_yelp_debugBlocking.csv", 100);
 
         ArrayList<Double> weights = new ArrayList<Double>();
         weights.add(0.4);
         weights.add(0.3);
         weights.add(0.3);
 
-        ArrayList<Function<String,String>> prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
+        ArrayList<Double> thresholds = new ArrayList<Double>();
+        thresholds.add(0.70);
+        thresholds.add(0.75);
+        thresholds.add(0.80);
+        thresholds.add(0.85);
+        thresholds.add(0.90);
 
-        /*
-        ################
-        #### Preprocessing: Clean, Lower
-        #### Different thresholds
-        ################
-         */
-        /*
-        Precision: 0.8000
-        Recall: 0.8000
-        F1: 0.8000
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker);
+        ArrayList<String> comparatorFunctions = new ArrayList<String>();
+        comparatorFunctions.add("cleanLowerStopWords");
+        comparatorFunctions.add("cleanLower");
+        comparatorFunctions.add("removeCityName");
+        // comparatorFunctions.add("unifyAddress");
 
-        /*
-        Precision: 1.0000
-        Recall: 0.6000
-        F1: 0.7500
-         */
-        // simpleTemplate(schema,yelp,0.8,weights,prep,blocker);
+        /*Map<String, Function<String,String>> nameToFunc = new HashMap<String, Function<String, String>>();
+        nameToFunc.put("cleanLower", ComparatorUtils::cleanLower);
+        nameToFunc.put("cleanLowerStopWords", ComparatorUtils::cleanLowerStopwords);
+        nameToFunc.put("removeCityName", ComparatorUtils::removeCityName);
+        nameToFunc.put("unifyAddress", ComparatorUtils::unifyAddress) ;*/
 
-        /*
-        Precision: 0.9333
-        Recall: 0.7000
-        F1: 0.8000
-         */
-        // simpleTemplate(schema,yelp,0.78,weights,prep,blocker);
+        String expFileName = "/home/rohitalyosha/Masters/Fall_2018/wdi/project/wdi_project/identity-resolution/data/exps/LinearRulesCombined.txt";
+        File expFile = new File(expFileName);
+        expFile.createNewFile();
+        String expResults;
+        String expSettings;
 
-        /*
-        ################
-        #### Preprocessing: Remove Stopwords
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::cleanLowerStopwords);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
+        for (Double threshold : thresholds) {
+            for (String func1Name : comparatorFunctions) {
+                for (String func2Name : comparatorFunctions) {
+                    for (String func3Name : comparatorFunctions) {
 
-        /*
-        Precision: 0.8000
-        Recall: 0.8000
-        F1: 0.8000
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker);
+                        ArrayList<String> funcNames = new ArrayList<String>();
+                        funcNames.add(func1Name);
+                        funcNames.add(func2Name);
+                        funcNames.add(func3Name);
 
+                        expSettings = "Threshold-" + Double.toString(threshold) + "\t";
+                        expSettings += func1Name + "\t";
+                        expSettings += func2Name + "\t";
+                        expSettings += func3Name + "\n";
+                        Files.write(Paths.get(expFileName), expSettings.getBytes(), StandardOpenOption.APPEND);
 
-        /*
-        ################
-        #### Preprocessing: Remove city names from restaurant name
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::removeCityName);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
+                        ArrayList<Function<String, String>> prep = new ArrayList<Function<String, String>>();
+                        for (String funcName : funcNames){
+                            System.out.println(funcName);
+                            if (funcName.equals("cleanLower"))
+                                prep.add(ComparatorUtils::cleanLower);
+                            else if (funcName.equals("cleanLowerStopWords"))
+                                prep.add(ComparatorUtils::cleanLowerStopwords);
+                            else if (funcName.equals("removeCityName"))
+                                prep.add(ComparatorUtils::removeCityName);
+                            else if (funcName.equals("unifyAddress"))
+                                prep.add(ComparatorUtils::unifyAddress);
+                        }
 
-        /*
-        Precision: 0.8182
-        Recall: 0.9000
-        F1: 0.8571
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker, true);
-
-
-        /*
-        Precision: 0.9444
-        Recall: 0.8500
-        F1: 0.8947
-         */
-        // simpleTemplate(schema,yelp,0.78,weights,prep,blocker, true);
-
-        /*
-        Precision: 1.0000
-        Recall: 0.8000
-        F1: 0.8889
-         */
-        // simpleTemplate(schema,yelp,0.79,weights,prep,blocker, true);
-
-        /*
-        Precision: 1.0000
-        Recall: 0.7500
-        F1: 0.8571
-         */
-        // simpleTemplate(schema,yelp,0.8,weights,prep,blocker,true);
-        /*
-        ################
-        #### Preprocessing: Unify address
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::unifyAddress);
-        /*
-        Precision: 0.8095
-        Recall: 0.8500
-        F1: 0.8293
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker);
-
-        /*
-        Precision: 0.9375
-        Recall: 0.7500
-        F1: 0.8333
-         */
-        // simpleTemplate(schema,yelp,0.8,weights,prep,blocker);
-
-
-
-        /*
-        ################
-        #### Preprocessing: Remove city names from restaurant name + unify address
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::removeCityName);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::unifyAddress);
-
-        /*
-        Precision: 0.8182
-        Recall: 0.9000
-        F1: 0.8571
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker, true);
-
-        /*
-        Precision: 0.9444
-        Recall: 0.8500
-        F1: 0.8947
-         */
-        simpleTemplate(schema,yelp,0.80,weights,prep,blocker, true);
-
-
-        weights = new ArrayList<Double>();
-        weights.add(0.3);
-        weights.add(0.2);
-        weights.add(0.5);
-
+                        expResults = simpleTemplate(schema, yelp, threshold, weights, prep, blocker);
+                        Files.write(Paths.get(expFileName), expResults.getBytes(), StandardOpenOption.APPEND);
+                    }
+                }
+            }
+        }
     }
 
     public static LinearCombinationMatchingRule<Restaurant,Attribute> getMatchingRule(ArrayList<Comparator<Restaurant,Attribute>> fns,
@@ -226,7 +143,7 @@ public class Yelp_Schema_Linear_Rules {
         return matchingRule;
     }
 
-    public static void simpleTemplate(HashedDataSet<Restaurant, Attribute> data1,
+    public static String simpleTemplate(HashedDataSet<Restaurant, Attribute> data1,
                                       HashedDataSet<Restaurant, Attribute> data2,
                                       Double threshold,
                                       ArrayList<Double> weights,
@@ -240,10 +157,11 @@ public class Yelp_Schema_Linear_Rules {
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
-        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+        return findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+
     }
 
-    public static void simpleTemplate(HashedDataSet<Restaurant, Attribute> data1,
+    public static String simpleTemplate(HashedDataSet<Restaurant, Attribute> data1,
                                       HashedDataSet<Restaurant, Attribute> data2,
                                       Double threshold,
                                       ArrayList<Double> weights,
@@ -258,10 +176,10 @@ public class Yelp_Schema_Linear_Rules {
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
-        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+        return findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
     }
 
-    public static void findCorrespondencesAndEvaluate(HashedDataSet<Restaurant, Attribute> data1,
+    public static String findCorrespondencesAndEvaluate(HashedDataSet<Restaurant, Attribute> data1,
                                                       HashedDataSet<Restaurant, Attribute> data2,
                                                       LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule,
                                                       StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
@@ -272,9 +190,7 @@ public class Yelp_Schema_Linear_Rules {
 
         // execute matching
         System.out.println("*\n*\tRunning identity resolution\n*");
-        Processable<Correspondence<Restaurant, Attribute>> correspondences = engine.runIdentityResolution(
-                data1, data2, null, matchingRule, blocker
-        );
+        Processable<Correspondence<Restaurant, Attribute>> correspondences = engine.runIdentityResolution(data1, data2, null, matchingRule, blocker);
 
         // write correspondences to output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/"+fileName+".csv"), correspondences);
@@ -284,23 +200,21 @@ public class Yelp_Schema_Linear_Rules {
         // load the gold standard (test set)
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
-        gsTest.loadFromCSVFile(new File(
-                "data/goldstandard/yelp_schema_gs_test.csv"));
+        gsTest.loadFromCSVFile(new File("data/goldstandard/gs_zomato_2_yelp_combined"));
 
         System.out.println("*\n*\tEvaluating result\n*");
         // evaluate your result
         MatchingEvaluator<Restaurant, Attribute> evaluator = new MatchingEvaluator<Restaurant, Attribute>();
-        Performance perfTest = evaluator.evaluateMatching(correspondences,
-                                                          gsTest);
+        Performance perfTest = evaluator.evaluateMatching(correspondences, gsTest);
 
         // print the evaluation result
-        System.out.println("Schema <-> Yelp");
-        System.out.println(String.format(
-                "Precision: %.4f",perfTest.getPrecision()));
-        System.out.println(String.format(
-                "Recall: %.4f",	perfTest.getRecall()));
-        System.out.println(String.format(
-                "F1: %.4f",perfTest.getF1()));
+        String expResults = "Schema <-> Yelp\n";
+        expResults += String.format("Precision: %.4f\n",perfTest.getPrecision());
+        expResults += String.format("Recall: %.4f\n",perfTest.getRecall());
+        expResults += String.format("Recall: %.4f\n",perfTest.getF1());
+
+        return expResults;
+
     }
 
 }

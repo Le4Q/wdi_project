@@ -241,6 +241,9 @@ public class ComparatorUtils {
     public static String cleanLowerStopwords(String s) {
         s = cleanLower(s);
 
+        if (s == null)
+            return s;
+
         String[] words = s.split(" ");
         ArrayList<String> wordsList = new ArrayList<String>();
 
@@ -260,11 +263,18 @@ public class ComparatorUtils {
     }
 
     public static String removeCityName(String s){
+        if (s == null)
+            return s;
         String[] aS = s.split(";");
-        String restaurantName = cleanLower(aS[0]);
-        String cityName = cleanLower(aS[1]);
-        restaurantName = restaurantName.replace(cityName, "");
-        return restaurantName;
+        if (aS.length > 1) {
+            String restaurantName = cleanLower(aS[0]);
+            String cityName = cleanLower(aS[1]);
+            restaurantName = restaurantName.replace(cityName, "");
+            return restaurantName;
+        }
+        else {
+            return s;
+        }
     }
 
     public static String unifyAddress(String s){
@@ -307,6 +317,26 @@ public class ComparatorUtils {
             return s;
         }
     }
+
+
+    public static String unifyPostalCode(String s){
+        if (s!=null){
+            s = cleanLower(s);
+
+            String[] aS = s.split(" ");
+            if (aS.length > 1) {
+                String restaurantName = cleanLower(aS[0]);
+                String cityName = cleanLower(aS[1]);
+                restaurantName = restaurantName.replace(cityName, "");
+                return restaurantName;
+
+            return s;
+
+        } else {
+            return s;
+        }
+    }
+
 
     public static String ordinal(int i) {
         String[] sufixes = new String[] { "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th" };
