@@ -9,6 +9,8 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.LevenshteinSimilarity;
 
+import java.util.function.Function;
+
 
 public class RestaurantAddressComparatorLevenshtein implements Comparator<Restaurant, Attribute> {
 
@@ -16,6 +18,15 @@ public class RestaurantAddressComparatorLevenshtein implements Comparator<Restau
 	private LevenshteinSimilarity sim = new LevenshteinSimilarity();
 	
 	private ComparatorLogger comparisonLog;
+
+	private Function<String,String> fn;
+
+	public RestaurantAddressComparatorLevenshtein(){
+		this.fn = ComparatorUtils::def;
+	}
+	public RestaurantAddressComparatorLevenshtein(Function<String,String> fn){
+		this.fn = fn;
+	}
 
 	@Override
 	public double compare(
@@ -25,6 +36,9 @@ public class RestaurantAddressComparatorLevenshtein implements Comparator<Restau
 		
 		String s1 = record1.getPostalAddress().getAddress();
 		String s2 = record2.getPostalAddress().getAddress();
+
+		s1 = fn.apply(s1);
+		s2 = fn.apply(s2);
     	
     	double similarity = sim.calculate(s1, s2);
     	
