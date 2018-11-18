@@ -1,0 +1,41 @@
+Threshold-0.7	cleanLowerStopWords	cleanLowerStopWords	cleanLowerStopWords
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	cleanLowerStopWords	cleanLower
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	cleanLowerStopWords	removeCityName
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	cleanLower	cleanLowerStopWords
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	cleanLower	cleanLower
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	cleanLower	removeCityName
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	removeCityName	cleanLowerStopWords
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	removeCityName	cleanLower
+Schema <-> Yelp
+Precision: 0.9140
+Recall: 1.0000
+Recall: 0.9551
+Threshold-0.7	cleanLowerStopWords	removeCityName	removeCityName
