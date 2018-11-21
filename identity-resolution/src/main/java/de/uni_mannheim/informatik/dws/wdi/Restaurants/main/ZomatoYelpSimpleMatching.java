@@ -36,6 +36,11 @@ public class ZomatoYelpSimpleMatching {
     private static final Logger logger = WinterLogManager.activateLogger("default");
 
     public static void main(String[] args) throws Exception {
+
+        double threshold = 0.7;
+        double name_weight = 0.4;
+        double addr_weight = 0.6;
+
         // loading data
         HashedDataSet<Restaurant, Attribute> zomato = new HashedDataSet<>();
         new RestaurantXMLReader().loadFromXML(new File("data/input/zomato_target.xml"), "/restaurants/restaurant", zomato);
@@ -44,30 +49,29 @@ public class ZomatoYelpSimpleMatching {
         new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "restaurants/restaurant", yelp);
 
         // create a matching rule
-        LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(0.80);
+        LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(threshold);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorLevenshtein(), 0.4);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.6);
+        matchingRule.addComparator(new RestaurantNameComparatorLevenshtein(), name_weight);
+        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), addr_weight);
 
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engine = new MatchingEngine<>();
 
         // create a blocker (blocking strategy)
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCategoryGenerator());
-        blocker.collectBlockSizeData("data/output/zomato_yelp_simplematching_debugBlocking.csv", 1000);
+        blocker.collectBlockSizeData("data/output/zomato_yelp/simplematching_debugBlocking.csv", 1000);
 
         // Execute the matching
         Processable<Correspondence<Restaurant, Attribute>> correspondences = engine.runIdentityResolution(zomato, yelp, null, matchingRule, blocker);
 
-
         // write the correspondences to the output files
-        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/zomato_yelp_correspondence_simple_matching.csv"), correspondences);
+        String overviewFName = "data/output/zomato_yelp/correspondence_simple_matching_new_" + Double.toString(threshold) + "_" + Double.toString(name_weight) + "_" + Double.toString(addr_weight) + ".csv";
+        new CSVCorrespondenceFormatter().writeCSV(new File(overviewFName), correspondences);
 
-        String annotationPath = "data/output/zomato_yelp_correspondence_simple_matching_detail.csv";
-        new CSVRestaurantDetailFormatter().writeCSV(new File(annotationPath), correspondences);
-        writeRandom(300, annotationPath, zomato, yelp);
-
+        String detailFName = "data/output/zomato_yelp/correspondence_simple_matching_new_detail_" + Double.toString(threshold) + "_" + Double.toString(name_weight) + "_" + Double.toString(addr_weight) + ".csv";
+        new CSVRestaurantDetailFormatter().writeCSV(new File(detailFName), correspondences);
+        writeRandom(300, detailFName, zomato, yelp);
 
     }
 
