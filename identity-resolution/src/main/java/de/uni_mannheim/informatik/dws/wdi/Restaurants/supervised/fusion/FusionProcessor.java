@@ -14,6 +14,8 @@ import javax.xml.xpath.XPathExpressionException;
 
 import org.xml.sax.SAXException;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.CategoriesEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.LatitudeEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.LongitudeEvaluationRule;
@@ -45,7 +47,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 public class FusionProcessor {
 
 	
-	public double run(FusionRunConfiguration configuration) throws Exception{
+	public double run(FusionRunConfiguration configuration, boolean persistence) throws Exception{
 		// Load the Data into FusibleDataSet
 		System.out.println("*\n*\tLoading datasets\n*");
 		FusibleDataSet<Restaurant, Attribute> datafiniti = new FusibleHashedDataSet<>();
@@ -138,6 +140,11 @@ public class FusionProcessor {
 		DataFusionEvaluator<Restaurant, Attribute> evaluator = new DataFusionEvaluator<>(strategy);
 
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
+		
+		
+		if (persistence) {
+			new RestaurantXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+		}
 		
 		System.out.println(String.format("Accuracy: %.2f", accuracy));
 		return Double.parseDouble(String.format("Accuracy: %.2f", accuracy));

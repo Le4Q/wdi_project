@@ -21,15 +21,15 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 public class GenericFuser<ValueType, RecordType extends Matchable & Fusible<SchemaElementType>, SchemaElementType extends Matchable> extends
         AttributeValueFuser<ValueType, RecordType, SchemaElementType> {
 	
-	Supplier<ValueType> getVal = null;
-	Consumer<ValueType> setVal = null;
+	Method getVal = null;
+	Method setVal = null;
 	Attribute val;
 
-    public GenericFuser(Attribute val, Supplier<ValueType> getVal, Consumer<ValueType> setVal, ConflictResolutionFunction<ValueType, RecordType, SchemaElementType> fusingMechanism) {
+    public GenericFuser(Attribute val, Method method, Method method2, ConflictResolutionFunction<ValueType, RecordType, SchemaElementType> fusingMechanism) {
         super(fusingMechanism);
        	this.val = val;
-        this.getVal = getVal;
-        this.setVal = setVal;
+        this.getVal = method;
+        this.setVal = method2;
     }
 
 

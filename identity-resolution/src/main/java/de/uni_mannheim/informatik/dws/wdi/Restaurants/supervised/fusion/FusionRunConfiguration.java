@@ -1,12 +1,10 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion;
 
 import java.util.ArrayList;
-
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.main.SupervisedFusionFeature;
-import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
-public class FusionRunConfiguration {
-
+public class FusionRunConfiguration implements Comparable<FusionRunConfiguration> {
+   
 	private ArrayList<SupervisedFusionFeature> supervisedFusionFeature = null;
 	private double fitness = 0d;
 	
@@ -29,5 +27,11 @@ public class FusionRunConfiguration {
 	public void setSupervisedFusionFeature(ArrayList<SupervisedFusionFeature> supervisedFusionFeature) {
 		this.supervisedFusionFeature = supervisedFusionFeature;
 	}
+	
+
+	@Override
+	public int compareTo(FusionRunConfiguration arg0) {
+		return (int) ((this.getFitness() - arg0.getFitness()) * 1000.0);
+	} 
 	
 }

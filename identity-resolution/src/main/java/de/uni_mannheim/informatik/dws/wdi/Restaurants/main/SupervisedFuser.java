@@ -8,6 +8,8 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionPr
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionRunConfiguration;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -69,6 +71,7 @@ public class SupervisedFuser {
         List<List<SupervisedFusionFeature>> cartesianProduct = Lists.cartesianProduct(immutableFeatures);
         ArrayList<SupervisedFusionFeature> _features = new ArrayList<>();
     	FusionProcessor fp = new FusionProcessor();
+    	ArrayList<FusionRunConfiguration> frcs = new ArrayList<>();
         for (List<SupervisedFusionFeature> list : cartesianProduct) {
         	System.out.println("\n\nRunning the following combination:");
         	for (SupervisedFusionFeature supervisedFusionFeature : list) {
@@ -77,8 +80,25 @@ public class SupervisedFuser {
 			}
         	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
         	
-        	frc.setFitness(fp.run(frc));
+        	frc.setFitness(fp.run(frc, false));
+        	frcs.add(frc);
 		}
+        
+        Collections.sort(frcs);
+        
+        System.out.println("------------------------------------------------");
+        System.out.println("Best result with accuracy="+frcs.get(0).getFitness()+" found for the following setup:");
+        _features = new ArrayList<>();
+        for (SupervisedFusionFeature supervisedFusionFeature : frcs.get(0).getSupervisedFusionFeature()) {
+			System.out.println(" - " + supervisedFusionFeature);
+			_features.add(supervisedFusionFeature);
+		}
+    	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
+        
+        System.out.println("Running the best setup again and saving results");
+    	fp.run(frc, true);
+    	System.out.println("FINISHED.");
+        
         
     }
 }
