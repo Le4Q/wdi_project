@@ -13,9 +13,6 @@ package de.uni_mannheim.informatik.dws.wdi.Restaurants.model;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Actor;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLFormatter;
 
 /**

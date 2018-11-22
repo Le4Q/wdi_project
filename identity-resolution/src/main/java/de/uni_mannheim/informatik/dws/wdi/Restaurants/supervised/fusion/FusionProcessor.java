@@ -14,8 +14,6 @@ import javax.xml.xpath.XPathExpressionException;
 
 import org.xml.sax.SAXException;
 
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.Movie;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseDataFusion.model.MovieXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.CategoriesEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.LatitudeEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.LongitudeEvaluationRule;
@@ -34,6 +32,7 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.PriceRangeFuserVoti
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.main.SupervisedFusionFeature;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.FusibleRestaurantFactory;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLFormatter;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine;
