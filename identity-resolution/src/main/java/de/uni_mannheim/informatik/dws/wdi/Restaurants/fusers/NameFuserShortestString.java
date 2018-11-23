@@ -3,6 +3,7 @@ package de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -10,12 +11,13 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
+import java.util.List;
 
-public class NameFuserFavourSources extends
+public class NameFuserShortestString extends
         AttributeValueFuser<String, Restaurant, Attribute> {
 
-    public NameFuserFavourSources() {
-        super(new FavourSources<String, Restaurant, Attribute>());
+    public NameFuserShortestString() {
+        super(new ShortestString<Restaurant, Attribute>());
     }
 
 

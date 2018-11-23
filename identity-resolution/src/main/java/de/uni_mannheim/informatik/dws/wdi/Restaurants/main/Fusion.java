@@ -78,18 +78,16 @@ public class Fusion {
         // write group size distribution
         correspondences.printGroupSizeDistribution();
 
-        // load the gold standard TODO:
-        /*
+        // load the gold standard
         System.out.println("*\n*\tEvaluating results\n*");
         DataSet<Restaurant, Attribute> gs = new FusibleHashedDataSet<>();
-        new RestaurantXMLReader().loadFromXML(new File("data/fusion/gold.xml"), "/restaurants/restaurant", gs);
-        */
+        new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/fusion_gold.xml"), "/restaurants/restaurant", gs);
+
 
         // define the fusion strategy
         DataFusionStrategy<Restaurant, Attribute> strategy = new DataFusionStrategy<>(new FusibleRestaurantFactory());
 
         // add attribute fusers TODO:
-
         strategy.addAttributeFuser(Restaurant.NAME, new NameFuserVoting(),new NameEvaluationRule());
         strategy.addAttributeFuser(Restaurant.NEIGHBORHOOD, new NeighborhoodFuserMostRecent(),new NameEvaluationRule());
         strategy.addAttributeFuser(Restaurant.POSTALADDRESS, new PostalAddressFuserMostRecent(), new PostalAddressEvaluationRule());
@@ -109,6 +107,15 @@ public class Fusion {
         // print record groups sorted by consistency
         engine.writeRecordGroupsByConsistency(new File("data/output/recordGroupConsistencies.csv"), correspondences, null);
 
+        // run the fusion
+        System.out.println("*\n*\tRunning data fusion\n*");
+        FusibleDataSet<Restaurant, Attribute> fusedDataSet = engine.run(correspondences, null);
 
+        // evaluate
+        DataFusionEvaluator<Restaurant, Attribute> evaluator = new DataFusionEvaluator<>(strategy);
+
+        double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
+
+        System.out.println(String.format("Accuracy: %.2f", accuracy));
     }
 }

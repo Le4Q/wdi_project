@@ -15,7 +15,7 @@ public class LatitudeEvaluationRule extends EvaluationRule<Restaurant, Attribute
             return false;
         else {
             double delta = record1.getLatitude() - record2.getLatitude();
-            return delta < 0.001 && delta > -0.001;
+            return delta < 0.05 && delta > -0.05;
         }
     }
 

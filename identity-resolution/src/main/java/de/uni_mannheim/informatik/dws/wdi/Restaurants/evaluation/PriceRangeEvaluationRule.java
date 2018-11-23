@@ -15,8 +15,7 @@ public class PriceRangeEvaluationRule extends EvaluationRule<Restaurant, Attribu
         else if(record1.getPriceRange() == null ^ record2.getPriceRange() == null)
             return false;
         else
-            return record1.getPriceRange().getLowerBound() == record2.getPriceRange().getLowerBound()
-                    && record1.getPriceRange().getUpperBound() == record2.getPriceRange().getUpperBound();
+            return record1.getPriceRange().equals(record2.getPriceRange());
     }
 
     @Override

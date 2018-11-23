@@ -14,6 +14,7 @@ public class PostalAddressEvaluationRule extends EvaluationRule<Restaurant, Attr
             return true;
         else if(record1.getPostalAddress() == null ^ record2.getPostalAddress() == null)
             return false;
+        /*
         if(record1.getPostalAddress().getCity() == null && record2.getPostalAddress().getCity() == null)
             return true;
         else if(record1.getPostalAddress().getCity() == null ^ record2.getPostalAddress().getCity() == null)
@@ -22,8 +23,9 @@ public class PostalAddressEvaluationRule extends EvaluationRule<Restaurant, Attr
             return true;
         else if(record1.getPostalAddress().getCity().getPostalCode() == null ^ record2.getPostalAddress().getCity().getPostalCode() == null)
             return false;
+        */
         else
-            return record1.getPostalAddress().getCity().getPostalCode().equals(record2.getPostalAddress().getCity().getPostalCode());
+            return record1.getPostalAddress().equals(record2.getPostalAddress()); //TODO: use similarity here
     }
 
     @Override

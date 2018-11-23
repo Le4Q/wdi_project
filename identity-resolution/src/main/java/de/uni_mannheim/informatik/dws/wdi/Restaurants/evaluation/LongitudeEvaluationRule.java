@@ -6,8 +6,6 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
-import java.text.DecimalFormat;
-
 public class LongitudeEvaluationRule extends EvaluationRule<Restaurant, Attribute> {
 
 
@@ -19,7 +17,7 @@ public class LongitudeEvaluationRule extends EvaluationRule<Restaurant, Attribut
             return false;
         else {
             double delta = record1.getLongitude() - record2.getLongitude();
-            return delta < 0.001 && delta > -0.001;
+            return delta < 0.05 && delta > -0.05;
         }
     }
 

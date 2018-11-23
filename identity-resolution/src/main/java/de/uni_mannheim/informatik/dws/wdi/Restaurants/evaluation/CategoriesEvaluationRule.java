@@ -10,9 +10,9 @@ public class CategoriesEvaluationRule extends EvaluationRule<Restaurant, Attribu
 
     @Override
     public boolean isEqual(Restaurant record1, Restaurant record2, Attribute attribute) {
-        if(record1.getCategories().isEmpty() && record2.getCategories().isEmpty())
+        if(record1.getCategories() == null && record2.getCategories() == null)
             return true;
-        else if(record1.getCategories().isEmpty() ^ record2.getCategories().isEmpty())
+        else if(record1.getCategories() == null ^ record2.getCategories() == null)
             return false;
         else
             return record1.getCategories().containsAll(record2.getCategories()) &&

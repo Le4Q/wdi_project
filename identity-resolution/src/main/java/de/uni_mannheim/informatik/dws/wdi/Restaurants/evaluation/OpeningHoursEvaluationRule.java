@@ -15,7 +15,7 @@ public class OpeningHoursEvaluationRule extends EvaluationRule<Restaurant, Attri
         else if(record1.getOpeninghours() == null ^ record2.getOpeninghours() == null)
             return false;
         else
-            return false;
+            return record1.getOpeninghours().equals(record2.getOpeninghours());
     }
 
     @Override

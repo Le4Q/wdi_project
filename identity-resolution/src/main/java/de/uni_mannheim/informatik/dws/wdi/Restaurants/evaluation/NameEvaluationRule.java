@@ -1,10 +1,12 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation;
 
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 public class NameEvaluationRule extends EvaluationRule<Restaurant, Attribute> {
 
@@ -15,7 +17,7 @@ public class NameEvaluationRule extends EvaluationRule<Restaurant, Attribute> {
         else if(record1.getName() == null ^ record2.getName() == null)
             return false;
         else
-            return record1.getName().equals(record2.getName());
+            return (new TokenizingJaccardSimilarity()).calculate(record1.getName(), record2.getName()) > 0.8;
     }
 
     @Override
