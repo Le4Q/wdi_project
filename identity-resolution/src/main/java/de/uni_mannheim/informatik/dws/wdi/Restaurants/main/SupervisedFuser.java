@@ -6,6 +6,7 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionArrayList;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionProcessor;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionRunConfiguration;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.SupervisedFusionFeature;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,6 +27,7 @@ public class SupervisedFuser {
         
         ArrayList<SupervisedFusionFeature> sfFeatures = new ArrayList<>();
         sfFeatures.add(new SupervisedFusionFeature(new NameFuserVoting(),new NameEvaluationRule(), Restaurant.NAME));
+        sfFeatures.add(new SupervisedFusionFeature(new NameFuserFavourSources(),new NameEvaluationRule(), Restaurant.NAME));
         features.add(new FusionArrayList(Restaurant.NAME, sfFeatures));
 
         sfFeatures = new ArrayList<>();
@@ -34,6 +36,7 @@ public class SupervisedFuser {
 
         sfFeatures = new ArrayList<>();
         sfFeatures.add(new SupervisedFusionFeature(new PostalAddressFuserMostRecent(), new PostalAddressEvaluationRule(), Restaurant.POSTALADDRESS));
+        sfFeatures.add(new SupervisedFusionFeature(new PostalAddressFuserFavourSources(), new PostalAddressEvaluationRule(), Restaurant.POSTALADDRESS));
         features.add(new FusionArrayList(Restaurant.POSTALADDRESS, sfFeatures));
 
         sfFeatures = new ArrayList<>();
@@ -42,10 +45,12 @@ public class SupervisedFuser {
 
         sfFeatures = new ArrayList<>();
         sfFeatures.add(new SupervisedFusionFeature(new LatitudeFuserFavourSource(),new LatitudeEvaluationRule(), Restaurant.LATITUDE));
+        sfFeatures.add(new SupervisedFusionFeature(new LatitudeFuserMostRecent(),new LatitudeEvaluationRule(), Restaurant.LATITUDE));
         features.add(new FusionArrayList(Restaurant.LATITUDE, sfFeatures));
 
         sfFeatures = new ArrayList<>();
         sfFeatures.add(new SupervisedFusionFeature(new LongitudeFuserFavourSources(),new LongitudeEvaluationRule(), Restaurant.LONGITUDE));
+        sfFeatures.add(new SupervisedFusionFeature(new LongitudeFuserMostRecent(),new LongitudeEvaluationRule(), Restaurant.LONGITUDE));
         features.add(new FusionArrayList(Restaurant.LONGITUDE, sfFeatures));
 
         sfFeatures = new ArrayList<>();
@@ -73,6 +78,7 @@ public class SupervisedFuser {
     	FusionProcessor fp = new FusionProcessor();
     	ArrayList<FusionRunConfiguration> frcs = new ArrayList<>();
         for (List<SupervisedFusionFeature> list : cartesianProduct) {
+        	_features = new ArrayList<>();
         	System.out.println("\n\nRunning the following combination:");
         	for (SupervisedFusionFeature supervisedFusionFeature : list) {
 				System.out.println(" - " + supervisedFusionFeature);
@@ -88,12 +94,10 @@ public class SupervisedFuser {
         
         System.out.println("------------------------------------------------");
         System.out.println("Best result with accuracy="+frcs.get(0).getFitness()+" found for the following setup:");
-        _features = new ArrayList<>();
-        for (SupervisedFusionFeature supervisedFusionFeature : frcs.get(0).getSupervisedFusionFeature()) {
-			System.out.println(" - " + supervisedFusionFeature);
-			_features.add(supervisedFusionFeature);
+        for (FusionRunConfiguration fusionRunConfiguration : frcs) {
+			System.out.println(fusionRunConfiguration.toString());
 		}
-    	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
+    	FusionRunConfiguration frc = new FusionRunConfiguration(frcs.get(0).getSupervisedFusionFeature());
         
         System.out.println("Running the best setup again and saving results");
     	fp.run(frc, true);

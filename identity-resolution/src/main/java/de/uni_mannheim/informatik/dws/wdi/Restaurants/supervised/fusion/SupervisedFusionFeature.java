@@ -1,5 +1,6 @@
-package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
+package de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion;
 
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.GenericFuser;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
@@ -42,10 +43,16 @@ public class SupervisedFusionFeature {
 		this.evaluationRule = evaluationRule;
 	}
 	
+	@SuppressWarnings("rawtypes")
 	@Override
 	public String toString() {
+		if (attributeValueFuser instanceof GenericFuser) {
+			return ((GenericFuser) attributeValueFuser).getValStrategy();
+		}
 		return attributeValueFuser.getClass().getName();
 	}
+	
+	
 	
 	
 	

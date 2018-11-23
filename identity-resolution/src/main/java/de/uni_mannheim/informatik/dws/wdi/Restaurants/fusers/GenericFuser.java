@@ -24,35 +24,29 @@ public class GenericFuser<ValueType, RecordType extends Matchable & Fusible<Sche
 	Method getVal = null;
 	Method setVal = null;
 	Attribute val;
+	ConflictResolutionFunction<ValueType, RecordType, SchemaElementType> fusingMechanism;
 
     public GenericFuser(Attribute val, Method method, Method method2, ConflictResolutionFunction<ValueType, RecordType, SchemaElementType> fusingMechanism) {
         super(fusingMechanism);
        	this.val = val;
         this.getVal = method;
         this.setVal = method2;
+        this.fusingMechanism = fusingMechanism;
     }
 
+    public String getValStrategy() {
+    	return this.val.toString() + " -> " + fusingMechanism.getClass().getName();
+    }
 
 
 
 	@Override
 	public ValueType getValue(RecordType record, Correspondence<SchemaElementType, Matchable> correspondence) {
-		for (Method m : record.getClass().getMethods()) {
-			if (m.getName().equals(getVal.toString())) {
-				 try {
-					return (ValueType) m.invoke(record, null);
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (InvocationTargetException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		} 
+		try {
+			return (ValueType) record.getClass().getMethod(getVal.getName(), null).invoke(record, null);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return null;
 	}
 
@@ -62,22 +56,11 @@ public class GenericFuser<ValueType, RecordType extends Matchable & Fusible<Sche
 			SchemaElementType schemaElement) {
 		FusedValue<ValueType, RecordType, SchemaElementType> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
        
-        for (Method m : fusedRecord.getClass().getMethods()) {
-			if (m.getName().equals(getVal.toString())) {
-				 try {
-					m.invoke(fusedRecord, fused.getValue());
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (InvocationTargetException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-		} 
+		try {
+			fusedRecord.getClass().getMethod(setVal.getName(), setVal.getParameterTypes()[0]).invoke(fusedRecord, fused.getValue());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
 		
 	}

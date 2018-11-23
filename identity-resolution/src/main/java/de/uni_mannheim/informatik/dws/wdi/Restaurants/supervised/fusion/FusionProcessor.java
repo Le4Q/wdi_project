@@ -29,7 +29,6 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.NeighborhoodFuserMo
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.OpeningHoursFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.PostalAddressFuserMostRecent;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.PriceRangeFuserVoting;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.main.SupervisedFusionFeature;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.FusibleRestaurantFactory;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLFormatter;
@@ -102,7 +101,7 @@ public class FusionProcessor {
 		// load the gold standard TODO:
         System.out.println("*\n*\tEvaluating results\n*");
         DataSet<Restaurant, Attribute> gs = new FusibleHashedDataSet<>();
-        new RestaurantXMLReader().loadFromXML(new File("data/fusion/gold.xml"), "/restaurants/restaurant", gs);
+        new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/fusion_gold_train.xml"), "/restaurants/restaurant", gs);
 		 
 
 		// define the fusion strategy
@@ -146,6 +145,6 @@ public class FusionProcessor {
 		}
 		
 		System.out.println(String.format("Accuracy: %.2f", accuracy));
-		return Double.parseDouble(String.format("Accuracy: %.2f", accuracy));
+		return accuracy;
 	}
 }

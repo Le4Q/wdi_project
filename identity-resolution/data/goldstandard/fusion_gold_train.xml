@@ -1,0 +1,102 @@
+<restaurants>
+
+	<restaurant>
+		<id>zomato_5079</id>
+		<name>Yummy Korean Restaurant</name>
+		<latitude>43.664663</latitude>
+		<longitude>-79.4162247</longitude>
+		<neighborhood>Old Toronto</neighborhood>
+		<postaladdress>
+			<address>620 Bloor St W</address>
+			<city>
+				<name>Toronto</name>
+				<postalcode>M6G 1K7</postalcode>
+				<country>Canada</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>0</lowerBound>
+			<upperBound>10</upperBound>
+		</pricerange>
+	</restaurant>
+
+	<restaurant>
+		<id>schemaOrg_1929</id>
+		<name>Fahrenheit</name>
+		<latitude>41.4797274</latitude>
+		<longitude>-81.6866972</longitude>
+		<neighborhood>Tremont</neighborhood>
+		<postaladdress>
+			<address>2417 Professor Ave</address>
+			<city>
+				<name>Cleveland</name>
+				<postalcode>44113</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>31</lowerBound>
+			<upperBound>60</upperBound>
+		</pricerange>
+	</restaurant>
+
+	<restaurant>
+		<id>schemaOrg_3446</id>
+		<name>Fleur by Hubert Keller</name>
+		<latitude>36.0914998</latitude>
+		<longitude>-115.178481</longitude>
+		<neighborhood>Paradise</neighborhood>
+		<postaladdress>
+			<address>3950 S Las Vegas Blvd</address>
+			<city>
+				<name>Las Vegas</name>
+				<postalcode>89119</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>31</lowerBound>
+			<upperBound>60</upperBound>
+		</pricerange>
+	</restaurant>
+
+	<restaurant>
+		<id>datafiniti_9620</id>
+		<name>McDonald's</name>
+		<latitude>37.9781522</latitude>
+		<longitude>-87.6307645</longitude>
+		<neighborhood>Evansville</neighborhood>
+		<postaladdress>
+			<address>115 Rosenberger Ave</address>
+			<city>
+				<name>Evansville</name>
+				<postalcode>47712</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>0</lowerBound>
+			<upperBound>10</upperBound>
+		</pricerange>
+	</restaurant>
+
+	<restaurant>
+		<id>zomato_2960</id>
+		<name>Wendy's</name>
+		<latitude>33.4660593</latitude>
+		<longitude>-112.0328727</longitude>
+		<neighborhood>Encanto Village</neighborhood>
+		<postaladdress>
+			<address>2346 E McDowell Rd</address>
+			<city>
+				<name>Phoenix</name>
+				<postalcode>85006</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>0</lowerBound>
+			<upperBound>10</upperBound>
+		</pricerange>
+	</restaurant>
+</restaurants>

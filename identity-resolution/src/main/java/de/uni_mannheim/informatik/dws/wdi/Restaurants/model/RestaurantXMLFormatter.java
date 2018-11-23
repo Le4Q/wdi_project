@@ -36,26 +36,26 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 		restaurant.appendChild(createTextElement("id", record.getIdentifier(), doc));
 		restaurant.appendChild(createTextElement("name", record.getName(), doc));
 		restaurant.appendChild(createTextElement("description", record.getDescription(), doc));
-		restaurant.appendChild(createTextElement("latitude", ""+record.getLatitude(), doc));
-		restaurant.appendChild(createTextElement("longitude", ""+record.getLongitude(), doc));
+		restaurant.appendChild(createTextElement("latitude", record.getLatitude(), doc));
+		restaurant.appendChild(createTextElement("longitude", record.getLongitude(), doc));
 		
 		Element postaladdress = doc.createElement("postalcode");
-		postaladdress.appendChild(createTextElement("address", ""+record.getPostalAddress().getAddress(), doc));
+		postaladdress.appendChild(createTextElement("address", record.getPostalAddress().getAddress(), doc));
 		Element city = doc.createElement("city");
-		city.appendChild(createTextElement("name", ""+record.getPostalAddress().getCity().getName(), doc));
-		city.appendChild(createTextElement("postalcode", ""+record.getPostalAddress().getCity().getPostalCode(), doc));
-		city.appendChild(createTextElement("state", ""+record.getPostalAddress().getCity().getState(), doc));
-		city.appendChild(createTextElement("country", ""+record.getPostalAddress().getCity().getCountry(), doc));
+		city.appendChild(createTextElement("name", record.getPostalAddress().getCity().getName(), doc));
+		city.appendChild(createTextElement("postalcode", record.getPostalAddress().getCity().getPostalCode(), doc));
+		city.appendChild(createTextElement("state", record.getPostalAddress().getCity().getState(), doc));
+		city.appendChild(createTextElement("country", record.getPostalAddress().getCity().getCountry(), doc));
 		postaladdress.appendChild(city);
 		restaurant.appendChild(postaladdress);
 		
-		Element reviews = doc.createElement("reviews");
-		reviews.appendChild(createTextElement("count", ""+record.getReviews().getCount(), doc));
-		reviews.appendChild(createTextElement("bodies", record.getReviews().getBodies(), doc));
-		reviews.appendChild(createTextElement("average_rating", ""+record.getReviews().getAverageRating(), doc));
-		restaurant.appendChild(reviews);
+		//Element reviews = doc.createElement("reviews");
+		//reviews.appendChild(createTextElement("count", record.getReviews().getCount(), doc));
+		//reviews.appendChild(createTextElement("bodies", record.getReviews().getBodies(), doc));
+		//reviews.appendChild(createTextElement("average_rating", record.getReviews().getAverageRating(), doc));
+		//restaurant.appendChild(reviews);
 		
-		Element openinghours = doc.createElement("openinghours");
+		/*Element openinghours = doc.createElement("openinghours");
 		for (Day day : record.getOpeninghours().getDays()) {
 			openinghours.appendChild(createTextElement("day", day.getName(), doc));
 			Element hours = doc.createElement("hours");
@@ -63,26 +63,26 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 			hours.appendChild(createTextElement("closes",  day.getCloses().toString(), doc));
 			openinghours.appendChild(hours);
 		}
-		restaurant.appendChild(openinghours);
+		restaurant.appendChild(openinghours);*/
 		
 		Element pricerange = doc.createElement("pricerange");
-		pricerange.appendChild(createTextElement("lowerBound", ""+record.getPriceRange().getLowerBound(), doc));
-		pricerange.appendChild(createTextElement("upperBound", ""+record.getPriceRange().getUpperBound(), doc));
+		pricerange.appendChild(createTextElement("lowerBound", record.getPriceRange().getLowerBound(), doc));
+		pricerange.appendChild(createTextElement("upperBound", record.getPriceRange().getUpperBound(), doc));
 		restaurant.appendChild(pricerange);
 		
-		Element categories = doc.createElement("categories");
+		/*Element categories = doc.createElement("categories");
 		for (String category : record.getCategories()) {
 			categories.appendChild(createTextElement("category", category, doc));
 		}
-		restaurant.appendChild(categories);
+		restaurant.appendChild(categories);*/
 		
-		restaurant.appendChild(createTextElement("stars",""+ record.getStars(), doc));
-		restaurant.appendChild(createTextElement("accepts_credit_cards", ""+record.getAcceptsCreditCards(), doc));
-		restaurant.appendChild(createTextElement("restaurant_delivery", ""+record.getRestaurantDelivery(), doc));
-		restaurant.appendChild(createTextElement("accepts_reservations", ""+record.getAcceptsReservations(), doc));
-		restaurant.appendChild(createTextElement("drivethru", ""+record.getDrivethru(), doc));
+		/*restaurant.appendChild(createTextElement("stars", record.getStars(), doc));
+		restaurant.appendChild(createTextElement("accepts_credit_cards", record.getAcceptsCreditCards(), doc));
+		restaurant.appendChild(createTextElement("restaurant_delivery", record.getRestaurantDelivery(), doc));
+		restaurant.appendChild(createTextElement("accepts_reservations", record.getAcceptsReservations(), doc));
+		restaurant.appendChild(createTextElement("drivethru", record.getDrivethru(), doc));*/
 		//restaurant.appendChild(createTextElement("wheelchair_accessibility", record., doc));
-		restaurant.appendChild(createTextElement("has_wifi", ""+record.getHasWifi(), doc));
+		//restaurant.appendChild(createTextElement("has_wifi", record.getHasWifi(), doc));
 		
 
 		//Element websites = doc.createElement("categories");
@@ -91,17 +91,27 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 		//}
 		//restaurant.appendChild(websites);
 		
-		restaurant.appendChild(createTextElement("accepts_currency", ""+record.getAcceptsCreditCards(), doc));
+		restaurant.appendChild(createTextElement("accepts_currency", record.getAcceptsCreditCards(), doc));
 		
 		
 		return restaurant;
 	}
 
 	protected Element createTextElementWithProvenance(String name,
-		String value, String provenance, Document doc) {
-		Element elem = createTextElement(name, value, doc);
+		Object value, String provenance, Document doc) {
+		if (value==null) {
+			value = new Object();
+		}
+		Element elem = createTextElement(name, ""+value.toString(), doc);
 		elem.setAttribute("provenance", provenance);
 		return elem;
+	}
+
+	protected Element createTextElement(String name, Object value, Document doc) {
+			if (value==null) {
+				value = new Object();
+			}
+		return createTextElement(name, value.toString(), doc);
 	}
 
 

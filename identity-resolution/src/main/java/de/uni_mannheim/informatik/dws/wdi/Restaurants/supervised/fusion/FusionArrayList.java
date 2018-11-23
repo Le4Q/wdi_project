@@ -2,7 +2,6 @@ package de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion;
 
 import java.util.ArrayList;
 
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.main.SupervisedFusionFeature;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
 public class FusionArrayList {
