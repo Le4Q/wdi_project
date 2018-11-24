@@ -1,5 +1,103 @@
 <restaurants>
+	<restaurant>
+		<id>zomato_18429</id>
+		<name>Metro Pizza</name>
+		<latitude>73.44853</latitude>
+		<longitude>39.5699</longitude>
+		<neighborhood>Pierrefonds-Roxboro</neighborhood>
+		<postaladdress>
+			<address>4886 Saint-Charles Blvd</address>
+			<city>
+				<name>Montreal</name>
+				<postalcode>H9H 3E2</postalcode>
+				<country>Canada</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>11</lowerBound>
+			<upperBound>30</upperBound>
+		</pricerange>
+	</restaurant>
+	
+	<restaurant>
+		<id>zomato_474</id>
+		<name>Carmine's Italian Restaurant</name>
+		<latitude>36.1174528</latitude>
+		<longitude>-115.1788768</longitude>
+		<neighborhood>Pierrefonds-Roxboro</neighborhood>
+		<postaladdress>
+			<address>3500 South Las Vegas Blvd</address>
+			<city>
+				<name>Las Vegas</name>
+				<postalcode>89109</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>11</lowerBound>
+			<upperBound>30</upperBound>
+		</pricerange>
+	</restaurant>
 
+	<restaurant>
+		<id>zomato_9824</id>
+		<name>Thai Express</name>
+		<latitude>51.084709</latitude>
+		<longitude>-114.1571067</longitude>
+		<neighborhood>Varsity</neighborhood>
+		<postaladdress>
+			<address>3625 Shaganappi Trail NW</address>
+			<city>
+				<name>Calgary</name>
+				<postalcode>T3A 0E2</postalcode>
+				<country>Canada</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>0</lowerBound>
+			<upperBound>10</upperBound>
+		</pricerange>
+	</restaurant>
+
+	<restaurant>
+		<id>zomato_1118</id>
+		<name>Michoacan</name>
+		<latitude>36.2713466</latitude>
+		<longitude>-115.2690753</longitude>
+		<neighborhood>Northwest Las Vegas</neighborhood>
+		<postaladdress>
+			<address>7870 W Tropical Pkwy</address>
+			<city>
+				<name>Las Vegas</name>
+				<postalcode>89149</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>11</lowerBound>
+			<upperBound>30</upperBound>
+		</pricerange>
+	</restaurant>
+
+	<restaurant>
+		<id>zomato_19205</id>
+		<name>Hardee's</name>
+		<latitude>37.9907635</latitude>
+		<longitude>-87.5218003</longitude>
+		<neighborhood>Evansville</neighborhood>
+		<postaladdress>
+			<address>1501 N Boeke Rd</address>
+			<city>
+				<name>Evansville</name>
+				<postalcode>47711</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>0</lowerBound>
+			<upperBound>10</upperBound>
+		</pricerange>
+	</restaurant>
 	<restaurant>
 		<id>zomato_5079</id>
 		<name>Yummy Korean Restaurant</name>

@@ -8,6 +8,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
 public class SupervisedFusionFeature {
 	
+
 	private AttributeValueFuser<? extends Object, Restaurant, Attribute> attributeValueFuser = null;
 	private EvaluationRule<Restaurant, Attribute> evaluationRule = null;
 	private Attribute attribute = null; 

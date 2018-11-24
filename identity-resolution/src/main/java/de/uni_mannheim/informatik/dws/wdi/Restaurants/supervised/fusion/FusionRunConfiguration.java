@@ -28,9 +28,9 @@ public class FusionRunConfiguration implements Comparable<FusionRunConfiguration
 	}
 	
 
-	@Override
+	@Override 
 	public int compareTo(FusionRunConfiguration arg0) {
-		return (int) (arg0.getFitness() - (this.getFitness()) * 1000.0);
+		return (int) ((this.getFitness() - arg0.getFitness()) * 1000.0);
 	} 
 	
 }

@@ -3,6 +3,7 @@ package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.evaluation.*;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.fusers.*;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.DatasetLoader;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionArrayList;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionProcessor;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionRunConfiguration;
@@ -65,7 +66,8 @@ public class SupervisedFuser {
         sfFeatures.add(new SupervisedFusionFeature(new OpeningHoursFuserMostRecent(),new OpeningHoursEvaluationRule(), Restaurant.OPENINGHOURS));
         features.add(new FusionArrayList(Restaurant.OPENINGHOURS, sfFeatures));
         
-        
+
+        DatasetLoader dl = new DatasetLoader();
 
 		LinkedList<ImmutableList<SupervisedFusionFeature>> immutableFeatures = new LinkedList<>();
         for (int i = 0; i < features.size(); i++) {
@@ -86,7 +88,7 @@ public class SupervisedFuser {
 			}
         	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
         	
-        	frc.setFitness(fp.run(frc, false));
+        	frc.setFitness(fp.run(frc, false, dl));
         	frcs.add(frc);
 		}
         
@@ -100,7 +102,7 @@ public class SupervisedFuser {
     	FusionRunConfiguration frc = new FusionRunConfiguration(frcs.get(0).getSupervisedFusionFeature());
         
         System.out.println("Running the best setup again and saving results");
-    	fp.run(frc, true);
+    	fp.run(frc, true, dl);
     	System.out.println("FINISHED.");
         
         

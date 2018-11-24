@@ -6,10 +6,12 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.OpeningHours;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.PostalAddress;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.PriceRange;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.DatasetLoader;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionArrayList;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionProcessor;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionRunConfiguration;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.FusionStrategyFactory;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.Strategies;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.supervised.fusion.SupervisedFusionFeature;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.ConflictResolutionFunction;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.Voting;
@@ -22,6 +24,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
+
+import org.w3c.dom.Element;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -36,22 +40,27 @@ public class GenericSupervisedFuser {
         ArrayList<FusionArrayList> features = new ArrayList<>();
 
         ArrayList<SupervisedFusionFeature> sfFeatures;
-        sfFeatures = (new FusionStrategyFactory<PriceRange>()).createFusionStrategies(Restaurant.PRICERANGE, "getPriceRange", "setPriceRange", PriceRange.class, new PriceRangeEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<PriceRange>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.VOTING, Strategies.MOSTRECENT, Strategies.FAVOURSOURCES), Restaurant.PRICERANGE, "getPriceRange", "setPriceRange", PriceRange.class, new PriceRangeEvaluationRule());
         features.add(new FusionArrayList(Restaurant.PRICERANGE, sfFeatures));
-        //sfFeatures = (new FusionStrategyFactory<String>()).createFusionStrategies(Restaurant.CATEGORIES, "getCategories", "setCategories", String.class);
-        //features.add(new FusionArrayList(Restaurant.PRICERANGE, sfFeatures));
-        
-        sfFeatures = (new FusionStrategyFactory<String>()).createFusionStrategies(Restaurant.NAME, "getName", "setName", String.class, new NameEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<String>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.LONGESTSTRING, Strategies.VOTING, Strategies.MOSTRECENT), Restaurant.NAME, "getName", "setName", String.class, new NameEvaluationRule());
         features.add(new FusionArrayList(Restaurant.NAME, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Restaurant.LATITUDE, "getLatitude", "setLatitude", double.class, new LatitudeEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.FAVOURSOURCES, Strategies.MOSTRECENT), Restaurant.LATITUDE, "getLatitude", "setLatitude", double.class, new LatitudeEvaluationRule());
         features.add(new FusionArrayList(Restaurant.LATITUDE, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Restaurant.LONGITUDE, "getLongitude", "setLongitude", double.class, new LongitudeEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.FAVOURSOURCES, Strategies.MOSTRECENT), Restaurant.LONGITUDE, "getLongitude", "setLongitude", double.class, new LongitudeEvaluationRule());
         features.add(new FusionArrayList(Restaurant.LONGITUDE, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<PostalAddress>()).createFusionStrategies(Restaurant.POSTALADDRESS, "getPostalAddress", "setPostalAddress", PostalAddress.class, new PostalAddressEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<PostalAddress>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.FAVOURSOURCES, Strategies.MOSTRECENT), Restaurant.POSTALADDRESS, "getPostalAddress", "setPostalAddress", PostalAddress.class, new PostalAddressEvaluationRule());
         features.add(new FusionArrayList(Restaurant.POSTALADDRESS, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<OpeningHours>()).createFusionStrategies(Restaurant.OPENINGHOURS, "getOpeninghours", "setOpeninghours", OpeningHours.class, new OpeningHoursEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<OpeningHours>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.MOSTRECENT), Restaurant.OPENINGHOURS, "getOpeninghours", "setOpeninghours", OpeningHours.class, new OpeningHoursEvaluationRule());
         features.add(new FusionArrayList(Restaurant.OPENINGHOURS, sfFeatures));
+        
 		
+        
+        
+        sfFeatures = new ArrayList<>();
+        sfFeatures.add(new SupervisedFusionFeature(new CategoriesFuserUnion(), new CategoriesEvaluationRule(), Restaurant.CATEGORIES));
+        features.add(new FusionArrayList(Restaurant.CATEGORIES, sfFeatures));
+        
+        
         
         
 
@@ -60,6 +69,8 @@ public class GenericSupervisedFuser {
         	ArrayList<SupervisedFusionFeature> _sfFeatures = features.get(i).getSupervisedFusionFeature();
         	immutableFeatures.add(ImmutableList.copyOf(_sfFeatures));
         }
+        
+        DatasetLoader dl = new DatasetLoader();
         
         List<List<SupervisedFusionFeature>> cartesianProduct = Lists.cartesianProduct(immutableFeatures);
         ArrayList<SupervisedFusionFeature> _features = new ArrayList<>();
@@ -74,21 +85,22 @@ public class GenericSupervisedFuser {
 			}
         	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
         	
-        	frc.setFitness(fp.run(frc, false));
+        	frc.setFitness(fp.run(frc, false, dl));
         	frcs.add(frc);
 		}
         
         Collections.sort(frcs);
         
         System.out.println("------------------------------------------------");
-        System.out.println("Best result with accuracy="+frcs.get(0).getFitness()+" found for the following setup:");
-        for (FusionRunConfiguration fusionRunConfiguration : frcs) {
-			System.out.println(fusionRunConfiguration.toString());
+        System.out.println("No. of tests: " + frcs.size());
+        System.out.println("Best result with accuracy="+frcs.get(frcs.size()-1).getFitness()+" found for the following setup:");
+        for (SupervisedFusionFeature supervisedFusionFeature : frcs.get(frcs.size()-1).getSupervisedFusionFeature() ) {
+			System.out.println(supervisedFusionFeature.toString());
 		}
-    	FusionRunConfiguration frc = new FusionRunConfiguration(frcs.get(0).getSupervisedFusionFeature());
+    	FusionRunConfiguration frc = new FusionRunConfiguration(frcs.get(frcs.size()-1).getSupervisedFusionFeature());
         
         System.out.println("Running the best setup again and saving results");
-    	fp.run(frc, true);
+    	fp.run(frc, true, dl);
     	System.out.println("FINISHED.");
         
         
