@@ -50,12 +50,14 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 		restaurant.appendChild(postaladdress);
 		
 		Element reviews = doc.createElement("reviews");
-		reviews.appendChild(this.createTextElement("count", record.getReviews().getCount(), doc));
-		reviews.appendChild(this.createTextElement("bodies", record.getReviews().getBodies(), doc));
-		reviews.appendChild(this.createTextElement("average_rating", record.getReviews().getAverageRating(), doc));
+		if (record.getReviews() != null) {
+			reviews.appendChild(this.createTextElement("count", record.getReviews().getCount(), doc));
+			reviews.appendChild(this.createTextElement("bodies", record.getReviews().getBodies(), doc));
+			reviews.appendChild(this.createTextElement("average_rating", record.getReviews().getAverageRating(), doc));
+		}
 		restaurant.appendChild(reviews);
 		
-		Element openinghours = doc.createElement("openinghours");
+		/*Element openinghours = doc.createElement("openinghours");
 		if (record.getOpeninghours() != null) {
 			for (Day day : record.getOpeninghours().getDays()) {
 				openinghours.appendChild(this.createTextElement("day", day.getName(), doc));
@@ -65,7 +67,7 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 				openinghours.appendChild(hours);
 			}
 		}
-		restaurant.appendChild(openinghours);
+		restaurant.appendChild(openinghours);*/
 		
 		Element pricerange = doc.createElement("pricerange");
 		pricerange.appendChild(this.createTextElement("lowerBound", record.getPriceRange().getLowerBound(), doc));
