@@ -322,13 +322,14 @@ public class ComparatorUtils {
     public static String unifyPostalCode(String s){
         if (s!=null){
             s = cleanLower(s);
+            String[] parts = s.split(" ");
+            if (parts.length > 1) {
+                String unifiedPostalCode = "";
+                for (String part : parts) {
+                    unifiedPostalCode += part + " ";
+                }
+                return unifiedPostalCode;
 
-            String[] aS = s.split(" ");
-            if (aS.length > 1) {
-                String restaurantName = cleanLower(aS[0]);
-                String cityName = cleanLower(aS[1]);
-                restaurantName = restaurantName.replace(cityName, "");
-                return restaurantName;
             }
             return s;
 

@@ -31,8 +31,8 @@ public class RestaurantBlockingKeyByCityNameFirstFiveGenerator extends
         if (name != null) {
             tokens = name.split(" ");
 
-            for (int i = 0; i <= 4 && i < tokens.length; i++) {
-                blockingKeyValue += tokens[i].substring(0, Math.min(4, tokens[i].length())).toUpperCase();
+            for (int i = 0; i <= 9 && i < tokens.length; i++) {
+                blockingKeyValue += tokens[i].substring(0, Math.min(9, tokens[i].length())).toUpperCase();
             }
             resultCollector.next(new Pair<>(blockingKeyValue, record));
 

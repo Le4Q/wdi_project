@@ -1,8 +1,11 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCategoryGenerator;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFirstFiveGenerator;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFullGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
+
+
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.ComparatorUtils;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantCityNameComparatorLevenshtein;
@@ -48,7 +51,7 @@ public class ZomatoYelpLinearRules {
         new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
 
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameFullGenerator());
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_zomato_yelp_debugBlocking.csv", 100);
 
@@ -103,7 +106,7 @@ public class ZomatoYelpLinearRules {
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
-        return findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"zomato_yelp_correspondence_nameWeight_40_addrWeight_60_prep_cleanLower_cleanLowerstopwords_postalCode_blocker");
+        return findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"zomato_yelp_correspondence_nameWeight_40_addrWeight_60_prep_cleanLower_cleanLowerstopwords_nameFull_blocker");
 
     }
 
@@ -122,7 +125,7 @@ public class ZomatoYelpLinearRules {
 
         // write correspondences to output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/"+fileName+".csv"), correspondences);
-        new CSVRestaurantDetailFormatter().writeCSV(new File("data/output/"+fileName+"_detail.csv"), correspondences);
+        new CSVRestaurantDetailFormatter().writeCSV(new File("data/output/zomato_yelp"+fileName+"_detail.csv"), correspondences);
 
 
         // load the gold standard (test set)
