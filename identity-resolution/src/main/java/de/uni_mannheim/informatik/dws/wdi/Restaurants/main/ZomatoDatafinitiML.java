@@ -1,6 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFirstThreeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.CSVRestaurantDetailFormatter;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
@@ -80,7 +80,7 @@ public class ZomatoDatafinitiML {
         MatchingEngine<Restaurant, Attribute> engine = new MatchingEngine<>();
 
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameGenerator());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameFirstThreeGenerator());
 
         // Execute the matching
         Processable<Correspondence<Restaurant, Attribute>> correspondences = engine.runIdentityResolution(

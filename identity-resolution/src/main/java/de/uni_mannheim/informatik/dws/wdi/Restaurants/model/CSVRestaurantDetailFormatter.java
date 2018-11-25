@@ -12,11 +12,13 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 public class CSVRestaurantDetailFormatter {
 
     public <TypeA extends Restaurant, TypeB extends Matchable> String[] format(Correspondence<TypeA, TypeB> record) {
-        return new String[] { "0", record.getFirstRecord().getName(), record.getSecondRecord().getName(),
-                record.getFirstRecord().getPostalAddress().getAddress(), record.getSecondRecord().getPostalAddress().getAddress(),
-                record.getFirstRecord().getPostalAddress().getCity().getPostalCode(), record.getSecondRecord().getPostalAddress().getCity().getPostalCode(),
-                record.getFirstRecord().getIdentifier(), record.getSecondRecord().getIdentifier(),
-                Double.toString(record.getSimilarityScore()) };
+        return new String[] { "0",
+                               record.getFirstRecord().getName(), record.getSecondRecord().getName(),
+                               record.getFirstRecord().getPostalAddress().getAddress(), record.getSecondRecord().getPostalAddress().getAddress(),
+                               record.getFirstRecord().getPostalAddress().getCity().getPostalCode(), record.getSecondRecord().getPostalAddress().getCity().getPostalCode(),
+                               record.getFirstRecord().getPostalAddress().getCity().getName(), record.getSecondRecord().getPostalAddress().getCity().getName(),
+                               record.getFirstRecord().getIdentifier(), record.getSecondRecord().getIdentifier(),
+                               Double.toString(record.getSimilarityScore()) };
     }
 
     public <TypeA extends Restaurant, TypeB extends Matchable> void writeCSV(File file,
