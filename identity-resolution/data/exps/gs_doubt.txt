@@ -1,0 +1,1437 @@
+0||Martha's Kitchen||Martha's Kitchen||1155 S Higley Road||1155 S Higley Rd||85206||85206||zomato_13344||yelp_51482||0.9333333333333333||
+0||La Pizzaiolle||Pizzaiolle||600 Rue Marguerite D'Youville||600 Rue Marguerite d'Youville||H3C1W7||H3C 1W7||zomato_17383||yelp_26349||0.9076923076923077||
+0||Fatbob Pizza||Fatbob's Pizza||1739 Pearl Rd||1739 Pearl Rd||44212||44212||zomato_19958||yelp_39451||0.9428571428571428||
+0||Subway||Subway||3411 Las Vegas Blvd S||3999 Las Vegas Blvd S||89109||89119||zomato_1068||yelp_34369||0.9142857142857144||
+0||Picante Mexican Grill||Picante Mexican Grill||1500 W Morehead Street Suite A||1500 W Morehead St, Ste A||28208||28208||zomato_7996||yelp_37150||0.88||
+0||India Oven||India Oven||1315 South Gilbert Road||1315 S Gilbert Rd||85204||85204||zomato_13244||yelp_19556||0.8434782608695652||
+0||Les copains gourmands||Copains Gourmands||352 Rue Guillaume||352 Rue Guillaume||J4H2X8||J4H 1S3||zomato_17036||yelp_3130||0.9238095238095239||
+0||Familia Pizzeria||Familia Pizzeria||8090 S Durango Dr #116||8090 S Durango Dr||89113||89113||zomato_455||yelp_5953||0.8636363636363636||
+0||Vincenza's Pizza & Pasta||Vincenza's Pizza & Pasta||603 Prospect Ave||603 Prospect Ave E||44115||44115||zomato_19938||yelp_30199||0.9333333333333333||
+0||Senor Taco||Señor Taco||1929 North Power Road Ste 105||1929 N Power Rd, Ste 105||85207||85207||zomato_13289||yelp_47371||0.8151724137931035||
+0||Khun Chai Thai Restaurant||Khun Chai Thai Restaurant||3650 S Decatur Blvd #1||3650 S Decatur Blvd, Ste 1||89103||89103||zomato_336||yelp_39108||0.8846153846153846||
+0||The Valley Thai Restaurant||The Valley Thai Restaurant||1725 E Warm Springs Road||1725 E Warm Springs Rd||89119||89119||zomato_1281||yelp_21251||0.95||
+0||Nando's Mexican Cafe||Nando's Mexican Cafe||6715 East McDowell Road||6715 E McDowell Rd||85215||85215||zomato_13271||yelp_11739||0.8695652173913044||
+0||Mitillinis Pizza & Steak House||Mitillinis Pizza & Steak House||2-5720 Silver Springs Boulevard NW||5720 Silver Springs Blvd NW||T3B 4N7||T3B 4N7||zomato_9522||yelp_33777||0.8764705882352941||
+0||Sardella's Pizza & Wings||Sardella's Pizza & Wings||3143 E Greenway Road||3143 E Greenway Rd||85032||85032||zomato_3192||yelp_49804||0.9400000000000001||
+0||Restaurant Thailande||Restaurant Thailande||88 Rue Bernard Ouest||88 Rue  Bernard Ouest||H2T2J8||H2T 2J8||zomato_15357||yelp_12491||0.9714285714285714||
+0||Uncle Angelo's Pizza Joint||Uncle Angelo's Pizza Joint||1821 N Las Vegas Boulevard||1821 Las Vegas Blvd N||89030||89030||zomato_485||yelp_56568||0.8153846153846154||
+0||Chipotle Mexican Grill||Chipotle Mexican Grill||4984 S Power Rd||2849 N Power Rd||85212||85215||zomato_13349||yelp_8615||0.8400000000000001||
+0||Restaurant Ambala||Restaurant Ambala||3887 Rue St-Denis||3887 Rue Saint-Denis||H2W2M3||H2W 2M4||zomato_14292||yelp_49861||0.91||
+0||Wok Cafe||Wok Cafe||1845 Rue Ste-Catherine W||1845 Rue Sainte-Catherine O||H3H||H3H 1M2||zomato_15973||yelp_40863||0.9111111111111111||
+0||Macaroni Bar||Macaroni Bar||4448 Boulevard Saint-Laurent||4448 Boulevard Saint Laurent||H2W1Z5||H2W 1Z5||zomato_16494||yelp_25396||0.9785714285714285||
+0||Il Mulino||Il Mulino||1060 Eglinton Avenue West||1060 Eglinton Avenue W||M6C 2C5||M6C 2C5||zomato_4548||yelp_9625||0.928||
+0||Mangiafoco||Mangiafoco||105 Rue St-Paul O||105 Rue Saint-Paul O||H2Y1Z5||H2Y 1Z3||zomato_17698||yelp_14892||0.91||
+0||Ray's Pizza||Famous Ray's Pizza||350 E Bell Rd||350 E Bell Rd||85022||85022||zomato_2526||yelp_6074||0.8444444444444444||
+0||Ital Vera Pizza||Ital Vera Pizza||270 Chancellor Drive||270 Chancellor Dr",,"L4L 7M1||zomato_5408||yelp_38758||0.91||
+0||Green Chili||Green Chili||1434 - 17th Ave SW||1454 17 Ave SW||T2T0C8||T2T||zomato_8756||yelp_3179||0.8333333333333333||
+0||Zaba's Mexican Grill||Ori'Zaba's Scratch Mexican Grill||6630 N Durango Dr||6630 N Durango Dr||89149||89149||zomato_1149||yelp_46255||0.85||
+0||Les Cons Servent||Les Cons Servent||5064 Papineau||5064 Papineau Av||H2H1B3||H2H 1V8||zomato_17828||yelp_37272||0.8875||
+0||Trawler's Seafood Kitchen||Trawler's Seafood Kitchen||1515 14 St SW||1515C 14 Street SW||T3C0X9||T3C 1E1||zomato_10203||yelp_33729||0.8333333333333333||
+0||Bottega||Bottega||65 Rue St-Zotique E||65 Rue Saint-Zotique E||H2S1K7||H2S 1K7||zomato_17654||yelp_13264||0.9181818181818182||
+0||Wing Lei||Wing Lei||3131 S Las Vegas Blvd||3131 Las Vegas Blvd S||89109||89109||zomato_17||yelp_12849||0.8857142857142857||
+0||Red Lobster||Red Lobster||368 Queen Street East||368 Queen Street E.||L6V 1C3||L6V 1C3||zomato_3769||yelp_46215||0.9142857142857144||
+0||Caribbean Curry House||Caribbean Curry House||6892 Ave Victoria||6892 Avenue Victoria||H3W1B8||H3W 1B8||zomato_15117||yelp_54694||0.91||
+0||Van Son Vietnamese Cuisine||Van Son Vietnamese Cuisine||308 16 Ave NW||308 16 Avenue NW||T1X 0R9||T2M 0H6||zomato_8873||yelp_42025||0.8875||
+0||Golden Crisp Fish and Chips||Golden Crisp Fish & Chips||1354 Weston Road||1354 Weston Road",,"M6M 4R8||zomato_4832||yelp_8548||0.9555555555555555||
+0||Carlos & Pepe's||Carlos & Pepes||1420 Rue Peel||1420 Rue Peel||H3A1T5||H3A 1S8||zomato_15098||yelp_1021||0.9733333333333334||
+0||Rosati's Pizza||Rosati's Pizza||1035 North Ellsworth Rd #104||1035 N Ellsworth Rd",,"85207||zomato_13941||yelp_46630||0.8071428571428572||
+0||Milano's Pizza||Milano's Pizza||3886 Bloor Street West||3886 Bloor St W||M9B1L3||M9B 1L3||zomato_5326||yelp_12043||0.8090909090909091||
+0||Golden Fish and Chips||Golden Fish & Chips||32 Main Street South||32 Main Street S||L7J 1X4||L7G 3G4||zomato_4846||yelp_35434||0.822857142857143||
+0||Yogis Teriyaki Grill||Yogi's Teriyaki and Grill||1130 W Grove Ave||1130 W Grove Ave||85210||85210||zomato_13386||yelp_47587||0.92||
+0||Subway||Subway||1106 N Gilbert Rd||2487 S Gilbert Rd||85203||85296||zomato_14103||yelp_8170||0.8235294117647058||
+0||Pizza Hut||Pizza Hut||4525 Kent Road||4525 Kent Rd||44224||44224||zomato_20774||yelp_10161||0.9142857142857144||
+0||Africana BBQ Curries Drinks||Africana Bbq Curries Drinks||3927 Edmonton Trail NE||3927 Edmonton Trail NE, Suite 7||T2E 6T1||T2E 6T1||zomato_8833||yelp_30035||0.8258064516129033||
+0||Subway||Subway||1221 S Gilbert Rd||2487 S Gilbert Rd||85204||85296||zomato_14135||yelp_8170||0.8588235294117647||
+0||Thai Nouilles & Sushi||Thaï Nouilles et Sushi||11612 Boul De Salaberry||11612 Boulevard de Salaberry||H9B||H9B 2R8||zomato_15383||yelp_24400||0.8383116883116883||
+0||Pho So 1||Pho So 1||1609 Centre St N||1609 Centre Street NW||T2E2S2||T2E 2S2||zomato_8871||yelp_26030||0.8571428571428571||
+0||Biff's Bistro||Biff's Bistro||4 Front Street East||4 Front Street  E||M5E 1G4||M5E 1G4||zomato_6113||yelp_26343||0.8736842105263158||
+0||Casablanca Cafe||Casablanca Cafe||1393 Danforth Avenue||1393 Danforth Ave||M4J 1N2||M4J 1M9||zomato_4292||yelp_1570||0.91||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2064 W Southern Ave||3504 W. Northern Ave||85202||85051||zomato_13311||yelp_590||0.8200000000000001||
+0||Fuchsia||Le Fuchsia||2000 Rue Sainte-Catherine Ouest||2000 Rue Sainte-Catherine O||H3H1M6||H3H 2T3||zomato_18106||yelp_4183||0.8025806451612902||
+0||Mr. Ma||Mr. Ma||1 Pl Ville-Marie||1 Place Ville-Marie||H3B||H3B 3Y1||zomato_15998||yelp_47355||0.9052631578947368||
+0||Chengdu Taste||Chengdu Taste||3950 Schiff Drive||3950 Schiff Dr",,"89103||zomato_1932||yelp_45879||0.8941176470588235||
+0||Subway||Subway||1901 W Main St||161 W Main St||85201||85201||zomato_14096||yelp_41686||0.9142857142857144||
+0||Thai Style Noodle House||Thai Style Noodle House||3516 Wynn Road||3516 Wynn Rd||89103||89103||zomato_1231||yelp_6159||0.9142857142857144||
+0||KFC||KFC||1950 W Baseline Rd||10720 E Baseline Rd||85202||85209||zomato_14144||yelp_52380||0.8736842105263158||
+0||Ristorante Pulcinella||Ristorante Pulcinella||1147 Kensington Cres NW||1147 Kensington Crescent NW||T2N1X7||T2N 1X7||zomato_9310||yelp_33420||0.9111111111111111||
+0||Lindo Michoacan||Lindo Michoacan||2655 East Desert Inn Rd||2655 E Desert Inn Rd||89121||89121||zomato_1106||yelp_17297||0.9217391304347826||
+0||KFC||KFC||10720 E Baseline Road||10720 E Baseline Rd||85209||85209||zomato_14122||yelp_52380||0.9428571428571428||
+0||Tony's Pizza||Tony's Pizza||6066 State Road||6066 State Rd||44134||44134||zomato_20702||yelp_19478||0.92||
+0||Red Lobster||Red Lobster||20 Dundas Street W||20 Dundas Street West||M5G 2C2||M5G 2C2||zomato_3738||yelp_19857||0.9142857142857144||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2064 W Southern Ave||531 E. Southern Ave||85202||85204||zomato_13311||yelp_9993||0.8105263157894738||
+0||Jack in the Box||Jack in the Box||3235 W Tropicana Ave||9360 W Tropicana Ave||89103||89147||zomato_1099||yelp_51810||0.88||
+0||KFC||KFC||2210 E Baseline Rd||10720 E Baseline Rd||85204||85209||zomato_14117||yelp_52380||0.8736842105263158||
+0||Nouilles Zen||Nouilles Zen||247 Boulevard D'Anjou||247-C Boulevard d'Anjou||J6J2R3||J6K 5B7||zomato_15408||yelp_54944||0.9478260869565218||
+0||Macaroni Bar||Macaroni Bar||4448 Boulevard Saint-Laurent||4448 Boulevard Saint Laurent||H2W1Z5||H2W 1Z5||zomato_17711||yelp_25396||0.9785714285714285||
+0||Punjab Palace||Punjab Palace||920 Rue Jean-Talon-Ouest||920 Rue Jean-Talon O||H3N||H3N 1S6||zomato_17968||yelp_24172||0.875||
+0||Pane Bianco||Pane Bianco||4404 North Central Avenue||4404 N Central Ave||85012||85012||zomato_3355||yelp_19310||0.8320000000000001||
+0||Atomic Restaurant||Atomic Restaurant||4637 Chemin Du Souvenir||4637 Boulevard du Souvenir||H7W1C5||H7W 1C5||zomato_16420||yelp_55876||0.8153846153846154||
+0||Calcutta Cricket Club||Calcutta Cricket Club||340 17 Avenue SW||340 - 17 Avenue SW||T2S 0A8||T2S 0A8||zomato_8759||yelp_15637||0.9333333333333333||
+0||Subway||Subway||3411 Las Vegas Blvd S||3770 Las Vegas Blvd S||89109||89109||zomato_1068||yelp_11850||0.9142857142857144||
+0||Rice To Go||Rice to Go||25 Thickson Road||25 Thickson Rd N",,"L1N 3R6||zomato_3998||yelp_22601||0.8875||
+0||Pizza Hut||Pizza Hut||1606 W Broadway St||808 W Broadway Rd||47670||85282||zomato_19095||yelp_28089||0.8333333333333333||
+0||Olde Yorke||The Olde Yorke||96 Laird Drive||96 Laird Drive",,"M4G 3V3||zomato_4785||yelp_19308||0.8857142857142857||
+0||Tacos 101||Tacos 101||101 Dundas Street East||101 Dundas Street  E||M5B 1E1||M5B 1E1||zomato_5470||yelp_9132||0.8909090909090909||
+0||Pari Indian Cuisine||Pari Authentic Indian Cuisine||12775 Chillicothe Road||12775 Chillicothe Rd||44026||44026||zomato_20509||yelp_53795||0.8075235109717869||
+0||Famous Gyro George||Famous Gyro George||7325 Euclid Avenue||7325 Euclid Ave||44103||44103||zomato_20451||yelp_52005||0.9||
+0||Peru Chicken||Perú Chicken||2055 E Tropicana Ave||2055 E Tropicana Ave, Ste 9||89119||89119||zomato_1771||yelp_44247||0.8111111111111111||
+0||Lattuca Barbecue||Lattuca Barbecue||15 Rue De La Commune Ouest||15 Rue de la Commune O||H2Y 2C6||H2Y 2C6||zomato_14170||yelp_37925||0.9076923076923077||
+0||Meatball Spot||Meatball Spot||3663 S Las Vegas Blvd||3663 Las Vegas Blvd S||89109||89109||zomato_2098||yelp_52865||0.8857142857142857||
+0||Macayo's Mexican Restaurants||Macayo's Mexican Table||12637 S 48th St||12637 S 48th St||85044||85044||zomato_3037||yelp_35084||0.8714285714285714||
+0||Garde Manger||Garde Manger||408 Rue St-Francois-Xavier||408 Rue Saint-François-Xavier||H2Y2T1||H2Y 2S9||zomato_14786||yelp_47242||0.9172413793103448||
+0||Shawnessy Vietnamese||Shawnessy Vietnamese Restaurant||16061 Macleod Trail SE||16061 MacLeod Trail SE||T2Y 3S5||T2Y 3S5||zomato_8886||yelp_3112||0.8580645161290322||
+0||Shiki Menya||Shiki Menya||827 1st Ave NE||827 1 Avenue NE||T2N||T2E 0C3||zomato_9182||yelp_34634||0.8||
+0||Trattoria Antica||Trattoria Antica||3909 Providence Road S Suite A||3909 Providence Rd A, Ste A||28173||28173||zomato_7446||yelp_56645||0.88||
+0||Atomic Restaurant||Atomic Restaurant||4637 Chemin Du Souvenir||4637 Boulevard du Souvenir||H7W1C5||H7W 1C5||zomato_17869||yelp_55876||0.8153846153846154||
+0||Le Plato||Le Plato||785 Danforth Avenue||785 Danforth Avenue, Unit B||M4J 1L2||M4J 1L2||zomato_4581||yelp_1510||0.8222222222222222||
+0||Subway||Subway||9757 State Route 14||9757 State Rte 14||44241||44241||zomato_20767||yelp_22103||0.9368421052631579||
+0||La Maison Du Magret||La Maison du Magret||102 Rue Saint Antoine Ouest||102 Rue Saint-Antoine O||H2Y1J6||H2Y 1J6||zomato_14752||yelp_52695||0.888888888888889||
+0||Toqué!||Toqué||900 Pl Jean-Paul-Riopelle||900 Place Jean-Paul-Riopelle||H2Y3X7||H2Z 2B2||zomato_17755||yelp_41433||0.8690476190476191||
+0||Papa John's Pizza||Papa John's Pizza||746 E Aurora Rd||746 E Aurora Rd, Ste 4||44056||44056||zomato_20780||yelp_19591||0.8090909090909091||
+0||Milagro||Milagro||783 Queen Street West||783 Queen St W",,"M6J 1G1||zomato_5424||yelp_13456||0.8||
+0||Ristorante Corneli||Ristorante Corneli||6741 Boulevard Saint-Laurent||6741 Boulevard St-Laurent||H2S3C7||H2S 3C8||zomato_17325||yelp_39851||0.9357142857142857||
+0||Bottega||Bottega||65 Rue St-Zotique E||65 Rue Saint-Zotique E||H2S1K7||H2S 1K7||zomato_17306||yelp_13264||0.9181818181818182||
+0||Himalayan Restaurant||Himalayan Restaurant||13124 Lorain Avenue||13124 Lorain Ave",,"44111||zomato_20517||yelp_53501||0.9052631578947368||
+0||Georges Brasserie||Georges Brasserie||4620 Piedmont Row Suite 110||4620 Piedmont Row Dr||28210||28210||zomato_7124||yelp_3193||0.8||
+0||Border Grill||Border Grill||3500 Las Vegas Blvd S||3950 S Las Vegas Blvd||89109||89119||zomato_1133||yelp_35609||0.8571428571428571||
+0||Satay - Thai Bistro & Bar||Satay Thai Bistro & Bar||3900 Paradise Rd Ste N||3900 Paradise Rd, Ste N||89169||89169||zomato_298||yelp_56611||0.941913043478261||
+0||Roberto's Taco Shop||Roberto's Taco Shop||10430 Bermuda Rd||10430 Bermuda Rd, Ste 1||89183||89123||zomato_1152||yelp_751||0.817391304347826||
+0||Moti Mahal||Moti Mahal||1805 14 St SW||1805 14 Street SW||T2T3T1||T2T 3T1||zomato_8829||yelp_5896||0.8588235294117647||
+0||Pasha Authentic Turkish Cuisine||Pasha Authentic Turkish Cuisine||64 Overlea Boulevard||64 Overlea Boulevard, Unit 10||M4H 1C4||M4H 1C4||zomato_5637||yelp_49714||0.8137931034482759||
+0||Carlito's Burritos||Carlito's Burritos||4300 E Sunset Road||4300 E Sunset Rd, Ste A5||89014||89014||zomato_1124||yelp_35620||0.8||
+0||Restaurant Shô-Dan||Restaurant Sho-Dan||2020 Metcalfe St||2020 Metcalfe Rue||H3A||H3A 1X8||zomato_14698||yelp_47157||0.8718954248366013||
+0||Rice Paper||Rice Paper||2241 N 7th Street||2221 N 7th St||85006||85006||zomato_2441||yelp_47829||0.8235294117647058||
+0||Zabas Mexican Grill||Zaba's Mexican Grill||2120 N Rampart Boulevard||2120 N Rampart Blvd||89128||89128||zomato_1174||yelp_731||0.855||
+0||Le Club Chasse et Pêche||Le Club Chasse et Pêche||423 Rue St-Claude||423 Rue Saint-Claude||H2Y3B6||H2Y 3B6||zomato_14796||yelp_19951||0.91||
+0||Bâtiment B||Batiment B||940 Place Iles Des Moulins||940 Place Iles des Moulins||J6W 4N7||J6W 4N7||zomato_18329||yelp_15655||0.96||
+0||Serrano's Mexican Food||Serrano's Mexican Restaurant||1964 E McKellips Rd||1964 E McKellips Rd||85203||85203||zomato_13296||yelp_23427||0.8571428571428571||
+0||Subway||Subway||1840 W Southern Ave||1840 W Southern Ave, Ste 12||85202||85202||zomato_14104||yelp_54921||0.8222222222222222||
+0||Basil n' Lime||Basil 'n Lime||3665 S Fort Apache Rd Ste 100||3665 Ft Apache Rd, Ste 100||89147||89147||zomato_1226||yelp_11949||0.8350132625994695||
+0||Subway||Subway||3550 E Southern Ave||6555 E Southern Ave||85204||85206||zomato_14130||yelp_40203||0.9368421052631579||
+0||Subway||Subway||1840 W Southern Ave||6555 E Southern Ave||85202||85206||zomato_14104||yelp_40203||0.8421052631578948||
+0||T&T Tacos Et Tortas||T&T Tacos Et Tortas||51 Rachel St W||51 Rachel Street W||H2W1G2||H2W 1G2||zomato_15102||yelp_26697||0.8666666666666667||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||1755 W Main St||1755 W. Main St||85201||85201||zomato_13292||yelp_40739||0.96||
+0||Pedrito's Taqueria #2||Pedrito's Taqueria 2||311 W Main St||311 W Main St||85201||85210||zomato_13565||yelp_46388||0.9809523809523809||
+0||Pizzeria Bianco||Pizzeria Bianco||623 East Adams Street||623 E Adams St||85004||85004||zomato_2456||yelp_29090||0.8||
+0||Tortas El Tri||Tortas El Tri||2837 N 75th Ave||2837 N 75th Ave, Ste 6||85035||85035||zomato_3081||yelp_48000||0.8090909090909091||
+0||The Friendly Thai||The Friendly Thai||3032 Dundas Street West||3032 Dundas Street W",,"M6P 1Z3||zomato_5595||yelp_38623||0.9217391304347826||
+0||Roberto's Taco Shop||Roberto's Taco Shop||10612 S Eastern Ave||1414 N Eastern Ave||89052||89101||zomato_1162||yelp_47480||0.8736842105263158||
+0||Pizzeria Bianco||Pizzeria Bianco||623 East Adams Street||623 E Adams St||85004||85004||zomato_2276||yelp_29090||0.8||
+0||Marisco's Chihuahua||Mariscos Chihuahua||1834 W Indian School Rd||1834 W Indian School Rd||85015||85015||zomato_2225||yelp_46393||0.9789473684210527||
+0||El Meson||El Meson||1678 Boulevard Saint Joseph||1678 Boulevard Saint-Joseph||H8S2N2||H8S 2N1||zomato_14526||yelp_48784||0.9777777777777779||
+0||Joël Robuchon||Joël  Robuchon||3799 Las Vegas Boulevard S||3799 Las Vegas Blvd S||89109||89109||zomato_1636||yelp_22791||0.8560439560439561||
+0||Freshly Thai||Freshly Thai||48 Queen Street West||48 Queen Street W||L6X 1A1||L6X 1A1||zomato_5562||yelp_3855||0.91||
+0||Kam Han Szechuan House||Kam Han Szechuan House North||2318 Spiller Rd SE||2318 Spiller Road SE||T2G 4G9||T2G 4H2||zomato_10307||yelp_56124||0.8542857142857143||
+0||Little Caesars Pizza||Little Caesars Pizza||2007 Washington Ave.||1160 Washington Ave||47714||15106||zomato_18837||yelp_30371||0.85||
+0||Restaurant Le P'Tit Plateau||Le P'tit Plateau||330 Rue Marie-Anne E||330 Rue Marie-Anne E||H2W1B2||H2W 1B1||zomato_14822||yelp_17218||0.837037037037037||
+0||Taco Time||Taco Time||4039 Macleod Trail SW||4007 MacLeod Trl SW||T2S2P4||T2G 2R6||zomato_9135||yelp_34857||0.8857142857142857||
+0||Long Wongs||Long Wong's||2812 E Thomas Rd||2812 E Thomas Rd||85016||85016||zomato_3574||yelp_48415||0.9636363636363636||
+0||Famous Gyro George||Famous Gyro George||1050 Pearl Road||1050 Pearl Rd||44212||44211||zomato_20429||yelp_9532||0.92||
+0||Salmigondis||Salmigondis||6896 Rue Saint Dominique||6896 Saint Dominique||H2S3B2||H2S 3B2||zomato_17674||yelp_53344||0.9||
+0||Red Shrimp||Red Shrimp Company||4060 S Jones Blvd||4060 S Jones Blvd||89103||89103||zomato_58||yelp_48891||0.8222222222222222||
+0||Amado's Mexican Food||Amados Mexican Food||2729 S Alma School Rd||2729 S Alma School Rd||85210||85210||zomato_13301||yelp_53956||0.98||
+0||Anatolia Turkish Cuisine||Anatolia Turkish Food||237 8th Avenue SE||237 8th Avenue SE||T2G 5C3||T2G 5C3||zomato_10619||yelp_32883||0.8833333333333333||
+0||Sukho Thai||Sukho Thai||1442 Dundas Street West||1442 Dundas Street W||M5E 1C7||M6J 1Y6||zomato_5529||yelp_25221||0.9217391304347826||
+0||La Tortilleria||La Tortilleria||198 Augusta Avenue||198 Augusta Ave||M5T2L6||M5T 1L8||zomato_5455||yelp_1075||0.9||
+0||Mucho Burrito||Mucho Burrito||306 Aspen Glen Landing SW||132, 306 Aspen Glen Landing SW||T3H4A3||T3H 0N5||zomato_9626||yelp_28401||0.9||
+0||India Palace Restaurant & Sweets||India Palace Restaurant & Sweets||10-5700 Falsbridge Dr NE||5700 Falsbridge Drive NE||T3J1A2||T3J 4X5||zomato_8797||yelp_3038||0.85||
+0||Archi's Thai Café||Archi's Thai Cafe||9350 West Sahara Avenue||9350 W Sahara Ave||89117||89117||zomato_1204||yelp_34192||0.8199488491048592||
+0||Subway||Subway||180 S Stephanie St||689 N Stephanie St||89012||89014||zomato_1075||yelp_17029||0.9||
+0||Little Caesars Pizza||Little Caesar's Pizza||2754 East McKellips Rd||2754 E McKellips Rd||85213||85213||zomato_14126||yelp_25803||0.8991341991341991||
+0||Papa John's Pizza||Papa John's Pizza||63 N Greenfield Rd||63 N Greenfield Rd, Ste 101||85205||85213||zomato_14089||yelp_8057||0.8||
+0||Chipotle Mexican Grill||Chipotle Mexican Grill||6602 E Superstition Springs Blvd||6602 E Superstition Springs Blvd, Pad C||85206||85206||zomato_13345||yelp_48475||0.8923076923076922||
+0||Fang Chi||Fang Chi||3967 Rue St-Antoine W||3967 Rue Saint-Antoine Ouest||H4C||H4C 1B7||zomato_16006||yelp_31836||0.8285714285714285||
+0||Hoai Huong||Hoai Huong||5485 Ave Victoria||5485 Avenue Victoria||H3W 2P9||H3W 2P9||zomato_14318||yelp_35565||0.91||
+0||Satay On The Road||Satay On the Road||1570 Bayview Avenue||1572 Bayview Ave",,"M4G 3B7||zomato_5604||yelp_41918||0.8736842105263158||
+0||Tiffin Curry & Roti House||Tiffin Curry & Roti House||188 28 St SE||188 28 Street  SE||T2A5R2||T2A 6J9||zomato_8758||yelp_31343||0.8235294117647058||
+0||Malhi Sweets Indian Cuisine||Malhi Sweets Indian Cuisine||880 Rue Jarry Ouest||880 Rue Jarry O||H3N1G9||H3N 1G9||zomato_17962||yelp_53104||0.8736842105263158||
+0||Asada Mexican Grill||Asada Mexican Grill||809 Street Clair Avenue West||806 Saint Clair Avenue W||M6C 1B9||M6G 3P7||zomato_5461||yelp_43846||0.8285714285714285||
+0||Intermezzo Pizzeria and Cafe||Intermezzo Pizzeria and Cafe||1427 E 10th Street||1427 E 10th St||28204||28204||zomato_8374||yelp_44836||0.8666666666666667||
+0||Taco Tijuana||Taco Tijuana||5889 Rue Sherbrooke Ouest||5893 Rue Sherbrooke O||H4A1X6||H4A 1X6||zomato_15061||yelp_31893||0.856||
+0||Pizza Planete||Pizza Planete||1181 Décarie Street||1181 Decarie Street||H4L 3M9||H4L 3M8||zomato_18418||yelp_45771||0.968421052631579||
+0||Pizza Hut||Pizza Hut||1215 E McKellips Rd||6017 East McKellips Rd||85203||85215||zomato_14092||yelp_24849||0.8363636363636364||
+0||Liverpool House||Liverpool House||2501 Rue Notre-Dame W||2501 Rue Notre-Dame O||H3J1N6||H3J 1N6||zomato_15910||yelp_25874||0.9714285714285714||
+0||Mr. Chicken||Mr Chicken||11680 Snow Road||11680 Snow Rd||44130||44130||zomato_20737||yelp_11017||0.8836363636363637||
+0||Brussels Bistro||Brussels Bistro||1975A Queen Street East||1975A Queen Street E",,"M4L 1J1||zomato_6145||yelp_55871||0.9217391304347826||
+0||Prommares Thai Food||Prommares Thai Food||6362 W Sahara Avenue||6362 W Sahara Ave||89146||89146||zomato_1242||yelp_29561||0.91||
+0||Hardee's||Hardee's||4249 Highway 41 N||4280 Highway 49 S||47711||28075||zomato_19205||yelp_56428||0.8588235294117647||
+0||Sabor Brasil||Sabor Brasil||1702 St. Clair Avenue West||1702 St Clair Avenue W||M6N 1J1||M6N||zomato_4418||yelp_51279||0.9076923076923077||
+0||Chez Ennio||Chez Ennio||1978 Boulevard De Maisonneuve W||1978 Boulevard de Maisonneuve Ouest||H3H||H3H 1K5||zomato_17726||yelp_38177||0.9142857142857144||
+0||Georges Brasserie||Georges Brasserie||4620 Piedmont Row Suite 110||4620 Piedmont Row Dr||28210||28210||zomato_8339||yelp_3193||0.8||
+0||Chipotle Mexican Grill||Baja Fresh Mexican Grill||3440 E Baseline Rd||3420 E Baseline Rd||85204||85204||zomato_13579||yelp_6464||0.8166666666666667||
+0||Thai Nongkhai||Thai Nong Khai||7400 Macleod Trail SE||7400 MacLeod Trail SE||T2H0L9||T2H 0L9||zomato_9794||yelp_55306||0.9714285714285714||
+0||The Captain’s Boil||The Captain's Boil||324 D Centre Street NE||1324 D Centre Street NE",,"T2E 2R7||zomato_10214||yelp_39237||0.9516908212560387||
+0||Basil Thai Kitchen||Basil Thai Kitchen||2326 Danforth Avenue||2326 Danforth Ave||M4C 1K7||M4C 1K7||zomato_5572||yelp_38470||0.91||
+0||KFC||KFC||1950 W Baseline Rd||2210 E Baseline Rd||85202||85204||zomato_14144||yelp_8579||0.8666666666666667||
+0||Little Caesars Pizza||Little Caesars Pizza||347 E Southern Ave #109||1810 W. Southern Ave #106||85210||85041||zomato_14076||yelp_35293||0.8320000000000001||
+0||Nana||Nana||785 Queen Street West||785 Queen Street W||M6J 1G1||M6J 1G1||zomato_5526||yelp_13219||0.9142857142857144||
+0||Fresh Millions Restaurant||Fresh Millions Restaurant||1130 W Grove Avenue||1130 W Grove Ave, Ste 111||85210||85210||zomato_13950||yelp_6005||0.808||
+0||KFC||KFC||10720 E Baseline Road||2210 E Baseline Rd||85209||85204||zomato_14122||yelp_8579||0.8285714285714285||
+0||Joe's New York Pizza||Joe's New York Pizza||4480 Paradise Road||4480 Paradise Rd||89169||89169||zomato_445||yelp_28302||0.9333333333333333||
+0||KFC||KFC||10720 E Baseline Road||1950 W Baseline Rd||85209||85202||zomato_14122||yelp_23542||0.8285714285714285||
+0||Los Picos Parrilla||Los Picos Parrilla Restaurant||1542 W University Dr||1542 W University Dr||85201||85201||zomato_13307||yelp_49759||0.8482758620689655||
+0||Thai Elephant||Thai Elephant||813 Queen Street West||813 Queen Street W||M6J 1G1||M6J||zomato_5534||yelp_39827||0.9142857142857144||
+0||Mucho Burrito||Mucho Burrito||306 Aspen Glen Landing SW||132, 306 Aspen Glen Landing SW||T3H4A3||T3H 0N5||zomato_8714||yelp_28401||0.9||
+0||KFC||KFC||2210 E Baseline Rd||1950 W Baseline Rd||85204||85202||zomato_14117||yelp_23542||0.8666666666666667||
+0||Moti Mahal||Moti Mahal||1805 14 St SW||1805 14 Street SW||T2T3T1||T2T 3T1||zomato_10217||yelp_5896||0.8588235294117647||
+0||Bonito Michoacan||Bonito Michoacan||3715 S Decatur Boulevard||3715 S Decatur Blvd||89103||89103||zomato_1114||yelp_18911||0.875||
+0||Pon Ocha Soup||Pon Ocha Soup||1000 N Nellis Blvd||1000 N Nellis Blvd, Ste I||89110||89110||zomato_1228||yelp_50853||0.8320000000000001||
+0||Amalfi's Pasta 'n' Pizza||Amalfi's Pasta 'n' Pizza||8542 University City Boulevard||8542 University City Blvd||28213||28213||zomato_7421||yelp_31186||0.9||
+0||Rotisserie Italienne||Rotisserie Italienne||1933 Rue Sainte-Catherine Ouest||1933 Rue Sainte-Catherine O||H3H1M4||H3H 1M3||zomato_17706||yelp_39541||0.9225806451612903||
+0||Carisma||Carisma||73 King Street East||73 King Street E||M5C 1G3||M5C 3J6||zomato_4518||yelp_24933||0.9052631578947368||
+0||Nouveau Maison Kam||Nouveau Maison Kam||11779 Boul Pierrefonds||11779 Boulevard de Pierrefonds||H8Z3K8||H8Z 3K8||zomato_16049||yelp_24175||0.8400000000000001||
+0||Atomic Restaurant||Atomic Restaurant||4637 Chemin Du Souvenir||4637 Boulevard du Souvenir||H7W1C5||H7W 1C5||zomato_17353||yelp_55876||0.8153846153846154||
+0||Pho Ha||Pho Ha||3545 32 Ave NE #205||3545 32 Avenue NE, Unit 205||T1Y6M6||T1Y 6M6||zomato_8921||yelp_53105||0.8||
+0||Marathon Ethiopian||Marathon Ethiopian Restaurant||130 10 St NW||130 10 St NW||T2N1V5||T2N 1V3||zomato_9477||yelp_4491||0.8482758620689655||
+0||El Amigo||El Amigo||51 Rue St-Zotique E||51 Rue Saint-Zotique Est||H2S1K7||H2S 1K7||zomato_14933||yelp_17326||0.875||
+0||Federico's Mexican Food||Federicos Mexican Food||20350 N. Cave Creek Rd. Suite #140||20350 N Cave Creek Rd, Ste 140||85024||85024||zomato_3066||yelp_10376||0.8943734015345268||
+0||Agave||Agave||1602 Ave Laurier Est||1602 Avenue Laurier Est||H2J1H9||H2J 1H9||zomato_14563||yelp_52373||0.9217391304347826||
+0||India Beau Village||India Beau Village||752 Rue Jarry W||640 Rue Jarry O||H3N1G6||H3N 1G6||zomato_17984||yelp_55808||0.8400000000000001||
+0||Phở 26||Pho 26||4019 17 Ave SE||4019A 17th Ave SE||T2A||T2A 0S8||zomato_8928||yelp_53127||0.8274509803921568||
+0||Greek Village Grille||Greek Village Grille||14019 Madison Ave.||14019 Madison Ave||44107||44107||zomato_20410||yelp_335||0.9666666666666667||
+0||La Salle À Manger||La Salle à Manger||1302 Ave Du Mont-Royal Est||1302 Avenue du Mont-Royal E",,"H2J 1Y5||zomato_14816||yelp_46614||0.888888888888889||
+0||Los Compadres Mexican Food||Los Compadres||2350 W Northern Ave||2350 W Northern Ave||85021||85021||zomato_3070||yelp_47437||0.8||
+0||Peru Chicken||Perú Chicken||2055 E Tropicana Ave||2055 E Tropicana Ave, Ste 9||89119||89119||zomato_397||yelp_44247||0.8111111111111111||
+0||Los Compadres Mexican Food||Los Compadres Mexican Food||4414 North 7th Avenue||4414 N 7th Ave||85013||85013||zomato_3050||yelp_35553||0.8||
+0||Rosati's Pizza||Rosati's Pizza||1035 North Ellsworth Rd #104||1035 N Ellsworth Rd",,"85207||zomato_13439||yelp_46630||0.8071428571428572||
+0||Pizza Hut||Pizza Hut||2903 Las Vegas Blvd S||3101 Las Vegas Blvd||89109||89115||zomato_1025||yelp_50523||0.8571428571428571||
+0||Radio City Pizza||Naked City Pizza||508 E Fremont St||600 E Fremont St||89101||89101||zomato_487||yelp_45528||0.8250000000000001||
+0||La Canasta Burrito Shop||La Canasta Burrito Shoppe||3202 South 40th St||3202 S 40th St||85040||85040||zomato_3072||yelp_8671||0.8346666666666667||
+0||Roberto's Taco Shop||Roberto's Taco Shop||6355 N. Commerce #103A||6355 N Commerce St, Ste 103A||89031||89031||zomato_1166||yelp_32108||0.8071428571428572||
+0||Pizzeria Bianco||Pizzeria Bianco||4743 North 20th St||4743 N 20th St||85016||85016||zomato_2473||yelp_17317||0.8666666666666667||
+0||Ali Baba's Restaurant & Bakery||Ali Baba's Restaurant & Bakery||3502 W Greenway Rd||3502 W Greenway Rd, Ste 1||85053||85053||zomato_3178||yelp_51333||0.8320000000000001||
+0||Marathon Ethiopian||Marathon Ethiopian Restaurant||130 10 St NW||130 10 St NW||T2N1V5||T2N 1V3||zomato_10012||yelp_4491||0.8482758620689655||
+0||Divinos||Divinos||3345 W Greenway Road||3345 W Greenway Rd||85053||85053||zomato_2348||yelp_50663||0.9400000000000001||
+0||Fish & Chicken Corner||Fish & Chicken Corner||3500 N Tryon Street||3500 N Tryon St||28206||28206||zomato_7105||yelp_33701||0.8736842105263158||
+0||KoMex Fusion||KoMex Fusion||4155 South Buffalo Drive||4155 S Buffalo Dr||89147||89147||zomato_791||yelp_54530||0.825||
+0||Mucho Burrito||Mucho Burrito||2312-4th St SW||2312 4th Street SW||T2S1W9||T2S 1W9||zomato_9089||yelp_11925||0.8333333333333333||
+0||Au Pied de Cochon||Au Pied de Cochon||536 Avenue Duluth Est||536 Avenue Duluth E||H2L1A9||H2L 1A9||zomato_17750||yelp_42231||0.9428571428571428||
+0||Taste of Instanbul||Taste of Istanbul Grill||2100 Steeles Avenue West||2100 Steeles Avenue W||L4K 3E5||L4K 3E5||zomato_5644||yelp_52585||0.8032608695652175||
+0||Little Caesars Pizza||Little Caesars Pizza||347 E Southern Ave #109||347 E Southern Ave, Ste 106||85210||85210||zomato_14076||yelp_12837||0.8666666666666667||
+0||Gorditis El Tio||Gorditas El Tio||3202 E Greenway Rd||3202 E Greenway Rd||85032||85032||zomato_3099||yelp_11779||0.9733333333333334||
+0||L'armorique||L'Armorique||231 Principale||231 Rue Principale||J0R1R0||J0R 1R6||zomato_15753||yelp_24426||0.8666666666666667||
+0||Le Petit Coin Du Mexique||Le Petit Coin du Mexique||2474 Rue Jean-Talon E||2474 rue Jean-Talon Est||H2E||H2E 1W3||zomato_15115||yelp_55770||0.9478260869565218||
+0||Julio's Too||Julio G's Tatum||12631 N Tatum Blvd||12631 N Tatum Blvd||85032||85032||zomato_3059||yelp_10325||0.84||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2064 W Southern Ave||2064 W. Southern Ave||85202||85202||zomato_13311||yelp_8009||0.97||
+0||Little Caesars Pizza||Little Caesars Pizza||3730 W Happy Valley Rd||3730 W Happy Valley Rd, Ste 105||85310||85310||zomato_2935||yelp_7644||0.8258064516129033||
+0||Fassil Ethiopean||Fassil Ethiopian Restaurant||3608 17 Ave SE||3608 17 Ave SE||T2A 0R7||T2A 0R9||zomato_9161||yelp_23763||0.837037037037037||
+0||Mangiafoco||Mangiafoco||105 Rue St-Paul O||105 Rue Saint-Paul O||H2Y1Z5||H2Y 1Z3||zomato_17338||yelp_14892||0.91||
+0||Subway||Subway||1901 W Main St||1429 W Main St||85201||53590||zomato_14096||yelp_19651||0.8714285714285714||
+0||Taqueria El Fundador||Taqueria El Fundador||3245 West Van Buren St||3245 W Van Buren St||85009||85009||zomato_3035||yelp_24722||0.9181818181818182||
+0||Caribbean Curry House||Caribbean Curry House||6892 Ave Victoria||6892 Avenue Victoria||H3W1B8||H3W 1B8||zomato_17245||yelp_54694||0.91||
+0||Macayo's Mexican Restaurants||Macayo's Mexican Table||1920 S Dobson Rd||1920 S Dobson Rd||85202||85202||zomato_13276||yelp_9317||0.8714285714285714||
+0||Africana BBQ Curries Drinks||Africana Bbq Curries Drinks||3927 Edmonton Trail NE||3927 Edmonton Trail NE, Suite 7||T2E 6T1||T2E 6T1||zomato_9479||yelp_30035||0.8258064516129033||
+0||Lasalle Drive-In||Lasalle Drive-In Restaurant||8760 Boul. Lasalle||8760 Boul Lasalle",,"H8P 1Y9||zomato_18385||yelp_44461||0.8037037037037037||
+0||Amazing Thai Restaurant||Amazing Thai Restaurant||3000 W Ann Road Suite 109||3000 W Ann Rd, Ste 109||89031||89031||zomato_1283||yelp_45291||0.88||
+0||Mommy's Fish & Chips||Mommy Fish & Chips||3135 Notre Dame||3135 Rue Notre-Dame||H8S||H8S 2H4||zomato_17120||yelp_28305||0.8021052631578949||
+0||Taqueria Mexico||Taqueria Mexico||7001 South Boulevard||7001 South Blvd||28217||28217||zomato_7976||yelp_30443||0.85||
+0||Restaurant Bambou Bleu||Restaurant Bambou Bleu||3985 Rue St-Denis||3985, Rue Saint-Denis||H2W2M3||H2W 2M4||zomato_14347||yelp_11199||0.8857142857142857||
+0||Rotisserie Panama Laval||Rôtisserie Panama||1150 Boulevard Curé-Labelle||1150 Boulevard Curé-Labelle",,"H7V 2V5||zomato_17906||yelp_15836||0.8782608695652174||
+0||El Fogon||El Fogón||543 St. Clair Avenue West||543 St Clair Avenue W",,"M6C 1A3||zomato_4409||yelp_35184||0.8540000000000001||
+0||Chez Frida||Chez Frida||5647 chemin de la Côte-des-Neiges||5647 Chemin de la Côte-des-Neige||H3T1Y8||H3T 1Y8||zomato_15139||yelp_27700||0.9818181818181818||
+0||Roti Hut||The Roti Hut||920 36 St NE||920 36 St NE||T2A6L8||T2A 6L8||zomato_9628||yelp_55381||0.8666666666666667||
+0||Anzio's Italian||Anzios Italian Restaurant||12418 N 28th Dr||12418 N 28th Dr||85029||85029||zomato_3399||yelp_8139||0.808||
+0||Trattoria Bianco||Pizzeria Bianco||4743 N 20th St||4743 N 20th St||85016||85016||zomato_2541||yelp_17317||0.85||
+0||Fatbob Pizza||Fatbob's Pizza||1739 Pearl Rd||1739 Pearl Rd||44212||44212||zomato_19291||yelp_39451||0.9428571428571428||
+0||Rouge||Rouge||1240 8 Ave SE||1240 8 Avenue SE||T2G0M9||T2G 0M7||zomato_9273||yelp_50053||0.8875||
+0||Vincenza's Pizza & Pasta||Vincenza's Pizza & Pasta||603 Prospect Ave||603 Prospect Ave E||44115||44115||zomato_19275||yelp_30199||0.9333333333333333||
+0||Pasta Casareccia||Pasta Casareccia||5849 Rue Sherbrooke W||5849 Rue Sherbrooke O||H1M2N2||H4A 1X4||zomato_17690||yelp_38345||0.9714285714285714||
+0||Thai Senses Restaurant||Thai Senses Restaurant||2450 Lakeshore Road West||2450 Lakeshore W",,"L6L 1H7||zomato_5585||yelp_2074||0.8||
+0||King and I||King & I||1107 E Tropicana Ave||1107 E Tropicana Ave||89119||89119||zomato_362||yelp_4106||0.8799999999999999||
+0||Maria Bonita||Maria Bonita||5269 Ave Casgrain||5269 Avenue Casgrain||H2T||H2T 1X1||zomato_15124||yelp_14344||0.91||
+0||Los Taquitos||Los Taquitos||4747 E Elliot Rd||4747 E Elliot Rd, Ste 17||85044||85044||zomato_3010||yelp_36687||0.8||
+0||Flip Toss & Thai Kitchen||Flip Toss & Thai Kitchen||141 Harbord Street||141 Harbord St",,"M5S 1H1||zomato_5578||yelp_43693||0.8666666666666667||
+0||Corso's Italian||Corso's Italian Restaurant||29691 Lorain Rd||29691 Lorain Rd||44070||44070||zomato_19451||yelp_27208||0.8307692307692307||
+0||Ray's Pizza||Ray's Pizza||3414 W Union Hills Dr||3414 W Union Hills Dr, Ste 5||85027||85027||zomato_2525||yelp_34612||0.85||
+0||Subway||Subway||1229 E Mckellips Rd # 104||5901 E McKellips Rd, Ste 108||85203||85215||zomato_14123||yelp_23395||0.8071428571428572||
+0||Las Delicias||Las Delicias||59 Dundas Street West||59 Dundas Street W||L5B||L5B 1H7||zomato_4416||yelp_49943||0.9142857142857144||
+0||Los Junior's Mexican Food||Los Juniors Mexican Food||415 E McKellips Rd||415 E Mckellips Rd||85203||85203||zomato_13333||yelp_40266||0.984||
+0||Roma Cafe Ristorante||Roma Cafe Ristorante||7210 E. Main Street||7210 E Main St||85207||85207||zomato_13422||yelp_46714||0.8421052631578948||
+0||Luciano's Ristorante Italiano||Luciano's Ristorante Italiano||1910 South Boulevard||1910 South Blvd||28203||28203||zomato_7471||yelp_20446||0.85||
+0||Atomic Restaurant||Atomic Restaurant||4637 Chemin Du Souvenir||4637 Boulevard du Souvenir||H7W1C5||H7W 1C5||zomato_16111||yelp_55876||0.8153846153846154||
+0||Beijing Noodle House||Beijing Noodle House||1440 S Country Club Drive||1440 S Country Club Dr||85210||85210||zomato_13846||yelp_34432||0.928||
+0||Grimaldi's Pizzeria||Grimaldi's Pizzeria||750 S Rampart Blvd Ste 7||750 S Rampart Blvd, Ste 7||89145||89145||zomato_427||yelp_15230||0.976||
+0||Pho Mont-Royal||Pho Mont-Royal||1235 Avenue du Mont-Royal Est||1235 Avenue du Mont-Royal E||H2J1Y2||H2J 1Y2||zomato_14406||yelp_35100||0.9586206896551724||
+0||Pad Thai||Pad Thai||5657 Darrow Road||5657 Darrow Rd||44236||44236||zomato_20221||yelp_22185||0.925||
+0||Le Local||Le Local||700 Rue William||740 Rue William||H3C4C9||H3C 1P1||zomato_14811||yelp_18960||0.96||
+0||Phat Phrank's||Phat Phrank's||4850 W Sunset Rd.||4850 W Sunset Rd||89118||89118||zomato_1158||yelp_5086||0.9647058823529412||
+0||Pizza Capital||Pizza Capital||15745 boul Pierrefonds||15746 Boul De Pierrefonds||H9H||H9H 3P6||zomato_18400||yelp_16449||0.904||
+0||Miu's Bistro||Mius Bistro||2711 S Alma School Road||2711 South Alma School Rd||85210||85210||zomato_13847||yelp_34505||0.8226666666666667||
+0||Tacos Victor||Tacos Victor||4376 Rue Notre-Dame Ouest||4374 Rue Notre Dame Ouest||H4C 1R8||H4C 1R8||zomato_14553||yelp_49526||0.9520000000000001||
+0||Moghel Tandoori||Moghel Tandoori||538 Ave Victoria||538 avenue Victoria",,"J4P||zomato_14313||yelp_19189||0.9052631578947368||
+0||Ristorante Corneli||Ristorante Corneli||6741 Boulevard Saint-Laurent||6741 Boulevard St-Laurent||H2S3C7||H2S 3C8||zomato_17679||yelp_39851||0.9357142857142857||
+0||Las Cazuelas||Las Cazuelas||9711 S Eastern Ave||9711 S Eastern Ave, Ste H-8||89183||89183||zomato_1164||yelp_5096||0.8||
+0||Krachai Thai Kitchen||Krachai Thai Kitchen||3361 West Greenway Road||3361 W Greenway Rd||85053||85053||zomato_3124||yelp_51061||0.8695652173913044||
+0||El Metate Mexican Food||Loretos Mexican Food||6140 E Main St||6144 E Main St||85205||85205||zomato_13305||yelp_24332||0.8480519480519482||
+0||Jack in The Box||Jack In the Box||1945 W Main St||1591 S Main St||85201||89104||zomato_14128||yelp_1981||0.8285714285714285||
+0||Pamplemousse Le Restaurant||Pamplemousse Le Restaurant||400 East Sahara Avenue||400 E Sahara Ave||89104||89104||zomato_1646||yelp_46099||0.8363636363636364||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||1402 E Chandler Blvd||6185 W. Chandler Blvd||85048||85226||zomato_3060||yelp_40736||0.8285714285714285||
+0||Villa Firenze||Villa Firenze||610 1 Ave NE||610 1 Avenue  NE||T2E0B6||T2E 0B6||zomato_9355||yelp_23752||0.85||
+0||Thai Street Cafe||Thai St Cafe||3137 S Industrial Rd||3137 S Industrial Rd||89109||89109||zomato_1275||yelp_10924||0.9||
+0||Viva Mexico||Viva Mexico||7450 Rue St-Hubert||7450 Rue Saint-Hubert||H2R2N3||H2R 2N3||zomato_14568||yelp_48136||0.9142857142857144||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2853 S Sossaman Rd||2853 S. Sossaman Ave||85212||85212||zomato_13308||yelp_13869||0.88||
+0||Taj Mahal L'inde||Taj Mahal Inde||4616 Rue Wellington||4616 Rue Wellington",,"H4G 1W8||zomato_18019||yelp_32813||0.95||
+0||Subway||Subway||3411 Las Vegas Blvd S||3200 Las Vegas Blvd S||89109||89109||zomato_1068||yelp_20186||0.9142857142857144||
+0||Caverne Grecque||La Caverne Grecque||105 Rue Prince-Arthur E||105 Rue Prince-Arthur E||H2X||H2X 1B6||zomato_17897||yelp_25098||0.9333333333333333||
+0||Leméac||Leméac||1045 Ave Laurier W||1045 Avenue Laurier Ouest||H2V2L1||H2V 2L1||zomato_17752||yelp_37063||0.808||
+0||Taquitos Jalisco||Taquitos Jalisco||437 S Gilbert Rd||437 S Gilbert Rd, Ste 2||85204||85204||zomato_13295||yelp_9290||0.817391304347826||
+0||Tom Yum Thai Restaurant||Chandhra Thai Restaurant||3510 E Bell Rd||3510 E Bell Rd||85032||85032||zomato_3128||yelp_35235||0.8666666666666667||
+0||Guido's Pizza Haven||Guido's Pizza Haven & Restaurant||12809 Chillicothe Rd||12809 Chillicothe Rd||44026||44026||zomato_20293||yelp_10388||0.8375||
+0||Golden Greek||The Golden Greek||7126 N 35th Ave||7126 N 35th Ave||85051||85051||zomato_2543||yelp_22885||0.9||
+0||Teriyaki Time||Teriyaki Time||4550 s. maryland pkwy||4550 S Maryland Pkwy, Ste 9||89119||89119||zomato_766||yelp_37435||0.8222222222222222||
+0||Squaw Peak Cafe||Squaw Peak Cafe||2333 E Thomas Rd.||2333 E Thomas Rd||85016||85016||zomato_2555||yelp_34777||0.9647058823529412||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2737 N Power Rd||2737 N. Power Rd||85215||85215||zomato_13595||yelp_20131||0.9625||
+0||China Gourmet||China Gourmet||3460 East Southern Avenue Suite 109||3460 E Southern Ave, Ste 109||85204||85204||zomato_13819||yelp_6267||0.8628571428571429||
+0||El Vallarta||El Vallarta||1445 Concord Parkway N||1480 Concord Pkwy N||28025||28025||zomato_7983||yelp_41084||0.8636363636363636||
+0||El Charrito Mexican||El Charrito Mexican Restaurant||30560 Euclid Ave||30560 Euclid Ave||44092||44092||zomato_20481||yelp_36753||0.8533333333333333||
+0||Red Lobster||Red Lobster||790 Burnhamthorpe Road West||790 Burnhamthorpe Road W||L5C 3X3||L5C 3X3||zomato_3754||yelp_28051||0.9333333333333333||
+0||Pizza Hut||Pizza Hut||6017 E McKellips Rd||6017 East McKellips Rd||85215||85215||zomato_14143||yelp_24849||0.9181818181818182||
+0||Nouveau Mogol||Nouveau Mogol||3434 Rue St. Denis||3434 Rue St  Denis||H2L4S9||H2X 3L1||zomato_14314||yelp_49823||0.9666666666666667||
+0||Maison Luo||Maison Luo||5045 Rue Wellington||5045 Wellington||H4G||H4G||zomato_16025||yelp_25405||0.8736842105263158||
+0||Aka-Fuji||Aka Fuji||3872 Wellington St||3872 Wellington||H4G3M6||H4G 1V2||zomato_14674||yelp_53519||0.8500000000000001||
+0||Buffet Maharaja||Buffet Maharaja||1481 Boulevard Rene-Levesque Ouest||1481 Boulevard René-Lévesque O||H3G2H5||H3G 1T8||zomato_14270||yelp_51828||0.8941176470588235||
+0||Mimis Cafe||Mimi's Cafe||596 N Stephanie St||596 N Stephanie St||89014||89014||zomato_697||yelp_2727||0.9636363636363636||
+0||Johnnie's Dee's Chicago Style Pizza||Johnnie's Chicago Style Pizza||15443 N Cave Creek Rd||15443 N Cave Creek Rd||85032||85034||zomato_2521||yelp_24581||0.9314285714285714||
+0||Capri Steak & Pizza House||Capri Steak & Pizza House||1704 Edmonton Trl NE||1704 Edmonton Trail NE||T2E||T2E 3L8||zomato_9524||yelp_56954||0.9454545454545454||
+0||Jack in The Box||Jack in the Box||2846 E Main St||1945 W Main St||85213||85201||zomato_14133||yelp_18510||0.8285714285714285||
+0||Grimaldi's Pizzeria||Grimaldi's Pizzeria||7155 S Rainbow Blvd Ste 125||7155 S Rainbow Blvd, Ste 125||89118||89118||zomato_450||yelp_38702||0.9785714285714285||
+0||Manana||Mañana||3605 Rue St-Denis||3605 rue Saint-Denis||H2X3L6||H2X 3L6||zomato_14188||yelp_7563||0.8433333333333334||
+0||Federal Pizza||Federal Pizza||5210 North Central Avenue||5210 N Central Ave||85012||85012||zomato_2469||yelp_37707||0.8320000000000001||
+0||La Fonderie||La Fonderie||2133 Boul Le Carrefour||2133 Boulevard Le Carrefour||H7S2J7||H7S 1Z7||zomato_15758||yelp_45049||0.888888888888889||
+0||Zappitelli's||Zappitelli's Pizza||9570 Mentor Ave||9570 Mentor Ave||44060||44060||zomato_20328||yelp_35674||0.8666666666666667||
+0||Ray's Pizza||Famous Ray's Pizza||2501 W Happy Valley Rd||2501 W Happy Valley Rd||85085||85085||zomato_2534||yelp_41805||0.8444444444444444||
+0||Belle Thailandaise||La Belle Thailandaise||4514 Rue St-Denis||4514 Rue Saint-Denis||H2J2L3||H2J 2L3||zomato_14391||yelp_22718||0.852857142857143||
+0||Subway||Subway||1221 S Gilbert Rd||1106 N Gilbert Rd||85204||85203||zomato_14135||yelp_23923||0.8588235294117647||
+0||Ta Chido||Ta Chido||5611 Ave Du Parc||5611 Avenue du Parc||H2V4G9||H2V 4G9||zomato_15112||yelp_28864||0.9052631578947368||
+0||Joël Robuchon||Joël  Robuchon||3799 Las Vegas Boulevard S||3799 Las Vegas Blvd S||89109||89109||zomato_66||yelp_22791||0.8560439560439561||
+0||El Zaziummm||El Zaziummm||1276 Ave Laurier E||1276 Avenue Laurier E||H2J1H2||H2J 1H1||zomato_14184||yelp_17093||0.9142857142857144||
+0||Thai Plates Cuisine||Thai Plates Cuisine||319 South Power Road||319 S Power Rd||85206||85206||zomato_13677||yelp_19036||0.8200000000000001||
+0||Beaver Choice||Beaver Choice||745 West Baseline Road||745 W Baseline Rd||85210||85210||zomato_13405||yelp_41599||0.8636363636363636||
+0||The Boil Bar||The Boil Bar||110-633 Silver Star Boulevard||633 Silver Star Boulevard",,"M1V 5N1||zomato_3760||yelp_41714||0.9172413793103448||
+0||Macayo's Mexican Restaurants||Macayo's Mexican Table||1920 S Dobson Rd||1920 S Dobson Rd||85202||85202||zomato_13511||yelp_9317||0.8714285714285714||
+0||Lakeside Eatery||Lakeside Eatery||2309 Lakeshore Road West||2309 Lakeshore Road W",,"L6L 1H2||zomato_4849||yelp_16133||0.925||
+0||Porte de L'Inde||La Porte de l'Inde||5195 Boulevard St-Laurent||5195 Boulevard Saint-Laurent||H2T||H2T 1R9||zomato_14287||yelp_33147||0.8690476190476191||
+0||Noodle World Restaurant Ltd||Noodle World Restaurant||4909 17 Ave SE||4909 17 Avenue SE||T2A||T2A 0V5||zomato_8895||yelp_24101||0.8348583877995643||
+0||Ross J's Aloha Grill||Ross J's Aloha Grill||4650 E Sunset Rd||4650 E Sunset Rd, Ste A||89014||89014||zomato_1414||yelp_23474||0.817391304347826||
+0||Los Jarritos||Los Jarritos Restaurant||4630 E Van Buren St||4630 E Van Buren St||85008||85008||zomato_2729||yelp_287||0.808695652173913||
+0||Fung Shing||Fung Shing||1102 Boulevard St-Laurent||1102 Boulevard Saint-Laurent||H2Z1J6||H2Z 1J6||zomato_16002||yelp_27054||0.9357142857142857||
+0||La Capital Tacos||La Capital Tacos||1096  Boul Saint- Laurent||1096 Boulevard Saint-Laurent||H2Z 1J5||H2Z 1J5||zomato_15105||yelp_4532||0.85||
+0||Mt. Everest Restaurant||Mt Everest Restaurant||804 Eglinton Avenue E||804 Eglinton Avenue E||M4G 2L1||M4G 2L1||zomato_5615||yelp_34198||0.9818181818181818||
+0||Taco Time||Taco Time||10409 Bonaventure Dr SE||10409 Bonaventure Drive SE||T2J5R8||T2J 5R8||zomato_9141||yelp_52603||0.9307692307692308||
+0||Subway||Subway||4968 Darrow Rd||9224 Darrow Rd||44224||44087||zomato_20762||yelp_18776||0.8285714285714285||
+0||Los Junior's Mexican Food||Los Juniors Mexican Food||415 E McKellips Rd||415 E Mckellips Rd||85203||85203||zomato_13580||yelp_40266||0.984||
+0||Jac's Bistro||J.A.C's Bistro||379-B Kerr Street||379 Kerr Street",,"L6K 3B9||zomato_6170||yelp_33619||0.8722689075630252||
+0||Vietnam Palace Grill & Noodle House||Vietnam Palace Grill & Noodle House||12030 Symons Valley Rd NW||12030 Symons Valley Road NW, Sutie 18||T3P 0A3||T3A 6B8||zomato_8936||yelp_28267||0.8054054054054054||
+0||Los Cabos Cantina & Grill||Los Cabos Cantina & Grill||1009 Dundas Street East||1009 Dundas Street E||L1N2K2||L1N 2K4||zomato_5450||yelp_28870||0.9217391304347826||
+0||Subway||Subway||4355 E University Dr||1130 W University Dr||85205||85201||zomato_14087||yelp_19844||0.85||
+0||Mark & Philly's Pizzeria||Mark & Philly's||3156 Bailey Rd||3156 Bailey Rd||44221||44221||zomato_19961||yelp_36095||0.85||
+0||M4 Burritos||M4 Burritos||1773 Rue Saint-Denis||1773 Saint Denis||H2X3K4||H2X 3K4||zomato_15132||yelp_3133||0.85||
+0||Carribean Tasty Treats||Caribbean Tasty Treats||4410 Blvd des Sources||4410 des Sources",,"H8Y 3B7||zomato_17253||yelp_16434||0.8207792207792207||
+0||Big Boys Pizza||Big Boys Pizza||1731 W Baseline Rd||1731 W Baseline Rd, Ste 115||85202||85202||zomato_13903||yelp_51077||0.8||
+0||Barro's Pizza||Barro's Pizza||6663 E McDowell Rd||15475 W McDowell Rd||85215||85395||zomato_13436||yelp_24416||0.8105263157894738||
+0||Liverpool House||Liverpool House||2501 Rue Notre-Dame W||2501 Rue Notre-Dame O||H3J1N6||H3J 1N6||zomato_14805||yelp_25874||0.9714285714285714||
+0||Little Caesars Pizza||Little Caesars Pizza||2007 Washington Ave.||1160 Washington Ave||47714||15106||zomato_19191||yelp_30371||0.85||
+0||Bella Pizza & Pasta||Bella Pizza & Pasta||2905 S Ellsworth||2905 S Ellsworth Rd||85212||85212||zomato_13864||yelp_9829||0.9052631578947368||
+0||Anzio's Italian||Anzios Italian Restaurant||12418 N 28th Dr||12418 N 28th Dr||85029||85029||zomato_2494||yelp_8139||0.808||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2853 S Sossaman Rd||2853 S. Sossaman Ave||85212||85212||zomato_13544||yelp_13869||0.88||
+0||Thai Charm Eatery||Thai Charm Eatery||800 Yankee Valley Boulevard Southwest||800 Yankee Valley Boulevard SW, Unit 505||T4B2X3||T4B 3Y2||zomato_9832||yelp_31998||0.85||
+0||Franky T's Pizzeria||Franky T's Pizzeria||2211 N New Hope Road||2211 N New Hope Rd||28054||28054||zomato_7452||yelp_26937||0.9400000000000001||
+0||Mark Rich's New York Pizza & Pasta II||Mark Rich's New York Pizza & Pasta||11710 W Charleston Boulevard||11710 W Charleston Blvd||89135||89135||zomato_1695||yelp_36846||0.8604247104247105||
+0||Manuel's Mexican Restaurant||Manuel's Mexican Restaurant & Cantina - Cave Creek||12801 N Cave Creek Rd||12801 N Cave Creek Rd||85022||85022||zomato_3078||yelp_22699||0.8160000000000001||
+0||Ristorante Quattro||Ristorante Quattro||17 Notre-Dame Ouest||17 Rue Notre-Dame Ouest||H2Y1B6||H2Y 1B6||zomato_17730||yelp_16957||0.8956521739130434||
+0||Mucho Burrito||Mucho Burrito||5179 Falconridge Blvd NE||5179 Falconridge Boulevard NE||T3J||T3J 3K9||zomato_9650||yelp_42461||0.896551724137931||
+0||Little Piggy's||Little Piggy's||469 Bloor Street West||469 Bloor Street W",,"M5S 1X9||zomato_5097||yelp_32436||0.9142857142857144||
+0||Fuchsia||Le Fuchsia||2000 Rue Sainte-Catherine Ouest||2000 Rue Sainte-Catherine O||H3H1M6||H3H 2T3||zomato_16221||yelp_4183||0.8025806451612902||
+0||Subway||Subway||3550 E Southern Ave||2714 W Southern Ave||85204||85282||zomato_14130||yelp_10719||0.8421052631578948||
+0||Subway||Subway||1840 W Southern Ave||2714 W Southern Ave||85202||85282||zomato_14104||yelp_10719||0.8736842105263158||
+0||El Metate Mexican Food||Loretos Mexican Food||6140 E Main St||6144 E Main St||85205||85205||zomato_13545||yelp_24332||0.8480519480519482||
+0||Carl's Jr.||Carl's Jr||1202 N 51st Ave||1202 N 51st Ave||85043||85043||zomato_2999||yelp_35551||0.96||
+0||Wing Fa||Wing Fa||3474 Ave Du Parc||3474 Avenue du Parc||H2X2H7||H2X 2H5||zomato_16047||yelp_15215||0.9052631578947368||
+0||Khao San Thai Kitchen||Khao San Thai Kitchen||1314 17th Avenue SW||1314-17 Avenue SW||T2T0C4||T2T 0C3||zomato_9784||yelp_25078||0.9052631578947368||
+0||Le Baratin||Le Baratin||1600 Dundas Street West||1600 Dundas Street. W||M6K 1T8||M6K 1T8||zomato_6161||yelp_21957||0.8956521739130434||
+0||Indian Flame||Indian Flame Restaurant||11623 Euclid Ave||11623 Euclid Ave||44106||44106||zomato_20495||yelp_51898||0.808695652173913||
+0||Hogan's Restaurant||Hogan's Restaurant||12988 Keele Street||12998 Keele Street||L7B 1L9||L7B 1H8||zomato_6164||yelp_56087||0.9666666666666667||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2737 N Power Rd||2737 N. Power Rd||85215||85215||zomato_13343||yelp_20131||0.9625||
+0||Papa Shunde Chinese Restaurant||Papa Shunde Chinese Restaurant||246 Hawkstone Dr NW||246 Hawkstone Drive NW||T3G3T4||T3G 3R1||zomato_10275||yelp_14723||0.9181818181818182||
+0||Paymon's Mediterranean Cafe & Lounge||Paymon's Mediterranean Cafe & Lounge||4147 S Maryland Parkway||4147 S Maryland Pkwy||89119||89119||zomato_433||yelp_38511||0.9217391304347826||
+0||Biryani Hut Express||BiryaniHut Express||26569 Center Ridge Rd||26569 Center Ridge Rd||44145||44145||zomato_20511||yelp_18639||0.9789473684210527||
+0||Red Devil Italian Restaurant & Pizzeria||Red Devil Italian Restaurant & Pizzeria||3102 East McDowell Road||3102 E Mcdowell Rd||85008||85008||zomato_2484||yelp_53810||0.8695652173913044||
+0||Jolly Bar Ethiopian Restaurant & Bar||Jolly Bar Ethiopian Restaurant||6182 W Flamingo Rd||6182 W Flamingo Rd||89103||89103||zomato_516||yelp_49338||0.9333333333333333||
+0||Dinghao Shanghai Bistro||Dinghao Shanghai Bistro||2711 S Alma School Rd||2711 S Alma School Rd, Ste 2||85210||85210||zomato_13844||yelp_10143||0.85||
+0||Barbounya||Barbounya||234 Ave Laurier Ouest||234 Avenue Laurier O||H2T 2N8||H2T 2N8||zomato_16355||yelp_32767||0.8||
+0||Nick's Steak House and Pizza||Nick's Steak House & Pizza||2430 Crowchild Trl NW||2430 Crowchild Trl NW||T2M4N5||T2M 4N5||zomato_9501||yelp_27798||0.9571428571428572||
+0||Papa John's Pizza||Papa John's Pizza||5045 W Tropicana Ave||5045 W Tropicana Ave, Ste 101||89103||89103||zomato_1079||yelp_11375||0.8137931034482759||
+0||Toscana||Toscana||6401 Morrison Boulevard||6401 Morrison Blvd||28211||28211||zomato_7431||yelp_37373||0.8695652173913044||
+0||Mekong River||Mekong River||5468 Dundas Street West||5468 Dundas Street W||M9B1B1||M9B||zomato_5516||yelp_56628||0.9217391304347826||
+0||Sumi Dojo||Sumi Dojo||3479 Blvd Saint-Laurent||3479 Boulevard Saint-Laurent||H2X2T6||H2X 2T6||zomato_16618||yelp_44792||0.8928571428571428||
+0||Peter's Cape Cod||Peter's Cape Cod||160 Rue Ste-Anne||160 Rue Sainte-Anne||H9X1M5||H9X 1M6||zomato_15874||yelp_45144||0.9052631578947368||
+0||Les copains gourmands||Copains Gourmands||352 Rue Guillaume||352 Rue Guillaume||J4H2X8||J4H 1S3||zomato_15278||yelp_3130||0.9238095238095239||
+0||Thai Room||Thai Room||3355 E Tropicana Ave||3355 E Tropicana Ave, Ste D||89121||89121||zomato_1249||yelp_19021||0.8444444444444444||
+0||Taquitos Jalisco||Taquitos Jalisco||437 S Gilbert Rd||437 S Gilbert Rd, Ste 2||85204||85204||zomato_13531||yelp_9290||0.817391304347826||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||1402 E Chandler Blvd||1050 W. Chandler Blvd||85048||85226||zomato_3060||yelp_35915||0.8571428571428571||
+0||Villa du Souvlaki||Villa du Souvlaki||5347 Rue Sherbrooke Ouest||5347 Rue Sherbrooke O||H4A1V5||H4A 1V2||zomato_17859||yelp_5743||0.904||
+0||Maison de Cari Golden||Maison de Cari Golden||5210 Boulevard St-Laurent||5210 Boulevard Saint-Laurent||H2T2L9||H2T 1S1||zomato_14246||yelp_47732||0.9357142857142857||
+0||Thai Viet Noodles House||Thai Viet Noodles House||14015 E Independence Boulevard||14015 E Independence Blvd, Ste I||28079||28079||zomato_8053||yelp_15978||0.8125||
+0||Mesa 14||Mesa 14||1425 Bishop||1425 Rue Bishop||H3G2E4||H3G 2E4||zomato_15118||yelp_3266||0.8400000000000001||
+0||La Cocina De Dona Luz||La Cocina De Dona Luz||807 St. Clair Avenue West||807 Saint Clair Avenue W",,"M6C 1B9||zomato_6513||yelp_32858||0.8320000000000001||
+0||Subway||Subway||2753 E Broadway Rd||818 W Broadway Rd||85204||85282||zomato_14077||yelp_7665||0.8333333333333333||
+0||Vicky's Fish and Chips||Vicky's Fish & Chips||414 Roncesvalles Avenue||414 Roncesvalles Avenue||M6R 2J6||M6R 2N2||zomato_5607||yelp_18548||0.9454545454545454||
+0||Moghel Tandoori||Moghel Tandoori||2770 Boulevard Jacques-Cartier E||2770 Boulevard Jacques Cartier E||J4N1P8||J4N 1P8||zomato_14260||yelp_10537||0.98125||
+0||Yolos||YOLOS||3667 Las Vegas Boulevard S||3667 Las Vegas Blvd S||89109||89109||zomato_1130||yelp_54933||0.8846153846153846||
+0||Alnoor Kebab & Sweets||Alnoor Kebob & Sweets Restaurant||44 Harwood Avenue South||44 Harwood Avenue South",,"L1S 2H6||zomato_4608||yelp_7975||0.85||
+0||KimBob Cafe||Kimbob Cafe||1771 Av Cardinal||1771, Avenue Cardinal||H9P2W4||H9P 2W4||zomato_15686||yelp_35715||0.8571428571428571||
+0||Jaipur Junction||Jaipur Junction||9377 W Sprague Rd||9249 Sprague Rd||44133||44133||zomato_20493||yelp_46060||0.8235294117647058||
+0||Terre Rouge||Terre Rouge||162 Enterprise Boulevard||162 Enterprise Boulevard, Unit 1",,"L6G 0A2||zomato_6183||yelp_27027||0.85||
+0||CiCi's Pizza||CiCi's Pizza||1618 Queen Street West||1618 Queen St W||M6R 1A8||M6R 1A8||zomato_5391||yelp_45934||0.8090909090909091||
+0||Artigiani Pizzeria Cucina||Artigiani Pizzeria & Cucina||4657 Rue Saint-Denis||4657 Rue Saint-Denis||H2J2L3||H2J 2L5||zomato_17688||yelp_31449||0.9703703703703703||
+0||Angela Mia Pizza||Angela-Mia Pizza||15811 Euclid Avenue||15811 Euclid Ave||44112||44112||zomato_20380||yelp_29062||0.8802631578947367||
+0||Chu Chai||ChuChai||4088 Rue Saint-Denis||4088 Rue Saint-Denis||H2W2M5||H2W 2M5||zomato_15347||yelp_6124||0.95||
+0||Pullano's Pizza, Wings & Sports Bar||Pullano's Pizza & Wings||13848 N 51st Ave||13848 N 51st Ave||85306||85306||zomato_3409||yelp_7709||0.8285714285714285||
+0||Subway||Subway||4984 S Power Rd||5290 S Power Rd||85212||85295||zomato_14085||yelp_33166||0.8400000000000001||
+0||Chipotle Mexican Grill||Baja Fresh Mexican Grill||3440 E Baseline Rd||3420 E Baseline Rd||85204||85204||zomato_13361||yelp_6464||0.8166666666666667||
+0||Barrio Coreano||Barrio Coreano||642 Bloor Street West||642 Bloor Street W||M6G 1K9||M6G 1K9||zomato_3943||yelp_13860||0.9142857142857144||
+0||Subway||Subway||3411 Las Vegas Blvd S||3791 Las Vegas Blvd S||89109||89109||zomato_1068||yelp_41973||0.9428571428571428||
+0||Grimaldi's Pizzeria||Grimaldi's Pizzeria||3327 Las Vegas Blvd Ste 2710||3327 Las Vegas Blvd S, Ste 2710||89109||89109||zomato_432||yelp_42989||0.9419354838709677||
+0||Ha Tien||Ha Tien||11225-30 Street SW||11225 30th St SW||T2W||T2W||zomato_8926||yelp_20565||0.8||
+0||Abruzzo Pizza||Abruzzo Pizza||9010 Yonge Street||9010 Yonge St||L4C 6Z8||L4C 6Z8||zomato_4492||yelp_35683||0.8588235294117647||
+0||Siam Garden||Siam Garden||3297 N Las Vegas Boulevard Suite 65||3297 Las Vegas Blvd N, Ste 65||89115||89115||zomato_323||yelp_24056||0.8114285714285714||
+0||Bangkok Garden||Bangkok Garden Restaurant||18 Elm Street||18 Elm Street||M5G 1G7||M5G 1G7||zomato_5519||yelp_28756||0.8240000000000001||
+0||El Amigo||El Amigo||51 Rue St-Zotique E||51 Rue Saint-Zotique Est||H2S1K7||H2S 1K7||zomato_14560||yelp_17326||0.875||
+0||Fat Moe's Pizza & Wings||Fat Moe's Pizza & Wings||6125 W Tropicana Ave Ste F||6125 W Tropicana Ave, Ste F||89103||89103||zomato_2005||yelp_50552||0.9777777777777779||
+0||Fulton's Fish Frye||Fulton Fish Frye||3790 Las Vegas Blvd S||3790 Las Vegas Blvd S||89109||89136||zomato_45||yelp_33400||0.9555555555555555||
+0||Manuel's Mexican Restaurant||Manny's Mexican Restaurant||2820 E Indian School Rd||12345 W Indian School Rd||85016||85392||zomato_3071||yelp_47490||0.8305555555555555||
+0||Gio Rana's Really Really Nice Restaurant||Gio Rana's Really Really Nice Restaurant||1220 Queen Street East||1220 Queen Street E||M4M 1L7||M4M 1L7||zomato_4457||yelp_50070||0.9181818181818182||
+0||Los Picos Parrilla||Los Picos Parrilla Restaurant||1542 W University Dr||1542 W University Dr||85201||85201||zomato_13548||yelp_49759||0.8482758620689655||
+0||Sourdough Pizza||Sourdough Pizza Restaurant||7440 E Main St||7440 E Main St||85207||85207||zomato_13431||yelp_9430||0.8307692307692307||
+0||North End Pizza||North End Pizza||6440 N. Durango||6440 N Durango Dr||89149||89149||zomato_1683||yelp_47163||0.8588235294117647||
+0||Thai Taste||Thai Taste||324 East Boulevard||324 East Blvd||28203||28203||zomato_7345||yelp_37100||0.8333333333333333||
+0||Lasalle Drive-In||Lasalle Drive-In Restaurant||8760 Boul. Lasalle||8760 Boul Lasalle",,"H8P 1Y9||zomato_17394||yelp_44461||0.8037037037037037||
+0||Pizzeria Magpie||Pizzeria Magpie||16 Maguire||16 Rue Maguire||H2T1B9||H2T 1B8||zomato_14815||yelp_8097||0.8285714285714285||
+0||Thai Pan Cuisine||Thai Pan Cuisine||463 S Decatur Boulevard||463 S Decatur Blvd||89107||89107||zomato_1290||yelp_40292||0.8695652173913044||
+0||Papa John's Pizza||Papa John's Pizza||746 E Aurora Rd||33411 Aurora Rd||44056||44139||zomato_20780||yelp_22945||0.8||
+0||Galanga Thai Eatery||Galanga Thai Eatery||8174 S Las Vegas Blvd||8174 S Las Vegas Blvd, Ste 108||89123||89123||zomato_356||yelp_12140||0.8200000000000001||
+0||Cuisine AuntDai||Cuisine AuntDai||5557 Côte-Des-Neiges Road||5557A Cote-des-Neiges||H3T 1Y8||H3T 1Y8||zomato_16012||yelp_44195||0.8320000000000001||
+0||3 Amigos||3 Amigos||1621 Saint-Denis||1621 Rue Saint-Denis||H2X3K3||H2X 3K3||zomato_14183||yelp_52922||0.88||
+0||Niki's Food Shop||Niki's Food Shop||2200 Beatties Ford Road||2200 Beatties Ford Rd||28216||28216||zomato_8164||yelp_13136||0.9478260869565218||
+0||Charanda Mexican Grill & Cantina||Charanda Mexican Grill & Cantina||1505 Carolina Place Drive||1505 Carolina Place Dr||29708||29708||zomato_7968||yelp_14222||0.928||
+0||Brown Rice Thai Kitchen||Brown Rice Thai Kitchen||1910 Village Center Circle||1910 Village Center Cir, Ste 3||89134||89134||zomato_1266||yelp_1436||0.88||
+0||Lotus Fine Indian Cuisine||Lotus Fine Indian Cuisine||3843 19 Street NW||3843 19th Street NW||T2L T2L||T2L 2B3||zomato_8801||yelp_41146||0.9368421052631579||
+0||Canadian Pizza Unlimited||Canadian Pizza Unlimited||3-630 1 Avenue NE||630 1 Ave NE||T2E7W8||T2E 0B6||zomato_10758||yelp_49199||0.8235294117647058||
+0||Rocco's NY Pizzeria||Rocco's NY Pizzeria||10860 W Charleston Blvd||10860 W Charleston Blvd, Ste 190||89135||89135||zomato_1687||yelp_24758||0.83125||
+0||Chi Thai||Chi Thai||3333 Pineville-Matthews Road||3333 Pineville Matthews Rd||28226||28226||zomato_8054||yelp_42423||0.9357142857142857||
+0||Sardella's Pizza & Wings||Sardella's Pizza & Wings||3143 E Greenway Road||3143 E Greenway Rd||85032||85032||zomato_2341||yelp_49804||0.9400000000000001||
+0||Soonturn Bahn Thai||Soontorn Bahn Thai||210 Lakeshore Road East||210 Lakeshore Road E||L6J 1H8||L6J 1H8||zomato_5550||yelp_43148||0.8995169082125604||
+0||Yunnan Tasty Garden||Yunnan Tasty Garden||5115 Spring Mountain Rd||5115 Spring Mt Rd||89146||89146||zomato_89||yelp_32165||0.8434782608695652||
+0||The Fig Tree Restaurant||The Fig Tree Restaurant||1601 East 7th Street||1601 East 7th St||28204||28204||zomato_8341||yelp_4906||0.88||
+0||Casa Grecque||Casa Grecque||350 Saint-Martin Ouest||350 Boulevard Saint-Martin Ouest||H7M3Y8||H7M 3Y8||zomato_17948||yelp_20996||0.8125||
+0||The Spicy Amigos||The Spicy Amigos||821 4th Avenue SW||821 4 Avenue SW||T2P 0K5||T2P 0K5||zomato_9078||yelp_34153||0.9294117647058824||
+0||Metro Pizza||Metro Pizza||1420 W Horizon Ridge Parkway||1420 W Horizon Ridge Pkwy||89012||89012||zomato_438||yelp_38804||0.9357142857142857||
+0||Beaver Choice||Beaver Choice||745 West Baseline Road||745 W Baseline Rd||85210||85210||zomato_13724||yelp_41599||0.8636363636363636||
+0||Jean's Trinidad Foods||Jean's Trinidad Foods||5914 Sherbrooke West||5914 Sherbrooke Rue W||H4A1X7||H4A 1X7||zomato_17262||yelp_5646||0.8857142857142857||
+0||Chez Lévêque||Chez Lévêque||1030 Ave Laurier W||1030 Rue Laurier Ouest||H2V2K8||H2V 2K8||zomato_17771||yelp_55338||0.8090909090909091||
+0||Napoli Pizzeria||Napoli Pizzeria||1677 Rue St-Denis||1675 Rue Saint-Denis||H2X3K4||H2X 3K4||zomato_17401||yelp_44325||0.88||
+0||Viva Chicken||Viva Chicken||1617 Elizabeth Avenue||1617 Elizabeth Ave||28204||28204||zomato_7380||yelp_13536||0.9142857142857144||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2064 W Southern Ave||2064 W. Southern Ave||85202||85202||zomato_13549||yelp_8009||0.97||
+0||Gagana Ramen||Gagana Ramen||5421 11 Street NE||101-5421 11th Street NE||T2E 6Z7||T2E 6M4||zomato_9239||yelp_52623||0.8434782608695652||
+0||Ramen Misoya||Ramen Misoya||2065A Bishop||2065A Rue Bishop||H3G2E8||H3G 2E8||zomato_14642||yelp_18867||0.85||
+0||Restaurant Les Infideles||Restaurant les Infideles||771 Rue Rachel E||773 Rue Rachel E||H2J2H5||H2J 2H4||zomato_17820||yelp_31400||0.9625||
+0||Gaetano's Ristorante||Gaetano's Ristorante||10271 South Eastern Avenue Ste 111||10271 S Eastern Ave, Ste 111||89052||89052||zomato_475||yelp_53297||0.8764705882352941||
+0||Kimchi Korea House||Kimchi Korea House||149 Dundas Street West||149 Dundas Street W||M5G 1C6||M5G 1C6||zomato_5051||yelp_44188||0.9181818181818182||
+0||Sunrise House||Sunrise House||661 Bloor Street West||661 Bloor Street W||M6G 1L1||M6G 1L1||zomato_5040||yelp_32252||0.9142857142857144||
+0||Les Fillettes||Les fillettes||1226 Ave Van Horne||1226 Avenue Van Horne||H2V1K3||H2V 1K3||zomato_17091||yelp_54538||0.9142857142857144||
+0||Lovely Sweets & Restaurant||Lovely Sweets & Restaurant||4818 Westwinds Dr Northeast||4818 Westwinds Dr NE||T3J0L7||T3J 0L7||zomato_8785||yelp_38615||0.8444444444444444||
+0||Chez Ping||Chez Ping||7401 Newman||7401 Boul Newman||H8N1X3||H8N 1X3||zomato_15879||yelp_46740||0.8125||
+0||Salt & Pepper Mexican Restaurante||Salt & Pepper Mexican Restaurant||4351 Macleod Trl SW||4351 MacLeod Trail SW||T2G||T2G 0A3||zomato_9083||yelp_40934||0.9307359307359307||
+0||La Mexicana||La Mexicana Restaurant||3337 Bathurst Street||3337 Bathurst Street||M6A 2B7||M6A 2B7||zomato_5458||yelp_31311||0.8||
+0||Marathon Souvlaki||Marathon Souvlaki||3313 Boul. des Sources||3313 Boulevard des Sources||H9B||H9B 1Z6||zomato_17854||yelp_32885||0.8846153846153846||
+0||Icehouse||Icehouse||51 Rue Roy Est||51 Rue Roy E||H2W1L8||H2W 1L8||zomato_14157||yelp_47617||0.9142857142857144||
+0||Gaati Thai Kitchen||Gaati Thai Kitchen||10545 South Eastern Avenue #100||10545 S Eastern Ave, Ste 100||89052||89052||zomato_1221||yelp_48014||0.8258064516129033||
+0||High Thai'd Cafe||High Thai'd||1791 Coventry Road||1791 Coventry Rd||44118||44118||zomato_19534||yelp_42157||0.8083333333333333||
+0||Filiberto's Mexican Food||Filibertos Mexican Food||1402 E Chandler Blvd||1322 E Chandler Blvd||85048||85048||zomato_3060||yelp_35714||0.9233333333333333||
+0||Le H4C||Le H4C||538 Pl Saint-Henri||538 Place Saint-Henri||H4C2R6||H4C 2R9||zomato_17777||yelp_4639||0.9142857142857144||
+0||Imperial Dynasty||Imperial Dynasty Restaurant||500 Country Hills Blvd NE||500 Country Hills Blvd NE",,"T3K 4Y7||zomato_10294||yelp_31815||0.837037037037037||
+0||Thai Express||Thai Express||4497 St-Denis||3470 St-Denis||H2J2K8||H2L 4S9||zomato_15438||yelp_21101||0.8615384615384615||
+0||The Fish Store||The Fish Store & Sandwiches||657 College Street||657 College Street||M6G 1B7||M6G 1B7||zomato_3743||yelp_48318||0.8074074074074075||
+0||Seven Lives - Tacos Y Mariscos||Seven Lives Tacos Y Mariscos||69 Kensington Avenue||69 Kensington Avenue||M5T 2K2||M5T 2K2||zomato_5412||yelp_28743||0.9733333333333334||
+0||El Zaziummm||El Zaziummm||1276 Ave Laurier E||1276 Avenue Laurier E||H2J1H2||H2J 1H1||zomato_14533||yelp_17093||0.9142857142857144||
+0||Restaurant Gandhi||Restaurant Gandhi||230 Rue St-Paul O||230 Rue Saint-Paul O||H2Y1Z9||H2Y 1Z9||zomato_14226||yelp_34969||0.91||
+0||Mangia & Bevi||Mangia & Bevi||260 King Street East||260 King Street E||M5A 4L5||M5R 4L5||zomato_4531||yelp_50899||0.91||
+0||La Societe - Montréal||La Société Montréal||1415 Rue De La Montagne||1415 Rue de la Montagne||H3G1Z3||H3G 1Z3||zomato_17801||yelp_28362||0.9238095238095239||
+0||Ka Chi||Ka Chi||414 Dundas Street West||414 Dundas Street W||M5T 1G7||M5T 1G6||zomato_5039||yelp_27544||0.9181818181818182||
+0||Queen's Pasta Cafe||Queen's Pasta Cafe||2263 Bloor Street West||2263 Bloor St W||M6S 1N8||M6S 1N8||zomato_4510||yelp_50865||0.8090909090909091||
+0||Serrano's Mexican Food||Serrano's Mexican Restaurant||1964 E McKellips Rd||1964 E McKellips Rd||85203||85203||zomato_13536||yelp_23427||0.8571428571428571||
+0||Roberto's Taco Shop||Roberto's Taco Shop||4845 S Fort Apache Rd||1101 S Fort Apache Rd||89147||89117||zomato_1146||yelp_19554||0.8857142857142857||
+0||Pin Kaow Thai||Pin Kaow Thai||7835 S Rainbow Boulevard||7835 S Rainbow Blvd||89139||89139||zomato_1208||yelp_601||0.875||
+0||Rocco's NY Pizza||Rocco's NY Pizzeria||6885 Aliante Pkwy||6885 Aliante Pkwy||89084||89084||zomato_1751||yelp_53001||0.9368421052631579||
+0||Spoon & Fork||Spoon & Fork||1233 The Queensway||1233 The Queensway, Unit 24",,"M8Z 1S2||zomato_4309||yelp_20085||0.8||
+0||Me Sabe a Peru||Me Sabe A Peru||4000 Steeles Avenue West||4000 Steeles Avenue W, Suite 10",,"L4L 4R8||zomato_4447||yelp_45325||0.8451612903225807||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||1755 W Main St||1755 W. Main St||85201||85201||zomato_13526||yelp_40739||0.96||
+0||Resto Lychee||Resto Lychee||187 Ave Du Mont-Royal E||187 Avenue du Mont-Royal E||H2T||H2T 1P2||zomato_15369||yelp_6394||0.9307692307692308||
+0||Four Brothers Pizza||Four Brothers Pizza||2828 Kingsway Dr||2828 Kingsway Drive||L6J6X7||L6J 6X7||zomato_5335||yelp_4061||0.9052631578947368||
+0||Playa Cabana Hacienda||Playa Cabana - Hacienda||14 Dupont Street||14 Dupont Street||M5R 1V2||M5R 1V3||zomato_5429||yelp_15177||0.9652173913043478||
+0||Bistro L'Entrepont||Bistro l'Entrepont||4622 avenue de l'Hôtel-de-Ville||4622 avenue de l'Hotel de Ville||H2T||H2T 2B1||zomato_17840||yelp_32364||0.9419354838709677||
+0||Naked City Pizza Shop||Naked City Pizza Shop||3240 S Arville Street||3240 S Arville St||89102||89102||zomato_1676||yelp_40541||0.8857142857142857||
+0||Lobster ME||Lobster ME||3377 S Las Vegas Blvd||3663 Las Vegas Blvd||89109||89101||zomato_32||yelp_35622||0.8571428571428571||
+0||Molcajete||Molcajete||1235 26 Ave SE||1235 26 Avenue SE||T2G1R7||T2G 1R7||zomato_9634||yelp_49173||0.8941176470588235||
+0||Little Caesars Pizza||Little Caesars||3730 W Happy Valley Rd||3800 W Happy Valley Rd||85310||85310||zomato_2935||yelp_49667||0.8254545454545454||
+0||Thai Taste||Thai Taste||324 East Boulevard||324 East Blvd||28203||28203||zomato_8030||yelp_37100||0.8333333333333333||
+0||Bangkok Ocha||Bangkok Ocha||7629 Pineville-Matthews Road Suite B||7629 Pineville Matthws Rd||28226||28226||zomato_8041||yelp_41168||0.8||
+0||Brit & Chips||Brit & Chips||433 McGill||433 Rue McGill||H2Y 2G5||H2Y 2H1||zomato_18238||yelp_15799||0.8285714285714285||
+0||Mama Roberto's Pizza||Mama Roberto's||8658 Mentor Ave||8658 Mentor Ave||44060||44060||zomato_20336||yelp_34628||0.8799999999999999||
+0||Casa Figueroa||Casa Figueroa||3217 Rue Beaubien E||3217 Beaubien E||H1Y 1H6||H1X 3C9||zomato_14591||yelp_18586||0.8736842105263158||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||17224 N 19th Ave||17224 N. 19th Ave||85023||85023||zomato_3076||yelp_22952||0.9647058823529412||
+0||Vicky's Fish and Chips||Vicky's Fish & Chips||414 Roncesvalles Avenue||414 Roncesvalles Avenue||M6R 2J6||M6R 2N2||zomato_4803||yelp_18548||0.9454545454545454||
+0||Golden Thai||Golden Thai Restaurant||105 Church Street||105 Church Street||M5C 2G3||M5C 2G3||zomato_5514||yelp_32530||0.8||
+0||Ginger Beef Express||Ginger Beef Express||1515 14 St SW||1515B 14 Street SW||T3C0X9||T3C 1E1||zomato_10339||yelp_9059||0.8333333333333333||
+0||Pick Thai||Pick Thaï||5221 Boulevard De Maisonneuve Ouest||5221 Boulevard de Maisnneuve O||H4A 0A4 0||H4A 0A4||zomato_17444||yelp_3188||0.8698412698412699||
+0||Manana||Mañana||3605 Rue St-Denis||3605 rue Saint-Denis||H2X3L6||H2X 3L6||zomato_14551||yelp_7563||0.8433333333333334||
+0||Julio's Barrio||Julio's Barrio||1110 Memorial Dr NW||1110 Memorial Drive NW||T2N4T3||T2N 3E3||zomato_10173||yelp_3901||0.9181818181818182||
+0||Pizza Hut||Pizza Hut||2639 E Broadway Rd||808 W Broadway Rd||85204||85282||zomato_14131||yelp_28089||0.8333333333333333||
+0||Pizza Pizza||Pizza Pizza||1846 Rue Sainte-Catherine Ouest||1846 Rue Sainte-Catherines Est||H3H1M1||H2K 2H3||zomato_16523||yelp_17953||0.9419354838709677||
+0||Julio's Barrio||Julio's Barrio||1110 Memorial Dr NW||1110 Memorial Drive NW||T2N4T3||T2N 3E3||zomato_9591||yelp_3901||0.9181818181818182||
+0||Bazille||Bazille||3401 Dufferin Street||3401 Dufferin Street, Unit 500||M6A 2T9||M6A 2T9||zomato_6178||yelp_16771||0.8||
+0||Arahova Souvlaki||Arahova Souvlaki||266 Rue St-Viateur W||256 Rue Saint-Viateur O||H2V4G9||H2V 1X9||zomato_17870||yelp_16462||0.8695652173913044||
+0||Subway||Subway||3611 E Baseline Rd||240 W Baseline Rd||85234||85210||zomato_14139||yelp_28064||0.8333333333333333||
+0||China Palace||China Palace||5761 E Brown Rd||5761 E Brown Rd, Ste 1||85205||85205||zomato_13826||yelp_12475||0.8090909090909091||
+0||Village Grec||Village Grec||654 Rue Jean-Talon Ouest||654 Rue Jean-Talon O||H3N1R7||H3N 1R7||zomato_17878||yelp_16467||0.9||
+0||The Hummus Factory||The Hummus Factory||7875 W Sahara Avenue||7875 W Sahara Ave, Ste 101||89117||89117||zomato_204||yelp_41469||0.8153846153846154||
+0||Pizza Hut||Pizza Hut||35050 Euclid Ave.||35050 Euclid Ave||44094||44094||zomato_20766||yelp_23723||0.9647058823529412||
+0||Pedrito's Taqueria #2||Pedrito's Taqueria 2||311 W Main St||311 W Main St||85201||85210||zomato_13320||yelp_46388||0.9809523809523809||
+0||Pizza Hut||Pizza Hut||501 N Main St||1901 W Main St||42459||85201||zomato_19062||yelp_24672||0.8714285714285714||
+0||Sinatra||Sinatra||3131 S Las Vegas Blvd||3131 Las Vegas Blvd S||89109||89109||zomato_431||yelp_55547||0.8857142857142857||
+0||Cafe Cubano||Café Cubano||168 Rue Beaubien E||168 Rue Beaubien E||H2S 1R2||H2S 1R2||zomato_17301||yelp_5917||0.9636363636363636||
+0||Sotto Sotto||Ristorante Sotto Sotto||120 Avenue Road||120 Avenue Road||M5R 2H4||M5R 2H4||zomato_4514||yelp_45424||0.8||
+0||Boston Pizza||Boston Pizza||7020 Warden Avenue||890 Warden Avenue",,"M1L 4W6||zomato_5297||yelp_56100||0.9||
+0||Cafe Rio Mexican Grill||Zabas Mexican Grill||9595 S Eastern Ave||9905 S Eastern Ave||89123||89183||zomato_1150||yelp_48888||0.8060606060606061||
+0||Amado's Mexican Food||Amados Mexican Food||2729 S Alma School Rd||2729 S Alma School Rd||85210||85210||zomato_13538||yelp_53956||0.98||
+0||T.Pot China Bistro||T.Pot China Bistro||100-9650 Harvest Hills Blvd NE||100 - 9650 Harvest Hills Boulevard NE||T3K0B3||T3K 0B3||zomato_10258||yelp_37416||0.8864864864864864||
+0||Enoteca Sociale||Enoteca Sociale||1288 Dundas Street West||1288 Dundas St W||M6J 1X7||M6J 1X7||zomato_4467||yelp_45430||0.817391304347826||
+0||Boxers Pizza & Sandwich Shop||Boxers Pizza & Sandwich Shop||1439 North Boulder Highway||1439 N Boulder Hwy||89011||89011||zomato_1749||yelp_25394||0.8153846153846154||
+0||Bella Pizza & Pasta||Bella Pizza & Pasta||2905 S Ellsworth||2905 S Ellsworth Rd||85212||85212||zomato_13415||yelp_9829||0.9052631578947368||
+0||Pane Bianco||Pane Bianco||4404 North Central Avenue||4404 N Central Ave||85012||85012||zomato_2464||yelp_19310||0.8320000000000001||
+0||Jaipur Junction||Jaipur Junction||180 W Streetsboro St #5||180 W Streetsboro St||44236||44236||zomato_20501||yelp_16239||0.9217391304347826||
+0||Tardes Caleñas||Tardes Caleñas||3366 Grande Allée||3366 Grande Allé||J4T2T1||J4T 2T1||zomato_14954||yelp_10083||0.9647058823529412||
+0||Ouzeri||Ouzeri||4690 Rue St-Denis||4690 Rue Saint-Denis||H2J2L3||H2J 2L3||zomato_17851||yelp_32250||0.91||
+0||Barbounya||Barbounya||234 Ave Laurier Ouest||234 Avenue Laurier O||H2T 2N8||H2T 2N8||zomato_17231||yelp_32767||0.8||
+0||Belle Thailandaise||La Belle Thailandaise||4514 Rue St-Denis||4514 Rue Saint-Denis||H2J2L3||H2J 2L3||zomato_15404||yelp_22718||0.852857142857143||
+0||Fonda Lola||Fonda Lola||942 Queen Street West||942 Queen Street W||M6J 1G8||M6J 1G8||zomato_5426||yelp_43044||0.9142857142857144||
+0||Aztec's Mine||Aztec's Mine||1986 Bloor Street West||1986 Bloor Street W||M6P 3K9||M6P 3K9||zomato_5476||yelp_31165||0.9181818181818182||
+0||Franky T's Pizzeria||Franky T's Pizzeria||2211 N New Hope Road||2211 N New Hope Rd||28054||28054||zomato_8415||yelp_26937||0.9400000000000001||
+0||Inglewood Drive in||Inglewood Drive Inn||802 12 St SE||802 12 Street SE||T2G3H8||T2G 3H5||zomato_10735||yelp_39817||0.8289473684210527||
+0||Guadalupe mexicaine||La Guadalupe Mexicain||2345 Rue Ontario E||2345 Rue Ontario E||H2K||H2K 1W2||zomato_15131||yelp_29956||0.9238095238095239||
+0||Troy Grille||Troy Grille||118 East Main St||118 E Main St||44240||44240||zomato_19896||yelp_3674||0.8875||
+0||Nittaya's Secret Kitchen||Nittaya's Secret Kitchen||2110 N Rampart Blvd Ste 110||2110 N Rampart, Ste 110||89128||89128||zomato_309||yelp_3465||0.888888888888889||
+0||Tandoori Xpress||Tandoori Xpress||220 Boul De La Concorde E||220 Boulevard de la Concorde E||H7G2E1||H7G 2E1||zomato_18012||yelp_37407||0.9||
+0||Emiliano's||Emiliano's||260 Rue Notre-Dame Ouest||260 Rue Notre-Dame O||H2Y 1T3||H2Y 1T3||zomato_15134||yelp_20639||0.9||
+0||Thai House Cuisine||Thai House Cuisine||2213 Queen Street East||2213 Queen Sreet E",,"M4E 1E8||zomato_5558||yelp_15129||0.8909090909090909||
+0||Subway||Subway||3611 E Baseline Rd||2020 W Baseline Rd||85234||85041||zomato_14139||yelp_33595||0.8333333333333333||
+0||Thai Basil||Thai Basil||467 Bloor Street West||467 Bloor Street W||M5S 1X9||M5S 1X9||zomato_5521||yelp_28449||0.9142857142857144||
+0||Pizza Pizza||Pizza Pizza||1846 Rue Sainte-Catherine Ouest||1001 Rue Sainte-Catherine E||H3H1M1||H2L 2G4||zomato_16523||yelp_4228||0.864516129032258||
+0||Zaba's Mexican Grill||Ori'Zaba's Scratch Mexican Grill||9809 W Flamingo Rd||9809 W Flamingo Rd||89147||89147||zomato_1165||yelp_47375||0.85||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||1402 E Chandler Blvd||1402 E. Chandler Blvd||85048||85225||zomato_3060||yelp_29527||0.9714285714285714||
+0||Chipotle Mexican Grill||Chipotle Mexican Grill||6602 E Superstition Springs Blvd||6602 E Superstition Springs Blvd, Pad C||85206||85206||zomato_13597||yelp_48475||0.8923076923076922||
+0||Pepe's Tacos||Pepe's Tacos||1401 N Decatur Boulevard||1401 N Decatur Blvd||89108||89108||zomato_1168||yelp_34048||0.875||
+0||Pho Binh||Pho Binh||4886 Boulevard Saint-Charles||4886  Saint-Charles",,"H9H 3E2||zomato_14334||yelp_10637||0.8071428571428572||
+0||Angie's Pizza||Angie's Pizza||6120 Royalton Road||6120 Royalton Rd||44133||44133||zomato_20725||yelp_47702||0.9333333333333333||
+0||Archi's Thai Kitchen||Archi's Thai Kitchen||6360 W Flamingo Road||6360 W Flamingo Rd||89103||89103||zomato_345||yelp_14629||0.9400000000000001||
+0||KoMex Fusion||KoMex Fusion||633 N Decatur Blvd Ste H||633 N Decatur Blvd, Ste H||89107||89107||zomato_790||yelp_39378||0.976||
+0||Roma Garden Ristorante||Roma Garden Ristorante||3923 E Thunderbird Rd||3923 E Thunderbird Rd, Ste 113||85032||85032||zomato_2497||yelp_35134||0.8200000000000001||
+0||Divinos||Divinos||3345 W Greenway Road||3345 W Greenway Rd||85053||85053||zomato_3196||yelp_50663||0.9400000000000001||
+0||Chipotle Mexican Grill||Chipotle Mexican Grill||4984 S Power Rd||2849 N Power Rd||85212||85215||zomato_13535||yelp_8615||0.8400000000000001||
+0||GAGA Pizzeria||Gaga Pizzeria||1236 12 Ave SW||1236 12 Avenue SW||T3C1A7||T3C 1A7||zomato_9367||yelp_2925||0.8941176470588235||
+0||Martha's Kitchen||Martha's Kitchen||1155 S Higley Road||1155 S Higley Rd||85206||85206||zomato_13596||yelp_51482||0.9333333333333333||
+0||La Verità||La Verità||11680 Boul De Salaberry||11680 Boulevard de Salaberry",,"H9B 2R8||zomato_17699||yelp_6989||0.8928571428571428||
+0||Viva Chicken||Viva Chicken||1617 Elizabeth Avenue||1617 Elizabeth Ave||28204||28204||zomato_8481||yelp_13536||0.9142857142857144||
+0||Little Caesars Pizza||Little Caesars||437 S Gilbert Rd||437 S Gilbert Rd||85204||85204||zomato_14141||yelp_7704||0.8799999999999999||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||1755 W Main St||1755 W. Main St||85201||85201||zomato_13786||yelp_40739||0.96||
+0||Cari Masala||Cari Masala||9194 Sherbrooke E.||9194 Rue Sherbrooke E||H1L1E5||H1L 1E5||zomato_18021||yelp_2457||0.8571428571428571||
+0||Les Enfants Terribles||Les Enfants Terribles||Rue de la Rotonde||209 Rue de la Rotonde||H3E||H3E 1Y1||zomato_17838||yelp_39089||0.8857142857142857||
+0||Indigo Classic||Indigo Classic||13750 Bow Bottom Trail SE Unit 6||6 13750 Bow Bottom Trail SE||T2J 6T5||T2J 6T5||zomato_8808||yelp_43640||0.83125||
+0||Central Grand Restaurant||Central Grand Restaurant||1623 Centre Street North||1623 Centre St NW||T2E||T2E 8S7||zomato_10265||yelp_37109||0.8||
+0||Spring N Fresh Rolls||Spring 'N Fresh Rolls||789 Warden Avenue||789 Warden Avenue||M1L||M1L 4C2||zomato_5600||yelp_32059||0.9809523809523809||
+0||Papa Nick's Pizza & Pasta||Papa Nick's Pizza & Pasta||11534 Clifton Boulevard||11534 Clifton Blvd||44102||44102||zomato_20357||yelp_50850||0.8695652173913044||
+0||Ramen Misoya||Ramen Misoya||2065A Bishop||2065A Rue Bishop||H3G2E8||H3G 2E8||zomato_14208||yelp_18867||0.85||
+0||The Old Spaghetti Factory||The Old Spaghetti Factory||1418 North Central Avenue||1418 N Central Ave||85004||85004||zomato_2476||yelp_36977||0.8320000000000001||
+0||Chez Frida||Chez Frida||5647 chemin de la Côte-des-Neiges||5647 Chemin de la Côte-des-Neige||H3T1Y8||H3T 1Y8||zomato_17085||yelp_27700||0.9818181818181818||
+0||Faustos Mexican Grill||Fausto's Mexican Grill||229 N Stephanie St||229 N Stephanie St||89074||89074||zomato_1140||yelp_40631||0.9818181818181818||
+0||3 Amigos||3 Amigos||1621 Saint-Denis||1621 Rue Saint-Denis||H2X3K3||H2X 3K3||zomato_14531||yelp_52922||0.88||
+0||L' Academie||L'Académie||4051 Rue St-Denis||4051 Rue Saint-Denis||H2W2M7||H2W 2M7||zomato_14828||yelp_48720||0.8372727272727273||
+0||Mark Pi's Chinese||Mark Pi's China Gate||32730 Walker Rd||32730 Walker Rd||44012||44012||zomato_20254||yelp_20197||0.9||
+0||Famoso Neapolitan Pizzeria||Famoso Pizzeria||5 High Street SE||5 High Street SE||T2Z||T2Z||zomato_9338||yelp_25870||0.8307692307692307||
+0||San Salvador Restaurant #2||San Salvador Restaurant||2211 S Maryland Pkwy||2211 S Maryland Pkwy||89104||89104||zomato_619||yelp_14425||0.9538461538461538||
+0||Sourdough Pizza||Sourdough Pizza Restaurant||7440 E Main St||7440 E Main St||85207||85207||zomato_13879||yelp_9430||0.8307692307692307||
+0||Senor Taco||Señor Taco||1929 North Power Road Ste 105||1929 N Power Rd, Ste 105||85207||85207||zomato_13524||yelp_47371||0.8151724137931035||
+0||Socialito||Socialito||75 Rue Saint Viateur O||75 Rue Saint-Viateur Ouest||H2T 2K9||H2T 2K9||zomato_14559||yelp_35611||0.8846153846153846||
+0||Redline Pizzeria||Redline Pizzeria||753 S Alma School Road||753 S Alma School Rd||85210||85210||zomato_13440||yelp_11629||0.9454545454545454||
+0||Mark & Philly's Pizzeria||Mark & Philly's||3156 Bailey Rd||3156 Bailey Rd||44221||44221||zomato_19294||yelp_36095||0.85||
+0||Moki's Hawaiian Grill||Mokis Hawaiian Grill||3614 East Southern Avenue||3614 E Southern Ave||85206||85206||zomato_13265||yelp_18432||0.8369523809523809||
+0||George Le Roi Du Sous-Marin Vaudreuil||George le Roi du Sous-Marin||585 Ave Saint-Charles||585 Avenue Saint-Charles||J7V8P9||J7V 8P9||zomato_18408||yelp_4879||0.8168918918918919||
+0||Chen's Chinese||Chens Chinese Restaurant||9303 E Baseline Rd||9303 E Baseline Rd||85212||85209||zomato_13828||yelp_41880||0.8||
+0||Karma Fine Indian Cuisine||Karma Fine Indian Cuisine||4600 130 Ave SE||4600 130 Avenue SE||T2Z||T2Z 0C2||zomato_8743||yelp_4794||0.9||
+0||Valley Fields Restaurant||Valley Fields Restaurant||1222 Lawrence Avenue East||1222 Lawrence Avenue E||M3A 1C3||M3A 1B9||zomato_4939||yelp_35778||0.928||
+0||The Sultan's Tent & Cafe Moroc||The Sultan's Tent & Cafe Moroc||49 Front Street East||49 Front Street E",,"M5E 1B3||zomato_4293||yelp_7903||0.91||
+0||Carl's Jr.||Carl's Jr.||8660 W Warm Springs Rd||8660 Warm Springs Rd||89148||89148||zomato_1041||yelp_47370||0.9454545454545454||
+0||Agabi Grill||Agabi Cuisine||234 Kerr Street||234 Kerr Street||L6K 3A8||L6K 1L8||zomato_6052||yelp_55534||0.8153846153846154||
+0||Saffron Patch||Saffron Patch||20600 Chagrin Boulevard||20600 Chagrin Blvd||44122||44122||zomato_20628||yelp_34764||0.8695652173913044||
+0||The Fig Tree Restaurant||The Fig Tree Restaurant||1601 East 7th Street||1601 East 7th St||28204||28204||zomato_7409||yelp_4906||0.88||
+0||Nando's Mexican Cafe||Nando's Mexican Cafe||6715 East McDowell Road||6715 E McDowell Rd||85215||85215||zomato_13504||yelp_11739||0.8695652173913044||
+0||Chicho's||Chicho's||6580 Boulevard St-Laurent||6580 Boulevard Saint-Laurent||H2S3C6||H2S 3C6||zomato_17543||yelp_16919||0.9357142857142857||
+0||Flipper's Fish House||Flipper's Fish House||2300 Lawrence Avenue East||2300 Lawrence Ave E||M1P 2K9||M1P 2R2||zomato_3786||yelp_18286||0.856||
+0||Mucho Burrito||Mucho Burrito||163 Quarry Park Blvd. SE||163 Quarry Park Blvd SE, Bay 226||T2C4J2||T2C 5E1||zomato_9639||yelp_41477||0.8125||
+0||Pho Binh Minh||Pho Binh Minh||4710 17 Ave SE||4710 17 Avenure SE||T2A||T2A 0V1||zomato_8888||yelp_42207||0.8666666666666667||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2064 W Southern Ave||531 E. Southern Ave||85202||85204||zomato_13549||yelp_9993||0.8105263157894738||
+0||Quesada Burritos & Tacos||Quesada Burritos & Tacos||1101 Centre Street N||1115 Centre Street NW||T2E||T2E 2R1||zomato_9652||yelp_13484||0.9142857142857144||
+0||La Bettola Di Terroni||La Bettola di Terroni||106 Victoria Street||106 Victoria St",,"M5C 2B4||zomato_4486||yelp_16028||0.8736842105263158||
+0||Artigiani Pizzeria Cucina||Artigiani Pizzeria & Cucina||4657 Rue Saint-Denis||4657 Rue Saint-Denis||H2J2L3||H2J 2L5||zomato_17328||yelp_31449||0.9703703703703703||
+0||Eddie's Pizzeria Cerino||Eddie's Pizzeria Cerino||7305 Broadview Road||7305 Broadview Rd||44131||44131||zomato_19930||yelp_3382||0.9368421052631579||
+0||ThaiZone||Thaïzone||6060 Rue Sherbrooke Est||6060 Rue Sherbrooke E||H1N||H1N 1C1||zomato_15439||yelp_6536||0.8978260869565218||
+0||Los Taquitos||Los Taquitos||4747 E Elliot Rd||4747 E Elliot Rd, Ste 17||85044||85044||zomato_2672||yelp_36687||0.8||
+0||Pure Contemporary Vietnamese Kitchen + Bar||Pure Contemporary Vietnamese Kitchen + Bar||815 8 Avenue SW||100- 815 8 Avenue S.W",,"T2P 2T4||zomato_8861||yelp_31716||0.8285714285714285||
+0||Los Chicos Brasa||Los Chicos Brasa||5308 Highway 7 E||5308 Highway 7||L3P 1B9||L3P 1B9||zomato_4426||yelp_46695||0.925||
+0||Chicago Pizza||Chicago Pizza||5472 Westminster||5472 Avenue Westminster||H4X2A2||H4X 2A5||zomato_17367||yelp_32887||0.817391304347826||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||2064 W Southern Ave||3504 W. Northern Ave||85202||85051||zomato_13549||yelp_590||0.8200000000000001||
+0||Brit & Chips||Brit & Chips||433 McGill||433 Rue McGill||H2Y 2G5||H2Y 2H1||zomato_17114||yelp_15799||0.8285714285714285||
+0||Morgan||Morgan||4686 Blvd Des Sources||4686 Boulevard des Sources||H8Y3C4||H8Y 3C4||zomato_15889||yelp_10686||0.8846153846153846||
+0||Tony's Pizza||Tony's Pizza||9548 Mount Holly-Huntersville Road||9548 Mt Holly Huntersville Rd||28078||28078||zomato_7415||yelp_27626||0.8941176470588235||
+0||Saffron Patch||Saffron Patch||20600 Chagrin Boulevard||20600 Chagrin Blvd||44122||44122||zomato_20492||yelp_34764||0.8695652173913044||
+0||Thai Chef||Thai Chef Cuisine||233 Roncesvalles Avenue||233 Roncesvalles Avenue||M6R 2L6||M6R 2L6||zomato_5596||yelp_28220||0.8117647058823529||
+0||KFC||KFC||20 Crowfoot Cres NW||1000 20 Crowfoot Crescent NW||T3G||T3G 2P6||zomato_10815||yelp_4777||0.8071428571428572||
+0||Chick-N-Joy||Chick-N-Joy||1483 Queen Street East||1483 Queen Street E||M4L 1E2||M4L 1E2||zomato_5407||yelp_28395||0.9181818181818182||
+0||Thai Express||Thai Express||3625 Shaganappi Trail NW||3625 Shaganappi Trl NW||T3A5P9||T3A 0E2||zomato_9824||yelp_54448||0.95||
+0||Papaya Thai||Papaya Thai||2706 East University Drive||2706 E University Dr||85213||85213||zomato_13679||yelp_19393||0.8615384615384615||
+0||Mama Depalma's Pizza Bistro||Mama DePalmas Pizza & Bistro||639 N Stephanie St||639 N Stephanie St||89014||89014||zomato_264||yelp_41135||0.9571428571428572||
+0||Maharajah East Indian Restaurant||Maharajah East Indian Restaurant||115 9 Ave SE Unit 163||115 9th Avenue SE, Suite 163||T2G||T2G 0P6||zomato_8773||yelp_31787||0.8071428571428572||
+0||Royal Tandoori Gril||Royal Tandoori Grill||4720 Blvd Saint-Jean||4720 Boulevard Saint Jean||H9H4B2||H9H 4B2||zomato_14279||yelp_34699||0.836||
+0||Rascal House Pizza||Rascal House Pizza||1836 Euclid Ave||11316 Euclid Ave||44115||44106||zomato_19882||yelp_55512||0.925||
+0||Yo Amo Tacos||Yo Amo Tacos||7034 Islington Ave||7034 Islington Avenue||L4L1V8||L4L 1V8||zomato_5480||yelp_56002||0.9142857142857144||
+0||Golden Fish and Chips||Golden Fish & Chips||32 Main Street South||32 Main Street S||L7J 1X4||L7G 3G4||zomato_3793||yelp_35434||0.822857142857143||
+0||Maison Indian Curry||Maison Indian Curry||996 Rue Jean-Talon W||996 Rue Jean-Talon Ouest||H3N||H3N 1S8||zomato_14225||yelp_17337||0.875||
+0||Carribean Tasty Treats||Caribbean Tasty Treats||4410 Blvd des Sources||4410 des Sources",,"H8Y 3B7||zomato_15148||yelp_16434||0.8207792207792207||
+0||Niki's Food Shop||Niki's Food Shop||2200 Beatties Ford Road||2200 Beatties Ford Rd||28216||28216||zomato_7265||yelp_13136||0.9478260869565218||
+0||Red Lobster||Red Lobster||3252 Sheppard Avenue E||3252 Sheppard Ave. East||M1T 3K3||M1T 3K3||zomato_3745||yelp_51379||0.8695652173913044||
+0||unPhogettable||unPhogettable||66 S Dobson Rd #104||66 S Dobson Rd||85202||85202||zomato_13246||yelp_11918||0.8421052631578948||
+0||Mi Patio Mexican||Mi Patio||3347 N 7th Ave||3347 N 7th Ave||85013||85013||zomato_3030||yelp_46600||0.8||
+0||Kam Shing Chinese||Kam Shing Chinese Restaurant||4771 Avenue Van Horne||4771 Avenue Van Horne||H3W 1H8||H3W 1H8||zomato_15982||yelp_28850||0.8428571428571429||
+0||Cafe Cubano||Café Cubano||168 Rue Beaubien E||168 Rue Beaubien E||H2S 1R2||H2S 1R2||zomato_14512||yelp_5917||0.9636363636363636||
+0||Brit & Chips||Brit & Chips||433 McGill||433 Rue McGill||H2Y 2G5||H2Y 2H1||zomato_14792||yelp_15799||0.8285714285714285||
+0||Don G's Pizzeria||Don G's Pizzeria||2159 Broadview Road||2159 Broadview Rd||44109||44109||zomato_19888||yelp_10253||0.9368421052631579||
+0||L'Usine de Spaghetti||L'Usine de Spaghetti||273 Rue Saint-Paul Est||273 Rue Saint Paul E||H2Y1H2||H2Y 1H1||zomato_17680||yelp_10884||0.9181818181818182||
+0||Mexico Lindo||Mexico Lindo||200 Harwood Avenue South||200 Harwood Avenue S",,"L1S 2H6||zomato_5441||yelp_16153||0.9||
+0||Maison VIP||La Maison VIP||1077 Rue Clark||1077 Rue Clark||H2Z1K3||H2Z 1K3||zomato_15979||yelp_3121||0.9076923076923077||
+0||Les Canailles||Les Canailles||3854 Rue Ontario Est||3854 Rue Ontario E||H1W1S4||H1W 1S4||zomato_15268||yelp_28175||0.9400000000000001||
+0||Royaume Khmer||Royaume Khmer||310 Boulevard Sir Wilfrid Laurier||310 Boul Sir-Wilfrid-Laurier||J3H2X2||J3H 3N7||zomato_15411||yelp_16400||0.8727272727272727||
+0||Quesada Burritos & Tacos||Quesada Burritos & Tacos||1101 Centre Street N||1115 Centre Street NW||T2E||T2E 2R1||zomato_9123||yelp_13484||0.9142857142857144||
+0||Toyama Express||Toyama Express||2130 E Arbors Drive||2130 E Arbors Dr||28262||28075||zomato_7357||yelp_51323||0.9052631578947368||
+0||Carrie Cerino's Ristorante||Carrie Cerino's Ristorante & Party Center||8922 Ridge Rd||8922 Ridge Rd||44133||44133||zomato_20375||yelp_15051||0.8536585365853658||
+0||Souvlaki Port Credit||Souvlaki Port Credit||85 Lakeshore Road East||85 Lakeshore Rd E||L5G 1C9||L5G 1C9||zomato_5681||yelp_20346||0.8636363636363636||
+0||Pizzeria Dei Compari||Pizzeria Dei Compari||1668 Rue St-Denis||1668 Rue Saint-Denis||H2X3K4||H2X 3K6||zomato_17675||yelp_50532||0.91||
+0||M4 Burritos||M4 Burritos||1773 Rue Saint-Denis||1773 Saint Denis||H2X3K4||H2X 3K4||zomato_14600||yelp_3133||0.85||
+0||Pizzeria Libretto||Pizzeria Libretto Danforth||550 Danforth Avenue||550 Danforth Avenue||M4K 1P8||M4K 1P7||zomato_4460||yelp_6977||0.8615384615384616||
+0||Pho So 1||Pho So 1||240 Midpark Way SE||14-240 Midpark Way SE||T2X1N4||T2X 1N4||zomato_8902||yelp_7368||0.9142857142857144||
+0||El Burrito Mexican||El Burrito Mexican Restaurant||8508 Del Webb Blvd||8508 Del Webb Blvd||89134||89134||zomato_1179||yelp_13185||0.8482758620689655||
+0||Love Cuisine||Love Cuisine||3633 W Camelback Rd||3633 W Camelback Rd, Ste 7||85019||85019||zomato_2556||yelp_55688||0.8384615384615386||
+0||Mr. Chicken||Mr. Chicken||6382 SOM Center Road||6382 Som Center Rd||44139||44139||zomato_20739||yelp_5733||0.9400000000000001||
+0||Valle Luna Mexican||Valle Luna||3336 W Bell Rd||3336 W Bell Rd||85053||85053||zomato_3022||yelp_29838||0.8222222222222222||
+0||Cafe Cubano||Café Cubano||168 Rue Beaubien E||168 Rue Beaubien E||H2S 1R2||H2S 1R2||zomato_14453||yelp_5917||0.9636363636363636||
+0||La Couscousiere||La Couscoussiere d'Ali Baba||1460 Rue Amherst||1460 Rue Amherst||H2L3L3||H2L 3L3||zomato_16992||yelp_5545||0.8222222222222222||
+0||Little Caesars Pizza||Little Caesars Pizza||6815 S Central Ave||6815 S. Central||85042||85040||zomato_2987||yelp_53220||0.8333333333333333||
+0||Rita's Mexican Food||Rivas Mexican Food||1402 N 35th Ave||4012 N 75th Ave||85009||85033||zomato_2209||yelp_4665||0.8378947368421052||
+0||Guido's Pizza Haven||Guido's Pizza Haven & Restaurant||12809 Chillicothe Rd||12809 Chillicothe Rd||44026||44026||zomato_19928||yelp_10388||0.8375||
+0||Famous Gyro George||Famous Gyro George||6700 Harvard Avenue||6700 Harvard Ave||44105||44105||zomato_20438||yelp_21841||0.9052631578947368||
+0||Pepe's Tacos||Pepe's Tacos||2490 Fremont Street||2490 Fremont St||89104||89104||zomato_1192||yelp_39720||0.8736842105263158||
+0||Phillips Seafood||Phillips Seafood||5501 Josh Birmingham Parkway||5501 Josh Birmingham Pkwy||28208||28214||zomato_7079||yelp_19125||0.9357142857142857||
+0||Mimis Cafe||Mimi's Cafe||596 N Stephanie St||596 N Stephanie St||89014||89014||zomato_1625||yelp_2727||0.9636363636363636||
+0||North End Pizza||North End Pizza||6440 N. Durango||6440 N Durango Dr||89149||89149||zomato_439||yelp_47163||0.8588235294117647||
+0||Capannina||La Capannina||2022 Rue Stanley||2022 Rue Stanley||H3A1R7||H3A 1R6||zomato_17743||yelp_10863||0.9||
+0||Molcajete||Molcajete||1235 26 Ave SE||1235 26 Avenue SE||T2G1R7||T2G 1R7||zomato_9100||yelp_49173||0.8941176470588235||
+0||Nouveau Mogol||Nouveau Mogol||3434 Rue St. Denis||3434 Rue St  Denis||H2L4S9||H2X 3L1||zomato_18049||yelp_49823||0.9666666666666667||
+0||Bell' Italia Pizzeria||Bell' Italia Pizzeria||4909 E Chandler Blvd||4909 E Chandler Blvd, Ste 506||85048||85048||zomato_2480||yelp_26563||0.8137931034482759||
+0||Shawarma Plus||Shawarma Plus||6530 S Decatur Boulevard||6530 S Decatur Blvd||89118||89118||zomato_1397||yelp_2580||0.875||
+0||La Parrilla Suiza||La Parrilla Suiza||1622 South Stapley Drive||1622 S Stapley Dr||85204||85204||zomato_13514||yelp_38135||0.825||
+0||Las Margaritas||Las Margaritas||4426 E Independence Boulevard||4426 E Independence Blvd||28205||28205||zomato_7966||yelp_45170||0.896551724137931||
+0||Julio's Barrio||Julio's Barrio||1110 Memorial Dr NW||1110 Memorial Drive NW||T2N4T3||T2N 3E3||zomato_9077||yelp_3901||0.9181818181818182||
+0||Souvlaki Bar||Souvlaki Bar||3310 Boulevard de la Côte-Vertu||3310 Boulevard de la Côte Vertu||H4R1P8||H4L||zomato_17939||yelp_32111||0.9806451612903226||
+0||Mo'Ramyun||Mcramyun||1 Baldwin Street||1 Baldwin Street||M5T 1L1||M5T 1L1||zomato_5096||yelp_23970||0.9111111111111111||
+0||Original Burrito Company||The Original Burrito Company||4865 E Elliot Rd||4949 E Elliot Rd||85044||85044||zomato_3018||yelp_45831||0.8303571428571429||
+0||Luca's New York Style Pizza||Luca's New York Style Pizza||3451 Darrow Rd.||3451 Darrow Rd||44224||44224||zomato_19306||yelp_48050||0.96||
+0||Greta Solomon's||Greta Solomon's||1118 Queen Street East||1118 Queen Street E||M4M 1K9||M4M 1K9||zomato_6176||yelp_34342||0.9181818181818182||
+0||Restaurant Ambala||Restaurant Ambala||3887 Rue St-Denis||3887 Rue Saint-Denis||H2W2M3||H2W 2M4||zomato_18027||yelp_49861||0.91||
+0||Adrian's||Adrian's||1011 West Main Street||1011 W Main St||85201||85201||zomato_13537||yelp_27703||0.8||
+0||Hacienda Mexican Food||Hacienda Restaurant||1602 E McDowell Rd||1602 E Mcdowell Rd||85006||85006||zomato_2222||yelp_42208||0.8095238095238095||
+0||Sumi Dojo||Sumi Dojo||3479 Blvd Saint-Laurent||3479 Boulevard Saint-Laurent||H2X2T6||H2X 2T6||zomato_14676||yelp_44792||0.8928571428571428||
+0||Pizza Hut||Pizza Hut||501 N Main St||633 S Main St||42459||53532||zomato_19062||yelp_9068||0.8153846153846154||
+0||Mesa 14||Mesa 14||1425 Bishop||1425 Rue Bishop||H3G2E4||H3G 2E4||zomato_14532||yelp_3266||0.8400000000000001||
+0||Sammi & Soupe Dumpling||Sammi & Soupe Dumpling||1909 Saint Catherine St West||1909 Rue Saint-Catherine Ouest||H3H2E8||H3H 2E8||zomato_15969||yelp_3298||0.8200000000000001||
+0||Le Margaux||Le Margaux||5058 Ave Du Parc||5058, avenue du Parc||H2V4E9||H2V 4G1||zomato_15277||yelp_45386||0.88||
+0||La Salle À Manger||La Salle à Manger||1302 Ave Du Mont-Royal Est||1302 Avenue du Mont-Royal E",,"H2J 1Y5||zomato_17763||yelp_46614||0.888888888888889||
+0||El Amigo||El Amigo||51 Rue St-Zotique E||51 Rue Saint-Zotique Est||H2S1K7||H2S 1K7||zomato_15073||yelp_17326||0.875||
+0||Rocco's NY Pizzeria||Rocco's NY Pizzeria||10860 W Charleston Blvd||10860 W Charleston Blvd, Ste 190||89135||89135||zomato_446||yelp_24758||0.83125||
+0||Subway||Subway||3611 E Baseline Rd||5130 W Baseline Rd||85234||85339||zomato_14139||yelp_45817||0.8333333333333333||
+0||Archi's Thai Kitchen||Archi's Thai Kitchen||6360 W Flamingo Road||6360 W Flamingo Rd||89103||89103||zomato_1227||yelp_14629||0.9400000000000001||
+0||Marco's Pizza||Marco's Pizza||13024 Eastfield Road||13024 Eastfield Rd||28078||28078||zomato_8166||yelp_36167||0.9400000000000001||
+0||Crust||Crust||2258 Professor Avenue||2258 Professor Ave||44113||44113||zomato_19981||yelp_18138||0.9142857142857144||
+0||Noce Gourmet Pizzeria||Noce Gourmet Pizzeria||125 Main St.||125 Main St||44024||44024||zomato_19963||yelp_18155||0.95||
+0||Metropolitan Cafe & Catering||Metropolitan Cafe & Catering||138 Brevard Court||138 Brevard Ct||28202||28202||zomato_8151||yelp_25734||0.8941176470588235||
+0||Restaurant Shi Tang||Restaurant Shi Tang||1622 de Maisonneuve Ouest||1622 De Maisonneuve W||H3H2M8||H3H 2M8||zomato_16036||yelp_7637||0.88||
+0||Friends Fish & Chips||Country Fish & Chips||398 Lakeshore Road East||293 Lakeshore Road East||L5G 1H5||L5G 1H3||zomato_3811||yelp_39536||0.8078260869565218||
+0||Maria Bonita's||Maria Bonita||7741 Colony Road||7741 Colony Rd||28226||28263||zomato_7952||yelp_6450||0.8678571428571429||
+0||Pho Bac 97||Pho Bac 97||1016 Boulevard St-Laurent||1016 Boulevard Saint-Laurent||H2Z1J4||H2Z 1J3||zomato_14324||yelp_43263||0.9357142857142857||
+0||Los Chicos Brasa||Los Chicos Brasa||5308 Highway 7 E||5308 Highway 7||L3P 1B9||L3P 1B9||zomato_6518||yelp_46695||0.925||
+0||Pizza Hut||Pizza Hut||501 N Main St||4001 Main St||42459||15120||zomato_19062||yelp_25534||0.8153846153846154||
+0||Wellington||Wellington||3629 Rue Wellington||3629, Rue Wellington||H4G||H4G||zomato_17817||yelp_51958||0.97||
+0||Los Molcajetes||Los Molcajetes||1553 N Eastern Avenue||1553 N Eastern Ave||89101||89101||zomato_1121||yelp_26535||0.9142857142857144||
+0||Sea Hut||Sea Hut||354 E Franklin Street||354 E Franklin St||28112||28112||zomato_7103||yelp_81||0.8857142857142857||
+0||Subway||Subway||1106 N Gilbert Rd||3757 S Gilbert Rd||85203||85296||zomato_14103||yelp_27167||0.8235294117647058||
+0||Los Arcos||Los Arcos||8619 JW Clay Boulevard||8619 Jw Clay Blvd||28262||28262||zomato_7994||yelp_6462||0.8636363636363636||
+0||L'Artizan Biztro||Z Biztro||6349 Rue Saint-Hubert||6349 Rue Saint-Hubert||H2S2L9||H2S 2L9||zomato_18294||yelp_51174||0.8||
+0||Au Just Thai||Au Just Thai||1265 Blvd Des Seigneurs||1265 Boulevard Des Seigneurs,||J6W4P7||J6W||zomato_15374||yelp_16432||0.8758620689655172||
+0||Haru Hana||Haru Hana||912 Blvd De Maisonneuve Est||912 Boulevard de Maisonneuve E||H2L1Z1||H2L 1Z1||zomato_18093||yelp_135||0.86||
+0||Subway||Subway||1221 S Gilbert Rd||3757 S Gilbert Rd||85204||85296||zomato_14135||yelp_27167||0.8588235294117647||
+0||Moghel Tandoori||Moghel Tandoori||538 Ave Victoria||538 avenue Victoria",,"J4P||zomato_18048||yelp_19189||0.9052631578947368||
+0||Restaurant Gandhi||Restaurant Gandhi||230 Rue St-Paul O||230 Rue Saint-Paul O||H2Y1Z9||H2Y 1Z9||zomato_17960||yelp_34969||0.91||
+0||Spices East Indian Dining||Spices East Indian Dining||19369 Sheriff King Street South||19369 Sheriff King Street, Unit 506||T2X 0G7||T2X 0G2||zomato_8803||yelp_88||0.8628571428571429||
+0||Venezia Pizza||Venezia Pizza||230 Sandalwood Parkway East||230 Sandalwood Parkway E||L6Z 1R3||L6Z 1R3||zomato_5401||yelp_29266||0.9333333333333333||
+0||Maison Indian Curry||Maison Indian Curry||996 Rue Jean-Talon W||996 Rue Jean-Talon Ouest||H3N||H3N 1S8||zomato_17956||yelp_17337||0.875||
+0||Subway||Subway||1121 S Higley Rd||1496 N Higley Rd||85206||85234||zomato_14138||yelp_29659||0.85||
+0||Peking House 98||Peking House 98||4125 4 St NW||4125 4 Street NW",,"T2K 1A3||zomato_10329||yelp_11045||0.85||
+0||Pizza Pizza||Pizza Pizza||1846 Rue Sainte-Catherine Ouest||1846 Rue Sainte-Catherine||H3H1M1||H3H 1M1||zomato_16523||yelp_6316||0.8838709677419354||
+0||Mucho Burrito||Mucho Burrito||163 Quarry Park Blvd. SE||163 Quarry Park Blvd SE, Bay 226||T2C4J2||T2C 5E1||zomato_9102||yelp_41477||0.8125||
+0||Raffaele Pizza||Raffaele's Pizza||7019 N 19th Ave||7019 N 19th Ave||85021||85021||zomato_2522||yelp_42179||0.95||
+0||Little Caesars Pizza||Little Caesars Pizza||2007 Washington Ave.||2833 E Washington Ave||47714||53704||zomato_18837||yelp_46098||0.8285714285714285||
+0||Café Mogador||Salon Mogador||310 Rue Beaubien E||310 Rue Beaubien E||H2S||H2S 1R8||zomato_16988||yelp_6710||0.8769230769230769||
+0||Les Canailles||Les Canailles||3854 Rue Ontario Est||3854 Rue Ontario E||H1W1S4||H1W 1S4||zomato_17831||yelp_28175||0.9400000000000001||
+0||GAGA Pizzeria||Gaga Pizzeria||1236 12 Ave SW||1236 12 Avenue SW||T3C1A7||T3C 1A7||zomato_10375||yelp_2925||0.8941176470588235||
+0||Maison Istanbul||Maison Istanbul||5106 Jean-Talon E||5106 Rue Jean-Talon E||H1S1K7||H1S 1K7||zomato_16366||yelp_20113||0.8857142857142857||
+0||Thai Food To Go||Thai Food To Go||3242 E Desert Inn Road||3242 E Desert Inn Rd, Ste 9||89121||89121||zomato_1243||yelp_43682||0.8222222222222222||
+0||Nittaya's Secret Kitchen||Nittaya's Secret Kitchen||2110 N Rampart Blvd Ste 110||2110 N Rampart, Ste 110||89128||89128||zomato_1212||yelp_3465||0.888888888888889||
+0||Roberto's Taco Shop||Roberto's Taco Shop||4845 S Fort Apache Rd||4845 S Fort Apache||89147||89147||zomato_1146||yelp_43557||0.9142857142857144||
+0||Susie's Mexican Cafe & Lunch||Susie's Mexican Cafe & Lounge||4044 S 16th St||4044 S 16th St||85040||85040||zomato_2742||yelp_54686||0.9586206896551724||
+0||Jalisciense Mexican Food||Jalisience Mexican Food||1948 W Broadway Rd||1948 W Broadway Rd||85202||85202||zomato_13554||yelp_54321||0.9666666666666667||
+0||Restaurant Dakao||Restaurant Dakao||360 Rue Jean-Talon E||360 Rue Jean Talon E||H2R||H2R 1T3||zomato_14354||yelp_32913||0.97||
+0||Pancho Y Emiliano||Pancho y Emiliano||200 Augusta Avenue||200 Augusta Ave||M5T 2L6||M5T 2L8||zomato_5451||yelp_51981||0.9||
+0||Le Local||Le Local||700 Rue William||740 Rue William||H3C4C9||H3C 1P1||zomato_17762||yelp_18960||0.96||
+0||Golden Thai||Golden Thai Restaurant||105 Church Street||105 Church Street||M5C 2G3||M5C 2G3||zomato_4321||yelp_32530||0.8||
+0||Me Sabe a Peru||Me Sabe A Peru||4000 Steeles Avenue West||4000 Steeles Avenue W, Suite 10",,"L4L 4R8||zomato_6523||yelp_45325||0.8451612903225807||
+0||Los Betos Mexican Food||Los Favoritos Mexican Food||4353 E University Dr||2650 E University Dr||85205||85213||zomato_13542||yelp_26528||0.8176923076923077||
+0||Los Favoritos Taco Shop||Los Favoritos Mexican Food||2650 E University Dr||2650 E University Dr||85213||85213||zomato_13570||yelp_26528||0.8615384615384616||
+0||Baan Mae Toy||Baan Mae Toy||4105 W Sahara Avenue||4105 W Sahara Ave||89102||89102||zomato_1293||yelp_2019||0.91||
+0||Canadian Pizza Unlimited||Canadian Pizza Unlimited||19-7400 MacLeod Trail SE||7400 MacLeod Trl SE||T2H0L9||T2H 0L9||zomato_10802||yelp_52607||0.875||
+0||Varsity Pizza & Subs||Varsity Pizza and Subs||4624 Varsity Dr NW||4624 Varsity Dr NW",,"T3A 2L9||zomato_10410||yelp_36277||0.9454545454545454||
+0||Wok With Dave||Wok With Dave||735 Ranchlands Blvd NW||735 Ranchlands Boulevard NW||T3G2C5||T3G 3A9||zomato_10338||yelp_40133||0.888888888888889||
+0||Scarpetta||Scarpetta||3708 Las Vegas Blvd S||3708 Las Vegas Blvd S, Level 3||89109||89109||zomato_440||yelp_52757||0.8200000000000001||
+0||El Herradero Mexican Restaurant||El Herradero Mexican Restaurant||1725 E Warm Springs Road||1725 E Warm Springs Rd||89119||89119||zomato_1197||yelp_31871||0.95||
+0||Metro pizza||Metro Pizza||4886 Boul St-Charles||4886 Boul Saint-Charles||H9H3E2||H9H 3E2||zomato_18429||yelp_11531||0.9217391304347826||
+0||Mangos Mexican Cafe||Mango's Mexican Cafe||44 W Main St||44 W Main St||85201||85201||zomato_13274||yelp_20753||0.98||
+0||Jack in the Box||Jack in the Box||12098 N 32nd St||12223 N 32nd St||85028||85032||zomato_2996||yelp_14976||0.88||
+0||Popeyes Louisiana Kitchen||Popeyes Louisiana Kitchen||6111 W Sahara Ave||6110 W Sahara Avenue||89146||89146||zomato_1095||yelp_14428||0.88||
+0||Kiin||Kiin||326 Adelaide Street West||326 Adelaide Street W",,"M5V 1R3||zomato_5608||yelp_43045||0.925||
+0||La Parrilla Suiza||La Parrilla Suiza||1622 South Stapley Drive||1622 S Stapley Dr||85204||85204||zomato_13785||yelp_38135||0.825||
+0||Chicken on the Way||Chicken-On-The-Way||1443 Kensington Rd NW||1443 Kensington Road NW||T2N3P9||T2N 3R1||zomato_10725||yelp_36749||0.8811594202898552||
+0||Pin Kaow Thai||Pin Kaow Thai||7835 S Rainbow Boulevard||7835 S Rainbow Blvd||89139||89139||zomato_300||yelp_601||0.875||
+0||TOA Vietnamese Cuisine||TOA Vietnamese Cuisine||611 6 St SW||611  6th St SW||T2P0T5||T2P 5E4||zomato_8901||yelp_22668||0.8714285714285714||
+0||Peking House 98||Peking House 98||4125 4 St NW||4125 4 Street NW",,"T2K 1A3||zomato_9802||yelp_11045||0.85||
+0||Burrito Express||Burrito Express||450 N Alma School Rd||450 N Alma School R||85201||85201||zomato_13529||yelp_39809||0.97||
+0||Gagana Ramen||Gagana Ramen||5421 11 Street NE||101-5421 11th Street NE||T2E 6Z7||T2E 6M4||zomato_8739||yelp_52623||0.8434782608695652||
+0||Mogette||Mogette Bistro||581 Mount Pleasant Road||581 Mount Pleasant Road||M4S 2M5||M4S 2M5||zomato_6151||yelp_10745||0.8||
+0||Mark Rich's New York Pizza & Pasta II||Mark Rich's New York Pizza & Pasta||11710 W Charleston Boulevard||11710 W Charleston Blvd||89135||89135||zomato_451||yelp_36846||0.8604247104247105||
+0||Grimaldi's Pizzeria||Grimaldi's Pizzeria||9595 S Eastern Ave Ste 100||9595 S Eastern Ave, Ste 100||89123||89123||zomato_413||yelp_577||0.9777777777777779||
+0||Ramen Misoya||Ramen Misoya||2065A Bishop||2065A Rue Bishop||H3G2E8||H3G 2E8||zomato_16586||yelp_18867||0.85||
+0||Macayo's Mexican Kitchen||Macayo's Mexican Restaurant||8245 W Sahara Ave||8245 W Sahara Ave||89117||89117||zomato_1148||yelp_38202||0.8814814814814815||
+0||Bottega||Bottega||65 Rue St-Zotique E||65 Rue Saint-Zotique E||H2S1K7||H2S 1K7||zomato_14801||yelp_13264||0.9181818181818182||
+0||Roberto's Taco Shop||Roberto's Taco Shop||10612 S Eastern Ave||2685 S Eastern Ave||89052||89169||zomato_1162||yelp_26395||0.8736842105263158||
+0||Indique Unique Flavours of India||Indique Unique Indian Flavors||3829 Bow Trail SW||3829 Bow Trail SW||T3C 2E8||T3C 2E8||zomato_8807||yelp_19345||0.8125||
+0||Abuela's Tacos||Abuela's Tacos||4225 E. Sahara Avenue||4225 E Sahara Ave, Ste 1||89104||89104||zomato_1157||yelp_13046||0.825||
+0||Casa Cocina||Casa Cocina||2121 E Craig Road||2121 East Craig Rd||89030||89030||zomato_1188||yelp_38229||0.8333333333333333||
+0||KimBob Cafe||Kimbob Cafe||1771 Av Cardinal||1771, Avenue Cardinal||H9P2W4||H9P 2W4||zomato_16107||yelp_35715||0.8571428571428571||
+0||Teriyaki Time||Teriyaki Time||4550 s. maryland pkwy||4550 S Maryland Pkwy, Ste 9||89119||89119||zomato_1363||yelp_37435||0.8222222222222222||
+0||Buono's Pizza||Buono's Pizza||2023 W Guadalupe Rd||2023 W Guadalupe Rd, Ste 12||85202||85202||zomato_13869||yelp_54782||0.8222222222222222||
+0||Giovanni's Pizza & Pasta||Giovanni's Pizza & Pasta||559 Winecoff School Road||559 Winecoff School Rd||28027||28027||zomato_7456||yelp_48486||0.95||
+0||Thai Basil||Thai Basil||467 Bloor Street West||467 Bloor Street W||M5S 1X9||M5S 1X9||zomato_4384||yelp_28449||0.9142857142857144||
+0||Little Caesars Pizza||Little Caesars Pizza||822 E Union Hills||1929 W Union Hills||85024||85027||zomato_2963||yelp_12083||0.8666666666666667||
+0||Roberto's Taco Shop||Robertos Taco Shop||8680 W Warm Springs Rd #105||8680 W Warm Springs Rd, Ste 105||89148||89148||zomato_1180||yelp_30373||0.8821731748726656||
+0||7 Mares Mexican Restaurant||Mariscos 7 Mares Mexican Restaurant||2000 E Charleston Blvd||2000 E Charleston Blvd||89104||89104||zomato_88||yelp_44851||0.8971428571428571||
+0||La Capital Tacos||La Capital Tacos||1096  Boul Saint- Laurent||1096 Boulevard Saint-Laurent||H2Z 1J5||H2Z 1J5||zomato_14525||yelp_4532||0.85||
+0||Ta Chido||Ta Chido||5611 Ave Du Parc||5611 Avenue du Parc||H2V4G9||H2V 4G9||zomato_14527||yelp_28864||0.9052631578947368||
+0||La Cancha||La Cancha||11329 E. Independence Boulwvard||11329 E Independence Blvd||28105||28105||zomato_7389||yelp_1939||0.8838709677419354||
+0||Lindo Michoacan||Lindo Michoacan||10082 West Flamingo||10082 W Flamingo Rd||89147||89147||zomato_1126||yelp_3463||0.8105263157894738||
+0||Ka Chi||Ka Chi||8 St. Andrew Street||8 Saint Andrews Street||M5T 2G4||M5T 1K6||zomato_5036||yelp_34933||0.8636363636363636||
+0||Vietnam Grille||Vietnam Grille||5615 South Boulevard||5615 South Blvd||28217||28217||zomato_7346||yelp_25984||0.85||
+0||Savory Sub Cafe & Pizzeria||Savory Sub Cafe||3840 Center Rd||3840 Center Rd||44212||44212||zomato_20709||yelp_28212||0.8307692307692307||
+0||Restaurant Pho Nam Quan||Pho Nam Quan||3562 Rue Jarry E||3562 Rue Jarry E||H1Z||H1Z 2G3||zomato_14358||yelp_46960||0.808695652173913||
+0||Trattoria Reggiano||Trattoria Reggiano||3377 S Las Vegas Blvd||3355 Las Vegas Blvd S||89109||89109||zomato_418||yelp_48182||0.8285714285714285||
+0||Ilios Noche||Ilios Noche||11508 Providence Road||11508 Providence Rd||28277||28277||zomato_7394||yelp_36435||0.9428571428571428||
+0||Balboa Pizza Company||Balboa Pizza Company||2240 Village Walk Dr||2265 Village Walk Dr||89052||89052||zomato_1714||yelp_19257||0.9400000000000001||
+0||KFC||KFC||2757 E Main St||6837 E Main St||85213||85207||zomato_14119||yelp_43363||0.8714285714285714||
+0||Royaume Khmer||Royaume Khmer||310 Boulevard Sir Wilfrid Laurier||310 Boul Sir-Wilfrid-Laurier||J3H2X2||J3H 3N7||zomato_14402||yelp_16400||0.8727272727272727||
+0||Best Gyros||Best Gyros||2245 Lee Rd.||2245 Lee Rd||44118||44118||zomato_20668||yelp_4712||0.95||
+0||Bamboo Bubble Tea||Bamboo Bubble Tea||1100 Burnhamthrope Road West||1100 Burnhamthorpe Road W||L5C 4E6||L5C 4E6||zomato_5752||yelp_16945||0.8928571428571428||
+0||Subway||Subway||144 N Central Ave||2817 N Central Ave||85004||85004||zomato_2930||yelp_43797||0.8666666666666667||
+0||Mercatto||Locale Mercatto||330 Bay Street||330 Bay Street",,"M5H 2S8||zomato_4533||yelp_27524||0.8133333333333334||
+0||Maison de Cari Golden||Maison de Cari Golden||5210 Boulevard St-Laurent||5210 Boulevard Saint-Laurent||H2T2L9||H2T 1S1||zomato_17981||yelp_47732||0.9357142857142857||
+0||Carribean Tasty Treats||Caribbean Tasty Treats||4410 Blvd des Sources||4410 des Sources",,"H8Y 3B7||zomato_14463||yelp_16434||0.8207792207792207||
+0||Koya Japan||Koya Japan||5111 Northland Dr NW||5111 Northland Drive NW||T2L2L2||T2L 2J7||zomato_9262||yelp_2104||0.9217391304347826||
+0||La Cocina De Dona Luz||La Cocina De Dona Luz||807 St. Clair Avenue West||807 Saint Clair Avenue W",,"M6C 1B9||zomato_4410||yelp_32858||0.8320000000000001||
+0||Bangkok Garden||Bangkok Garden Restaurant||18 Elm Street||18 Elm Street||M5G 1G7||M5G 1G7||zomato_4377||yelp_28756||0.8240000000000001||
+0||Pizzeria Geppetto||Pizzeria Geppetto||2504 Rue Notre-Dame W||2504, rue Notre-Dame Ouest||H2K4K3||H3J 1N5||zomato_17663||yelp_46848||0.8615384615384615||
+0||Juree's Thai Place||Juree's Thai Place||2055 16 Ave. NW||2055 16th Avenue NW||T2M||T2M 0M3||zomato_9786||yelp_10348||0.8421052631578948||
+0||Chez Ping||Chez Ping||7401 Newman||7401 Boul Newman||H8N1X3||H8N 1X3||zomato_16030||yelp_46740||0.8125||
+0||Harbour Sixty||Harbour 60||60 Harbour Street||60 Harbour Street",,"M5J 1B7||zomato_3823||yelp_54561||0.8461538461538461||
+0||Khoury's Mediterranean Restaurant||Khoury's Mediterranean Restaurant||9340 W Sahara Avenue||9340 W Sahara Ave, Ste 106||89148||89117||zomato_1374||yelp_3387||0.8153846153846154||
+0||El Zaziummm||El Zaziummm||1276 Ave Laurier E||1276 Avenue Laurier E||H2J1H2||H2J 1H1||zomato_15119||yelp_17093||0.9142857142857144||
+0||Jack in the Box||Jack In the Box||2301 S Decatur Blvd||4860 S Decatur Blvd||89102||89103||zomato_1096||yelp_26951||0.8736842105263158||
+0||La Carnita||La Carnita||780 Queen Street East||780 Queen Street E",,"M4M 1H4||zomato_5439||yelp_970||0.9142857142857144||
+0||KimBob Cafe||Kimbob Cafe||1771 Av Cardinal||1771, Avenue Cardinal||H9P2W4||H9P 2W4||zomato_16416||yelp_35715||0.8571428571428571||
+0||Punjabi Sweet House & Restaurant Ltd||Punjabi Sweet House & Restaurant||216 Saddletowne Cir NE||216 Saddletowne Circle NE||T3J0H5||T3J 0C9||zomato_8795||yelp_40375||0.8835555555555556||
+0||Subway||Subway||1106 N Gilbert Rd||1221 S Gilbert Rd||85203||85204||zomato_14103||yelp_3184||0.8588235294117647||
+0||Humble Pie||Humble Pie||21050 North Tatum Boulevard||21050 N Tatum Blvd||85050||85050||zomato_2489||yelp_42833||0.8||
+0||Samurai Sam's Teriyaki Grill||Samurai Sam's Teriyaki Grill||4731 E Greenway Rd||6339 E Greenway Rd||85032||85254||zomato_3163||yelp_56755||0.9||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||3041 E McKellips Rd||3041 E. McKellips Rd||85213||85213||zomato_13583||yelp_26789||0.97||
+0||Emerald Garden Peking & Seafood||Emerald Garden Restaurant||1006 16 Ave NW||1006 16 Ave NW||T2M0K6||T2M 0K5||zomato_10193||yelp_9892||0.8193548387096774||
+0||Barro's Pizza||Barro's Pizza||1545 S Power Rd||1066 N Power Rd||85206||85205||zomato_13437||yelp_54422||0.8400000000000001||
+0||Copa By Sea||Copa By Sea||230 Adelaide Street West||230 Adelaide Street W||M5H 3H1||M5H 3H1||zomato_3744||yelp_30690||0.925||
+0||Subway||Subway||3411 Las Vegas Blvd S||3950 S Las Vegas Blvd||89109||89119||zomato_1068||yelp_55960||0.8||
+0||Emiliano's||Emiliano's||260 Rue Notre-Dame Ouest||260 Rue Notre-Dame O||H2Y 1T3||H2Y 1T3||zomato_14544||yelp_20639||0.9||
+0||Vaqueros Carne Asada||Vaqueros Carne Asada||1821 W Southern Ave||2602 W Southern Ave||85041||85282||zomato_3077||yelp_38031||0.8736842105263158||
+0||Spinato's Pizza||Spinato's Pizzeria||1614 E Bell Rd||1614 E Bell Rd||85022||85022||zomato_2474||yelp_30799||0.9333333333333333||
+0||The Cooking Pot||The Cooking Pot||5622 E Independence Boulevard Suite 129||5622 E Independence Blvd, Ste 129||28212||28212||zomato_7498||yelp_12668||0.8769230769230769||
+0||Chipotle Mexican Grill||Chipotle Mexican Grill||1955 S Signal Butte Rd||1955 S Signal Butte Rd, Ste 101||85209||85209||zomato_13357||yelp_33913||0.8258064516129033||
+0||Angela Mia Pizza||Angela-Mia Pizza||15811 Euclid Avenue||15811 Euclid Ave||44112||44112||zomato_20011||yelp_29062||0.8802631578947367||
+0||Jack in The Box||Jack In the Box||1105 S Val Vista Dr||4910 S Val Vista Dr||85204||85298||zomato_14142||yelp_43443||0.9052631578947368||
+0||Guadalupe mexicaine||La Guadalupe Mexicain||2345 Rue Ontario E||2345 Rue Ontario E||H2K||H2K 1W2||zomato_14542||yelp_29956||0.9238095238095239||
+0||Fondue Du Prince||La Fondue du Prince||94 Rue Ste-Anne||94 Rue Sainte-Anne||H9X1L9||H9X 1L8||zomato_14761||yelp_31095||0.8368421052631578||
+0||Pad Thai||Pad Thai||5657 Darrow Road||5657 Darrow Rd||44236||44236||zomato_19521||yelp_22185||0.925||
+0||Corso's Italian||Corso's Italian Restaurant||29691 Lorain Rd||29691 Lorain Rd||44070||44070||zomato_20365||yelp_27208||0.8307692307692307||
+0||Secret Pizza||Secret Pizza||3708 S Las Vegas Blvd||3708 Las Vegas Blvd S||89109||89109||zomato_425||yelp_54924||0.8857142857142857||
+0||Mr. Chicken||Mr. Chicken||9010 Darrow Road||9010 Darrow Rd||44087||44087||zomato_20772||yelp_20467||0.925||
+0||Le St-Urbain||Le St-Urbain||96 Rue Fleury Ouest||96, rue Fleury O||H3L1S8||H3L 1T2||zomato_17783||yelp_835||0.8421052631578948||
+0||KFC||KFC||1950 W Baseline Rd||705 W Baseline Rd||85202||85283||zomato_14144||yelp_15751||0.9||
+0||Marco's Pizza||Marco's Pizza||13024 Eastfield Road||13024 Eastfield Rd||28078||28078||zomato_7263||yelp_36167||0.9400000000000001||
+0||KFC||KFC||10720 E Baseline Road||705 W Baseline Rd||85209||85283||zomato_14122||yelp_15751||0.8||
+0||GAGA Pizzeria||Gaga Pizzeria||1236 12 Ave SW||1236 12 Avenue SW||T3C1A7||T3C 1A7||zomato_9983||yelp_2925||0.8941176470588235||
+0||Pizzeria Dei Compari||Pizzeria Dei Compari||1668 Rue St-Denis||1668 Rue Saint-Denis||H2X3K4||H2X 3K6||zomato_17324||yelp_50532||0.91||
+0||Galanga Thai Eatery||Galanga Thai Eatery||8174 S Las Vegas Blvd||8174 S Las Vegas Blvd, Ste 108||89123||89123||zomato_1232||yelp_12140||0.8200000000000001||
+0||Nando's||Nando's||741 Queen Street West||741 Queen Street W||M6J 1G1||M6J 1G1||zomato_4598||yelp_15543||0.9142857142857144||
+0||Harbor Palace Seafood||Harbor Palace Seafood Restaurant||4275 Spring Mountain Rd||4275 Spring Mountain Rd||89102||89102||zomato_24||yelp_32351||0.8625||
+0||Top Shelf Mexican Food||Top Shelf Mexican Food & Cantina||3301 W Greenway Rd||3301 W Greenway Rd||85053||85053||zomato_3067||yelp_15674||0.875||
+0||Gus's Cafe & Pizzeria||Gus's Cafe & Pizzeria||1620 29 St NW||1620 29 Street NW||T2N4L7||T2N 4L7||zomato_10377||yelp_19549||0.8588235294117647||
+0||Rosati's Pizza||Rosati's Pizza||2320 E Baseline Rd||2320 E Baseline Rd, Ste 158||85042||85042||zomato_2519||yelp_54747||0.8||
+0||KFC||KFC||2210 E Baseline Rd||705 W Baseline Rd||85204||85283||zomato_14117||yelp_15751||0.8333333333333333||
+0||La Chronique||La Chronique||104 Ave Laurier Ouest||104 Avenue Laurier Ouest||H2T2N7||H2T 2N7||zomato_17810||yelp_23765||0.925||
+0||Hacienda Mexican Food||Hacienda Restaurant||1602 E McDowell Rd||1602 E Mcdowell Rd||85006||85006||zomato_2755||yelp_42208||0.8095238095238095||
+0||Greek Village Grille||Greek Village Grille||14019 Madison Ave.||14019 Madison Ave||44107||44107||zomato_19279||yelp_335||0.9666666666666667||
+0||Siam Garden||Siam Garden||3297 N Las Vegas Boulevard Suite 65||3297 Las Vegas Blvd N, Ste 65||89115||89115||zomato_1217||yelp_24056||0.8114285714285714||
+0||The Greek Pita||The Greek Pita||2737 West Thunderbird Road #108||2737 W Thunderbird Rd, Ste 108||85053||85053||zomato_3173||yelp_27465||0.8064516129032259||
+0||Subway||Subway||9757 State Route 14||9380 State Route 43||44241||44241||zomato_20767||yelp_6871||0.8421052631578948||
+0||Tacos & Tequila||T&T - Tacos & Tequila||3900 Las Vegas Blvd S||3900 Las Vegas Blvd||89119||89119||zomato_1196||yelp_41453||0.8285714285714285||
+0||Jean's Trinidad Foods||Jean's Trinidad Foods||5914 Sherbrooke West||5914 Sherbrooke Rue W||H4A1X7||H4A 1X7||zomato_14472||yelp_5646||0.8857142857142857||
+0||New Tang Dynasty Restaurant||Tang Dynasty Restaurant||112 3 Ave SE||112 3 Avenue SE",,"T2G 0B6||zomato_10306||yelp_9765||0.8207407407407408||
+0||Pick Thai||Pick Thaï||5221 Boulevard De Maisonneuve Ouest||5221 Boulevard de Maisnneuve O||H4A 0A4 0||H4A 0A4||zomato_15361||yelp_3188||0.8698412698412699||
+0||Maison Istanbul||Maison Istanbul||5106 Jean-Talon E||5106 Rue Jean-Talon E||H1S1K7||H1S 1K7||zomato_17242||yelp_20113||0.8857142857142857||
+0||Il Fornello||Il Fornello||8851 Yonge Street||1560 Yonge Street",,"M4T 2S9||zomato_4540||yelp_28784||0.8588235294117647||
+0||Salt & Pepper Mexican Restaurante||Salt & Pepper Mexican Restaurant||4351 Macleod Trl SW||4351 MacLeod Trail SW||T2G||T2G 0A3||zomato_9599||yelp_40934||0.9307359307359307||
+0||Best Gyros||Best Gyros||2245 Lee Rd.||2245 Lee Rd||44118||44118||zomato_20427||yelp_4712||0.95||
+0||Gold Bistro Chinese||Gold Bistro Chinese Restaurant||208 Midpark Way SE||208 Midpark Way SE||T2X1J6||T2X 1J6||zomato_10333||yelp_36661||0.8533333333333333||
+0||Angry Crab & BBQ||Angry Crab Shack||3820 E Ray Rd||3820 E Ray Rd||85044||85044||zomato_2176||yelp_16470||0.875||
+0||Pizza Bogo||pizzaBOGO||13434 Cedar Road||13434 Cedar Rd||44118||44118||zomato_19934||yelp_13955||0.885||
+0||Red Lobster||Red Lobster||100-6100 Macleod Trail SW||100-6100 MacLeod Trail S.W.||T2H0K5||T2H 0K5||zomato_10192||yelp_10322||0.9555555555555556||
+0||Subway||Subway||3611 E Baseline Rd||9221 E Baseline Rd||85234||85212||zomato_14139||yelp_32603||0.9||
+0||Bonterra Trattoria||Bonterra Trattoria||1016 8 St SW||1016 8 Street SW||T2R0J3||T2R 1K2||zomato_9306||yelp_55556||0.85||
+0||Salt & Pepper Mexican Restaurante||Salt & Pepper Mexican Restaurant||4351 Macleod Trl SW||4351 MacLeod Trail SW||T2G||T2G 0A3||zomato_10177||yelp_40934||0.9307359307359307||
+0||Mucho Burrito||Mucho Burrito||5179 Falconridge Blvd NE||5179 Falconridge Boulevard NE||T3J||T3J 3K9||zomato_9107||yelp_42461||0.896551724137931||
+0||Pizzeria Geppetto||Pizzeria Geppetto||2504 Rue Notre-Dame W||2504, rue Notre-Dame Ouest||H2K4K3||H3J 1N5||zomato_17313||yelp_46848||0.8615384615384615||
+0||L & L Hawaiian Barbeque||L & L Hawaiian Barbecue||2755 S Nellis Blvd Bldg C||2755 S Nellis Blvd||89121||89121||zomato_1437||yelp_30648||0.8146086956521739||
+0||Naked City Pizza Shop||Naked City Pizza Shop||3240 S Arville Street||3240 S Arville St||89102||89102||zomato_423||yelp_40541||0.8857142857142857||
+0||Bourlingueur||Le Bourlingueur||363 Rue St-Francois-Xavier||363 Rue Saint-François-Xavier||H2Y 3P9||H2Y 3P9||zomato_17835||yelp_29105||0.8372413793103448||
+0||Fondue Du Prince||La Fondue du Prince||94 Rue Ste-Anne||94 Rue Sainte-Anne||H9X1L9||H9X 1L8||zomato_15749||yelp_31095||0.8368421052631578||
+0||Le Club Chasse et Pêche||Le Club Chasse et Pêche||423 Rue St-Claude||423 Rue Saint-Claude||H2Y3B6||H2Y 3B6||zomato_17757||yelp_19951||0.91||
+0||Little Caesars Pizza||Little Caesars Pizza||3544 E. Southern Ave||10720 E Southern Ave||85204||85209||zomato_14061||yelp_31510||0.8200000000000001||
+0||Taj Mahal L'inde||Taj Mahal Inde||4616 Rue Wellington||4616 Rue Wellington",,"H4G 1W8||zomato_14285||yelp_32813||0.95||
+0||Thai-Chinese Restaurant||Kung Fu Thai & Chinese Restaurant||3506 S Valley View Blvd||3505 S Valley View Blvd||89103||89103||zomato_1284||yelp_41269||0.8405797101449276||
+0||Lorenzo's Pizzeria||Lorenzo's Pizzeria||515 17 Avenue Southwest||515 17 Avenue SW||T2S0A9||T2S 0A9||zomato_10381||yelp_11575||0.817391304347826||
+0||Benjarong Authentic Thai Cuisine||Benjarong Authentic Thai Cuisine||7425 South Durango Drive Suite 101||7425 S Durango Dr, Ste 101||89113||89113||zomato_1233||yelp_2488||0.8411764705882354||
+0||Pho Phuong Vi Noodle House||Pho Phuong VI Noodle House||1330A - 16 Avenue N.W.||1330A 16th Avenue NW||T2M0L1||T2M 0L1||zomato_8859||yelp_40279||0.8363636363636364||
+0||La Cancha||La Cancha||11329 E. Independence Boulwvard||11329 E Independence Blvd||28105||28105||zomato_8487||yelp_1939||0.8838709677419354||
+0||The Sultan's Tent & Cafe Moroc||The Sultan's Tent & Cafe Moroc||49 Front Street East||49 Front Street E",,"M5E 1B3||zomato_6171||yelp_7903||0.91||
+0||Tacos El Asador||Tacos El Asador||690 Bloor Street West||689 Bloor Street W||M6G 4B9||M6G 1L2||zomato_5507||yelp_50194||0.8571428571428571||
+0||The Spicy Amigos||The Spicy Amigos||821 4th Avenue SW||821 4 Avenue SW||T2P 0K5||T2P 0K5||zomato_9582||yelp_34153||0.9294117647058824||
+0||Resto Lychee||Resto Lychee||187 Ave Du Mont-Royal E||187 Avenue du Mont-Royal E||H2T||H2T 1P2||zomato_16007||yelp_6394||0.9307692307692308||
+0||1900 Mexican Grill||1900 Mexican Grill||1523 Elizabeth Avenue||1523 Elizabeth Ave||28204||28204||zomato_7946||yelp_33010||0.9142857142857144||
+0||Peppino's Oven||Peppino's Oven||2015 Kingsridge Dr||2015 Kingsridge Drive",,"L6M||zomato_6454||yelp_45272||0.9142857142857144||
+0||3 Amigos||3 Amigos||1621 Saint-Denis||1621 Rue Saint-Denis||H2X3K3||H2X 3K3||zomato_15113||yelp_52922||0.88||
+0||Dima's Tacos||Dimas Tacos||5081 N Rainbow Blvd Ste 103||5081 N Rainbow Blvd, Ste 103||89130||89130||zomato_1199||yelp_2352||0.9452380952380952||
+0||Kung Fu Thai & Chinese Restaurant||Kung Fu Thai & Chinese Restaurant||3505 South Valley View Boulevard||3505 S Valley View Blvd||89103||89103||zomato_1211||yelp_41269||0.83125||
+0||Subway||Subway||1106 N Gilbert Rd||756 S Gilbert Rd||85203||85296||zomato_14103||yelp_43164||0.8588235294117647||
+0||Subway||Subway||1221 S Gilbert Rd||756 S Gilbert Rd||85204||85296||zomato_14135||yelp_43164||0.8588235294117647||
+0||Wild Thaiger||Wild Thaiger||2631 North Central Avenue||2631 N Central Ave||85004||85004||zomato_2353||yelp_41552||0.8320000000000001||
+0||Toqué!||Toqué||900 Pl Jean-Paul-Riopelle||900 Place Jean-Paul-Riopelle||H2Y3X7||H2Z 2B2||zomato_14798||yelp_41433||0.8690476190476191||
+0||Crust||Crust||2258 Professor Avenue||2258 Professor Ave||44113||44113||zomato_19311||yelp_18138||0.9142857142857144||
+0||Grimaldi's Pizzeria||Grimaldi's Pizzeria||3327 Las Vegas Blvd Ste 2710||3200 Las Vegas Blvd S, Ste 1540||89109||89109||zomato_432||yelp_25942||0.8258064516129033||
+0||Lucille's Oyster Dive||Lucille's Oyster Dive||5669 Monkland Avenue ||5669 Monkland Avenue||H4A 1E3||H4A 1E3||zomato_15869||yelp_56186||0.9714285714285714||
+0||Scopa Neighbourhood Italian||Scopa Neighbourhood Italian||2202 Centre Street N||2220 Centre Street NE",,"T2E 2T5||zomato_9348||yelp_39573||0.9142857142857144||
+0||J & M Chinese Restaurant||J & M Chinese Cuisine Restaurant||1035 N Ellsworth Road||1035 N Ellsworth Rd||85207||85207||zomato_13849||yelp_42482||0.8428571428571429||
+0||Metro Pizza||Metro Pizza||6720 Sky Pointe Drive||6720 Sky Pointe Dr||89131||89131||zomato_1741||yelp_34061||0.9142857142857144||
+0||Grimaldi's Pizzeria||Grimaldi's Pizzeria||3200 S Las Vegas Blvd Ste 1540||3200 Las Vegas Blvd S, Ste 1540||89109||89109||zomato_456||yelp_25942||0.9032258064516129||
+0||Restaurant Le P'Tit Plateau||Le P'tit Plateau||330 Rue Marie-Anne E||330 Rue Marie-Anne E||H2W1B2||H2W 1B1||zomato_17782||yelp_17218||0.837037037037037||
+0||Original Cusine||Original Cuisine||1853 W Broadway Road||1853 W Broadway Rd||85202||85202||zomato_13845||yelp_13259||0.915||
+0||Golden Valley Chinese||Golden Valley Chinese Restaurant||832 W Baseline Rd||832 W Baseline Rd||85210||85210||zomato_13815||yelp_2224||0.8625||
+0||Phoenix Burrito House||PHX Burrito House||4140 N 7th Ave||4140 N 7th Ave||85013||85013||zomato_3088||yelp_39288||0.9238095238095239||
+0||Mexico Lindo||Mexico Lindo||915 Taunton Road East||915 Taunton Road E||L1R3L7||L1R 3L6||zomato_5433||yelp_34304||0.9142857142857144||
+0||Icehouse||Icehouse||51 Rue Roy Est||51 Rue Roy E||H2W1L8||H2W 1L8||zomato_16570||yelp_47617||0.9142857142857144||
+0||Moghel Tandoori||Moghel Tandoori||2770 Boulevard Jacques-Cartier E||2770 Boulevard Jacques Cartier E||J4N1P8||J4N 1P8||zomato_17993||yelp_10537||0.98125||
+0||Vincenza's Pizza & Pasta||Vincenza's Pizza & Pasta||603 Prospect Ave||603 Prospect Ave E||44115||44115||zomato_20303||yelp_30199||0.9333333333333333||
+0||Queen's Pizzeria & Cafe||Queens Pizzeria||125 W Main St||127 W Main St||85201||85201||zomato_13881||yelp_13232||0.8147157190635452||
+0||Eastern Fortune||Eastern Fortune Restaurant||416 16 Avenue NE||416 16 Avenue NE||T2E 8K9||T2E 1K2||zomato_10284||yelp_40791||0.8307692307692307||
+0||Thai Princess||Thai Princess||387 King Street West||387 King Street W||M5V 1K1||M5V 1K1||zomato_5556||yelp_52927||0.91||
+0||Don Tortaco Mexican Grill||Don Tortaco Mexican Grill||430 E Silverado Ranch. #100||430 E Silverado Ranch, Ste 100||89123||89123||zomato_1195||yelp_41288||0.9||
+0||Taco Time||Taco Time||10409 Bonaventure Dr SE||10409 Bonaventure Drive SE||T2J5R8||T2J 5R8||zomato_9677||yelp_52603||0.9307692307692308||
+0||Watercress Express||Watercress Express||1322 17 Ave SW||1322 17th Avenue SW||T2T0C3||T2T 0C3||zomato_8852||yelp_24282||0.8421052631578948||
+0||Christina's Authentic Mexican Restaurant||Christina's Authentic Mexican Food Restaurant||2706 E University Dr Ste 10||2706 E University Dr||85213||85213||zomato_13286||yelp_5399||0.8||
+0||I Am Thai Cuisine||I Am Thai Cuisine||310 E Warm Springs Rd||310 E Warm Springs Rd, Ste G||89119||89119||zomato_1291||yelp_2380||0.85||
+0||Boston Pizza||Boston Pizza||1231 boul Des Prommenades||1231 Boulevard des Promenades||J3V6H1||J3V 6H1||zomato_14999||yelp_41336||0.8758620689655172||
+0||Cafe 109||Cafe 109||750 East Pyle Ave Ste 109||750 E Pyle Ave, Ste 109||89183||89183||zomato_1288||yelp_41126||0.904||
+0||Silver Dragon Restaurant||Silver Dragon Restaurant||106 3 Ave SE||106 3 Avenue SE||T2G4Z4||T2G 0B6||zomato_10257||yelp_52658||0.88||
+0||Chianti Café & Restaurant||Chianti Cafe & Restaurant||1438 17 Ave SW||1438 17 Avenue SW||T2T0C8||T2T 0C8||zomato_9365||yelp_55471||0.8781176470588234||
+0||Hermanos Mexican Grill||Hermanos Mexican Grill||61 Lakeshore Road East||61 Lakeshore Road E||L5G 1C9||L5G 1C9||zomato_5477||yelp_46171||0.9181818181818182||
+0||Cora Pizza||Cora Pizza||656 Spadina Avenue||656A Spadina Ave||M5S 2H7||M5S 2H7||zomato_5362||yelp_47693||0.8666666666666667||
+0||Chianti Café & Restaurant||Chianti Cafe & Restaurant||1438 17 Ave SW||1438 17 Avenue SW||T2T0C8||T2T 0C8||zomato_9392||yelp_55471||0.8781176470588234||
+0||Saveurs Thai||Saveurs Thai||13900 boulevard Pierrefonds||13900 Boulevard de Pierrefonds||H9A||H9A||zomato_15378||yelp_3244||0.9400000000000001||
+0||Luca's New York Style Pizza||Luca's New York Style Pizza||3451 Darrow Rd.||3451 Darrow Rd||44224||44224||zomato_19974||yelp_48050||0.96||
+0||Pizzédélic||Pizzédélic||5556 Ave Monkland||5556 Avenue Monkland||H4A1E1||H4A 1C9||zomato_17381||yelp_45316||0.91||
+0||Giovanni's Pizza & Pasta||Giovanni's Pizza & Pasta||559 Winecoff School Road||559 Winecoff School Rd||28027||28027||zomato_8419||yelp_48486||0.95||
+0||Emerald Garden Peking & Seafood||Emerald Garden Restaurant||1006 16 Ave NW||1006 16 Ave NW||T2M0K6||T2M 0K5||zomato_10290||yelp_9892||0.8193548387096774||
+0||Le Papillon on Front||Le Papillon On Front||69 Front Street East||69 Front Street E||M5E 1B5||M5E 1B5||zomato_6114||yelp_16266||0.91||
+0||Pho Huong Viet Noodle House||Pho Huong Viet Noodle House||3855 17 Avenue SW||3855 17th Avenue SW||T3C1J7||T3E 0C3||zomato_8847||yelp_6681||0.9368421052631579||
+0||Tofu Hut||Tofu Hut||3920 Spring Mountain Road||3920 Spring Mountain Rd||89102||89102||zomato_748||yelp_13844||0.9520000000000001||
+0||Eddie's Pizzeria Cerino||Eddie's Pizzeria Cerino||7305 Broadview Road||7305 Broadview Rd||44131||44131||zomato_20299||yelp_3382||0.9368421052631579||
+0||Apna Punjab Sweets and Restaurant||Apna Punjab Sweets & Restaurant||5075 Falconridge Blvd NE||5075 Falconridge Boulevard NE||T3J4L8||T3J 3K9||zomato_8810||yelp_16219||0.8601880877742947||
+0||Papa Nick's Pizza & Pasta||Papa Nick's Pizza & Pasta||11534 Clifton Boulevard||11534 Clifton Blvd||44102||44102||zomato_19983||yelp_50850||0.8695652173913044||
+0||Gate Of India||Gate of India||311- 500 Country Hills Blvd NE||500 Country Hills Blvd NE, 311||T3K 0B2||T3K 5H2||zomato_8794||yelp_45397||0.8||
+0||El Fogon||El Fogón||543 St. Clair Avenue West||543 St Clair Avenue W",,"M6C 1A3||zomato_6512||yelp_35184||0.8540000000000001||
+0||Subway||Subway||1901 W Main St||19 W Main St||85201||53703||zomato_14096||yelp_54146||0.9142857142857144||
+0||Reign of Thai||Reign Of Thai||12032 N Cave Creek Rd||12032 Cave Creek Rd||85020||85020||zomato_3123||yelp_38467||0.9428571428571428||
+0||Fassil Ethiopean||Fassil Ethiopian Restaurant||3608 17 Ave SE||3608 17 Ave SE||T2A 0R7||T2A 0R9||zomato_9478||yelp_23763||0.837037037037037||
+0||Rascal House Pizza||Rascal House Pizza||1836 Euclid Ave||11316 Euclid Ave||44115||44106||zomato_20383||yelp_55512||0.925||
+0||El Meson||El Meson||1678 Boulevard Saint Joseph||1678 Boulevard Saint-Joseph||H8S2N2||H8S 2N1||zomato_15106||yelp_48784||0.9777777777777779||
+0||High Thai'd Cafe||High Thai'd||1791 Coventry Road||1791 Coventry Rd||44118||44118||zomato_20239||yelp_42157||0.8083333333333333||
+0||Nice Bistro||Nice Bistro||117 Brock Street North||117 Brock Street N",,"L1N 4H3||zomato_6135||yelp_1383||0.8909090909090909||
+0||Little Caesars Pizza||Little Caesars Pizza||2007 Washington Ave.||2833 E Washington Ave||47714||53704||zomato_19191||yelp_46098||0.8285714285714285||
+0||Mama Mia Too||Mama Mia Too||101 Maxwell Avenue||101 Maxwell Ave||28078||28078||zomato_7490||yelp_44047||0.9||
+0||Chez Frida||Chez Frida||5647 chemin de la Côte-des-Neiges||5647 Chemin de la Côte-des-Neige||H3T1Y8||H3T 1Y8||zomato_15327||yelp_27700||0.9818181818181818||
+0||Original Burrito Company||The Original Burrito Company||4865 E Elliot Rd||4949 E Elliot Rd||85044||85044||zomato_2677||yelp_45831||0.8303571428571429||
+0||India Beau Village||India Beau Village||752 Rue Jarry W||640 Rue Jarry O||H3N1G6||H3N 1G6||zomato_14249||yelp_55808||0.8400000000000001||
+0||Pho Hao||Pho Hao||495 36 St NE||495 36 Street NE||T2A6K3||T2A 6K3||zomato_8939||yelp_24313||0.85||
+0||Le Margaux||Le Margaux||5058 Ave Du Parc||5058, avenue du Parc||H2V4E9||H2V 4G1||zomato_17035||yelp_45386||0.88||
+0||Times Square Italian Restaurant & Pizzeria||Times Square Pizzeria||2602 W Deer Valley Rd||2602 W Deer Valley Rd||85027||85027||zomato_2174||yelp_37520||0.8||
+0||Salsa's Mexican Grille||Salsas Mexican Grille||2015 Ayrsley Town Boulevard||2015 Ayrsley Town Blvd||28273||28273||zomato_7940||yelp_9767||0.8707070707070708||
+0||Haru Hana||Haru Hana||912 Blvd De Maisonneuve Est||912 Boulevard de Maisonneuve E||H2L1Z1||H2L 1Z1||zomato_16208||yelp_135||0.86||
+0||El Vallarta||El Vallarta||1890 W Roosevelt Boulevard||1890 W Roosevelt Blvd||28110||28110||zomato_7985||yelp_35224||0.8846153846153846||
+0||Subway||Subway||3555 W Van Buren St||3555 W Van Buren St, Ste 106||85009||85009||zomato_2989||yelp_27438||0.8071428571428572||
+0||Marathon Ethiopian||Marathon Ethiopian Restaurant||130 10 St NW||130 10 St NW||T2N1V5||T2N 1V3||zomato_9160||yelp_4491||0.8482758620689655||
+0||Carlos & Pepe's||Carlos & Pepes||1420 Rue Peel||1420 Rue Peel||H3A1T5||H3A 1S8||zomato_14520||yelp_1021||0.9733333333333334||
+0||Oyster Bay Wine Bar||Oyster Bay Seafood||3663 Las Vegas Blvd S||3663 Las Vegas Blvd S||89109||89109||zomato_60||yelp_55821||0.8315789473684211||
+0||Fiesta Maya||Fiesta Maya||3507 David Cox Road Suite B||3507 David Cox Rd, Ste B||28269||28269||zomato_7950||yelp_36641||0.888888888888889||
+0||Mucho Burrito||Mucho Burrito||2312-4th St SW||2312 4th Street SW||T2S1W9||T2S 1W9||zomato_9613||yelp_11925||0.8333333333333333||
+0||Christina's Authentic Mexican Restaurant||Christina's Authentic Mexican Food Restaurant||2706 E University Dr Ste 10||2706 E University Dr||85213||85213||zomato_13522||yelp_5399||0.8||
+0||El Amigo||El Amigo||51 Rue St-Zotique E||51 Rue Saint-Zotique Est||H2S1K7||H2S 1K7||zomato_18347||yelp_17326||0.875||
+0||New York Chinese Restaurant||New York Chinese Restaurant||655 S Green Valley Parkway #140||655 S Green Valley Pkwy, Ste 140||89052||89052||zomato_1359||yelp_20903||0.85||
+0||Papa John's Pizza||Papa John's Pizza||2805 W Broadway St||524 W Broadway Rd||47670||85282||zomato_19097||yelp_30013||0.8||
+0||Cuisine Szechuan||Cuisine Szechuan||2350 Guy||2350 Rue Guy||H3H2M2||H3H 2M2||zomato_15983||yelp_24133||0.8||
+0||Morazan Restaurant||Morazán Restaurante||5421 South Boulevard||5421 South Blvd||28217||28217||zomato_8020||yelp_10563||0.8078947368421052||
+0||Canadian Thai||Canadian Thai||2300 John Street||2300 John Street, Unit 4",,"L3T 6G7||zomato_5565||yelp_9922||0.8||
+0||850 Degrees Pizza||850 Degrees Pizzeria||3455 Lake Shore Boulevard West||3455 Lakeshore Boulevard W||M8W 1N2||M8W 1N2||zomato_4541||yelp_43781||0.8600000000000001||
+0||Shawarma Plus||Shawarma Plus||10100 S Eastern Ave||10100 S Eastern Ave, Ste 120||89052||89052||zomato_1593||yelp_44913||0.8071428571428572||
+0||Buca||Buca||604 King Street West||604 King Street W||M5V 1M6||M5V 1M6||zomato_4459||yelp_26612||0.91||
+0||Restaurant Atoyac Estilo Oaxaca||Restaurants Atoyac Estilo Oaxaca||1830 West Glendale Avenue||1830 W Glendale Ave||85021||85021||zomato_3027||yelp_42503||0.8434999999999999||
+0||Porte de L'Inde||La Porte de l'Inde||5195 Boulevard St-Laurent||5195 Boulevard Saint-Laurent||H2T||H2T 1R9||zomato_18022||yelp_33147||0.8690476190476191||
+0||Subway||Subway||1901 W Main St||243 W Main St||85201||15063||zomato_14096||yelp_3328||0.8285714285714285||
+0||African Palace||African Palace||977 Bloor Street West||977 Bloor Street W||M6H 1L8||M6H 1L7||zomato_4597||yelp_13107||0.9142857142857144||
+0||Saigon Bistro||Saigon Bistro||250-9737 Macleod Tr. SW||250-9737 Macleod Trail SE||T2J0P6||T2J 0P6||zomato_8932||yelp_37779||0.904||
+0||Monkland Grille||Monkland Grill||6447 Ave Somerled||6447 Avenue Somerled||H4V1S4||H4V 1S4||zomato_17873||yelp_35198||0.8833333333333333||
+0||Pizzeria Magpie||Pizzeria Magpie||16 Maguire||16 Rue Maguire||H2T1B9||H2T 1B8||zomato_17657||yelp_8097||0.8285714285714285||
+0||Ambrosia Veggie House||Ambrosia Veggie House||1009 4 Ave SW||1009 4th Avenue SW||T2P0K8||T2P 0K8||zomato_10341||yelp_18637||0.8333333333333333||
+0||Frijoles Grilled Tacos||Frijoles & Frescas Grilled Tacos||7000 W Charleston Blvd||7000 W Charleston Blvd||89117||89117||zomato_1169||yelp_15263||0.875||
+0||Saino Indian Nepali Kitchen||Saino Indian Nepali Kitchen||4860 W Desert Inn Road||4860 W Desert Inn Rd, Ste 09||89102||89102||zomato_1372||yelp_27324||0.8071428571428572||
+0||Les Canailles||Les Canailles||3854 Rue Ontario Est||3854 Rue Ontario E||H1W1S4||H1W 1S4||zomato_17026||yelp_28175||0.9400000000000001||
+0||Buffet Maharaja||Buffet Maharaja||1481 Boulevard Rene-Levesque Ouest||1481 Boulevard René-Lévesque O||H3G2H5||H3G 1T8||zomato_18003||yelp_51828||0.8941176470588235||
+0||Subway||Subway||4984 S Power Rd||8490 S Power Rd||85212||85297||zomato_14085||yelp_27687||0.88||
+0||T&T Tacos Et Tortas||T&T Tacos Et Tortas||51 Rachel St W||51 Rachel Street W||H2W1G2||H2W 1G2||zomato_14523||yelp_26697||0.8666666666666667||
+0||King and I||King & I||1107 E Tropicana Ave||1107 E Tropicana Ave||89119||89119||zomato_1234||yelp_4106||0.8799999999999999||
+0||Le Bleu Raisin||Le Bleu Raisin||5237 Rue St-Denis||5237 Rue Saint-Denis||H2J2L8||H2J 2M4||zomato_17825||yelp_47034||0.91||
+0||Mk Thai Cuisine||MK Thai Cuisine||4420 E Charleston Blvd||4420 E Charleston Blvd, Ste 5 & 6||89104||89104||zomato_1274||yelp_21910||0.8||
+0||Rodney's Oyster House||Rodney's Oyster House||469 King Street West||469 King Street W||M5V 1K4||M5V 1K4||zomato_3731||yelp_20610||0.91||
+0||Art's Fish & Chips||Art's Fish & Chips||1500 6th Line||1500 Sixth Line||L6H 2P2||L6H 2P2||zomato_4840||yelp_41108||0.88||
+0||Delicious Country||Delicious Country||303 Centre St S||303 Centre Street SW||T2G||T2G 2B9||zomato_10332||yelp_34227||0.85||
+0||Red Rock Pizza||Red Rock Pizza||8455 W Lake Mead Boulevard||8455 W Lake Mead Blvd||89128||89128||zomato_1736||yelp_22526||0.8846153846153846||
+0||Sukho Thai||Sukho Thai||52 Wellington Street East||52 Wellington Street E",,"M5E 1C9||zomato_5512||yelp_23403||0.928||
+0||SaBai Modern Thai||SaBai Modern Thai||4121 E Thomas Road||4121 E Thomas Rd||85018||85018||zomato_3129||yelp_43664||0.9333333333333333||
+0||Ono Hawaiian BBQ||Ono Hawaiian BBQ||2415 E.Baseline Rd Ste 121||2415 E Baseline Rd, Ste 121||85042||85042||zomato_3201||yelp_38777||0.9555555555555556||
+0||Our Thai Restaurant & Cafe||Our Thai Restaurant & Cafe||60 Interchange Way||60 Interchange Way, 7A",,"L4K 5C3||zomato_5570||yelp_23443||0.8909090909090909||
+0||Moga's Pizza||Moga Pizza||475 Charolais Boulevard||475 Charolais Blvd",,"L6Y 4R3||zomato_5398||yelp_12814||0.8028985507246378||
+0||Garcia's Mexican Restaurant||Garcia's Mexican Restaurants||3301 W Peoria Ave||3301 W Peoria Ave||85029||85029||zomato_3090||yelp_4851||0.9857142857142858||
+0||Hollywood Pizzeria||Hollywood Pizzeria||8011 Rue Blaise-Pascal||8011 Avenue Blaise-Pascal||H1E||H1E 3X7||zomato_18434||yelp_10830||0.904||
+0||Thai Nouilles & Sushi||Thaï Nouilles et Sushi||11612 Boul De Salaberry||11612 Boulevard de Salaberry||H9B||H9B 2R8||zomato_17617||yelp_24400||0.8383116883116883||
+0||Oyster Boy||Oyster Boy||872 Queen Street West||872 Queen Street W",,"M6J 1G3||zomato_3735||yelp_32491||0.9142857142857144||
+0||Familia Pizzeria||Familia Pizzeria||8090 S Durango Dr #116||8090 S Durango Dr||89113||89113||zomato_1696||yelp_5953||0.8636363636363636||
+0||Shalom Ethiopian Restaurant||Shalom Ethopian Restaurant||587 Parliament Street||587 Parliament Street||M4X 1P9||M4X 1P9||zomato_4609||yelp_24043||0.9851851851851852||
+0||Le Passé Composé||Le Passé Composé||1310 Boulevard de Maisonneuve Est||1310 Boulevard de Maisonneuve E||H2L 2A5||H2L 2A5||zomato_17780||yelp_24980||0.9636363636363636||
+0||Shawarma Plus||Shawarma Plus||10100 S Eastern Ave||10100 S Eastern Ave, Ste 120||89052||89052||zomato_1410||yelp_44913||0.8071428571428572||
+0||Secret Pizza||Secret Pizza||3708 S Las Vegas Blvd||3708 Las Vegas Blvd S||89109||89109||zomato_932||yelp_54924||0.8857142857142857||
+0||Lezvos West||Lezvos West||4235a Decarie Blvd||4235A Decarie Boul||H4A||H4A 3K4||zomato_17887||yelp_10324||0.9||
+0||Subway||Subway||1229 E Mckellips Rd # 104||1229 E Mckellips Rd, Ste 104||85203||85203||zomato_14123||yelp_15820||0.9142857142857144||
+0||L'Arrivage||L'Arrivage||350 Pl Royale||350 Place Royale||H2Y2C9||H2Y 3Y5||zomato_14739||yelp_42681||0.8875||
+0||Garde Manger||Garde Manger||408 Rue St-Francois-Xavier||408 Rue Saint-François-Xavier||H2Y2T1||H2Y 2S9||zomato_17751||yelp_47242||0.9172413793103448||
+0||L' Academie||L'Académie||4051 Rue St-Denis||4051 Rue Saint-Denis||H2W2M7||H2W 2M7||zomato_17676||yelp_48720||0.8372727272727273||
+0||Angela Mia Pizza||Angela-Mia Pizza||15811 Euclid Avenue||15811 Euclid Ave||44112||44112||zomato_19338||yelp_29062||0.8802631578947367||
+0||Restaurant Shô-Dan||Restaurant Sho-Dan||2020 Metcalfe St||2020 Metcalfe Rue||H3A||H3A 1X8||zomato_16640||yelp_47157||0.8718954248366013||
+0||Manhattan Pizzeria & Sub Shop||Manhattan Pizzeria and Subshop||5224 N 7th St||5224 N 7th St||85014||85014||zomato_2552||yelp_21780||0.9466666666666667||
+0||Shiki Menya||Shiki Menya||827 1st Ave NE||827 1 Avenue NE||T2N||T2E 0C3||zomato_8731||yelp_34634||0.8||
+0||Filiberto's Mexican Food||Filiberto's Mexican Food||3041 E McKellips Rd||3041 E. McKellips Rd||85213||85213||zomato_13363||yelp_26789||0.97||
+0||Thai Pepper||Thai Pepper Restaurant||2 Fisherman Drive||2 Fisherman Drive||L7A2X9||L7A 1B5||zomato_5524||yelp_24788||0.8||
+0||Mama Roberto's Pizza||Mama Roberto's||8658 Mentor Ave||8658 Mentor Ave||44060||44060||zomato_19968||yelp_34628||0.8799999999999999||
+0||Mexico Lindo||Mexico Lindo||1618 Bayview Avenue||1618 Bayview Ave",,"M4S 1T3||zomato_5440||yelp_8410||0.9052631578947368||
+0||Hue Thai||Hue-Thai||5115 Spring Mountain Rd #223||5115 Spring Mountain Rd, Ste 223||89146||89146||zomato_1294||yelp_44140||0.85625||
+0||Roti Hut||The Roti Hut||920 36 St NE||920 36 St NE||T2A6L8||T2A 6L8||zomato_9058||yelp_55381||0.8666666666666667||
+0||Chipotle Mexican Grill||Chipotle Mexican Grill||1955 S Signal Butte Rd||1955 S Signal Butte Rd, Ste 101||85209||85209||zomato_13567||yelp_33913||0.8258064516129033||
+0||Aurelio's Pizza||Aurelio's Pizza||445 W Craig Rd Ste 105||445 W Craig Rd, Ste 105||89032||89032||zomato_504||yelp_16031||0.9739130434782609||
+0||The Friendly Thai||The Friendly Thai||1218 Queen Street East||1218 Queen Street E||M4M 1L7||M4M 1L7||zomato_5566||yelp_24745||0.9181818181818182||
+0||Pizza Hut||Pizza Hut||2850 Bicentennial Pkwy||2850 Bicentennial Pkwy, Ste 130||89044||89044||zomato_1088||yelp_33764||0.8258064516129033||
+0||Little Caesars Pizza||Little Caesars Pizza||347 E Southern Ave #109||3544 E Southern Ave||85210||85204||zomato_14076||yelp_14643||0.817391304347826||
+0||Athens Pizza||Athens Pizza||2920 Old Monroe Road||2920 Old Monroe Rd||28104||28104||zomato_8417||yelp_35617||0.9400000000000001||
+0||Restaurant Les Infideles||Restaurant Prince||771 Rue Rachel E||771 Rue Rachel E||H2J2H5||H2J 2H4||zomato_17820||yelp_48765||0.8333333333333333||
+0||Joe's Touch of Italy||Joe's Touch of Italy||503 S Central Avenue||503 S Central Ave||28012||28012||zomato_8455||yelp_18320||0.91||
+0||Little Caesars Pizza||Little Caesars Pizza||3544 E. Southern Ave||3544 E Southern Ave||85204||85204||zomato_14061||yelp_14643||0.97||
+0||Caribbean Curry House||Caribbean Curry House||6892 Ave Victoria||6892 Avenue Victoria||H3W1B8||H3W 1B8||zomato_14456||yelp_54694||0.91||
+0||Pizzeria Magpie||Pizzeria Magpie||16 Maguire||16 Rue Maguire||H2T1B9||H2T 1B8||zomato_17308||yelp_8097||0.8285714285714285||
+0||Jacques Bistro Du Parc||Jacques' Bistro Du Parc||126A Cumberland Street||126 Cumberland St||M5R 1A6||M5R 1A6||zomato_6131||yelp_8218||0.8462450592885375||
+0||DB Brasserie||Pinot Brasserie||3355 S Las Vegas Blvd||3355 Las Vegas Blvd||89109||89109||zomato_1628||yelp_43190||0.8095238095238095||
+0||Federico's Mexican Food||Federicos Mexican Food||10802 N 32nd St||10802 N 32nd St||85028||85028||zomato_3091||yelp_56941||0.9826086956521739||
+0||Vera's Kitchen||Vera's Kitchen||90 Eglinton Avenue East||90 Eglinton Avenue E||M4P 1A6||M4P 2Y3||zomato_6401||yelp_2822||0.9217391304347826||
+0||Rita's Mexican Food||Rivas Mexican Food||1402 N 35th Ave||4012 N 75th Ave||85009||85033||zomato_2714||yelp_4665||0.8378947368421052||
+0||Pon Ocha Soup||Pon Ocha Soup||1000 N Nellis Blvd||1000 N Nellis Blvd, Ste I||89110||89110||zomato_358||yelp_50853||0.8320000000000001||
+0||L' Academie||L'Académie||4051 Rue St-Denis||4051 Rue Saint-Denis||H2W2M7||H2W 2M7||zomato_17794||yelp_48720||0.8372727272727273||
+0||Los Aztecas||Los Aztecas||100 Fort Mill Sq Ste G||100 Fort Mill Sq||29715||29715||zomato_8001||yelp_29155||0.8363636363636364||
+0||Bahn Thai||Bahn Thai||12206 Copper Way Suite 122||12206 Copper Way, Ste 122||28277||28277||zomato_7301||yelp_34758||0.9307692307692308||
+0||Archi's Thai Café||Archi's Thai Cafe||9350 West Sahara Avenue||9350 W Sahara Ave||89117||89117||zomato_294||yelp_34192||0.8199488491048592||
+0||Green Mango||Green Mango||3006 Bloor Street West||3006 Bloor St W||M8X 1C2||M8X 1C2||zomato_5551||yelp_23226||0.8090909090909091||
+0||Marconi Pizzeria||Marconi Pizzeria||2222 Rue Beaubien E||2224 Rue Beaubien E||H2G||H2G 1M7||zomato_17358||yelp_48595||0.968421052631579||
+0||Taco Time||Taco Time||4039 Macleod Trail SW||4007 MacLeod Trl SW||T2S2P4||T2G 2R6||zomato_9670||yelp_34857||0.8857142857142857||
+0||El Taco Fresco||El Taco Feliz||4755 W Flamingo Rd||4755 W Flamingo Rd||89103||89103||zomato_1178||yelp_55247||0.8857142857142857||
+0||Tandoori Xpress||Tandoori Xpress||220 Boul De La Concorde E||220 Boulevard de la Concorde E||H7G2E1||H7G 2E1||zomato_14278||yelp_37407||0.9||
+0||Leméac||Leméac||1045 Ave Laurier W||1045 Avenue Laurier Ouest||H2V2L1||H2V 2L1||zomato_14787||yelp_37063||0.808||
+0||White Elephant Thai Cuisine||White Elephant Thai Cuisine||1808 19 Street N.E||1808 19 Street  NE||T2E 4Y3||T2E 4Y3||zomato_9783||yelp_46839||0.9333333333333333||
+0||Brownstone Bistro||Brownstone Bistro||601 Yonge Street||603 Yonge Street||M4Y 1Z5||M4Y 1Z5||zomato_4513||yelp_1255||0.9625||
+0||Punjab Palace||Punjab Palace||920 Rue Jean-Talon-Ouest||920 Rue Jean-Talon O||H3N||H3N 1S6||zomato_14232||yelp_24172||0.875||
+0||Teatro||Teatro||200 8 Ave SE||200 8th Avenue SE||T2G 0K7||T2G 0K7||zomato_9315||yelp_15213||0.8235294117647058||
+0||Pizza Prima||Pizza Prima||5457 Rue Sherbrooke Ouest||5457 Rue Sherbrooke O",,"H4A 1W1||zomato_17396||yelp_23492||0.904||
+0||Jalisciense Mexican Food||Jalisience Mexican Food||1948 W Broadway Rd||1948 W Broadway Rd||85202||85202||zomato_13312||yelp_54321||0.9666666666666667||
+0||Wild Thaiger||Wild Thaiger||2631 North Central Avenue||2631 N Central Ave||85004||85004||zomato_3107||yelp_41552||0.8320000000000001||
+0||Rosati's Pizza||Rosati's Pizza||602 W Union Hills Dr||602 W Union Hills Dr, Ste 1||85027||85027||zomato_2517||yelp_44704||0.8444444444444444||
+0||Los Betos Mexican Food||Los Favoritos Mexican Food||4353 E University Dr||2650 E University Dr||85205||85213||zomato_13304||yelp_26528||0.8176923076923077||
+0||Pizza Hut||Pizza Hut||35050 Euclid Ave.||29954 Euclid Ave||44094||44092||zomato_20766||yelp_55452||0.8235294117647058||
+0||Los Favoritos Taco Shop||Los Favoritos Mexican Food||2650 E University Dr||2650 E University Dr||85213||85213||zomato_13327||yelp_26528||0.8615384615384616||
+0||Halibut House||Halibut House||336 9 Ave NE||336 9th Avenue NE||T2E0V6||T2E 0V6||zomato_10199||yelp_16089||0.8235294117647058||
+0||Fausto's Mexican Grill||Fausto's Mexican Grill||7835 S Rainbow Blvd||7835 S Rainbow Blvd, Ste 20||89139||89139||zomato_1151||yelp_14114||0.8222222222222222||
+0||Pho 88||Pho 88||900 Don Mills Road||900 Don Mills Road, Unit 9||M3C 1V6||M3C 1V6||zomato_5564||yelp_189||0.8153846153846154||
+0||Red Rock Pizza||Red Rock Pizza||8455 W Lake Mead Boulevard||8455 W Lake Mead Blvd||89128||89128||zomato_501||yelp_22526||0.8846153846153846||
+0||Sakina Thai Cusine||Sakina Thai Cuisine||4251 West Sahara Avenue||4251 W Sahara Ave||89102||89102||zomato_1273||yelp_14209||0.8224256292906178||
+0||Hwaro||Hwaro||5030 Spring Mountain Road||5030 Spring Mountain Rd||89146||89146||zomato_772||yelp_12858||0.9520000000000001||
+0||Restaurant Beijing||Restaurant Beijing||92 Rue De La Gauchetiere Ouest||92 Rue de la Gauchetière O||H2Z1K1||H2Z 1C1||zomato_15967||yelp_27953||0.9||
+0||JPs Indian Bistro||JPs Indian Bistro||#7006 - 2060 Symons Valley Parkway NW||7006-2060 Symons Valley Parkway NW||T3P 0||T3P 0M9||zomato_8789||yelp_17251||0.9513513513513513||
+0||Mark Pi's Chinese||Mark Pi's China Gate||32730 Walker Rd||32730 Walker Rd||44012||44012||zomato_19541||yelp_20197||0.9||
+0||Golden Bell Saigon||Golden Bell Saigon||1112 17th Ave SW||1112 17 Avenue SW||T2T0B4||T2T 0B4||zomato_8856||yelp_18522||0.8235294117647058||
+0||King's Tacos||King's Tacos||1190 St. Clair Avenue West||1190 St Clair Avenue W||M6E 1B4||M6E 1B4||zomato_5442||yelp_23270||0.9076923076923077||
+0||Spice Thai Cafe||Spice Thai Cafe||250 Queens Quay West||250 Queens Quay W||M5J 2N2||M5J 2N2||zomato_5573||yelp_11249||0.91||
+0||L'Atelier de Joël Robuchon||L'Atelier de Joël Robuchon||3799 Las Vegas Boulevard S||3799 Las Vegas Blvd S||89109||89109||zomato_1599||yelp_56319||0.8846153846153846||
+0||Maison Luo||Maison Luo||5045 Rue Wellington||5045 Wellington||H4G||H4G||zomato_15379||yelp_25405||0.8736842105263158||
+0||Bahn Thai||Bahn Thai||12206 Copper Way Suite 122||12206 Copper Way, Ste 122||28277||28277||zomato_8047||yelp_34758||0.9307692307692308||
+0||Spice Hut||Spice Hut||6554 - 4th Street NE||6554 4 Street NE||T2K6G9||T2K 6H2||zomato_8749||yelp_50495||0.88||
+0||Newk's Express Cafe||Newk's Express Cafe||101 N Tryon Street||101 N Tryon St||28202||28202||zomato_8411||yelp_6568||0.8666666666666667||
+0||Campagnolo||Campagnolo||832 Dundas Street West||832 Dundas Street W||M6J 1V3||M6J 1V3||zomato_4473||yelp_41521||0.9181818181818182||
+0||Elounda||Elounda||1818 Blvd De La Cote-Vertu||1818 Boulevard De La Cote-Vertu||H4L||H4L 2A6||zomato_15942||yelp_25158||0.9032258064516129||
+0||Mi Taco Taqueria||Mi Taco Taqueria||247 Queen Street West||247 Queen Street W||M5V 1H2||M5V 1Z4||zomato_5466||yelp_12792||0.9142857142857144||
+0||Sahara Korean Restaurant||Elephant BBQ Restaurant||953 E Sahara Ave||953 E Sahara Ave||89104||89104||zomato_783||yelp_51226||0.8||
+0||KFC||KFC||3550 W Thunderbird Rd||7541 W Thunderbird Rd||85053||85381||zomato_3004||yelp_1263||0.9142857142857144||
+0||Surina restaurant||Elephant BBQ Restaurant||953 E Sahara Ave||953 E Sahara Ave||89104||89104||zomato_768||yelp_51226||0.808695652173913||
+0||Uncle Tony's Pizza||Uncle Tony's Pizza||7830 North 19th Avenue||7830 N 19th Ave||85021||85021||zomato_2548||yelp_56757||0.8090909090909091||
+0||Little Caesars Pizza||Little Caeser's Pizza||2754 East McKellips Rd||2754 E Mckellips Rd||85213||85213||zomato_14126||yelp_1328||0.8800865800865801||
+0||Thai Style Noodle House||Thai Style Noodle House||2267 N Rampart Boulevard||2267 N Rampart Blvd||89134||89134||zomato_1252||yelp_31498||0.875||
+0||Mangos Mexican Cafe||Mango's Mexican Cafe||44 W Main St||44 W Main St||85201||85201||zomato_13508||yelp_20753||0.98||
+0||Jay's Gyros||Jay's Gyro's||4750 E Broadway Road||4750 E Broadway Rd||85040||85040||zomato_3183||yelp_41309||0.9066666666666667||
+0||Tierra Azteca||Tierra Azteca||1115 Bloor Street West||1115 Bloor Street W, Unit 2||M6H 1M7||M6H 1M7||zomato_5498||yelp_41822||0.8444444444444444||
+0||Subway||Subway||1840 W Southern Ave||3550 E Southern Ave||85202||85204||zomato_14104||yelp_37524||0.8736842105263158||
+0||Les Fillettes||Les fillettes||1226 Ave Van Horne||1226 Avenue Van Horne||H2V1K3||H2V 1K3||zomato_15333||yelp_54538||0.9142857142857144||
+0||Yummy Korean Restaurant||Yummy Korean Food Restaurant||620 Bloor Street West||620 Bloor Street W||M6G 1K7||M6G 1K7||zomato_5079||yelp_18123||0.842857142857143||
+0||Buk Chang Dong Soon Tofu||Buk Chang Dong Soon Tofu||691 Bloor Street West||691 Bloor Street W||M6G 1L3||M6G 1L3||zomato_5017||yelp_9940||0.9142857142857144||
+0||China Wing||China Wing||808 E Arrowood Road||808 E Arrowood Rd||28217||28217||zomato_7721||yelp_23648||0.9368421052631579||
+0||Burrito Express||Burrito Express||450 N Alma School Rd||450 N Alma School R||85201||85201||zomato_13294||yelp_39809||0.97||
+0||Tchang Kiang by the Yangtze||Tchang Kiang par le Yangtze||6066 Rue Sherbrooke W||6066 Rue Sherbrooke O||H4A||H4A 1Y1||zomato_16018||yelp_698||0.8973544973544973||
+0||La Chaumiere||La Chaumiere Restaurant||139 17 Ave SW||139 17 Ave SW||T2R0W2||T2S 0A1||zomato_9280||yelp_31190||0.808695652173913||
+0||El Vallarta||El Vallarta||1201 N Broome Street||1201 N Broome St||28173||28173||zomato_7992||yelp_12550||0.88||
+0||Subway||Subway||3550 E Southern Ave||5707 W Northern Ave||85204||85301||zomato_14130||yelp_2756||0.8105263157894738||
+0||Basil n' Lime||Basil 'n Lime||3665 S Fort Apache Rd Ste 100||3665 Ft Apache Rd, Ste 100||89147||89147||zomato_340||yelp_11949||0.8350132625994695||
+0||Aurelio's Pizza||Aurelio's Pizza||445 W Craig Rd Ste 105||445 W Craig Rd, Ste 105||89032||89032||zomato_1739||yelp_16031||0.9739130434782609||
+0||Subway||Subway||1840 W Southern Ave||5707 W Northern Ave||85202||85301||zomato_14104||yelp_2756||0.8105263157894738||
+0||Satay - Thai Bistro & Bar||Satay Thai Bistro & Bar||3900 Paradise Rd Ste N||3900 Paradise Rd, Ste N||89169||89169||zomato_1207||yelp_56611||0.941913043478261||
+0||Thai Style Noodle House||Thai Style Noodle House||3516 Wynn Road||3516 Wynn Rd||89103||89103||zomato_355||yelp_6159||0.9142857142857144||
+0||Friends Fish & Chips||Country Fish & Chips||398 Lakeshore Road East||293 Lakeshore Road East||L5G 1H5||L5G 1H3||zomato_4881||yelp_39536||0.8078260869565218||
+0||Malhi Sweets Indian Cuisine||Malhi Sweets Indian Cuisine||880 Rue Jarry Ouest||880 Rue Jarry O||H3N1G9||H3N 1G9||zomato_14227||yelp_53104||0.8736842105263158||
+0||Radio City Pizza||Radio City Pizzeria||508 E Fremont St||508  Fremont St||89101||89101||zomato_487||yelp_45027||0.8993421052631578||
+0||Royal Tandoori Gril||Royal Tandoori Grill||4720 Blvd Saint-Jean||4720 Boulevard Saint Jean||H9H4B2||H9H 4B2||zomato_18013||yelp_34699||0.836||
+0||Maria Bonita||Maria Bonita||5269 Ave Casgrain||5269 Avenue Casgrain||H2T||H2T 1X1||zomato_14538||yelp_14344||0.91||
+0||Chili Club Thai House||Chili Club Thai House||1904 36 St SW||1904 36th Street SW||T3E0B8||T3E 2Y9||zomato_9785||yelp_10995||0.8105263157894738||
+0||Chez Frida||Chez Frida||5647 chemin de la Côte-des-Neiges||5647 Chemin de la Côte-des-Neige||H3T1Y8||H3T 1Y8||zomato_14601||yelp_27700||0.9818181818181818||
+0||Red Lobster||Red Lobster||10212 N 28th Dr||10220 N 28th Dr||85051||85051||zomato_2163||yelp_31792||0.92||
+0||Restaurant Inferno||Restaurant Inferno||6850 Rue Saint Dominique||6850 Rue Saint-Dominique||H2S1J7||H2S 1J7||zomato_17728||yelp_40485||0.975||
+0||Auberge du Pommier||Auberge du Pommier||4150 Yonge St.||4150 Yonge Street||M2P 2C6||M2P 2C6||zomato_6106||yelp_40800||0.8588235294117647||
+0||Felipitos Mexican Food||Felipito's Mexican Food||5095 S Decatur Blvd||5095 S Decatur Blvd||89118||89118||zomato_1176||yelp_27289||0.9826086956521739||
+0||Taste of Thailand||Taste of Thailand||1256 12 Ave SW||1256 12 Avenue SW||T3C1A7||T3C 1A7||zomato_9812||yelp_20045||0.8941176470588235||
+0||Copa By Sea||Copa By Sea||230 Adelaide Street West||230 Adelaide Street W||M5H 3H1||M5H 3H1||zomato_4407||yelp_30690||0.925||
+0||Georgetown Thai Cuisine||Georgetown Thai Cuisine||76 Main Street South||76 Main Street S||L7J 1X4||L7G 3G3||zomato_5605||yelp_1225||0.88||
+0||Subway||Subway||1725 S Green St||616 E Green St||42420||61820||zomato_19159||yelp_29411||0.8||
+0||Papa Nick's Pizza & Pasta||Papa Nick's Pizza & Pasta||11534 Clifton Boulevard||11534 Clifton Blvd||44102||44102||zomato_19314||yelp_50850||0.8695652173913044||
+0||Subway||Subway||940 N Green St||616 E Green St||42420||61820||zomato_19181||yelp_29411||0.8285714285714285||
+0||Arriba Mexican Grill||Baja Fresh Mexican Grill||1812 E Camelback Rd||1615 E Camelback Rd||85016||85016||zomato_3052||yelp_38545||0.8035087719298246||
+0||Au Pied de Cochon||Au Pied de Cochon||536 Avenue Duluth Est||536 Avenue Duluth E||H2L1A9||H2L 1A9||zomato_14785||yelp_42231||0.9428571428571428||
+0||Boston Pizza||Boston Pizza||1231 boul Des Prommenades||1231 Boulevard des Promenades||J3V6H1||J3V 6H1||zomato_16785||yelp_41336||0.8758620689655172||
+0||Le Petit Coin Du Mexique||Le Petit Coin du Mexique||2474 Rue Jean-Talon E||2474 rue Jean-Talon Est||H2E||H2E 1W3||zomato_14528||yelp_55770||0.9478260869565218||
+0||Roman Fountain Pizza & Subs||Roman Fountain Pizza||15603 Detroit Ave||15603 Detroit Ave||44107||44107||zomato_20730||yelp_54214||0.8962962962962963||
+0||Fusion Sushi, Downtown||Fusion Sushi - Downtown||118A 5th Avenue S.E||118A 5th Avenue SE",,"T2G 3X9||zomato_9822||yelp_45183||0.9336384439359269||
+0||Jack in the Box||Jack In The Box||3235 W Tropicana Ave||3790 E Tropicana Ave||89103||89121||zomato_1099||yelp_55087||0.88||
+0||Mucho Burrito||Mucho Burrito||306 Aspen Glen Landing SW||132, 306 Aspen Glen Landing SW||T3H4A3||T3H 0N5||zomato_9097||yelp_28401||0.9||
+0||Giovanni's Ristorante||Giovannis Ristorante||25550 Chagrin Blvd||25550 Chagrin Blvd||44122||44122||zomato_20382||yelp_1334||0.9809523809523809||
+0||Zio's Pizza & Wings||Zios Pizza & Wings||1620 W University Dr||1620 W University Dr, Ste 3||85201||85201||zomato_13925||yelp_43035||0.8233918128654971||
+0||Joe's New York Pizza||Joe's New York Pizza||4480 Paradise Road||4480 Paradise Rd||89169||89169||zomato_1689||yelp_28302||0.9333333333333333||
+0||Phoenix House of Pizza & Subs||Phoenix House Of Pizza And Subs||326 N 48th St||326 N 48th St||85008||85008||zomato_2303||yelp_5984||0.9612903225806452||
+0||Wiener-Schnitzel Haus||Wiener-Schnitzel Haus||4703 Bowness Rd NW||4703 Bowness Road NW||T3B0B7||T3B 0B5||zomato_9369||yelp_33643||0.9400000000000001||
+0||Pizza People Pub||Pizza People Pub||1326 North Central Avenue||1326 N Central Ave||85004||85004||zomato_3589||yelp_43583||0.8320000000000001||
+0||Kauai Cafe||Kauai Cafe||10140 W Tropicana Avenue||10140 W Tropicana Ave, Ste 122||89147||89147||zomato_1445||yelp_31031||0.8400000000000001||
+0||Lobster ME||Lobster ME||3377 S Las Vegas Blvd||3663 Las Vegas Blvd||89109||89101||zomato_625||yelp_35622||0.8571428571428571||
+0||Adrian's||Adrian's||1011 West Main Street||1011 W Main St||85201||85201||zomato_13300||yelp_27703||0.8||
+0||Casa Grecque||Casa Grecque||3855 Boulevard St-Jean||3855 Boulevard Saint-Jean||H9G1X2||H9G 1X2||zomato_17885||yelp_24563||0.928||
+0||Khun Chai Thai Restaurant||Khun Chai Thai Restaurant||3650 S Decatur Blvd #1||3650 S Decatur Blvd, Ste 1||89103||89103||zomato_1240||yelp_39108||0.8846153846153846||
+0||Il Fornello||Il Fornello||576 Danforth Avenue||576 Danforth Ave",,"M4K 1R1||zomato_4550||yelp_39997||0.9052631578947368||
+0||Marisco's Ensenada||Mariscos Ensenada 4||2919 N 59th Ave||2919 N 59th Ave||85033||85033||zomato_2170||yelp_14318||0.9368421052631579||
+0||Sabroso Mexican Food||El Mas Sabroso Mexican Food||4705 E Southern Ave||4705 E Southern Ave||85042||85073||zomato_2227||yelp_26126||0.8962962962962963||
+0||Carlos & Pepe's||Carlos & Pepes||1420 Rue Peel||1420 Rue Peel||H3A1T5||H3A 1S8||zomato_14177||yelp_1021||0.9733333333333334||
+0||Subway||Subway||1901 W Main St||1 S Main St||85201||89101||zomato_14096||yelp_13670||0.8285714285714285||
+0||Subway||Subway||3411 Las Vegas Blvd S||3645 S Las Vegas Blvd||89109||89109||zomato_1068||yelp_30070||0.8285714285714285||
+0||Mark & Philly's Pizzeria||Mark & Philly's||3156 Bailey Rd||3156 Bailey Rd||44221||44221||zomato_20329||yelp_36095||0.85||
+0||Aka-Fuji||Aka Fuji||3872 Wellington St||3872 Wellington||H4G3M6||H4G 1V2||zomato_16617||yelp_53519||0.8500000000000001||
+0||King's Chinese Food||King's Chinese Food||1050 17 Ave SW||1050 17 Avenue SW||T2T0B4||T2T 0A5||zomato_10286||yelp_34718||0.8941176470588235||
+0||Al's Pizza & Steakhouse||Al's Pizza & Steakhouse||735 Ranchlands Blvd NW||735 Ranchlands Boulevard NW||T3G2C5||T3G 3A9||zomato_9513||yelp_46757||0.888888888888889||
+0||Cari Masala||Cari Masala||9194 Sherbrooke E.||9194 Rue Sherbrooke E||H1L1E5||H1L 1E5||zomato_14284||yelp_2457||0.8571428571428571||
+0||Subway||Subway||4984 S Power Rd||1145 S Power Rd||85212||85206||zomato_14085||yelp_12151||0.8400000000000001||
+0||La Parrilla Suiza||La Parrilla Suiza||1622 South Stapley Drive||1622 S Stapley Dr||85204||85204||zomato_13282||yelp_38135||0.825||
+0||Burrito Boyz||Burrito Boyz||224 Adelaide Street West||224 Adelaide Street W||M5H 1W7||M5H 1W7||zomato_5506||yelp_1386||0.925||
+0||Hue Thai||Hue-Thai||5115 Spring Mountain Rd #223||5115 Spring Mountain Rd, Ste 223||89146||89146||zomato_1644||yelp_44140||0.85625||
+0||Tacos Victor||Tacos Victor||4376 Rue Notre-Dame Ouest||4374 Rue Notre Dame Ouest||H4C 1R8||H4C 1R8||zomato_15151||yelp_49526||0.9520000000000001||
+0||Torteria Lupita||Torteria Lupita||4601 Rue Notre-Dame Ouest||4601 Rue Notre-Dame O||H4C 1S5||H4C 1S5||zomato_14561||yelp_15927||0.904||
+0||Le Richmond||Restaurant le Richmond||377 Rue Richmond||377 Rue Richmond||H3J||H3J 1T9||zomato_17666||yelp_53836||0.8||
+0||Mo'Ramyun||Mo' Ramyun||1 Baldwin Street||1 Baldwin St||M5T 1L1||M5T 1L1||zomato_5096||yelp_40638||0.81||
+0||La Unica Mexican Restaurant||La Unica Mexican Restaurant||16203 Northcross Drive||16203 Northcross Dr||28078||28078||zomato_7933||yelp_40553||0.9181818181818182||
+0||Zappitelli's||Zappitelli's Pizza||9570 Mentor Ave||9570 Mentor Ave||44060||44060||zomato_19960||yelp_35674||0.8666666666666667||
+0||Pho Chu The||Pho Chu The||4633 Macleod Trail SW||4633 Macleod Trail SW, Unit 108||T2G5C1||T2G 5C1||zomato_8893||yelp_11867||0.8064516129032259||
+0||Tardes Caleñas||Tardes Caleñas||3366 Grande Allée||3366 Grande Allé||J4T2T1||J4T 2T1||zomato_17544||yelp_10083||0.9647058823529412||
+0||Namaste India Garden||Namaste India Garden||14412 Detroit Rd||14412 Detroit Ave||44107||44107||zomato_20504||yelp_1099||0.8941176470588235||
+0||Taco Tijuana||Taco Tijuana||5889 Rue Sherbrooke Ouest||5893 Rue Sherbrooke O||H4A1X6||H4A 1X6||zomato_14536||yelp_31893||0.856||
+0||Downsview Restaurant||Peter Piper Pizza||2865 Keele Street||2131 S Decatur Blvd",,"89102||zomato_4972||yelp_49630||-1.0||
+0||Seventeen Eighteen||Tony's Bagels Deli & Coffee||1718 Queen Street West||9133 W Thunderbird Rd",,"85381||zomato_6956||yelp_21809||-1.0||
+0||Indigo Classic||Buffo Ristorante||13750 Bow Bottom Trail SE Unit 6||Saks Fifth Avenue, 6455 MacLeod Trail SW, CF Chinook Centre||T2J 6T5||T2H 0K8||zomato_8808||yelp_44586||-1.0||
+0||El Chalateco||Chizona's Pizza||520 Rue Beaubien Est||8418 E McDonald Dr||H2S2S5||85250||zomato_15071||yelp_2156||-1.0||
+0||Rose & Sons||Le Milsa||176 Dupont Street||579 Boulevard Saint-Martin Ouest||M5R 2E6||H7M 1Y9||zomato_5223||yelp_10377||-1.0||
+0||Restaurant Toroli||Pita Jungle||421 Rue Marie-Anne||1431 E Williams Field Rd, Ste 101||H2J 1Z9||85295||zomato_16186||yelp_41364||-1.0||
+0||KINTON RAMEN||Infuse Cafe Bar||1211 Rue Bishop||354 Yonge Street||H3G||M5B 1S5||zomato_14210||yelp_13383||-1.0||
+0||Doma||Subway||50 Clinton Street||201 N Tryon St, Ste 1020||M6G 2Y3||28202||zomato_6136||yelp_20480||-1.0||
+0||Fourchette Antillaise||Queen's Head Pub||5968 De Salaberry||2555 Victoria Park Avenue||H4J1E3||M1T 1A3||zomato_14468||yelp_44943||-1.0||
+0||Rosati's||Swiss Chalet Rotisserie & Grill||8002 N Durango Dr||44-1111 Davis Dr||89131||L3Y 8X2||zomato_503||yelp_31120||-1.0||
+0||Imadake||Luv A Sub||4006 St-Catherine West||3922 E University Dr",,"85034||zomato_17409||yelp_11780||-1.0||
+0||Bar César||Zios Pizza & Wings||4039 Piedmont Avenue||1620 W University Dr, Ste 3||94611||85201||zomato_11951||yelp_43035||-1.0||
+0||Nove Italiano||Kennedy Tavern||||2235 Village Walk Dr, Ste 157||89103||89052||zomato_465||yelp_41446||-1.0||
+0||Evoke||Impérial||||998 Boulevard Saint-Laurent, Étage 6||28204||H2Z 9Y9||zomato_8514||yelp_4536||-1.0||
+0||Kyara Japanese Tapas||House of Wong||6555 S. Jones Boulevard||4601 Kingston Road||89118||M1E 2P3||zomato_221||yelp_37199||-1.0||
+0||Restaurant Des Jardiniers Maraîchers Enr.||The Sett||1210 Chemin De Saint Jean||1308 W Dayton St||J5R4S4||53715||zomato_15839||yelp_17961||-1.0||
+0||Dunkin' Donuts||Fit For Life||2345 W. Thomas Rd||Commerce Court, 199 Bay St||85015||M5J||zomato_3157||yelp_5018||-1.0||
+0||Uncle Tetsu's Angel Café||Marigold Maison- Paradise Valley||191 Dundas Street West||4720 E Cactus Rd, Ste D118||M5G 1C7||85032||zomato_5953||yelp_48039||-1.0||
+0||Zeppe's Bistro & Pizzeria||Viva Chicken||||11641 Waverly Center Dr, Ste K1||44236||28277||zomato_19323||yelp_4680||-1.0||
+0||BEVO Bar + Pizzeria||Tabülè Middle Eastern Cuisine||410 Rue Saint Vincent||810 Queen Street  E||H2Y3A6||M4M 1H7||zomato_17652||yelp_42040||-1.0||
+0||Starbucks||Le Poke Shop||1229 E McKellips Rd Ste 102mesa||5209 Boulevard Décarie||85203||H3W 3C2||zomato_13748||yelp_15119||-1.0||
+0||Malaya Kitchen||El Burrito Mexican Restaurant||8200 Providence Road Suite 400||8508 Del Webb Blvd||28277||89134||zomato_8043||yelp_13185||-1.0||
+0||Fine Taste||Toto Pizzeria||75 Bayly Street W||1380 Rue Notre-Dame||L1S 7L7||H8S 2C8||zomato_3999||yelp_31969||-1.0||
+0||Rione||Sushi Maru and Ramen||227 Rue St-Zotique E||115 Times Avenue||H2S1L2||L3T 7Z5||zomato_18306||yelp_42505||-1.0||
+0||Torsh||Best Wok Chinese||705 College Street 2F||7671 W Ridgewood Dr||M6G 1C2||44129||zomato_6254||yelp_37181||-1.0||
+0||Wally Waffle||Burrito Caliente Latin Grill||845 West Market Street||112E - 5555 Eglinton Avenue W||44303||M9C 5M1||zomato_19842||yelp_2680||-1.0||
+0||Chacho's||Black Briik Restobar||234 Merton Street||1077 Bloor St W||M4S 1A1||M6H 1M5||zomato_5460||yelp_33543||-1.0||
+0||Tini||Ali Baba||5014 Park Avenue||840 Yonge Street||H2V||M4W 2H1||zomato_15440||yelp_21356||-1.0||
+0||Rusty Putter||Fuwa Fuwa Japanese Pancakes||7555 E Eagle Crest Drive||408 Bloor Street W||85207||M5S 2N5||zomato_14034||yelp_18260||-1.0||
+0||Jo Ann's Donuts & Ice Cream Parlor||Bampot House of Tea & Board Games||8140 Broadview Rd||201 Harbord Street||44147||M5S 1H6||zomato_20165||yelp_27864||-1.0||
+0||Horstketter's Tavern||Hacienda Del Rey||5809 Stringtown Rd||2797 S Maryland Pkwy, Ste 1||47711||89109||zomato_18938||yelp_22502||-1.0||
+0||Get Grill||Boston Pizza||||2501 N. Prospect Ave||L6Y 0P6||61821||zomato_4593||yelp_4870||-1.0||
+0||Labarake - Caserne à Manger||Kabob Hot||3165 Rue Rachel Est||3116 Weddington Rd, Ste 600||H1W||28105||zomato_15873||yelp_23235||-1.0||
+0||Swenson's||3 For 2 Pizza and Wings||4466 Kent Rd||4646 Heritage Hills Boulevard||44224||L5R 1Y3||zomato_19824||yelp_54861||-1.0||
+0||Mexico Lindo||La Brasserie Saint-Denis||200 Harwood Avenue South||4350 Rue Saint-Denis",,"H2J 2L1||zomato_5441||yelp_22656||-1.0||
+0||Frankie's Tiki Room||Venice Pizza||1712 W Charleston Blvd||4645 W Maryland Ave||89102||85301||zomato_2034||yelp_55249||-1.0||
+0||Pacific Gardens Asian Bistro||CJ's Talley's Pub||4747 E Elliot Rd||1219 E Glendale||85044||85020||zomato_2397||yelp_46615||-1.0||
+0||Dreyer's Grand Ice Cream||Ginos Petit Dejeuner||3337 W Wilshire Dr||W 55 Alpha Dr||85009||15238||zomato_2606||yelp_52936||-1.0||
+0||Nothing Bundt Cakes||Coffee Culture||8512 W Sahara Avenue||10037 Keele Street||89117||L6A 3Y8||zomato_2074||yelp_42943||-1.0||
+0||Emil Villa's California BBQ||Johnny Rockets||24047 Mission Boulevard||3333 Blue Diamond Rd, Ste 101, Silverton Casino||94544||89139||zomato_12618||yelp_37602||-1.0||
+0||Wanda's Pie In The Sky||Andre's||287 Augusta Avenue||401 S 6th Street||M5T 2M2||89101||zomato_4637||yelp_52336||-1.0||
+0||Fuddruckers||China Town II||6455 E Southern Ave||2051 W 25th St||85206||44113||zomato_13604||yelp_4981||-1.0||
+0||Maison Publique||Mama Lena's||4720 Rue Marquette||116 N Main St||H2J 3Y6||28173||zomato_17414||yelp_56920||-1.0||
+0||Camille by Manon||LongHorn Steakhouse||2170 S Rainbow Blvd||14127 W Bell Rd||89146||85374||zomato_606||yelp_54541||-1.0||
+0||Pusateri's||Rockaberry||Bayview Village Shopping Centre||7210 Langelier Boulevard||M2N 5Z7||H1S 2X6||zomato_5903||yelp_16367||-1.0||
+0||Ck's Tavern & Grill||Giulietta||4142 E Chandler Blvd||972 College Street W||85048||M6H 1A5||zomato_2857||yelp_80||-1.0||
+0||Pelayo's Mexican Food||Sbarro||5055 Business Center Dr||1300 Mall Ring Cir||94534||89014||zomato_12020||yelp_47044||-1.0||
+0||KINKA IZAKAYA||Obikà Mozzarella Bar||1624 Saint Catherine St W||Brookfield Place Mall, 181 Bay Street||H3H 1L9||M5J 2T3||zomato_14637||yelp_19314||-1.0||
+0||Tu Tai 2||Erbert and Gerbert's||1531 Webster Street||900 Windsor St||94501||53590||zomato_11092||yelp_25562||-1.0||
+0||é by José Andrés||Applebee's Grill + Bar||3708 Las Vegas Boulevard South||699 N Stephanie St||89109||89014||zomato_1611||yelp_47074||-1.0||
+0||Dunkin' Donuts||Starfire Grille||2103 E||11500 N Hayden Rd||28092||85260||zomato_8099||yelp_40096||-1.0||
+0||Zoyo Neighborhood Yogurt||Chili's||1958 E Brown Rd||1025 N Dobson Rd||85203||85201||zomato_13460||yelp_48140||-1.0||
+0||Subway||Sapa||4984 S Power Rd||4074 Boulevard Saint-Laurent||85212||H2W 1Y8||zomato_14085||yelp_34251||-1.0||
+0||Moti Mehal||Café République||1024 Rue Jean-Talon-Ouest||93 Rue Sainte-Catherine Ouest||H3N1T1||H2X 1K5||zomato_14282||yelp_36371||-1.0||
+0||Shoney's||Itsy Bitsy||8531 N Tryon Street||150 Las Vegas Blvd N, Ste 100||28262||89101||zomato_7635||yelp_31852||-1.0||
+0||Stop N Go Tropical Grill||Tequila And Tacos||1668 Weston Road||210 Edmonton Trail NE",,"T4B 1R9||zomato_4279||yelp_6635||-1.0||
+0||The Cheesecake Cafe||Jukebox||7600 Macleod Trl S||1404 W 29th St||T2H||44113||zomato_10651||yelp_19628||-1.0||
+0||Mia Famiglia Pizzeria||Ponte Vecchio||||2100 Superior Via||28079||44113||zomato_7449||yelp_23659||-1.0||
+0||Ice Cream Sonic||Cinnaholic||5607 W Cambridge Ave||7920 W Tropical Pkwy, Unit 110||85035||89149||zomato_3705||yelp_15960||-1.0||
+0||Starbucks||Frank's New York Style Deli||9820 Rea Road||2301 W Orange Dr||28277||85015||zomato_8282||yelp_24567||-1.0||
+0||Copacabana Grilled Brazilian||Villa Massimo||Upper Floor||120 Boulevard Taschereau||M5H 3H1||J5R 1S8||zomato_6538||yelp_12971||-1.0||
+0||Sorrento||Ristorante Cavalli||2064 B Treat Boulevard||2040 Rue Peel||94598||H3A 2R4||zomato_11649||yelp_9775||-1.0||
+0||Olde Tyme Fish & Chips||Old School Pizzeria||136 King St E||2040 E Craig Rd, Ste 101",,"89030||zomato_3808||yelp_56385||-1.0||
+0||Rockin' Crawfish||Sushi Newtown||211 Foothill Boulevard||311 Rue de la Montagne||94606||H3C 0R6||zomato_11172||yelp_17101||-1.0||
+0||Cafe Raj||Los Mariachis Mexican Restaurant||1158 Solano Avenue||7400 MacLeod Trail SE, Suite 1||94706||T2H 0L9||zomato_10976||yelp_35621||-1.0||
+0||Outback Steakhouse||Noble Wok||||13065 Highway 27, Unit 4||44056||L0G 1N0||zomato_19645||yelp_2216||-1.0||
+0||Babystacks Cafe||Southern Style||7090 North Durango Drive||4371 N Rancho Dr||89149||89130||zomato_1436||yelp_3419||-1.0||
+0||Miracle Mile Delicatessen||Sexy Lexy Kitchen||4433 N 16th St||500 N Rainbow, Ste 300||85016||89107||zomato_3384||yelp_42924||-1.0||
+0||The Melting Pot||Papa John's Pizza||3111 Westgate Mall||7741 Colony Rd||44126||28226||zomato_20404||yelp_51703||-1.0||
+0||O.Noir||Essence of Thai||620 Church Street||4107 W Sahara Ave||M4Y 1N3||89136||zomato_6174||yelp_10937||-1.0||
+0||Bofinger||Phnom Penh Restaurant||5667 Rue Sherbrooke O||13124 Lorain Ave||H4A 1W6||44111||zomato_14164||yelp_52779||-1.0||
+0||El Rincon Latino||The Wine Swine||9265 Boulevard Saint-Michel||1001 Eastern Avenue||H1Z 3G7||M4L 1A8||zomato_15111||yelp_17838||-1.0||
+0||Musashi||Potbelly Sandwich Shop||10110 Johnston Road Suite 15||1 E Washington St, Ste 170||28210||85004||zomato_7371||yelp_40735||-1.0||
+0||Rubio's||Zesty Zzeeks Pizza and Wings||1804 S Signal Butte Rd||4825 E Warner Rd||85209||85044||zomato_13550||yelp_39999||-1.0||
+0||Delice||Banh Mi and tea company||200 Barclay Parade Southwest||2130 Ayrsley Town Blvd, Ste C||T2P4R5||28273||zomato_9487||yelp_45813||-1.0||
+0||Trader Vic's||The Boat House||9 Anchor Drive||490 Horsepower Cv||94608||89005||zomato_12136||yelp_50083||-1.0||
+0||Uchi||Mai Bistro||1799 Amherst||4906 Dundas W||H2L1R1||M9A 1B4||zomato_16612||yelp_54971||-1.0||
+0||A & W||La Saucisserie||70 Shawville Blvd SE||229 Ossington Ave||T2Y3S5||M6J 2Z8||zomato_10813||yelp_18902||-1.0||
+0||Kwality Indian Restaurant||McDonald's||4767 Blvd Des Sources||1460 W Southern Ave||H8Y3C6||85202||zomato_14274||yelp_37378||-1.0||
+0||Persuasian Restaurant||SkyJump Las Vegas||2214 Park Road||2000 Las Vegas Blvd S||28203||89104||zomato_7374||yelp_14447||-1.0||
+0||Burger King||Christine's Country Cookin||||2130 PA-88||42420||15332||zomato_19175||yelp_49827||-1.0||
+0||Dunkin' Donuts||Little India||3481 S Durango Dr||1813 E Baseline Rd||89117||85281||zomato_1347||yelp_53380||-1.0||
+0||Riviera Mexican Grill||Carolina Kebap||10604 State Route 662||4508 E Independence Blvd||47630||28205||zomato_18715||yelp_28578||-1.0||
+0||Gecko Gecko||Social House Seven||2101 Milvia Street||123 7th St||94704||15222||zomato_12227||yelp_45780||-1.0||
+0||Simple Simon Pies||Pizza Nova||510 77 Ave SE||755 Dundas Street W||T2H1C3||L5N 7Y8||zomato_9707||yelp_37390||-1.0||
+0||Freshii||Chez Ping||RioCan Yonge Eglinton Centre||7401 Boul Newman",,"H8N 1X3||zomato_4191||yelp_46740||-1.0||
+0||Dans la Gueule Du Loup||Down Under Wines & Bistro||2055 Rue Laurier||1422 W Warner Rd, Ste 100 A||H2H1B8||85233||zomato_16299||yelp_43904||-1.0||
+0||Gem's House Of Jerk||Dave's Chicken And Seafood||Rona Plaza||801 Matheson Boulevard West",,"L5V 2N6||zomato_4208||yelp_21000||-1.0||
+0||Terrace Point Café||Grillades Torino||3131 S Las Vegas Blvd||3131 Boulevard de la Cote-Vertu||89109||H4R 1Y8||zomato_923||yelp_49881||-1.0||
+0||Barro's Pizza||Bar Louie||6663 E McDowell Rd||6605 Las Vegas Blvd S, Ste N||85215||89119||zomato_13436||yelp_45120||-1.0||
+0||Capitol Coffee||Rubio's Fresh Mexican Grill||1722 W Van Buren St.||13736 West Bell Rd||85007||85374||zomato_2758||yelp_11711||-1.0||
+0||Salt & Pepper Mexican Restaurante||Subway||1413 - 9 Avenue SE||616 E Green St||T2G||61820||zomato_9596||yelp_29411||-1.0||
+0||Ck's Tavern & Grill||El Camino||4142 E Chandler Blvd||395 N Aurora Rd||85048||44202||zomato_3537||yelp_40738||-1.0||
+0||Unlovable||Fox Hound Smokehouse & Tavern||1415B Dundas Street West||8320 W Mariners Way||M6J 1Y8||85382||zomato_6894||yelp_36427||-1.0||
+0||Middle Eastern Bakery & Deli||Le Ti Colibri||3052 North 16th Street||291 Augusta Avenue||85016||M5T 1N9||zomato_3413||yelp_11219||-1.0||
+0||Kaizen Fusion Roll & Sushi||Il Vicino||4480 Paradise Rd||57 Boulevard Saint-Jean-Baptiste||89169||J6J 3H5||zomato_335||yelp_11013||-1.0||
+0||In-N-Out Burger||Intimate Fine Dining||||1770 Horizon Pkwy, Ste 100||94534||89077||zomato_13176||yelp_47671||-1.0||
+0||Greasy Spoon||San Gennaro Burger||160 laurier west||3355 Las Vegas Blvd S||H2T2N4||89109||zomato_18055||yelp_18145||-1.0||
+0||Cookies N Creme||Samadhi Tea House||117 N Pilot Knob Road||160 Baldwin Street||28037||M5T 3K7||zomato_7547||yelp_17167||-1.0||
+0||Dunkin' Donuts||The Lodge||14009 Pearl Rd||4422 N 75th St||44136||85251||zomato_20184||yelp_43133||-1.0||
+0||Redline Pizzeria||Tikka Tikka Indian Delight||753 S Alma School Road||6001 14th Avenue||85210||L3P 3J3||zomato_13440||yelp_13851||-1.0||
+0||Cinco De Mayo||Chenoy's||514 Center Avenue||3616 Boulevard Saint-Jean||94553||H9G 1X1||zomato_12024||yelp_40380||-1.0||
+0||Del Taco||Graffiti: A Social Kitchen||3648 E Southern Ave||1261 W 76th St||85206||44102||zomato_14134||yelp_12584||-1.0||
+0||Nami||Jester's Billiards||2014 North 7th Street||1515 N Gilbert Rd||85004||85234||zomato_2562||yelp_50851||-1.0||
+0||Zesto Drive-In||IL CHIANTI RESTAURANT||102 W Franklin||277 20 Avenue NE||47713||T2E 1R1||zomato_18724||yelp_49689||-1.0||
+0||The Keg Steakhouse + Bar||Harry Ramsdens||6815 Trans-Canada Hwy||22 Foreshore Road||H9R5X4||YO11 1PB||zomato_14979||yelp_8064||-1.0||
+0||Imperial Tea Court||Guido's Pizza Haven & Restaurant||Gourmet Ghetto||12809 Chillicothe Rd||94709||44026||zomato_12532||yelp_10388||-1.0||
+0||Sambalatte||McAlister's Deli||3770 Las Vegas Boulevard S||4954 Great Northern Mall, Ste 356||89118||44070||zomato_1524||yelp_52693||-1.0||
+0||Fry's Food and Drug||Restaurant TGV||18420 N 19th Avenue||4745 Rue Jean-Talon E||85023||H1S 1K4||zomato_3693||yelp_51561||-1.0||
+0||COBS Bread||New Tasty Chicken House||1975 Queen Street East||1014 Queen St E",,"M4M 1K1||zomato_7047||yelp_32846||-1.0||
+0||Thai Seafood Ginger||Domino's Pizza||1750 S Rainbow Boulevard||9020 Albemarle Rd, Ste A2||89146||28227||zomato_1297||yelp_36181||-1.0||
+0||The Pilot||Jack in the Box||22 Cumberland Street||1261 W Warm Springs Rd||M4W 1J5||89014||zomato_5268||yelp_44728||-1.0||
+0||Cibo||Symposium Cafe Restaurant & Lounge||1012 17 Ave SW||3055 Dundas St W||T2T 0A5||L5L 3R8||zomato_9381||yelp_49386||-1.0||
+0||Trinidad and Tobago Organettes||Ginza Sushi||2110 41 Ave NE||375 N Stephanie St, Ste 311||T3B5V3||89014||zomato_9065||yelp_42551||-1.0||
+0||Sheng Kee Bakery||Chuck E Cheese's||2307 Telegraph Avenue||2945 Argentia Road||94704||L5N 0A2||zomato_11818||yelp_6389||-1.0||
+0||Pendeli's Pizza||Ginger China Bistro||5599 Chemin De La Cote-St-Luc||5940 W Union Hills Dr||H3X2C9||85308||zomato_16090||yelp_32625||-1.0||
+0||Balsam Inn||Subway||1237 Metcalfe St||3519 S Maryland Pkwy||H3B2V5||89169||zomato_18260||yelp_57163||-1.0||
+0||Daily Press Juicery||Hong Lou||200 Queen Street West||6850 Spring Mountain Rd, Ste F4||M5V 1Z2||89146||zomato_3844||yelp_53313||-1.0||
+0||Be Coffee + Food + Stuff||Lucky Star Chinese & Japanese Buffet||220 E Roosevelt||617 Mall Ring Cir, Ste 120||85004||89136||zomato_3314||yelp_55999||-1.0||
+0||Poppyseed's Bagels||Subway||1311 Chestnut Lane||755 S Grand Central Pkwy, Ste 1480||28104||89106||zomato_8179||yelp_39096||-1.0||
+0||Smoothie King||Mildred's Sandwich Shop||Rivergate||827 E Johnson St||28273||53703||zomato_8352||yelp_27142||-1.0||
+0||Paul Patates||Maria's Italian Restaurant||760 Rue Charlevoix||11822 Detroit Ave||H3K2Y3||44107||zomato_15466||yelp_49276||-1.0||
+0||Torteria San Cosme||Peggy's Lunch Box||||10255 Northfield Rd",,"44067||zomato_5452||yelp_50692||-1.0||
+0||Krispy Kreme Doughnuts||Kiyomizu Restaurant||3850 Las Vegas Blvd S||41 Spring Garden Avenue||89109||M2N 3G1||zomato_1520||yelp_10647||-1.0||
+0||Mexican Amigos||Bar Cento||10720 Yonge Street||1948 W 25th St||L4C 0C7||44113||zomato_5427||yelp_1967||-1.0||
+0||Long Branch Fish & Chips||BarBurrito - Sheppard||3260 Lake Shore Boulevard||4918 Yonge St||M8V 1M4||M2N 5N5||zomato_4880||yelp_6626||-1.0||
+0||Cuisine of India||Nana's Hot Dog Shop||6857 West 130th Street||1110 Federal St||44130||15212||zomato_20487||yelp_15818||-1.0||
+0||Elna Bistro||Positano Osteria||6900 Boul Decarie Ste m240 Côte St-luc Qc h3x 2t8||8625 Lindholm Dr, Ste A",,"28078||zomato_18191||yelp_55479||-1.0||
+0||Ben & Florentine||La Cage||1215 Rue Mansfield||150 Rue Sainte-Catherine O, Local 201C||H3B4G8||H2X 3Y2||zomato_17195||yelp_13265||-1.0||
+0||Nature's Emporium||CAVA||2180 Itabashi Way||16845 Birkdale Commons Pkwy, Ste D||L7M 5A5||28078||zomato_6360||yelp_6753||-1.0||
+0||Nemo Grille||Black Apron Cuisine||36976 Detroit Rd||6120 2nd Street SE, building A Unit 9C||44011||T2H 2L8||zomato_19755||yelp_29924||-1.0||
+0||Salt & Pepper Mexican Restaurante||The Hillsdale||6515 Bowness Road NW||2112 Yonge Street||T3B 0G1||M4S 2A5||zomato_9593||yelp_44162||-1.0||
+0||Harvey's||Restaurant Phuket||525 36 St NE||4673 Jarry Rue E||T2A6K3||H1R 1X6||zomato_10776||yelp_1027||-1.0||
+0||My Place Fish' N Chips||Veranda Restaurant & Wine Bar||||2790 S Fish Hatchery Rd||M1T 1A4||53711||zomato_4809||yelp_9429||-1.0||
+0||Bernard Callebaut||The Cozy Cafe||826 Crowfoot Crescent NW||400 S Main St||T3G4S3||15220||zomato_9460||yelp_6320||-1.0||
+0||Kam Han Szechuan House||New Hofbrau||2318 Spiller Rd SE||416 Highland Ave||T2G 4G9||15317||zomato_10307||yelp_27675||-1.0||
+0||La Salsa||Wazuzu||3663 Las Vegas Boulevard S||3131 Las Vegas Blvd S||89109||89109||zomato_1132||yelp_48338||-1.0||
+0||Domino's||Don Ramon Mexican Restaurant||720||4866 Richmond Rd||T3G||44128||zomato_10790||yelp_22349||-1.0||
+0||Mars Bar||Happy Wok||15314 Madison Ave||2409 W Broadway||44107||53713||zomato_20423||yelp_53602||-1.0||
+0||LongHorn Steakhouse||Picnic||||130 King Street W||85210||M5X 1K6||zomato_13489||yelp_25741||-1.0||
+0||Earl's||Jimmy John's||1110 16 Ave NW||4401 E McKellips Rd, Ste 104||T2M0K8||85215||zomato_10486||yelp_26867||-1.0||
+0||IHOP||Beef 'O' Brady's||1920 W. Bell Road||13699 N Litchfield Rd||85023||85379||zomato_2728||yelp_31145||-1.0||
+0||Swiss Chalet Rotisserie & Grill||Gyro Bar!||6970 Financial Drive||1647 Queen St W||L5N 8J4||M6R 1A9||zomato_3850||yelp_17400||-1.0||
+0||Rouge Boeuf||Pho Khanh Hoa||1553 Blvd Le Corbusier||5110 Rue Jean-Talon E||H7S1Z3||H1S 1K7||zomato_15036||yelp_16854||-1.0||
+0||Kneaders Bakery and Cafe||The Olde Mecklenburg Brewery||4730 E Ray Rd||215 Southside Dr||85044||28217||zomato_2697||yelp_25712||-1.0||
+0||Bua Thai||Breakroom Bar & Grill||743 The Queensway||4729 E McDowell Rd||M8Y 2T3||85008||zomato_5520||yelp_43555||-1.0||
+0||Martin's Corner Deli||Black Angus Steakhouse||34985 Detroit Rd||7606 W Bell Rd||44011||85308||zomato_19737||yelp_40687||-1.0||
+0||Yellow Tavern||Domino's Pizza||521 Church St||12905 Rosedale Hill Ave||47631||28078||zomato_19075||yelp_8818||-1.0||
+0||Dur À Cuire||La Palette||219 Saint-Jean St||492 Queen Street W||J4H2X4||M5V 2B3||zomato_16972||yelp_4141||-1.0||
+0||Pier 29 Restaurant in Alameda||Nando's Flame Grilled Chicken||1148 Ballena Boulevard||3333 32nd Ave NE||94501||T1Y 6M5||zomato_12753||yelp_19342||-1.0||
+0||Jack in the Box||Quiznos||2135 Railroad Avenue||5857 Smith Rd||94565||44142||zomato_13141||yelp_39061||-1.0||
+0||K'Moon Restaurant||Willows Tavern||150 Rue St Zotique Est||5485 Willow Rd",,"53597||zomato_17009||yelp_14763||-1.0||
+0||Los Cerros||Pasta Pomodoro||||16255 N Scottsdale Rd||94803||85254||zomato_11983||yelp_54643||-1.0||
+0||Pickwick & Frolic Restaurant and Club||New Great China Super Buffet||2035 East 4th Street||2651 N 75th Ave||44115||85035||zomato_20643||yelp_43639||-1.0||
+0||Pancer's Original Deli||The Coachman's Inn||||3240 S Eastern Ave||M3H 3N3 3N3||89169||zomato_5845||yelp_57123||-1.0||
+0||Mysore Indian Cuisine||Shirin Kebab House||4216 Boulevard St-Laurent||1880 Eglinton Avenue E||H2W||M1L 2L1||zomato_17982||yelp_33445||-1.0||
+0||MacAlpine's||Indochine Grill||2303 North 7th Street||210 E Trade St||85006||28202||zomato_2635||yelp_54095||-1.0||
+0||Whole Foods Market||Fun Asian Bistro||10810 N. Tatum Blvd||11655 Frankstown Rd||85028||15235||zomato_2306||yelp_11459||-1.0||
+0||Bachi Burger||Pita Lite||6825 W Russell Rd||482 Dundas Street W||89118||L6H 6Y3||zomato_2029||yelp_29197||-1.0||
+0||Celia's Mexican Restaurant - Antioch||Frankie's||||892 Queen Street E||94509||M4M 1J3||zomato_11944||yelp_46791||-1.0||
+0||CREAM||Fv Foods||1372 N Main Street||2085 Lawrence Avenue E||94596||M1R 2Z4||zomato_12267||yelp_36586||-1.0||
+0||Bad Daddy's||Vibo Restaurant||1626 East Boulevard||2995 Bloor Street W||28203||M8X 1C1||zomato_7729||yelp_15979||-1.0||
+0||High Park Deli Express||Potato Valley Cafe||1960 Bloor Street West||801 S Las Vegas Blvd, Ste 110||M6P 3K9||89101||zomato_5894||yelp_41055||-1.0||
+0||Ronnie's Local 069||Kabab Grill||69 Nassau Street||70 Gerrard Street W||M5T 1M6||M5G 1J5||zomato_6864||yelp_34439||-1.0||
+0||Marta's||Taqueria Los Angeles||800 E 222nd St||10590 N 90th Ave||44123||85345||zomato_19785||yelp_46707||-1.0||
+0||Buona Forchetta||House of Frites||2407 Ave Du Mont-Royal Est||4440 S Maryland Pkwy, Ste 113||H2H1L2||89119||zomato_16781||yelp_13896||-1.0||
+0||Phat Daddy's Cafe||Le Saint Jacques||2741 Old Monroe Road||6001 De Jumonville||28104||H1M 1R5||zomato_8427||yelp_24201||-1.0||
+0||ZK Grill||Pho Van||4757 E Greenway Road||2120 Penn Ave||85032||15222||zomato_3335||yelp_38935||-1.0||
+0||Country Waffles- Antioch||Lucky Dragon Restaurant||||2524 Keele Street||94531||M6L 2N8||zomato_12375||yelp_54641||-1.0||
+0||Infusion Contemporary Cuisine||Poutine Laurier||2250 162 Ave SW||2100 Avenue Laurier Est||T2Y4Z9||H2H 1B9||zomato_10677||yelp_7581||-1.0||
+0||Atlas Pizza||Cork & Cleaver Social Kitchen||4051 St Andre||8130 Broadview Rd||H2L3W4||44147||zomato_17378||yelp_17318||-1.0||
+0||Pizza Prima||Fiesta Jalisco||5457 Rue Sherbrooke Ouest||5317 E Independence Blvd",,"28212||zomato_17396||yelp_51746||-1.0||
+0||Farro||Le's Pho||2316 Major Mackenzie Drive||8180 11 Street SE, Suite 848",,"T2H 3B5||zomato_4529||yelp_50212||-1.0||
+0||Kaffa Ethiopian Cuisine||Taco Bell||2987 Sacramento Street||13710 Independence Blvd||94702||28079||zomato_11514||yelp_14665||-1.0||
+0||Jonathan's Restaurant and Bistro||Putters Bar & Grill||120 Thomas Street||1231 American Pacific Dr",,"89074||zomato_3782||yelp_29391||-1.0||
+0||Rione||Pie Squared||227 Rue St-Zotique E||3401 Dufferin Street||H2S1L2||M6A 2T9||zomato_18306||yelp_40755||-1.0||
+0||9 Tapas||Our Place Homemade||9 Roncesvalles Ave||105 Middle Ave||M6R 2K2||15148||zomato_4044||yelp_25554||-1.0||
+0||Jersey Mike's Subs||Rôtisserie Ebal||||2275 Boulevard Marcel-Laurin||28202||H4R 0K4||zomato_8209||yelp_17515||-1.0||
+0||Saigon VIP||Lone Star Texas Grill||1850 Ste-Catherine West||18277 Yonge Street||H3H1M2||L9N 0A2||zomato_14325||yelp_14321||-1.0||
+0||Great Canadian Pizza & Fried Chicken||Pizza Hut||937 7th Ave SW||2436 E Bell Rd||T2P1A1||85032||zomato_10766||yelp_29863||-1.0||
+0||Chili's||Beaute D'amour Nails Studio||||823 Yonge Street||94578||M4W 2G9||zomato_11380||yelp_6300||-1.0||
+0||Oh Geul Boh Geul||Casey Moore's Oyster House||5320 Yonge Street||850 S Ash Ave||M2N 5P9||85281||zomato_5024||yelp_57074||-1.0||
+0||McDonald's||Toby's Supper Club||7690 Hurontario Street||3717 S Dutch Mill Rd",,"53718||zomato_5352||yelp_55129||-1.0||
+0||Bonnie's Bar & Grill||Hakka Wok||22811 Lorain Road||9418 Markham Road||44126||L3P 3J3||zomato_20105||yelp_52365||-1.0||
+0||Ten Ren's Tea||Teriyaki Boy Healthy Grill||Square One Shopping Centre||4441 E Bonanza Rd, Ste 105",,"89110||zomato_5787||yelp_33150||-1.0||
+0||Afternoon Tea||Demetris Pizza||6000 E Camelback Rd||1986 Kensington Road NW||85251||T2N 3R5||zomato_2799||yelp_16977||-1.0||
+0||Scends||My Wonderful Kitchen||3627 San Pablo Avenue||350 Highway 7 E, Unit 101||94608||L4B 3N2||zomato_11362||yelp_14808||-1.0||
+0||Alan Shish Kabob House||Shinji||856 Sheppard Avenue West||1732 Rue Notre Dame O",,"H3J 1M3||zomato_6411||yelp_3528||-1.0||
+0||Deep Sea||Burger King||||1549 E 55th St||28105||44103||zomato_8449||yelp_16080||-1.0||
+0||Frankie Johnnie & Luigi Too!||Harvey's||||7475 boul Décarie||94568||H4P 2G9||zomato_11705||yelp_829||-1.0||
+0||Coffee Culture Café & Eatery||Pizzeria Bosco||7030 St Barbara Boulevard 3||Toronto Eaton Centre, 14 Queen Street W||L5W 0E6||M5H 3X4||zomato_6020||yelp_56116||-1.0||
+0||The Good Press||Tableau||87 Yorkville Avenue||3131 Las Vegas Blvd S||M5R 1B9||89109||zomato_6271||yelp_52727||-1.0||
+0||Sonic Drive-In||Tropical Thai Cuisine||Mooresville Crossing||993 Kingston Road||28117||M4E 1T3||zomato_7850||yelp_31299||-1.0||
+0||Sir Veza's Taco Garage||Tuyen Restaurant||Phoenix Sky Harbor Airport||4860 Yonge Street||85034||M2N 5N2||zomato_2703||yelp_50783||-1.0||
+0||Machu Picchu Restaurant||Gretalian||1272 Speers Road||5341 N 7th Ave",,"85013||zomato_6514||yelp_17397||-1.0||
+0||King Donuts||Rivas Mexican Food||Chestnut Square||15403 W Greenway Rd, Ste 100||94519||85374||zomato_11406||yelp_40544||-1.0||
+0||Arahova Souvlaki||Mike's Kitchen||8051 Boulevard Newman||Rue Sunny Acres||H2Y||H9X 3B5||zomato_17945||yelp_47053||-1.0||
+0||Artigiani Pizzeria Cucina||Souper Salad||4657 Rue Saint-Denis||5117 S Blvd||H2J2L3||28217||zomato_17688||yelp_9776||-1.0||
+0||Sawassedee||Il Giardino Ristorante Italiano||1613||344 17 Avenue SW||J6X2Z7||T2S 0A8||zomato_15435||yelp_16988||-1.0||
+0||Les Co'Pains d'Abord||Palmyra Mediterranean Grill||418 rue Rachel E||419 State St||H2J2G8||53703||zomato_15702||yelp_19320||-1.0||
+0||Orange Julius||Pizza Hut||1423 W Southern Ave||7150 N. Durango Drive, #120||85202||89149||zomato_13464||yelp_6515||-1.0||
+0||Bellagio Pizza||Heisei Mart||75 Williamson Drive||3160 Steeles Avenue E||L1T4W8||L3R 8T3||zomato_4153||yelp_32182||-1.0||
+0||Hot N Juicy Crawfish||Geisha House Steak & Sushi||3863 Spring Mountain Rd||3751 E Desert Inn Rd||89102||89121||zomato_36||yelp_38058||-1.0||
+0||Jack in the Box||Sree's Foods||14395 San Pablo Avenue||606 Main St||94806||15215||zomato_13188||yelp_54170||-1.0||
+0||Bourbon Street Grill||McDonald's||Chinook Centre||3211 Clark Ave||T2H||44109||zomato_9047||yelp_13195||-1.0||
+0||Las Vegas Donut House||Urban Rice||4080 Paradise Rd||108-3rd Avenue SW, Unit 104||89169||T2P||zomato_1311||yelp_27134||-1.0||
+0||La Frita Pizzeria||Seanachie Irish Pub||4909 Notre Dame West||5909 Signal Hill Drive SW||H4C||T3H 3P8||zomato_18383||yelp_26303||-1.0||
+0||Nando's Mexican Cafe||East Side Mario's||3519 E Baseline Rd||18283 Yonge St||85234||L9N 0A2||zomato_13533||yelp_20489||-1.0||
+0||Pumpernickel's||Gagan Sweets||First Canadian Place||3175 Rutherford Road, Unit 43,44||M5X 2A2||L4K 5Y6||zomato_5890||yelp_32735||-1.0||
+0||Comptoir 21||Gyu-Kaku Japanese BBQ||747 Square Victoria||81 Church Street||H2Y 3Y9||M5C 2G2||zomato_15926||yelp_25674||-1.0||
+0||La Chinoise||Globefish Sushi & Izakaya||486 St-Charles||6455 Macleod Trail SW, Suite 0130||J7V 2N7||T2H||zomato_16010||yelp_167||-1.0||
+0||Spice Is Rite||Marathon Souvlaki Restaurant||||3938 Notre-Dame Boul",,"H7W 1S7||zomato_4226||yelp_18390||-1.0||
+0||Mi Pueblo||Del Taco||9620 N Metro Pkwy W||2320 E Serene Ave||85051||89123||zomato_3094||yelp_25088||-1.0||
+0||Hob Nobs Cafe & Spirits||Viking Brew Pub||149 W McDowell Rd||211 E Main St||85003||53589||zomato_2631||yelp_21593||-1.0||
+0||Purdy's Chocolates||Midwood Smokeshack||100 Anderson Rd SE||3335 Siskey Pkwy||T2J||28105||zomato_9758||yelp_39663||-1.0||
+0||Pub St-Paul||Kasper's Grill||124 Rue St-Paul E||3130 Driwood Ct, Unit A||H2Y 1G6 1G6||28269||zomato_17476||yelp_10616||-1.0||
+0||Nong Thon||Therapy||||518 E Fremont St||94530||89101||zomato_11073||yelp_34229||-1.0||
+0||Crush||Subway||3799 Las Vegas Boulevard S||Jones Blvd, Ste 104||89109||89146||zomato_225||yelp_30323||-1.0||
+0||Nasib's Quality||Sushi Nakano||||4025 E Chandler Blvd, Ste 44",,"85048||zomato_6060||yelp_53727||-1.0||
+0||HEbrews||Gino's Pizza||117 N Main Street||60 Queen Street E||28115||M5C 2T3||zomato_7169||yelp_2794||-1.0||
+0||Korean Garden BBQ House||The Melting Pot - Pittsburgh||4355 Spring Mountain Rd||125 W Station Square Dr||89102||15219||zomato_756||yelp_1857||-1.0||
+0||Régine Café||Noodles & Company||1840 Rue Beaubien Est||7541 W Bell Rd||H2G2V6||85382||zomato_16351||yelp_26993||-1.0||
+0||Great Donuts||Shawarma Twist||Alamo Plaza||4-2901 Markham Road||94507||M1X 0B6||zomato_11414||yelp_46112||-1.0||
+0||Which Wich||EuroGyro||2192 N Rainbow Blvd Ste 100||107 S Depeyster St||89108||44240||zomato_1727||yelp_36973||-1.0||
+0||Euro Grill & Cafe||Noodles & Company||||7541 W Bell Rd||28205||85382||zomato_8376||yelp_10495||-1.0||
+0||Honey Berry||MARU HanPan||1632 N Main Street||100 Steeles Avenue W, Unit 18 & 19||94596||L4J 7Y1||zomato_12100||yelp_2639||-1.0||
+0||Cafe Chat L'Heureux||Chipotle Mexican Grill||172 Ave Duluth Est||5849 W Northern Ave, Ste 500||H2W1H3||85301||zomato_16274||yelp_54516||-1.0||
+0||Akita Sushi||Elsa Lutong Bahay||5451 Highway 7||65 Rutherford Road S, Unit 1",,"L6W 3J3||zomato_4395||yelp_12628||-1.0||
+0||Teavana||Tokyo Express||82 Clock Tower Road||3530 N Goldwater Blvd",,"85251||zomato_5190||yelp_15541||-1.0||
+0||Smoothie King||Cookie Dough Bliss||||318 E South Main St||28117||28173||zomato_7190||yelp_16226||-1.0||
+0||McDonald's||Ceedo's Eatery||4400 Central Plaza||4147 Bridgewater Pkwy||94534||44224||zomato_13234||yelp_6970||-1.0||
+0||Dunkin' Donuts||Bong Lua Vietnamese Restaurant||7400 Las Vegas Blvd South||Huntingwood Square, 2572 Birchmount Road||89123||M1T 3H1||zomato_1312||yelp_24349||-1.0||
+0||L'Amère à boire||Dirty Food Eatery||2049 St-Denis||3070 Dundas Street W||H2X3K8||M6P 1Z7||zomato_17457||yelp_31130||-1.0||
+0||Comme Par Hasard||The British Chippy||244 Rue Saint-Charles Ouest||2335 162 Avenue SW, Suite 233||J4H1E1||T2Y 4S6||zomato_17214||yelp_20732||-1.0||
+0||Starbucks||Cafe 17||550 - 6th Avenue SW||5755 Granger Rd||T2P||44131||zomato_9009||yelp_5879||-1.0||
+0||Tower Pizzeria||Penn Station East Coast Subs||2000 Las Vegas Boulevard S||4815 Centre Ave, Ste 102||89104||15213||zomato_2121||yelp_53819||-1.0||
+0||Twiisted Sushi, Grill and Bar||Lucky Kitchen||985 Boardman Aly||1520 W Indian School Rd||44256||85015||zomato_19537||yelp_49358||-1.0||
+0||Clementine's||Rockwest Music And Grub Pub||||30676 Detroit Rd||94583||44145||zomato_11165||yelp_41639||-1.0||
+0||Mizuumi Buffet||THEcafe at THEhotel||1604 Decoto Road||Mandalay Bay Resort and  Casino, 3950 S Las Vegas Blvd||94587||89109||zomato_12764||yelp_8539||-1.0||
+0||Rustic Cafe||Eggs Crepes Restaurant||20811 N Cave Creek Rd.||250 Bayly Street W||85024||L1S 3V4||zomato_2682||yelp_41925||-1.0||
+0||Hillside Market and Grill||Chicago Brewing Company||6710 Dallas Cherryville Hwy||202 Fremont St||28016||89101||zomato_7651||yelp_42554||-1.0||
+0||Marché Bacchus||Phoenix Premium Outlets||2620 Regatta Dr||4976 Premium Outlet Way||89128||85226||zomato_1608||yelp_54615||-1.0||
+0||Via De Los Santos Mexican Cafe||Little Athens's Catering||9120 North Central Avenue||499 Merchant St||85020||15003||zomato_3011||yelp_26766||-1.0||
+0||Best Steak & Gyros House||Montreal Poutine||13620 Euclid Ave||161 Rue Saint Paul E||44112||H2Y 1G6||zomato_20435||yelp_49385||-1.0||
+0||Pizza Time||A-One Catering||2278 S Green St||7875 Tranmere Drive||42420||L5S 1T8||zomato_18810||yelp_26448||-1.0||
+0||Zappitelli's||Sorrento Pizza||9570 Mentor Ave||860 N Rainbow Blvd||44060||89107||zomato_19960||yelp_38523||-1.0||
+0||Mazatlan Mexican Restaurant||McDonald's||Natalie Commons Plaza||6361 Penn Ave||28037||15206||zomato_8007||yelp_50149||-1.0||
+0||Parkway Pizza||Popeyes Louisiana Kitchen||3911 Broadway Ave||6140 Broadway Ave||47712||44127||zomato_18462||yelp_19737||-1.0||
+0||Quesada Burritos & Tacos||Grand China Restaurant||10822 50 Street SE Unit 4 T2C 2X8||2388 Jackson St",,"53589||zomato_9147||yelp_10545||-1.0||
+0||La P'tite Grosse||The Beverley Hotel||1232 De La Montagne||335 Queen Street W||H3G 1Z1||M5V 2A1||zomato_15939||yelp_15602||-1.0||
+0||Ditka's||Mr. Chicken||15091 Komatke Lane||10710 Northfield Rd||85339||44067||zomato_3483||yelp_56440||-1.0||
+0||Fresh Addicts Juice Bar||Samurai Sam's||71 James Snow Parkway||7550 W Lake Mead Blvd, Ste 8",,"89128||zomato_6341||yelp_32156||-1.0||
+0||Zapata's Cantina||The Old House||Ballantyne Commons East||3 Glen Watford Drive||28277||M1S 2B7||zomato_7941||yelp_17018||-1.0||
+0||Fairway Park Donuts||Chon Thai Food||411 E 18th Street||2330 N Alma School Rd, Ste 116||94606||85224||zomato_11490||yelp_5768||-1.0||
+0||Brasa Grill||McDonald's||1300 W 9th St||17760 Yonge Street||44113||L3Y 8P4||zomato_20119||yelp_51863||-1.0||
+0||Moxie's Grill & Bar||Tim Hortons||1815 Liverpool Road||625 Rue Sainte-Catherine O||L1V 1W2||H3B 1B7||zomato_3983||yelp_4761||-1.0||
+0||Delicia Restaurant||La Selva||9 Boulevard Samson||862 rue Marie-Anne E||H7X3S5||H2J 2A9||zomato_16871||yelp_7943||-1.0||
+0||Boulangerie Antep||Tetsuro's Sayonara, Aloha, Going Away Uye At Japanese Curry n||3662 FLEURY EAST||5020 Spring Mountain Rd||H1H4R3||89146||zomato_16360||yelp_22569||-1.0||
+0||Luxy||Bob's Sub||60 Interchange Way||9600 Perry Hwy",,"15237||zomato_6935||yelp_26217||-1.0||
+0||Red Lobster||Bistro des Moulins||||10897 Rue du Pont||85254||H2B 2H3||zomato_2166||yelp_56693||-1.0||
+0||Ferro||Le Coq Rico||769 Street Clair Avenue West||8899 Rue Berri||M6C 1B4||H2M 1P5||zomato_4499||yelp_31008||-1.0||
+0||Samurai Sam's Teriyaki Grill||Equal Exchange Espresso Bar||4731 E Greenway Rd||900 Euclid Ave||85032||44115||zomato_3163||yelp_54380||-1.0||
+0||Cafexo Boutique||QDOBA Mexican Eats||358 St-Charles||11324 Euclid Ave||J7V2M7||44106||zomato_16298||yelp_40550||-1.0||
+0||Aéropaul||Ay Caramba, Eh||2025 Rue de l'Aéroport||65-3540 Rutherford Road",,"L4H 3T8||zomato_15543||yelp_44977||-1.0||
+0||Siraia||Pizza Pizza||Site 13||8053 Yonge Street",,"L3T 2C3||zomato_10497||yelp_11889||-1.0||
+0||Starbucks||Mohan's Restaurant||651 N Rainbow Blvd||7324 Saltsburg Rd||89107||15235||zomato_853||yelp_29930||-1.0||
+0||IHOP||Panera Bread||6379 Dublin Boulevard||2627 E Springs Dr||94568||53704||zomato_12951||yelp_41272||-1.0||
+0||Starbucks||The Livermore||8460 Boulevard Newman||124 S Highland Ave||H8N 1Y5||15206||zomato_16323||yelp_33630||-1.0||
+0||Maple Bakery Inc||Que Mas Mexican Cafe||10040 Keele Street||1435 W Craig Rd",,"89032||zomato_7027||yelp_11360||-1.0||
+0||Dispatch Café||Rikkochez||||341 Danforth Avenue||H2V 1A4||M4K 1N7||zomato_18173||yelp_24611||-1.0||
+0||Ferreira Café||Dirty Food Catering||||3070 Dundas Street W||H3A1S8||M6P 1Z7||zomato_15906||yelp_25227||-1.0||
+0||Granola Jar||Hatam||||10158 Yonge Street||47725||L4C 1T6||zomato_18529||yelp_30037||-1.0||
+0||Else's||The Dumpling Hut||156 Roy est||3591 Rue Clark||H2W1M2||H2X 2R9||zomato_17021||yelp_36495||-1.0||
+0||P.F. Changs||Dairy Queen||5485 Rue Des Jockeys||601 E Oak St||H4P||61853||zomato_16172||yelp_9740||-1.0||
+0||Mercuri Montreal||BarBurrito - Dufferin Mall||645 Wellington St||900 Dufferin St||H3C1T2||M6H 4A9||zomato_17020||yelp_17433||-1.0||
+0||Restaurant Dong Que||Top Tea||1210 Boulevard Rosemont||768 Yonge Street||H2S2A5||M4Y 2B6||zomato_14364||yelp_45229||-1.0||
+0||Caribbean Choice Food||Windy City Beefs N Dogs||2235 Centre St N||7500 W Lake Mead Blvd, Ste 10||T2E||89128||zomato_9060||yelp_36935||-1.0||
+0||Capriotti's Sandwich Shop||Sweet Home Wisconsin||4929 E Chandler Boulevard||910 Regent St||85048||53715||zomato_2845||yelp_2382||-1.0||
+0||Emeril's New Orleans Fish House||Roti Lady On the Dunn Ave||||269 Dunn Avenue||89109||M6K 2S1||zomato_729||yelp_39223||-1.0||
+0||Wendy's||Pho Kim 88||388 Country Hills Blvd NE||4100 Library Rd||T3K5J6||15234||zomato_10777||yelp_3180||-1.0||
+0||Kneaders Bakery and Cafe||Chili's||4730 E Ray Rd||9730 Rea Rd||85044||28277||zomato_2697||yelp_30138||-1.0||
+0||Misai Japanese||Bowl of Greens||1915 32 Ave NE||16447 N Scottsdale Rd, Ste 101||T2E8K5||85254||zomato_9190||yelp_19926||-1.0||
+0||Chipotle Mexican Grill||Cool Runnings Restaurant||3440 E Baseline Rd||146 Main Street||85204||M4E 2V8||zomato_13579||yelp_31623||-1.0||
+0||Chop Crazy||Greco Fresh Grille||977 Saint Catherine St West||1143 Stonecrest Blvd, Ste 101||H3B4W3||29708||zomato_16720||yelp_36683||-1.0||
+0||Hot Wok||Szechwan Chinese Restaurant||2639 E. Broadway||19715 Detroit Rd||85204||44116||zomato_13830||yelp_6459||-1.0||
+0||Starbucks||KFC||2060 S Power Rd Ste 100mesa||5032 Sunset Rd||85209||28269||zomato_13755||yelp_34856||-1.0||
+0||Jack's Corner Tap||Pho Metro||||1995 Salem Road N, Unit 5||28031||L1T 4V9||zomato_7800||yelp_55767||-1.0||
+0||Scott's Restaurant - Walnut Creek||Sushi Shop||||159 Saint-Antoine Rue W||94596||H2Z 1H2||zomato_12757||yelp_40520||-1.0||
+0||Golden Spoon Frozen Yogurt||Popeyes Louisiana Kitchen||8680 W Warm Springs Rd||237 Sheppard Avenue E||89113||M2N 3A8||zomato_599||yelp_52950||-1.0||
+0||Wah Sing||Crush'd Wine Bar and Market||2222 Railroad Avenue||7101 E Thunderbird Rd, Ste 101A||94565||85254||zomato_12776||yelp_30300||-1.0||
+0||Typhoon Lounge||Costco Food Court||5752 Ave De Monkland||791 Marks St||H4A1E9||89014||zomato_16398||yelp_47134||-1.0||
+0||Pane E Vino Restaurant and Catering||By The Inch Pizza Caffe||151 Brunel Road||4555 S Fort Apache Blvd, Ste 112||L4Z 3E8||89147||zomato_6504||yelp_22755||-1.0||
+0||Five Guys||Racines||Woodbridge Square||444 Rue Mcgill",,"H2Y 2G1||zomato_5334||yelp_5757||-1.0||
+0||Halibut House||Denny's||1820 Scugog Street||5045 W Tropicana",,"89103||zomato_4851||yelp_54963||-1.0||
+0||Bazic||Der Braumeister||5115 Spring Mountain Rd||13046 Lorain Ave||89146||44111||zomato_765||yelp_27654||-1.0||
+0||Ronaker's Coffee Shop||Medley Buffet||2123 Doolittle Drive||7300 N Aliante Pkwy||94577||89084||zomato_12538||yelp_31701||-1.0||
+0||Anga Cuisine Inspiree||Pizza Pit||3425 A Saint Denis St||1060 W Main St||H2X3L1||53589||zomato_17034||yelp_20816||-1.0||
+0||La Roulotte||Carl's Jr.||10 Rue Paiement||607 W Craig Rd||H9H2S6||89032||zomato_18443||yelp_44062||-1.0||
+0||ShareTea||Glow||576 Yonge Street||1281A Avenue Van Horne||M4Y 1Z2||H2V 1K5||zomato_3875||yelp_50372||-1.0||
+0||Durant's||Quesada||2611 North Central Avenue||1001 Rue Sherbrooke O||85004||H3A 1G5||zomato_3467||yelp_15868||-1.0||
+0||Clover Breakfast and Fish||Laura's Place||929 Old N Main St||16758 E Glenbrook Blvd||29710||85268||zomato_7694||yelp_24231||-1.0||

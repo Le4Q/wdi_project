@@ -64,8 +64,8 @@ public class PostalAddress extends AbstractRecord<Attribute> implements Serializ
         return true;
     }
 
-    private static final Attribute ADDRESS = new Attribute("Address");
-    private static final Attribute CITY = new Attribute("City");
+    public static final Attribute ADDRESS = new Attribute("Address");
+    public static final Attribute CITY = new Attribute("City");
 
     /* (non-Javadoc)
      * @see de.uni_mannheim.informatik.wdi.model.Record#hasValue(java.lang.Object)

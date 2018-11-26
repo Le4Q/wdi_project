@@ -36,7 +36,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Yelp_Schema_Linear_Rules {
+public class YelpSchemaLinearRules {
 
     private static final Logger logger = WinterLogManager.activateLogger("default");
 

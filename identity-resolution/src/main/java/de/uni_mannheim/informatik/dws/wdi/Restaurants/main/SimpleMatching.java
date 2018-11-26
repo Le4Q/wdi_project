@@ -16,7 +16,7 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.CSVRestaurantDetailF
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLReader;
 import org.apache.logging.log4j.Logger;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameGenerator;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFirstThreeGenerator;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
@@ -55,7 +55,7 @@ public class SimpleMatching {
         MatchingEngine<Restaurant, Attribute> engine = new MatchingEngine<>();
 
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameGenerator());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameFirstThreeGenerator());
         //StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new StaticBlockingKeyGenerator<Restaurant, Attribute>());
         blocker.collectBlockSizeData("identity-resolution/data/output/debugBlocking.csv", 1000);
 

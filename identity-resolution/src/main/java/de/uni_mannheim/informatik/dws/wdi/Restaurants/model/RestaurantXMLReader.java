@@ -28,7 +28,23 @@ public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribut
 	@Override
 	protected void initialiseDataset(DataSet<Restaurant, Attribute> dataset) {
 		super.initialiseDataset(dataset);
-		
+
+		dataset.addAttribute(Restaurant.NAME);
+		dataset.addAttribute(Restaurant.NEIGHBORHOOD);
+		dataset.addAttribute(Restaurant.DESCRIPTION);
+		dataset.addAttribute(Restaurant.LATITUDE);
+		dataset.addAttribute(Restaurant.LONGITUDE);
+		dataset.addAttribute(Restaurant.POSTALADDRESS);
+		dataset.addAttribute(Restaurant.REVIEWS);
+		dataset.addAttribute(Restaurant.PRICERANGE);
+		dataset.addAttribute(Restaurant.CATEGORIES);
+		dataset.addAttribute(Restaurant.OPENINGHOURS);
+		dataset.addAttribute(Restaurant.STARS);
+		dataset.addAttribute(Restaurant.ACCEPTSCREDITCARDS);
+		dataset.addAttribute(Restaurant.RESTAURANTDELIVERY);
+		dataset.addAttribute(Restaurant.ACCEPTSRESERVATIONS);
+		dataset.addAttribute(Restaurant.DRIVETHRU);
+		dataset.addAttribute(Restaurant.HASWIFI);
 	}
 	
 	@Override
