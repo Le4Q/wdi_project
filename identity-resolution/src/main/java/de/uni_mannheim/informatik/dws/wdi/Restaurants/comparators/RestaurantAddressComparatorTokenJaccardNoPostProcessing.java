@@ -1,4 +1,3 @@
-
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators;
 
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
@@ -8,29 +7,24 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 import java.util.function.Function;
 
 
-public class RestaurantNameComparatorNGramJaccardSimilarity implements Comparator<Restaurant, Attribute> {
+public class RestaurantAddressComparatorTokenJaccardNoPostProcessing implements Comparator<Restaurant, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private JaccardOnNGramsSimilarity sim = new JaccardOnNGramsSimilarity(3);
-	
+	TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
+
 	private ComparatorLogger comparisonLog;
-
 	private Function<String,String> fn;
-	private boolean removeCityName = false;
 
-	public RestaurantNameComparatorNGramJaccardSimilarity(){
+	public RestaurantAddressComparatorTokenJaccardNoPostProcessing(){
 		this.fn = ComparatorUtils::def;
 	}
-	public RestaurantNameComparatorNGramJaccardSimilarity(Function<String,String> fn){
+	public RestaurantAddressComparatorTokenJaccardNoPostProcessing(Function<String,String> fn){
 		this.fn = fn;
-	}
-	public RestaurantNameComparatorNGramJaccardSimilarity(Function<String,String> fn, boolean removeCityName){
-		this.fn = fn;
-		this.removeCityName = removeCityName;
 	}
 
 	@Override
@@ -39,20 +33,15 @@ public class RestaurantNameComparatorNGramJaccardSimilarity implements Comparato
 			Restaurant record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
 		
-		String s1 = record1.getName();
-		String s2 = record2.getName();
-
-		// kind of hacky, append city name to restaurant name, will use that information to remove the city name from the restaurant name string
-		if(removeCityName){
-			s1 += ";" + record1.getPostalAddress().getCity().getName();
-			s2 += ";" + record2.getPostalAddress().getCity().getName();
-		}
+		String s1 = record1.getPostalAddress().getAddress();
+		String s2 = record2.getPostalAddress().getAddress();
 
 		s1 = fn.apply(s1);
 		s2 = fn.apply(s2);
 
-    	double similarity = sim.calculate(s1, s2);
-    	
+		// calculate similarity
+		double similarity = sim.calculate(s1, s2);
+
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
 		
@@ -60,8 +49,8 @@ public class RestaurantNameComparatorNGramJaccardSimilarity implements Comparato
 			this.comparisonLog.setRecord2Value(s2);
     	
 			this.comparisonLog.setSimilarity(Double.toString(similarity));
+			this.comparisonLog.setPostprocessedSimilarity(Double.toString(similarity));
 		}
-		
 		return similarity;
 	}
 

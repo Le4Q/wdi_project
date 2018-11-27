@@ -2,10 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
 import com.wcohen.ss.SourcedTFIDF;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.ComparatorUtils;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantAddressComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantCityNameComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantNameComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.CSVRestaurantDetailFormatter;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLReader;
@@ -22,6 +19,9 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import de.uni_mannheim.informatik.dws.winter.similarity.list.GeneralisedJaccard;
+import de.uni_mannheim.informatik.dws.winter.similarity.list.MaximumOfContainment;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.*;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.apache.commons.lang3.time.DurationFormatUtils;
 import org.apache.logging.log4j.Logger;
@@ -57,33 +57,106 @@ public class YelpSchemaLinearRules {
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
 
+
+        LevenshteinSimilarity sim = new LevenshteinSimilarity();
+        // 3, 1, 2
+        String s1 = "Mesa Grill - Caesars Palace".toLowerCase();
+        String s2 = "Mesa Grill".toLowerCase();
+
+        // 1, 3, 2
+        s1 = "Benihana".toLowerCase();
+        s2 = "Benihanna of Tokyo".toLowerCase();
+
+        // 3, 2, 1
+        //s1 = "Overlook Grill - The Cosmopolitan of".toLowerCase();
+        //s2 = "Overlook Grill".toLowerCase();
+
+        /*
+        double similarity = sim.calculate(s1, s2);
+        System.out.println(similarity);
+
+        System.out.println("tokenizing");
+        TokenizingJaccardSimilarity sim2 = new TokenizingJaccardSimilarity();
+        similarity = sim2.calculate(s1, s2);
+        System.out.println(similarity);
+
+        System.out.println("ngram");
+        JaccardOnNGramsSimilarity sim3 = new JaccardOnNGramsSimilarity(3);
+        similarity = sim3.calculate(s1, s2);
+        System.out.println(similarity);
+
+        System.out.println("generalised");
+        GeneralisedStringJaccard sim4 = new GeneralisedStringJaccard(new JaccardOnNGramsSimilarity(3), 0.3, 0.3);
+        similarity = sim4.calculate(s1, s2);
+        System.out.println(similarity);
+        */
+
         // run best parameter setting after iteratively improving gold standard
         /*
         Precision: 0.8947
         Recall: 0.6071
         F1: 0.7234
-         */
+        */
+
         Double t = 0.78;
 
         ArrayList<Double> weights = new ArrayList<Double>();
         weights.add(0.4);
         weights.add(0.3);
         weights.add(0.3);
+        //weights.add(0.15);
 
         ArrayList<Function<String,String>> prep = new ArrayList<Function<String,String>>();
         prep.add(ComparatorUtils::removeCityName);
         prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
+        prep.add(ComparatorUtils::unifyAddress);
 
 
         String fileName = "name_city_address_t:"+Double.toString(t)+"_w1:"+Double.toString(weights.get(0))+"_w2:"+Double.toString(weights.get(1))+
                 "_w3:"+Double.toString(weights.get(2))+"_remCity_clean_clean";
-        simpleTemplate(schema,yelp,t,weights,prep,blocker,true,fileName);
-
+        //simpleTemplate(schema,yelp,t,weights,prep,blocker,true,fileName);
+        simpleTemplate02(schema,yelp,t,weights,prep,blocker,fileName);
 
         // address & name: beginning of word more weight (number
-        // postal code comparator
-        // remove "Restaurant", "Ristorante"
+        // use token based and ngram based
+        // postal code comparator, number
+
+        /*
+        Ngram
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.6429
+        F1: 0.7826
+         */
+
+        /*
+        Tokenized
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.5000
+        F1: 0.6667
+         */
+
+        /*
+        Ngram, unify address, address ngram jaccard
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.6786
+        F1: 0.8085
+         */
+
+        /*
+        Ngram, unify address, address token jaccard
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.6071
+        F1: 0.7556
+        */
+
+        /*
+        with postal code
+
+         */
 
     }
 
@@ -225,6 +298,11 @@ public class YelpSchemaLinearRules {
         // simple matching rule to create the gold standard
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(threshold);
 
+        //MatchingGoldStandard gsTraining = new MatchingGoldStandard();
+        //gsTraining.loadFromCSVFile(new File(
+        //        "data/goldstandard/yelp_schema_gs_training.csv"));
+        //matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, gsTraining);
+
         // add comparators
         Iterator<Comparator<Restaurant,Attribute>> it_fn = fns.iterator();
         Iterator<Double> it_weights = weights.iterator();
@@ -275,6 +353,26 @@ public class YelpSchemaLinearRules {
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
         findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,fileName);
+    }
+
+
+    public static void simpleTemplate02(HashedDataSet<Restaurant, Attribute> data1,
+                                      HashedDataSet<Restaurant, Attribute> data2,
+                                      Double threshold,
+                                      ArrayList<Double> weights,
+                                      ArrayList<Function<String,String>> prep,
+                                      StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
+                                      String fileName) throws Exception {
+        ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
+
+        fns.add(new RestaurantNameComparatorNGramJaccardSimilarity(prep.get(0), true));
+        fns.add(new RestaurantCityNameComparatorLevenshtein(prep.get(1)));
+        fns.add(new RestaurantAddressComparatorNGramJaccardNoPostProcessing(prep.get(2)));
+        //fns.add(new RestaurantPostalCodeComparatorNgramJaccard(ComparatorUtils::cleanPostal));
+
+        LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
+
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker, fileName);
     }
 
     public static void findCorrespondencesAndEvaluate(HashedDataSet<Restaurant, Attribute> data1,

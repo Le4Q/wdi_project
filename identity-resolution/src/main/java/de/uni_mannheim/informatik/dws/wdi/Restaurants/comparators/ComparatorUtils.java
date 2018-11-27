@@ -318,7 +318,13 @@ public class ComparatorUtils {
         }
     }
 
-
+    public static String cleanPostal(String s){
+        if (s!=null){
+            return s.split("-")[0];
+        } else {
+            return s;
+        }
+    }
     public static String unifyPostalCode(String s){
         if (s!=null){
             s = cleanLower(s);
