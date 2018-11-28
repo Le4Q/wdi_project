@@ -59,13 +59,31 @@ public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribut
 		restaurant.setNeighborhood(getValueFromChildElement(node, "neighborhood"));
 		restaurant.setDescription(getValueFromChildElement(node, "description"));
 		try { restaurant.setStars(Integer.parseInt(getValueFromChildElement(node, "stars"))); } catch (Exception e) {}
+		try { restaurant.setLatitude(Double.parseDouble(getValueFromChildElement(node, "latitude"))); } catch (Exception e){ }
+		try { restaurant.setLongitude(Double.parseDouble(getValueFromChildElement(node, "longitude"))); }catch (Exception e){ }
+		/*
 		try { restaurant.setAcceptsCreditCards(Boolean.parseBoolean(getValueFromChildElement(node, "accepts_credit_cards"))); } catch (Exception e) {}
 		try { restaurant.setRestaurantDelivery(Boolean.parseBoolean(getValueFromChildElement(node, "restaurant_delivery"))); } catch (Exception e) {}
 		try { restaurant.setAcceptsReservations(Boolean.parseBoolean(getValueFromChildElement(node, "accepts_reservations"))); } catch (Exception e) {}
 		try { restaurant.setDrivethru(Boolean.parseBoolean(getValueFromChildElement(node, "drivethru"))); } catch (Exception e) {}
 		try { restaurant.setHasWifi(Boolean.parseBoolean(getValueFromChildElement(node, "has_wifi"))); } catch (Exception e) {}
-		try { restaurant.setLatitude(Double.parseDouble(getValueFromChildElement(node, "latitude"))); } catch (Exception e){ }
-		try { restaurant.setLongitude(Double.parseDouble(getValueFromChildElement(node, "longitude"))); }catch (Exception e){ }
+		*/
+
+		if(getValueFromChildElement(node, "accepts_credit_cards") != null && (getValueFromChildElement(node, "accepts_credit_cards").equals("true")
+				|| getValueFromChildElement(node, "accepts_credit_cards").equals("false")))
+			try { restaurant.setAcceptsCreditCards(Boolean.parseBoolean(getValueFromChildElement(node, "accepts_credit_cards"))); } catch (Exception e) {}
+		if(getValueFromChildElement(node, "restaurant_delivery") != null && (getValueFromChildElement(node, "restaurant_delivery").equals("true")
+				|| getValueFromChildElement(node, "restaurant_delivery").equals("false")))
+			try { restaurant.setRestaurantDelivery(Boolean.parseBoolean(getValueFromChildElement(node, "restaurant_delivery"))); } catch (Exception e) {}
+		if(getValueFromChildElement(node, "accepts_reservations") != null && (getValueFromChildElement(node, "accepts_reservations").equals("true")
+				|| getValueFromChildElement(node, "accepts_reservations").equals("false")))
+			try { restaurant.setAcceptsReservations(Boolean.parseBoolean(getValueFromChildElement(node, "accepts_reservations"))); } catch (Exception e) {}
+		if(getValueFromChildElement(node, "drivethru") != null && (getValueFromChildElement(node, "drivethru").equals("true")
+				|| getValueFromChildElement(node, "drivethru").equals("false")))
+			try { restaurant.setDrivethru(Boolean.parseBoolean(getValueFromChildElement(node, "drivethru"))); } catch (Exception e) {}
+		if(getValueFromChildElement(node, "has_wifi") != null && (getValueFromChildElement(node, "has_wifi").equals("true")
+				|| getValueFromChildElement(node, "has_wifi").equals("false")))
+			try { restaurant.setHasWifi(Boolean.parseBoolean(getValueFromChildElement(node, "has_wifi"))); } catch (Exception e) {}
 
 
 		if(node instanceof Element) {
