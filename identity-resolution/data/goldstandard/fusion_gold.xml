@@ -17,6 +17,8 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+		<restaurant_delivery>true</restaurant_delivery>
 	</restaurant>
 	
 	<restaurant>
@@ -37,6 +39,10 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>true</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -57,6 +63,11 @@
 			<lowerBound>0</lowerBound>
 			<upperBound>10</upperBound>
 		</pricerange>
+		<accepts_credit_cards>false</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <drivethru>false</drivethru>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -77,6 +88,10 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -117,6 +132,10 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -137,6 +156,10 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>true</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -157,6 +180,10 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -177,6 +204,11 @@
 			<lowerBound>0</lowerBound>
 			<upperBound>10</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <drivethru>true</drivethru>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -197,6 +229,10 @@
 			<lowerBound>0</lowerBound>
 			<upperBound>10</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -237,6 +273,10 @@
 			<lowerBound>0</lowerBound>
 			<upperBound>10</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -257,6 +297,9 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <accepts_reservations>false</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -277,6 +320,10 @@
 			<lowerBound>11</lowerBound>
 			<upperBound>30</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -297,6 +344,10 @@
 			<lowerBound>0</lowerBound>
 			<upperBound>10</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>true</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -317,6 +368,10 @@
 			<lowerBound>31</lowerBound>
 			<upperBound>60</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -337,6 +392,10 @@
 			<lowerBound>31</lowerBound>
 			<upperBound>60</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>false</has_wifi>
 	</restaurant>
 
 	<restaurant>
@@ -377,6 +436,130 @@
 			<lowerBound>0</lowerBound>
 			<upperBound>10</upperBound>
 		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <drivethru>true</drivethru>
 	</restaurant>
-
+	
+	<restaurant>
+		<id>yelp_50168</id>
+		<name>Cien Agaves Tacos &amp; Tequila</name>
+		<latitude>33.5761208</latitude>
+		<longitude>-111.9989887</longitude>
+		<neighborhood>Old Town</neighborhood>
+		<postaladdress>
+			<address>7228 E 1st Ave</address>
+			<city>
+				<name>Scottsdale</name>
+				<postalcode>85251</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>11</lowerBound>
+			<upperBound>30</upperBound>
+		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
+	</restaurant>
+	
+	<restaurant>
+		<id>yelp_17147</id>
+		<name>McCormick &amp; Schmick's Seafood &amp; Steaks</name>
+		<latitude>40.4346627</latitude>
+		<longitude>-80.0006708</longitude>
+		<neighborhood>Uptown</neighborhood>
+		<postaladdress>
+			<address>2667 Sidney St</address>
+			<city>
+				<name>Pittsburgh</name>
+				<postalcode>15203</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>11</lowerBound>
+			<upperBound>30</upperBound>
+		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
+	</restaurant>
+	
+	<restaurant>
+		<id>yelp_10664</id>
+		<name>Carpe Diem Restaurant &amp; Caterers</name>
+		<latitude>35.2139546</latitude>
+		<longitude>-80.8289135</longitude>
+		<neighborhood>Elizabeth</neighborhood>
+		<postaladdress>
+			<address>1535 Elizabeth Ave</address>
+			<city>
+				<name>Charlotte</name>
+				<postalcode>28204</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>31</lowerBound>
+			<upperBound>60</upperBound>
+		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>true</has_wifi>
+	</restaurant>
+	
+	<restaurant>
+		<id>zomato_8453</id>
+		<name>Steak 'n Hoagie Shop</name>
+		<latitude>35.1640408</latitude>
+		<longitude>-80.8452003</longitude>
+		<postaladdress>
+			<address>1542 Stallings Rd</address>
+			<city>
+				<name>Matthews</name>
+				<postalcode>28104</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>0</lowerBound>
+			<upperBound>10</upperBound>
+		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>false</accepts_reservations>
+        <has_wifi>true</has_wifi>
+	</restaurant>
+	
+	<restaurant>
+		<id>schemaOrg_10401</id>
+		<name>The Melting Pot</name>
+		<latitude>33.556761</latitude>
+		<longitude>-111.9012437</longitude>
+		<postaladdress>
+			<address>8260 North Hayden Road</address>
+			<city>
+				<name>Scottsdale</name>
+				<postalcode>85258</postalcode>
+				<country>US</country>
+			</city>
+		</postaladdress>
+		<pricerange>
+			<lowerBound>11</lowerBound>
+			<upperBound>30</upperBound>
+		</pricerange>
+		<accepts_credit_cards>true</accepts_credit_cards>
+        <restaurant_delivery>false</restaurant_delivery>
+        <accepts_reservations>true</accepts_reservations>
+        <has_wifi>false</has_wifi>
+	</restaurant>
+	
+	
+	
 </restaurants>
