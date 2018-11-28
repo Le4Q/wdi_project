@@ -68,11 +68,13 @@ public class Fusion {
         System.out.println("*\n*\tLoading correspondences\n*");
         CorrespondenceSet<Restaurant, Attribute> correspondences = new CorrespondenceSet<>();
         System.out.println("*\n*\tLoading correspondences 1\n*");
-        correspondences.loadCorrespondences(new File("data/output/zomato_yelp_correspondence_simple_matching.csv"),zomato, yelp);
+        correspondences.loadCorrespondences(new File("data/output/zomato_yelp/zomato_yelp_correspondence_postalCode_blocker.csv"), zomato, yelp);
         System.out.println("*\n*\tLoading correspondences 2\n*");
         correspondences.loadCorrespondences(new File("data/output/zomato_datafiniti_correspondences_MP.csv"), zomato, datafiniti);
         System.out.println("*\n*\tLoading correspondences 3\n*");
         correspondences.loadCorrespondences(new File("data/output/zomato_schemaOrg_correspondences_KStar.csv"), zomato, schemaOrg);
+        System.out.println("*\n*\tLoading correspondences 4\n*");
+        correspondences.loadCorrespondences(new File("data/output/yelp_schema_corr.csv"), schemaOrg, yelp);
 
 
         // write group size distribution
