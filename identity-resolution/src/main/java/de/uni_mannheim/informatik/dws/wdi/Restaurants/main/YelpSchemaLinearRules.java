@@ -1,10 +1,8 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
+import com.wcohen.ss.SourcedTFIDF;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.ComparatorUtils;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantAddressComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantCityNameComparatorLevenshtein;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantNameComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.CSVRestaurantDetailFormatter;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLReader;
@@ -21,10 +19,17 @@ import de.uni_mannheim.informatik.dws.winter.model.Performance;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.CSVCorrespondenceFormatter;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+import de.uni_mannheim.informatik.dws.winter.similarity.list.GeneralisedJaccard;
+import de.uni_mannheim.informatik.dws.winter.similarity.list.MaximumOfContainment;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.*;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
+import org.apache.commons.lang3.time.DurationFormatUtils;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+import java.io.PrintWriter;
+import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Iterator;
 import java.util.function.Function;
 import java.util.ArrayList;
@@ -36,6 +41,7 @@ public class YelpSchemaLinearRules {
     private static final Logger logger = WinterLogManager.activateLogger("default");
 
     public static void main(String[] args) throws Exception {
+        // testParameters();
 
         // load the data sets
         HashedDataSet<Restaurant, Attribute> schemaOrg = new HashedDataSet<>();
@@ -51,165 +57,251 @@ public class YelpSchemaLinearRules {
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
 
+
+        LevenshteinSimilarity sim = new LevenshteinSimilarity();
+        // 3, 1, 2
+        String s1 = "Mesa Grill - Caesars Palace".toLowerCase();
+        String s2 = "Mesa Grill".toLowerCase();
+
+        // 1, 3, 2
+        s1 = "Benihana".toLowerCase();
+        s2 = "Benihanna of Tokyo".toLowerCase();
+
+        // 3, 2, 1
+        //s1 = "Overlook Grill - The Cosmopolitan of".toLowerCase();
+        //s2 = "Overlook Grill".toLowerCase();
+
+        /*
+        double similarity = sim.calculate(s1, s2);
+        System.out.println(similarity);
+
+        System.out.println("tokenizing");
+        TokenizingJaccardSimilarity sim2 = new TokenizingJaccardSimilarity();
+        similarity = sim2.calculate(s1, s2);
+        System.out.println(similarity);
+
+        System.out.println("ngram");
+        JaccardOnNGramsSimilarity sim3 = new JaccardOnNGramsSimilarity(3);
+        similarity = sim3.calculate(s1, s2);
+        System.out.println(similarity);
+
+        System.out.println("generalised");
+        GeneralisedStringJaccard sim4 = new GeneralisedStringJaccard(new JaccardOnNGramsSimilarity(3), 0.3, 0.3);
+        similarity = sim4.calculate(s1, s2);
+        System.out.println(similarity);
+        */
+
+        // run best parameter setting after iteratively improving gold standard
+        /*
+        Precision: 0.8947
+        Recall: 0.6071
+        F1: 0.7234
+        */
+
+        Double t = 0.78;
+
         ArrayList<Double> weights = new ArrayList<Double>();
         weights.add(0.4);
         weights.add(0.3);
         weights.add(0.3);
+        //weights.add(0.15);
 
         ArrayList<Function<String,String>> prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-
-        /*
-        ################
-        #### Preprocessing: Clean, Lower
-        #### Different thresholds
-        ################
-         */
-        /*
-        Precision: 0.8000
-        Recall: 0.8000
-        F1: 0.8000
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker);
-
-        /*
-        Precision: 1.0000
-        Recall: 0.6000
-        F1: 0.7500
-         */
-        // simpleTemplate(schema,yelp,0.8,weights,prep,blocker);
-
-        /*
-        Precision: 0.9333
-        Recall: 0.7000
-        F1: 0.8000
-         */
-        // simpleTemplate(schema,yelp,0.78,weights,prep,blocker);
-
-        /*
-        ################
-        #### Preprocessing: Remove Stopwords
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::cleanLowerStopwords);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-
-        /*
-        Precision: 0.8000
-        Recall: 0.8000
-        F1: 0.8000
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker);
-
-
-        /*
-        ################
-        #### Preprocessing: Remove city names from restaurant name
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::removeCityName);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-
-        /*
-        Precision: 0.8182
-        Recall: 0.9000
-        F1: 0.8571
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker, true);
-
-
-        /*
-        Precision: 0.9444
-        Recall: 0.8500
-        F1: 0.8947
-         */
-        // simpleTemplate(schema,yelp,0.78,weights,prep,blocker, true);
-
-        /*
-        Precision: 1.0000
-        Recall: 0.8000
-        F1: 0.8889
-         */
-        // simpleTemplate(schema,yelp,0.79,weights,prep,blocker, true);
-
-        /*
-        Precision: 1.0000
-        Recall: 0.7500
-        F1: 0.8571
-         */
-        // simpleTemplate(schema,yelp,0.8,weights,prep,blocker,true);
-        /*
-        ################
-        #### Preprocessing: Unify address
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::unifyAddress);
-        /*
-        Precision: 0.8095
-        Recall: 0.8500
-        F1: 0.8293
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker);
-
-        /*
-        Precision: 0.9375
-        Recall: 0.7500
-        F1: 0.8333
-         */
-        // simpleTemplate(schema,yelp,0.8,weights,prep,blocker);
-
-
-
-        /*
-        ################
-        #### Preprocessing: Remove city names from restaurant name + unify address
-        #### Different thresholds
-        ################
-         */
-        prep = new ArrayList<Function<String,String>>();
         prep.add(ComparatorUtils::removeCityName);
         prep.add(ComparatorUtils::cleanLower);
         prep.add(ComparatorUtils::unifyAddress);
 
-        /*
-        Precision: 0.8182
-        Recall: 0.9000
-        F1: 0.8571
-         */
-        // simpleTemplate(schema,yelp,0.75,weights,prep,blocker, true);
+
+        String fileName = "name_city_address_t:"+Double.toString(t)+"_w1:"+Double.toString(weights.get(0))+"_w2:"+Double.toString(weights.get(1))+
+                "_w3:"+Double.toString(weights.get(2))+"_remCity_clean_clean";
+        //simpleTemplate(schema,yelp,t,weights,prep,blocker,true,fileName);
+        simpleTemplate02(schema,yelp,t,weights,prep,blocker,fileName);
+
+        // address & name: beginning of word more weight (number
+        // use token based and ngram based
+        // postal code comparator, number
 
         /*
-        Precision: 0.9444
-        Recall: 0.8500
-        F1: 0.8947
+        Ngram
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.6429
+        F1: 0.7826
          */
-        simpleTemplate(schema,yelp,0.80,weights,prep,blocker, true);
 
+        /*
+        Tokenized
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.5000
+        F1: 0.6667
+         */
 
-        weights = new ArrayList<Double>();
-        weights.add(0.3);
-        weights.add(0.2);
-        weights.add(0.5);
+        /*
+        Ngram, unify address, address ngram jaccard
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.6786
+        F1: 0.8085
+         */
+
+        /*
+        Ngram, unify address, address token jaccard
+        Schema <-> Yelp
+        Precision: 1.0000
+        Recall: 0.6071
+        F1: 0.7556
+        */
+
+        /*
+        with postal code
+
+         */
 
     }
+
+    public static void testParameters() throws Exception{
+
+        // load the data sets
+        HashedDataSet<Restaurant, Attribute> schemaOrg = new HashedDataSet<>();
+        new RestaurantXMLReader().loadFromXML(new File("data/input/schemaOrg_target.xml"), "/restaurants/restaurant", schemaOrg);
+        HashedDataSet<Restaurant, Attribute> schema = Utils.removeDuplicates("data/output/schemaOrg_duplicates.csv", schemaOrg);
+        System.out.println(schema.size());
+
+        HashedDataSet<Restaurant, Attribute> yelp = new HashedDataSet<>();
+        new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
+
+        // create a blocker (blocking strategy)
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
+        blocker.setMeasureBlockSizes(true);
+        blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
+
+        // INIT WEIGHTS
+        ArrayList<Double> weights1 = new ArrayList<Double>();
+        weights1.add(0.4);
+        weights1.add(0.3);
+        weights1.add(0.3);
+
+        ArrayList<Double> weights2 = new ArrayList<Double>();
+        weights2.add(0.5);
+        weights2.add(0.1);
+        weights2.add(0.4);
+
+        ArrayList<Double> weights3 = new ArrayList<Double>();
+        weights3.add(0.8);
+        weights3.add(0.05);
+        weights3.add(0.15);
+
+        ArrayList<ArrayList<Double>> aWeights = new ArrayList<ArrayList<Double>>();
+        aWeights.add(weights1);
+        aWeights.add(weights2);
+        aWeights.add(weights3);
+
+        // INIT PREPROCESSING STUFF
+        ArrayList<Function<String,String>> prep1 = new ArrayList<Function<String,String>>();
+        prep1.add(ComparatorUtils::cleanLower);
+        prep1.add(ComparatorUtils::cleanLower);
+        prep1.add(ComparatorUtils::cleanLower);
+
+        ArrayList<String> prepNames1 = new ArrayList<String>();
+        prepNames1.add("clean");
+        prepNames1.add("clean");
+        prepNames1.add("clean");
+
+        ArrayList<Function<String,String>> prep2 = new ArrayList<Function<String,String>>();
+        prep2.add(ComparatorUtils::cleanLowerStopwords);
+        prep2.add(ComparatorUtils::cleanLower);
+        prep2.add(ComparatorUtils::cleanLower);
+
+        ArrayList<String> prepNames2 = new ArrayList<String>();
+        prepNames2.add("cleanStop");
+        prepNames2.add("clean");
+        prepNames2.add("clean");
+
+        ArrayList<Function<String,String>> prep3 = new ArrayList<Function<String,String>>();
+        prep3.add(ComparatorUtils::removeCityName);
+        prep3.add(ComparatorUtils::cleanLower);
+        prep3.add(ComparatorUtils::cleanLower);
+
+        ArrayList<String> prepNames3 = new ArrayList<String>();
+        prepNames3.add("remCity");
+        prepNames3.add("clean");
+        prepNames3.add("clean");
+
+
+        ArrayList<Function<String,String>> prep4 = new ArrayList<Function<String,String>>();
+        prep4.add(ComparatorUtils::cleanLower);
+        prep4.add(ComparatorUtils::cleanLower);
+        prep4.add(ComparatorUtils::unifyAddress);
+
+        ArrayList<String> prepNames4 = new ArrayList<String>();
+        prepNames4.add("clean");
+        prepNames4.add("clean");
+        prepNames4.add("unifyAdd");
+
+
+        ArrayList<Function<String,String>> prep5 = new ArrayList<Function<String,String>>();
+        prep5.add(ComparatorUtils::removeCityName);
+        prep5.add(ComparatorUtils::cleanLower);
+        prep5.add(ComparatorUtils::unifyAddress);
+
+        ArrayList<String> prepNames5 = new ArrayList<String>();
+        prepNames5.add("remCity");
+        prepNames5.add("clean");
+        prepNames5.add("unifyAdd");
+
+
+        ArrayList<ArrayList<Function<String,String>>> aPreprocessings = new ArrayList<ArrayList<Function<String,String>>>();
+        aPreprocessings.add(prep1);
+        aPreprocessings.add(prep2);
+        aPreprocessings.add(prep3);
+        aPreprocessings.add(prep4);
+        aPreprocessings.add(prep5);
+
+        ArrayList<ArrayList<String>> aPreprocessingNames = new ArrayList<ArrayList<String>>();
+        aPreprocessingNames.add(prepNames1);
+        aPreprocessingNames.add(prepNames2);
+        aPreprocessingNames.add(prepNames3);
+        aPreprocessingNames.add(prepNames4);
+        aPreprocessingNames.add(prepNames5);
+
+
+        Double[] aThresholds = {
+                0.7,0.75,0.78,0.8
+        };
+
+
+        Iterator<ArrayList<String>> i1 = aPreprocessingNames.iterator();
+        Iterator<ArrayList<Function<String, String>>> i2 = aPreprocessings.iterator();
+
+        while(i1.hasNext() && i2.hasNext()){
+            ArrayList<Function<String,String>> p = i2.next();
+            ArrayList<String> names = i1.next();
+            //for (ArrayList<Function<String, String>> p : aPreprocessings) {
+            for (ArrayList<Double> w : aWeights) {
+                for (Double t : aThresholds) {
+                    String fileName = "name_city_address_t:"+Double.toString(t)+"_w1:"+Double.toString(w.get(0))+"_w2:"+Double.toString(w.get(1))+
+                            "_w3:"+Double.toString(w.get(2))+"_"+names.get(0)+"_"+names.get(1)+"_"+names.get(2);
+                    Boolean bRemoveCityName = names.get(0).equals("remCity") ? true : false;
+                    simpleTemplate(schema,yelp,t,w,p,blocker,bRemoveCityName,fileName);
+                }
+            }
+        }
+    }
+
+
+
 
     public static LinearCombinationMatchingRule<Restaurant,Attribute> getMatchingRule(ArrayList<Comparator<Restaurant,Attribute>> fns,
                                                                                       Double threshold,
                                                                                       ArrayList<Double> weights) throws Exception{
         // simple matching rule to create the gold standard
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(threshold);
+
+        //MatchingGoldStandard gsTraining = new MatchingGoldStandard();
+        //gsTraining.loadFromCSVFile(new File(
+        //        "data/goldstandard/yelp_schema_gs_training.csv"));
+        //matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", -1, gsTraining);
 
         // add comparators
         Iterator<Comparator<Restaurant,Attribute>> it_fn = fns.iterator();
@@ -231,7 +323,8 @@ public class YelpSchemaLinearRules {
                                       Double threshold,
                                       ArrayList<Double> weights,
                                       ArrayList<Function<String,String>> prep,
-                                      StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker) throws Exception {
+                                      StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
+                                      String fileName) throws Exception {
         ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
 
         fns.add(new RestaurantNameComparatorLevenshtein(prep.get(0)));
@@ -240,7 +333,7 @@ public class YelpSchemaLinearRules {
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
-        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker, fileName);
     }
 
     public static void simpleTemplate(HashedDataSet<Restaurant, Attribute> data1,
@@ -249,7 +342,8 @@ public class YelpSchemaLinearRules {
                                       ArrayList<Double> weights,
                                       ArrayList<Function<String,String>> prep,
                                       StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
-                                      boolean removeCityName) throws Exception {
+                                      boolean removeCityName,
+                                      String fileName) throws Exception {
         ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
 
         fns.add(new RestaurantNameComparatorLevenshtein(prep.get(0), removeCityName));
@@ -258,7 +352,27 @@ public class YelpSchemaLinearRules {
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
-        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,fileName);
+    }
+
+
+    public static void simpleTemplate02(HashedDataSet<Restaurant, Attribute> data1,
+                                      HashedDataSet<Restaurant, Attribute> data2,
+                                      Double threshold,
+                                      ArrayList<Double> weights,
+                                      ArrayList<Function<String,String>> prep,
+                                      StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
+                                      String fileName) throws Exception {
+        ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
+
+        fns.add(new RestaurantNameComparatorNGramJaccardSimilarity(prep.get(0), true));
+        fns.add(new RestaurantCityNameComparatorLevenshtein(prep.get(1)));
+        fns.add(new RestaurantAddressComparatorNGramJaccardNoPostProcessing(prep.get(2)));
+        //fns.add(new RestaurantPostalCodeComparatorNgramJaccard(ComparatorUtils::cleanPostal));
+
+        LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
+
+        findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker, fileName);
     }
 
     public static void findCorrespondencesAndEvaluate(HashedDataSet<Restaurant, Attribute> data1,
@@ -270,11 +384,17 @@ public class YelpSchemaLinearRules {
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engine = new MatchingEngine<>();
 
+        LocalDateTime start = LocalDateTime.now();
+
         // execute matching
         System.out.println("*\n*\tRunning identity resolution\n*");
         Processable<Correspondence<Restaurant, Attribute>> correspondences = engine.runIdentityResolution(
                 data1, data2, null, matchingRule, blocker
         );
+
+        LocalDateTime end = LocalDateTime.now();
+        String t = DurationFormatUtils.formatDurationHMS(Duration.between(start, end).toMillis());
+
 
         // write correspondences to output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/"+fileName+".csv"), correspondences);
@@ -283,14 +403,34 @@ public class YelpSchemaLinearRules {
 
         // load the gold standard (test set)
         System.out.println("*\n*\tLoading gold standard\n*");
+
+        MatchingGoldStandard gsTotal = new MatchingGoldStandard();
+        gsTotal.loadFromCSVFile(new File(
+                "data/goldstandard/yelp_schema_gs_total.csv"));
+
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
         gsTest.loadFromCSVFile(new File(
                 "data/goldstandard/yelp_schema_gs_test.csv"));
 
         System.out.println("*\n*\tEvaluating result\n*");
         // evaluate your result
+        System.out.println("** TOTAL **");
         MatchingEvaluator<Restaurant, Attribute> evaluator = new MatchingEvaluator<Restaurant, Attribute>();
         Performance perfTest = evaluator.evaluateMatching(correspondences,
+                                                          gsTotal);
+
+        // print the evaluation result
+        System.out.println("Schema <-> Yelp");
+        System.out.println(String.format(
+                "Precision: %.4f",perfTest.getPrecision()));
+        System.out.println(String.format(
+                "Recall: %.4f",	perfTest.getRecall()));
+        System.out.println(String.format(
+                "F1: %.4f",perfTest.getF1()));
+
+        System.out.println("** TEST FILE **");
+        evaluator = new MatchingEvaluator<Restaurant, Attribute>();
+        perfTest = evaluator.evaluateMatching(correspondences,
                                                           gsTest);
 
         // print the evaluation result
@@ -301,6 +441,13 @@ public class YelpSchemaLinearRules {
                 "Recall: %.4f",	perfTest.getRecall()));
         System.out.println(String.format(
                 "F1: %.4f",perfTest.getF1()));
+
+        // write it to file
+        PrintWriter writer = new PrintWriter("data/output/yelp_schema_logs/"+fileName+".txt", "UTF-8");
+        writer.println(Double.toString(perfTest.getPrecision())+";"+Double.toString(perfTest.getRecall())+";"+Double.toString(perfTest.getF1())+";"+t+";"+
+        Double.toString(blocker.getReductionRatio()));
+        writer.close();
+
     }
 
 }

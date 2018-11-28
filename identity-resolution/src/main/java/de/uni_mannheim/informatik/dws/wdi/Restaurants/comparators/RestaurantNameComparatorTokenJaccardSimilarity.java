@@ -8,27 +8,28 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.similarity.string.JaccardOnNGramsSimilarity;
+import de.uni_mannheim.informatik.dws.winter.similarity.string.TokenizingJaccardSimilarity;
 
 import java.util.function.Function;
 
 
-public class RestaurantNameComparatorNGramJaccardSimilarity implements Comparator<Restaurant, Attribute> {
+public class RestaurantNameComparatorTokenJaccardSimilarity implements Comparator<Restaurant, Attribute> {
 
 	private static final long serialVersionUID = 1L;
-	private JaccardOnNGramsSimilarity sim = new JaccardOnNGramsSimilarity(3);
-	
+	private TokenizingJaccardSimilarity sim = new TokenizingJaccardSimilarity();
+
 	private ComparatorLogger comparisonLog;
 
 	private Function<String,String> fn;
 	private boolean removeCityName = false;
 
-	public RestaurantNameComparatorNGramJaccardSimilarity(){
+	public RestaurantNameComparatorTokenJaccardSimilarity(){
 		this.fn = ComparatorUtils::def;
 	}
-	public RestaurantNameComparatorNGramJaccardSimilarity(Function<String,String> fn){
+	public RestaurantNameComparatorTokenJaccardSimilarity(Function<String,String> fn){
 		this.fn = fn;
 	}
-	public RestaurantNameComparatorNGramJaccardSimilarity(Function<String,String> fn, boolean removeCityName){
+	public RestaurantNameComparatorTokenJaccardSimilarity(Function<String,String> fn, boolean removeCityName){
 		this.fn = fn;
 		this.removeCityName = removeCityName;
 	}

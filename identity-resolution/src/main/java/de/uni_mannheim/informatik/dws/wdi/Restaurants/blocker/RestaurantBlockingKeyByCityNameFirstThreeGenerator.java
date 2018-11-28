@@ -11,7 +11,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.DataIterator;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 
-public class RestaurantBlockingKeyByCityNameGenerator extends
+public class RestaurantBlockingKeyByCityNameFirstThreeGenerator extends
 		RecordBlockingKeyGenerator<Restaurant, Attribute> {
 
 	private static final long serialVersionUID = 1L;
@@ -24,53 +24,19 @@ public class RestaurantBlockingKeyByCityNameGenerator extends
 	public void generateBlockingKeys(Restaurant record, Processable<Correspondence<Attribute, Matchable>> correspondences,
 			DataIterator<Pair<String, Restaurant>> resultCollector) {
 
-		/*
 		String blockingKeyValue = "";
-
 		String name = record.getPostalAddress().getCity().getName();
-
-		String[] tokens = null;
-
-		if (name != null)
-			tokens  = name.split(" ");
-
-		if (tokens != null) {
-			for (int i = 0; i <= 2 && i < tokens.length; i++) {
-				blockingKeyValue += tokens[i].substring(0, Math.min(2, tokens[i].length())).toUpperCase();
-			}
-		}
-		*/
-
-
-		String blockingKeyValue = "";
-
-		String name = record.getPostalAddress().getCity().getName();
-
 
 		String[] tokens;
 		if (name != null) {
-            tokens = name.split(" ");
+			tokens = name.split(" ");
 
-            for (int i = 0; i <= 2 && i < tokens.length; i++) {
-                blockingKeyValue += tokens[i].substring(0, Math.min(2, tokens[i].length())).toUpperCase();
+			for (int i = 0; i <= 2 && i < tokens.length; i++) {
+				blockingKeyValue += tokens[i].substring(0, Math.min(2, tokens[i].length())).toUpperCase();
+			}
+			resultCollector.next(new Pair<>(blockingKeyValue, record));
 
-            }
-            resultCollector.next(new Pair<>(blockingKeyValue, record));
-
-        }
-			/*
-		String[] tokens  = record.getPostalAddress().getCity().getName().split(" ");
-
-		String blockingKeyValue = "";
-
-		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
 		}
-		resultCollector.next(new Pair<>(blockingKeyValue, record));
-		*/
-
-
-
 
     }
 

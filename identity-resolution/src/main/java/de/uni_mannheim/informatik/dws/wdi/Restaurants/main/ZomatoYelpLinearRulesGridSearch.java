@@ -1,11 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCategoryGenerator;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFirstFiveGenerator;
-import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFullGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
-
-
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.ComparatorUtils;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.RestaurantCityNameComparatorLevenshtein;
@@ -37,7 +33,7 @@ import java.util.*;
 import java.util.function.Function;
 
 
-public class ZomatoYelpLinearRules {
+public class ZomatoYelpLinearRulesGridSearch {
 
     private static final Logger logger = WinterLogManager.activateLogger("default");
 
@@ -51,25 +47,83 @@ public class ZomatoYelpLinearRules {
         new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
 
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameFullGenerator());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCategoryGenerator());
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_zomato_yelp_debugBlocking.csv", 100);
 
-        double nameWeight = 0.4;
-        double addrWeight = 1 - nameWeight;
-        double threshold = 0.75;
+        ArrayList<Double> nameWeights = new ArrayList<Double>();
+        Double addrWeight;
+        nameWeights.add(0.3);
+        nameWeights.add(0.4);
+        nameWeights.add(0.5);
+        nameWeights.add(0.6);
 
-        ArrayList<Function<String, String>> prep = new ArrayList<Function<String, String>>();
-        prep.add(ComparatorUtils::cleanLower);
-        prep.add(ComparatorUtils::cleanLowerStopwords);
+        ArrayList<Double> thresholds = new ArrayList<Double>();
+        thresholds.add(0.50);
+        thresholds.add(0.55);
+        thresholds.add(0.60);
+        thresholds.add(0.65);
+        thresholds.add(0.70);
+        thresholds.add(0.75);
+        thresholds.add(0.80);
+        thresholds.add(0.85);
+        thresholds.add(0.90);
 
-        ArrayList<Double> weights = new ArrayList<Double>();
-        weights.add(nameWeight);
-        weights.add(addrWeight);
+        ArrayList<String> comparatorFunctions = new ArrayList<String>();
+        comparatorFunctions.add("def");
+        comparatorFunctions.add("cleanLowerStopWords");
+        comparatorFunctions.add("cleanLower");
+        comparatorFunctions.add("removeCityName");
+        // comparatorFunctions.add("unifyAddress");
 
-        String expResults = simpleTemplate(zomato, yelp, threshold, weights, prep, blocker);
-        System.out.println(expResults);
+        String expFileName = "/home/rohitalyosha/Masters/Fall_2018/wdi/project/wdi_project/identity-resolution/data/exps/LinearRulesTest2.txt";
+        File expFile = new File(expFileName);
+        expFile.createNewFile();
+        String expResults;
+        String expSettings;
 
+
+        for (String func1Name : comparatorFunctions) {
+            for (String func2Name : comparatorFunctions) {
+                for (Double threshold : thresholds) {
+                    for (Double nameWeight : nameWeights) {
+                        addrWeight = 1 - nameWeight;
+                        ArrayList<String> funcNames = new ArrayList<String>();
+                        funcNames.add(func1Name);
+                        funcNames.add(func2Name);
+
+                        expSettings = "Threshold: " + Double.toString(threshold) + "\t";
+                        expSettings += func1Name + "\t";
+                        expSettings += func2Name + "\t";
+                        expSettings += "Name weight: " + Double.toString(nameWeight) + "\t";
+                        expSettings += "Address weight: " + Double.toString(addrWeight) + "\n";
+                        Files.write(Paths.get(expFileName), expSettings.getBytes(), StandardOpenOption.APPEND);
+
+                        ArrayList<Function<String, String>> prep = new ArrayList<Function<String, String>>();
+                        for (String funcName : funcNames) {
+                            System.out.println(funcName);
+                            if (funcName.equals("cleanLower"))
+                                prep.add(ComparatorUtils::cleanLower);
+                            else if (funcName.equals("cleanLowerStopWords"))
+                                prep.add(ComparatorUtils::cleanLowerStopwords);
+                            else if (funcName.equals("removeCityName"))
+                                prep.add(ComparatorUtils::removeCityName);
+                            else if (funcName.equals("unifyAddress"))
+                                prep.add(ComparatorUtils::unifyAddress);
+                            else if (funcName.equals("def"))
+                                prep.add(ComparatorUtils::def);
+                        }
+
+                        ArrayList<Double> weights = new ArrayList<Double>();
+                        weights.add(nameWeight);
+                        weights.add(addrWeight);
+
+                        expResults = simpleTemplate(zomato, yelp, threshold, weights, prep, blocker);
+                        Files.write(Paths.get(expFileName), expResults.getBytes(), StandardOpenOption.APPEND);
+                    }
+                }
+            }
+        }
     }
 
     public static LinearCombinationMatchingRule<Restaurant,Attribute> getMatchingRule(ArrayList<Comparator<Restaurant,Attribute>> fns,
@@ -94,11 +148,11 @@ public class ZomatoYelpLinearRules {
     }
 
     public static String simpleTemplate(HashedDataSet<Restaurant, Attribute> data1,
-                                        HashedDataSet<Restaurant, Attribute> data2,
-                                        Double threshold,
-                                        ArrayList<Double> weights,
-                                        ArrayList<Function<String,String>> prep,
-                                        StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker) throws Exception {
+                                      HashedDataSet<Restaurant, Attribute> data2,
+                                      Double threshold,
+                                      ArrayList<Double> weights,
+                                      ArrayList<Function<String,String>> prep,
+                                      StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker) throws Exception {
         ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
 
         fns.add(new RestaurantNameComparatorLevenshtein(prep.get(0)));
@@ -106,15 +160,15 @@ public class ZomatoYelpLinearRules {
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 
-        return findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"zomato_yelp_correspondence_nameWeight_40_addrWeight_60_prep_cleanLower_cleanLowerstopwords_nameFull_blocker");
+        return findCorrespondencesAndEvaluate(data1,data2,matchingRule,blocker,"simple");
 
     }
 
     public static String findCorrespondencesAndEvaluate(HashedDataSet<Restaurant, Attribute> data1,
-                                                        HashedDataSet<Restaurant, Attribute> data2,
-                                                        LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule,
-                                                        StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
-                                                        String fileName) throws Exception{
+                                                      HashedDataSet<Restaurant, Attribute> data2,
+                                                      LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule,
+                                                      StandardBlocker<Restaurant,Attribute,Restaurant,Attribute> blocker,
+                                                      String fileName) throws Exception{
 
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engine = new MatchingEngine<>();
@@ -125,7 +179,7 @@ public class ZomatoYelpLinearRules {
 
         // write correspondences to output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/"+fileName+".csv"), correspondences);
-        new CSVRestaurantDetailFormatter().writeCSV(new File("data/output/zomato_yelp"+fileName+"_detail.csv"), correspondences);
+        new CSVRestaurantDetailFormatter().writeCSV(new File("data/output/"+fileName+"_detail.csv"), correspondences);
 
 
         // load the gold standard (test set)
