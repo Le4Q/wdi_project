@@ -21,6 +21,7 @@ import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -36,31 +37,74 @@ public class GenericSupervisedFuser {
        
       
     	
-    	
+    	 
         ArrayList<FusionArrayList> features = new ArrayList<>();
 
         ArrayList<SupervisedFusionFeature> sfFeatures;
-        sfFeatures = (new FusionStrategyFactory<PriceRange>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.VOTING, Strategies.MOSTRECENT, Strategies.FAVOURSOURCES), Restaurant.PRICERANGE, "getPriceRange", "setPriceRange", PriceRange.class, new PriceRangeEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<PriceRange>()).createFusionStrategies(Strategies.union(Strategies.MOSTRECENT, Strategies.FAVOURSOURCES), Restaurant.PRICERANGE, "getPriceRange", "setPriceRange", PriceRange.class, new PriceRangeEvaluationRule());
         features.add(new FusionArrayList(Restaurant.PRICERANGE, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<String>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.LONGESTSTRING, Strategies.VOTING, Strategies.MOSTRECENT), Restaurant.NAME, "getName", "setName", String.class, new NameEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<String>()).createFusionStrategies(Strategies.union(Strategies.LONGESTSTRING, Strategies.SHORTESTSTRING), Restaurant.NAME, "getName", "setName", String.class, new NameEvaluationRule());
         features.add(new FusionArrayList(Restaurant.NAME, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.FAVOURSOURCES, Strategies.MOSTRECENT), Restaurant.LATITUDE, "getLatitude", "setLatitude", double.class, new LatitudeEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Strategies.union(Strategies.VOTING), Restaurant.LATITUDE, "getLatitude", "setLatitude", double.class, new LatitudeEvaluationRule());
         features.add(new FusionArrayList(Restaurant.LATITUDE, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.FAVOURSOURCES, Strategies.MOSTRECENT), Restaurant.LONGITUDE, "getLongitude", "setLongitude", double.class, new LongitudeEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<Double>()).createFusionStrategies(Strategies.union(Strategies.VOTING), Restaurant.LONGITUDE, "getLongitude", "setLongitude", double.class, new LongitudeEvaluationRule());
         features.add(new FusionArrayList(Restaurant.LONGITUDE, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<PostalAddress>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.FAVOURSOURCES, Strategies.MOSTRECENT), Restaurant.POSTALADDRESS, "getPostalAddress", "setPostalAddress", PostalAddress.class, new PostalAddressEvaluationRule());
+        sfFeatures = (new FusionStrategyFactory<PostalAddress>()).createFusionStrategies(Strategies.union(Strategies.MOSTRECENT, Strategies.FAVOURSOURCES), Restaurant.POSTALADDRESS, "getPostalAddress", "setPostalAddress", PostalAddress.class, new PostalAddressEvaluationRule());
         features.add(new FusionArrayList(Restaurant.POSTALADDRESS, sfFeatures));
-        sfFeatures = (new FusionStrategyFactory<OpeningHours>()).createFusionStrategies(Strategies.union(Strategies.ALL, Strategies.MOSTRECENT), Restaurant.OPENINGHOURS, "getOpeninghours", "setOpeninghours", OpeningHours.class, new OpeningHoursEvaluationRule());
-        features.add(new FusionArrayList(Restaurant.OPENINGHOURS, sfFeatures));
-        
-		
+        //sfFeatures = (new FusionStrategyFactory<OpeningHours>()).createFusionStrategies(Strategies.union(Strategies.MOSTRECENT, Strategies.FAVOURSOURCES), Restaurant.OPENINGHOURS, "getOpeninghours", "setOpeninghours", OpeningHours.class, new OpeningHoursEvaluationRule());
+        //features.add(new FusionArrayList(Restaurant.OPENINGHOURS, sfFeatures));
+        sfFeatures = (new FusionStrategyFactory<String>()).createFusionStrategies(Strategies.union(Strategies.LONGESTSTRING, Strategies.SHORTESTSTRING), Restaurant.NEIGHBORHOOD, "getNeighborhood", "setNeighborhood", String.class, new NeighborhoodEvaluationRule());
+        features.add(new FusionArrayList(Restaurant.NEIGHBORHOOD, sfFeatures));
+        /*sfFeatures = (new FusionStrategyFactory<Integer>()).createFusionStrategies(Strategies.union(Strategies.ALL), Restaurant.STARS, "getStars", "setStars", int.class, new StarsEvaluationRule());
+        features.add(new FusionArrayList(Restaurant.STARS, sfFeatures));*/
+        sfFeatures = (new FusionStrategyFactory<Boolean>()).createFusionStrategies(Strategies.union(Strategies.FAVOURSOURCES), Restaurant.ACCEPTSCREDITCARDS, "getAcceptsCreditCards", "setAcceptsCreditCards", boolean.class, new AcceptsCreditCardsEvaluationRule());
+        features.add(new FusionArrayList(Restaurant.ACCEPTSCREDITCARDS, sfFeatures));
+        sfFeatures = (new FusionStrategyFactory<Boolean>()).createFusionStrategies(Strategies.union(Strategies.FAVOURSOURCES), Restaurant.RESTAURANTDELIVERY, "getRestaurantDelivery", "setRestaurantDelivery", boolean.class, new RestaurantDeliveryEvaluationRule());
+        features.add(new FusionArrayList(Restaurant.RESTAURANTDELIVERY, sfFeatures));
+        sfFeatures = (new FusionStrategyFactory<Boolean>()).createFusionStrategies(Strategies.union(Strategies.FAVOURSOURCES), Restaurant.ACCEPTSRESERVATIONS, "getAcceptsReservations", "setAcceptsReservations", boolean.class, new AcceptsReservationsEvaluationRule());
+        features.add(new FusionArrayList(Restaurant.ACCEPTSRESERVATIONS, sfFeatures));
+        //sfFeatures = (new FusionStrategyFactory<Boolean>()).createFusionStrategies(Strategies.union(Strategies.FAVOURSOURCES), Restaurant.DRIVETHRU, "getDrivethru", "setDrivethru", boolean.class, new DrivethruEvaluationRule());
+        //features.add(new FusionArrayList(Restaurant.DRIVETHRU, sfFeatures));
+        sfFeatures = (new FusionStrategyFactory<Boolean>()).createFusionStrategies(Strategies.union(Strategies.FAVOURSOURCES), Restaurant.DRIVETHRU, "getHasWifi", "setHasWifi", boolean.class, new HasWifiEvaluationRule());
+        features.add(new FusionArrayList(Restaurant.HASWIFI, sfFeatures));
         
         
         sfFeatures = new ArrayList<>();
         sfFeatures.add(new SupervisedFusionFeature(new CategoriesFuserUnion(), new CategoriesEvaluationRule(), Restaurant.CATEGORIES));
         features.add(new FusionArrayList(Restaurant.CATEGORIES, sfFeatures));
         
-        
+
+        ArrayList<ArrayList<Double>> source = new ArrayList<ArrayList<Double>>();
+		ArrayList<Double> a = new ArrayList<>();
+		a.add(1d);
+		a.add(2d);
+		a.add(3d);
+		a.add(4d);
+        source.add(a);
+        a = new ArrayList<>();
+		a.add(1d);
+		a.add(2d);
+		a.add(3d);
+		a.add(4d);
+        source.add(a);
+        a = new ArrayList<>();
+		a.add(1d);
+		a.add(2d);
+		a.add(3d);
+		a.add(4d);
+        source.add(a);
+        a = new ArrayList<>();
+		a.add(1d);
+		a.add(2d);
+		a.add(3d);
+		a.add(4d);
+        source.add(a);
+        List<List<Double>> temp = new ArrayList<List<Double>>();
+        for (ArrayList<Double> list : source) {
+            temp.add(Collections.unmodifiableList(list));
+        }
+        List<List<Double>> out = Collections.unmodifiableList(temp);    
+        List<List<Double>> weights = Lists.cartesianProduct(out);
         
         
 
@@ -76,17 +120,21 @@ public class GenericSupervisedFuser {
         ArrayList<SupervisedFusionFeature> _features = new ArrayList<>();
     	FusionProcessor fp = new FusionProcessor();
     	ArrayList<FusionRunConfiguration> frcs = new ArrayList<>();
+    	System.out.println("\n\n now running tests...\n");
         for (List<SupervisedFusionFeature> list : cartesianProduct) {
-        	_features = new ArrayList<>();
-        	System.out.println("\n\nRunning the following combination:");
-        	for (SupervisedFusionFeature supervisedFusionFeature : list) {
-				System.out.println(" - " + supervisedFusionFeature);
-				_features.add(supervisedFusionFeature);
+        	for (int i = 0; i < weights.size(); i++) {
+	        	_features = new ArrayList<>();
+	        	//System.out.println("\n\nRunning the following combination:");
+	        	for (SupervisedFusionFeature supervisedFusionFeature : list) {
+					//System.out.println(" - " + supervisedFusionFeature);
+					_features.add(supervisedFusionFeature);
+				}
+	        	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
+	        	frc.setDatasetWeights(weights.get(i).toArray());
+	        	
+	        	frc.setFitness(fp.run(frc, false, dl));
+	        	frcs.add(frc);
 			}
-        	FusionRunConfiguration frc = new FusionRunConfiguration(_features);
-        	
-        	frc.setFitness(fp.run(frc, false, dl));
-        	frcs.add(frc);
 		}
         
         Collections.sort(frcs);
@@ -97,6 +145,7 @@ public class GenericSupervisedFuser {
         for (SupervisedFusionFeature supervisedFusionFeature : frcs.get(frcs.size()-1).getSupervisedFusionFeature() ) {
 			System.out.println(supervisedFusionFeature.toString());
 		}
+        System.out.println("Weights: " + frcs.get(frcs.size()-1).getDatasetWeights());
     	FusionRunConfiguration frc = new FusionRunConfiguration(frcs.get(frcs.size()-1).getSupervisedFusionFeature());
         
         System.out.println("Running the best setup again and saving results");

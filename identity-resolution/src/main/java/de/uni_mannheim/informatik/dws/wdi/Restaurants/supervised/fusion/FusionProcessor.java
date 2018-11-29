@@ -54,6 +54,12 @@ public class FusionProcessor {
 		DataSet<Restaurant, Attribute> gs = dl.getGs();
 	    CorrespondenceSet<Restaurant, Attribute> correspondences = dl.getCorrespondences();
 
+	    
+        schemaOrg.setScore(configuration.getDatasetWeights()[0]);
+        datafiniti.setScore(configuration.getDatasetWeights()[1]);
+        zomato.setScore(configuration.getDatasetWeights()[2]);
+        yelp.setScore(configuration.getDatasetWeights()[3]);
+	    
 		// define the fusion strategy
 		DataFusionStrategy<Restaurant, Attribute> strategy = new DataFusionStrategy<>(new FusibleRestaurantFactory());
 
@@ -67,7 +73,8 @@ public class FusionProcessor {
 		DataFusionEngine<Restaurant, Attribute> engine = new DataFusionEngine<>(strategy);
 
 		// print consistency report
-		engine.printClusterConsistencyReport(correspondences, null);
+		if (persistence)
+			engine.printClusterConsistencyReport(correspondences, null);
 
 		// print record groups sorted by consistency
 		//engine.writeRecordGroupsByConsistency(new File("data/output/recordGroupConsistencies.csv"), correspondences,
@@ -78,7 +85,9 @@ public class FusionProcessor {
 		//		null);
 
 		// run the fusion
-		System.out.println("*\n*\tRunning data fusion\n*");
+		if (persistence)
+			System.out.println("*\n*\tRunning data fusion\n*");
+		
 		FusibleDataSet<Restaurant, Attribute> fusedDataSet = engine.run(correspondences, null);
 
 		// write the result
@@ -94,7 +103,8 @@ public class FusionProcessor {
 			new RestaurantXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
 		}
 		
-		System.out.println(String.format("Accuracy: %.2f", accuracy));
+		if (persistence) 
+			System.out.println(String.format("Accuracy: %.2f", accuracy));
 		return accuracy;
 	}
 }

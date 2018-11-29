@@ -6,7 +6,20 @@ public class FusionRunConfiguration implements Comparable<FusionRunConfiguration
    
 	private ArrayList<SupervisedFusionFeature> supervisedFusionFeature = null;
 	private double fitness = 0d;
+	private double[] datasetWeights = new double[4];
+
+	public double[] getDatasetWeights() {
+		return this.datasetWeights;
+	}
 	
+	public void setDatasetWeights(Object[]  objects) {
+		double[] o = new double[objects.length];
+		for (int i = 0; i < objects.length; i++) {
+			o[i] = Double.parseDouble(objects[i].toString());
+		}
+		this.datasetWeights = o;
+	}
+
 	public double getFitness() {
 		return fitness;
 	}

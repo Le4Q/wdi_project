@@ -80,58 +80,60 @@ public class DatasetLoader {
 	public DatasetLoader() {
 		try {
 		// Load the Data into FusibleDataSet
-				System.out.println("*\n*\tLoading datasets\n*");
-				
-					new RestaurantXMLReader().loadFromXML(new File("data/input/datafiniti_target.xml"), "/restaurants/restaurant",
-							datafiniti);
-				
-				datafiniti.printDataSetDensityReport();
+			System.out.println("*\n*\tLoading datasets\n*");
+	        new RestaurantXMLReader().loadFromXML(new File("data/input/datafiniti_target.xml"), "/restaurants/restaurant", datafiniti);
+	        datafiniti.printDataSetDensityReport();
 
-				new RestaurantXMLReader().loadFromXML(new File("data/input/schemaOrg_target.xml"), "/restaurants/restaurant",
-						schemaOrg);
-				schemaOrg.printDataSetDensityReport();
+	        new RestaurantXMLReader().loadFromXML(new File("data/input/schemaOrg_target.xml"), "/restaurants/restaurant", schemaOrg);
+	        schemaOrg.printDataSetDensityReport();
 
-				new RestaurantXMLReader().loadFromXML(new File("data/input/zomato_target.xml"), "/restaurants/restaurant",
-						zomato);
-				zomato.printDataSetDensityReport();
+	        new RestaurantXMLReader().loadFromXML(new File("data/input/zomato_target.xml"), "/restaurants/restaurant", zomato);
+	        zomato.printDataSetDensityReport();
 
-				new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
-				yelp.printDataSetDensityReport();
+	        new RestaurantXMLReader().loadFromXML(new File("data/input/yelp_target.xml"), "/restaurants/restaurant", yelp);
+	        yelp.printDataSetDensityReport();
 
-				// Maintain Provenance
-				// Scores (e.g. from rating)
-				schemaOrg.setScore(1.0);
-				datafiniti.setScore(2.0);
-				zomato.setScore(3.0);
-				yelp.setScore(4.0);
 
-				// Date (e.g. last update)
-				DateTimeFormatter formatter = new DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd")
-						.parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0).parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-						.parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0).toFormatter(Locale.ENGLISH);
+	        // Maintain Provenance
+	        // Scores (e.g. from rating)
+	        schemaOrg.setScore(1.0);
+	        datafiniti.setScore(2.0);
+	        zomato.setScore(3.0);
+	        yelp.setScore(4.0);
 
-				yelp.setDate(LocalDateTime.parse("2018-08-02", formatter));
-				schemaOrg.setDate(LocalDateTime.parse("2017-11-01", formatter));
-				zomato.setDate(LocalDateTime.parse("2018-10-30", formatter));
-				datafiniti.setDate(LocalDateTime.parse("2018-06-30", formatter));
+	        // Date (e.g. last update)
+	        DateTimeFormatter formatter = new DateTimeFormatterBuilder()
+	                .appendPattern("yyyy-MM-dd")
+	                .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
+	                .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
+	                .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
+	                .toFormatter(Locale.ENGLISH);
 
-				// load correspondences
-		        System.out.println("*\n*\tLoading correspondences\n*");
-		        System.out.println("*\n*\tLoading correspondences 1\n*");
-		        correspondences.loadCorrespondences(new File("data/output/zomato_yelp_correspondence_simple_matching.csv"),zomato, yelp);
-		        System.out.println("*\n*\tLoading correspondences 2\n*");
-		        correspondences.loadCorrespondences(new File("data/output/zomato_datafiniti_correspondences_MP.csv"), zomato, datafiniti);
-		        System.out.println("*\n*\tLoading correspondences 3\n*");
-		        correspondences.loadCorrespondences(new File("data/output/zomato_schemaOrg_correspondences_KStar.csv"), zomato, schemaOrg);
-		        
+	        yelp.setDate(LocalDateTime.parse("2018-08-02", formatter));
+	        schemaOrg.setDate(LocalDateTime.parse("2017-11-01", formatter));
+	        zomato.setDate(LocalDateTime.parse("2018-10-30", formatter));
+	        datafiniti.setDate(LocalDateTime.parse("2018-06-30", formatter));
 
-				// write group size distribution
-				correspondences.printGroupSizeDistribution();
-		        
-				// load the gold standard TODO:
-		        System.out.println("*\n*\tEvaluating results\n*");
-		        new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/fusion_gold_train.xml"), "/restaurants/restaurant", gs);
-				
+	        // load correspondences
+	        System.out.println("*\n*\tLoading correspondences\n*");
+	        System.out.println("*\n*\tLoading correspondences 1\n*");
+	        correspondences.loadCorrespondences(new File("data/output/zomato_yelp/zomato_yelp_correspondence_postalCode_blocker.csv"), zomato, yelp);
+	        System.out.println("*\n*\tLoading correspondences 2\n*");
+	        correspondences.loadCorrespondences(new File("data/output/zomato_datafiniti_correspondences_MP.csv"), zomato, datafiniti);
+	        System.out.println("*\n*\tLoading correspondences 3\n*");
+	        correspondences.loadCorrespondences(new File("data/output/zomato_schemaOrg_correspondences_KStar.csv"), zomato, schemaOrg);
+	        System.out.println("*\n*\tLoading correspondences 4\n*");
+	        correspondences.loadCorrespondences(new File("data/output/yelp_schema_corr.csv"), schemaOrg, yelp);
+
+
+	        // write group size distribution
+	        correspondences.printGroupSizeDistribution();
+
+	        // load the gold standard
+	        System.out.println("*\n*\tEvaluating results\n*");
+	        new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/fusion_gold.xml"), "/restaurants/restaurant", gs);
+
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

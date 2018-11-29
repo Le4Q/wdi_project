@@ -18,6 +18,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 public class FusionStrategyFactory<T> {
 
 	
+	@SuppressWarnings("unchecked")
 	public ArrayList<SupervisedFusionFeature> createFusionStrategies(boolean[] strategies, Attribute attribute, String getMethod, String setMethod, Class<T> class1, EvaluationRule<Restaurant, Attribute> evaluationRule) {
 
 	    ArrayList<ConflictResolutionFunction<T, Restaurant, Attribute>> fusingstrategies = new ArrayList<>();
@@ -30,6 +31,8 @@ public class FusionStrategyFactory<T> {
 	    	fusingstrategies.add(new FavourSources<T, Restaurant, Attribute>());
 	    if (strategies[3])
 	    	fusingstrategies.add((ConflictResolutionFunction<T, Restaurant, Attribute>) new LongestString<Restaurant, Attribute>());
+	    if (strategies[4])
+	    	fusingstrategies.add((ConflictResolutionFunction<T, Restaurant, Attribute>) new ShortestString<Restaurant, Attribute>());
 
         ArrayList<SupervisedFusionFeature> sfFeatures = new ArrayList<>();
          

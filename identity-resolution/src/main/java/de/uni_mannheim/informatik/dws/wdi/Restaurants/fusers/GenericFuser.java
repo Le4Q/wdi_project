@@ -57,7 +57,9 @@ public class GenericFuser<ValueType, RecordType extends Matchable & Fusible<Sche
 		FusedValue<ValueType, RecordType, SchemaElementType> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
        
 		try {
-			fusedRecord.getClass().getMethod(setVal.getName(), setVal.getParameterTypes()[0]).invoke(fusedRecord, fused.getValue());
+			if (fused.getValue()!=null)
+				fusedRecord.getClass().getMethod(setVal.getName(), setVal.getParameterTypes()[0]).invoke(fusedRecord, fused.getValue());
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
