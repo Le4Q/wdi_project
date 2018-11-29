@@ -1,6 +1,8 @@
 package de.uni_mannheim.informatik.dws.wdi.Restaurants.main;
 
+import com.ibm.icu.text.RuleBasedNumberFormat;
 import com.wcohen.ss.SourcedTFIDF;
+import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByCityNameFirstFiveGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.blocker.RestaurantBlockingKeyByPostalCodeGenerator;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.CSVRestaurantDetailFormatter;
@@ -8,6 +10,7 @@ import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Restaurants.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.Comparator;
@@ -31,6 +34,7 @@ import java.io.PrintWriter;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.function.Function;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,42 +58,9 @@ public class YelpSchemaLinearRules {
 
         // create a blocker (blocking strategy)
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByPostalCodeGenerator());
+        //StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByCityNameFirstFiveGenerator());
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
-
-
-        LevenshteinSimilarity sim = new LevenshteinSimilarity();
-        // 3, 1, 2
-        String s1 = "Mesa Grill - Caesars Palace".toLowerCase();
-        String s2 = "Mesa Grill".toLowerCase();
-
-        // 1, 3, 2
-        s1 = "Benihana".toLowerCase();
-        s2 = "Benihanna of Tokyo".toLowerCase();
-
-        // 3, 2, 1
-        //s1 = "Overlook Grill - The Cosmopolitan of".toLowerCase();
-        //s2 = "Overlook Grill".toLowerCase();
-
-        /*
-        double similarity = sim.calculate(s1, s2);
-        System.out.println(similarity);
-
-        System.out.println("tokenizing");
-        TokenizingJaccardSimilarity sim2 = new TokenizingJaccardSimilarity();
-        similarity = sim2.calculate(s1, s2);
-        System.out.println(similarity);
-
-        System.out.println("ngram");
-        JaccardOnNGramsSimilarity sim3 = new JaccardOnNGramsSimilarity(3);
-        similarity = sim3.calculate(s1, s2);
-        System.out.println(similarity);
-
-        System.out.println("generalised");
-        GeneralisedStringJaccard sim4 = new GeneralisedStringJaccard(new JaccardOnNGramsSimilarity(3), 0.3, 0.3);
-        similarity = sim4.calculate(s1, s2);
-        System.out.println(similarity);
-        */
 
         // run best parameter setting after iteratively improving gold standard
         /*
@@ -98,7 +69,7 @@ public class YelpSchemaLinearRules {
         F1: 0.7234
         */
 
-        Double t = 0.78;
+        Double t = 0.755;
 
         ArrayList<Double> weights = new ArrayList<Double>();
         weights.add(0.4);
@@ -114,8 +85,10 @@ public class YelpSchemaLinearRules {
 
         String fileName = "name_city_address_t:"+Double.toString(t)+"_w1:"+Double.toString(weights.get(0))+"_w2:"+Double.toString(weights.get(1))+
                 "_w3:"+Double.toString(weights.get(2))+"_remCity_clean_clean";
+        fileName = "yelp_schema_new";
         //simpleTemplate(schema,yelp,t,weights,prep,blocker,true,fileName);
         simpleTemplate02(schema,yelp,t,weights,prep,blocker,fileName);
+
 
         // address & name: beginning of word more weight (number
         // use token based and ngram based
@@ -366,9 +339,11 @@ public class YelpSchemaLinearRules {
         ArrayList<Comparator<Restaurant,Attribute>> fns = new ArrayList<Comparator<Restaurant,Attribute>>();
 
         fns.add(new RestaurantNameComparatorNGramJaccardSimilarity(prep.get(0), true));
+        //fns.add(new RestaurantNameComparatorTokenJaccardSimilarity(prep.get(0), true));
         fns.add(new RestaurantCityNameComparatorLevenshtein(prep.get(1)));
-        fns.add(new RestaurantAddressComparatorNGramJaccardNoPostProcessing(prep.get(2)));
         //fns.add(new RestaurantPostalCodeComparatorNgramJaccard(ComparatorUtils::cleanPostal));
+
+        fns.add(new RestaurantAddressComparatorNGramJaccardNoPostProcessing(prep.get(2)));
 
         LinearCombinationMatchingRule<Restaurant,Attribute> matchingRule = getMatchingRule(fns, threshold, weights);
 

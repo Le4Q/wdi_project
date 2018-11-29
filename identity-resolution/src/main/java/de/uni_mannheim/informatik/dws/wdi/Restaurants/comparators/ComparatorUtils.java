@@ -229,6 +229,7 @@ public class ComparatorUtils {
 
     public static String cleanLower(String s){
         if (s!= null){
+            s = s.replaceAll("'s", "s");
             s = s.replaceAll("[^A-Za-z0-9]", " ");
             s = s.replaceAll("\\s{2,}", " ");
 
@@ -267,7 +268,7 @@ public class ComparatorUtils {
             return s;
         String[] aS = s.split(";");
         if (aS.length > 1) {
-            String restaurantName = cleanLower(aS[0]);
+            String restaurantName = cleanLowerStopwords(aS[0]);
             String cityName = cleanLower(aS[1]);
             restaurantName = restaurantName.replace(cityName, "");
             return restaurantName;
