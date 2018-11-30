@@ -45,6 +45,7 @@ public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribut
 		dataset.addAttribute(Restaurant.ACCEPTSRESERVATIONS);
 		dataset.addAttribute(Restaurant.DRIVETHRU);
 		dataset.addAttribute(Restaurant.HASWIFI);
+		dataset.addAttribute(City.COUNTRY);
 	}
 	
 	@Override

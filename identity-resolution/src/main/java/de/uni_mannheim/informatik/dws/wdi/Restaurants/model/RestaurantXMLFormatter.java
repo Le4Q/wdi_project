@@ -39,7 +39,7 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 		restaurant.appendChild(this.createTextElement("latitude", record.getLatitude(), doc));
 		restaurant.appendChild(this.createTextElement("longitude", record.getLongitude(), doc));
 		
-		Element postaladdress = doc.createElement("postalcode");
+		Element postaladdress = doc.createElement("postaladdress");
 		postaladdress.appendChild(this.createTextElement("address", record.getPostalAddress().getAddress(), doc));
 		Element city = doc.createElement("city");
 		city.appendChild(this.createTextElement("name", record.getPostalAddress().getCity().getName(), doc));

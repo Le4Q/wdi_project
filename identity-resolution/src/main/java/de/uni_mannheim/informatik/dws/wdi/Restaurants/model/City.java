@@ -98,10 +98,10 @@ public class City extends AbstractRecord<Attribute> implements Serializable {
 		return true;
 	}
 
-	private static final Attribute NAME = new Attribute("Name");
-	private static final Attribute POSTALCODE = new Attribute("Postalcode");
-	private static final Attribute STATE = new Attribute("State");
-	private static final Attribute COUNTRY = new Attribute("Country");
+	public static final Attribute NAME = new Attribute("Name");
+	public static final Attribute POSTALCODE = new Attribute("Postalcode");
+	public static final Attribute STATE = new Attribute("State");
+	public static final Attribute COUNTRY = new Attribute("Country");
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.Record#hasValue(java.lang.Object)
