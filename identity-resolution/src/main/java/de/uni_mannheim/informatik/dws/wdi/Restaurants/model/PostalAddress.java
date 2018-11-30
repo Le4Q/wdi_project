@@ -64,8 +64,9 @@ public class PostalAddress extends AbstractRecord<Attribute> implements Serializ
         return true;
     }
 
+    @Override
     public String toString() {
-        return this.address + ", " + this.city.getPostalCode() + ", " + this.city.getName() + ", " + this.city.getCountry();
+        return this.address + ", " + this.city.getPostalCode() + ", " + this.city.getName();
     }
 
     public static final Attribute ADDRESS = new Attribute("Address");

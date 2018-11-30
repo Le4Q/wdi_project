@@ -6,6 +6,11 @@ import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 public class CategoriesEvaluationRule extends EvaluationRule<Restaurant, Attribute> {
 
     @Override
@@ -14,9 +19,14 @@ public class CategoriesEvaluationRule extends EvaluationRule<Restaurant, Attribu
             return true;
         else if(record1.getCategories() == null ^ record2.getCategories() == null)
             return false;
-        else
-            return record1.getCategories().containsAll(record2.getCategories()) &&
-                    record2.getCategories().containsAll(record1.getCategories());
+        else {
+            //return record1.getCategories().containsAll(record2.getCategories()) &&
+            //       record2.getCategories().containsAll(record1.getCategories());
+            List<String> copy = record1.getCategories();
+            copy.retainAll(record2.getCategories());
+            copy.removeAll(Arrays.asList("", null));
+            return copy.size() >= 1;
+        }
     }
 
     @Override

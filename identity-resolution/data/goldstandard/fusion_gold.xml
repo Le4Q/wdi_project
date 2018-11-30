@@ -236,26 +236,6 @@
 	</restaurant>
 
 	<restaurant>
-		<id>zomato_14798</id>
-		<name>Toqué!</name>
-		<latitude>45.502948</latitude>
-		<longitude>-73.5633926</longitude>
-		<neighborhood>Ville-Marie</neighborhood>
-		<postaladdress>
-			<address>900 Place Jean-Paul-Riopelle</address>
-			<city>
-				<name>Montreal</name>
-				<postalcode>H2Z 2B2</postalcode>
-				<country>Canada</country>
-			</city>
-		</postaladdress>
-		<pricerange>
-			<lowerBound>31</lowerBound>
-			<upperBound>60</upperBound>
-		</pricerange>
-	</restaurant>
-
-	<restaurant>
 		<id>datafiniti_6605</id>
 		<name>Tropical Smoothie Cafe</name>
 		<latitude>36.1454228</latitude>

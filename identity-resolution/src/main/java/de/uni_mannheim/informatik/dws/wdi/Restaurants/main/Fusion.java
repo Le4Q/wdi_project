@@ -74,7 +74,7 @@ public class Fusion {
         System.out.println("*\n*\tLoading correspondences 3\n*");
         correspondences.loadCorrespondences(new File("data/output/zomato_schemaOrg_correspondences_KStar.csv"), zomato, schemaOrg);
         System.out.println("*\n*\tLoading correspondences 4\n*");
-        correspondences.loadCorrespondences(new File("data/output/yelp_schema_corr.csv"), schemaOrg, yelp);
+        correspondences.loadCorrespondences(new File("data/output/yelp_schema_correspondences_FINAL.csv"), schemaOrg, yelp);
 
 
         // write group size distribution
