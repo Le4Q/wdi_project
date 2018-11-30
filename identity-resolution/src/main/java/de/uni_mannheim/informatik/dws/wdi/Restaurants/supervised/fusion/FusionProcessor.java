@@ -100,11 +100,14 @@ public class FusionProcessor {
 		
 		
 		if (persistence) {
+			fusedDataSet.printDataSetDensityReport();
+			
 			new RestaurantXMLFormatter().writeXML(new File("data/output/fused.xml"), fusedDataSet);
+			
+			System.out.println(String.format("Accuracy: %.2f", accuracy));
+			
 		}
 		
-		if (persistence) 
-			System.out.println(String.format("Accuracy: %.2f", accuracy));
 		return accuracy;
 	}
 }

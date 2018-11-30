@@ -77,7 +77,7 @@ public class DatasetLoader {
 		this.gs = gs;
 	}
 
-	public DatasetLoader() {
+	public DatasetLoader(String evaluation_set) {
 		try {
 		// Load the Data into FusibleDataSet
 			System.out.println("*\n*\tLoading datasets\n*");
@@ -123,7 +123,7 @@ public class DatasetLoader {
 	        System.out.println("*\n*\tLoading correspondences 3\n*");
 	        correspondences.loadCorrespondences(new File("data/output/zomato_schemaOrg_correspondences_KStar.csv"), zomato, schemaOrg);
 	        System.out.println("*\n*\tLoading correspondences 4\n*");
-	        correspondences.loadCorrespondences(new File("data/output/yelp_schema_corr.csv"), schemaOrg, yelp);
+	        correspondences.loadCorrespondences(new File("data/output/yelp_schema_correspondences_FINAL.csv"), schemaOrg, yelp);
 
 
 	        // write group size distribution
@@ -131,7 +131,7 @@ public class DatasetLoader {
 
 	        // load the gold standard
 	        System.out.println("*\n*\tEvaluating results\n*");
-	        new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/fusion_gold.xml"), "/restaurants/restaurant", gs);
+	        new RestaurantXMLReader().loadFromXML(new File(evaluation_set), "/restaurants/restaurant", gs);
 
 
 		} catch (Exception e) {
