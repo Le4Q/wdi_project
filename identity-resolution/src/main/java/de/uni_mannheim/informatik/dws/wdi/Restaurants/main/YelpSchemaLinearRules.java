@@ -28,6 +28,7 @@ import de.uni_mannheim.informatik.dws.winter.similarity.string.*;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import org.apache.commons.lang3.time.DurationFormatUtils;
 import org.apache.logging.log4j.Logger;
+import sun.tools.jstat.Token;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -62,19 +63,13 @@ public class YelpSchemaLinearRules {
         blocker.setMeasureBlockSizes(true);
         blocker.collectBlockSizeData("data/output/gs_yelp_schema_debugBlocking.csv", 100);
 
-        // run best parameter setting after iteratively improving gold standard
-        /*
-        Precision: 0.8947
-        Recall: 0.6071
-        F1: 0.7234
-        */
 
-        Double t = 0.755;
+        Double t = 0.76;
 
         ArrayList<Double> weights = new ArrayList<Double>();
-        weights.add(0.4);
+        weights.add(0.35);
         weights.add(0.3);
-        weights.add(0.3);
+        weights.add(0.35);
         //weights.add(0.15);
 
         ArrayList<Function<String,String>> prep = new ArrayList<Function<String,String>>();
@@ -84,53 +79,11 @@ public class YelpSchemaLinearRules {
 
 
         String fileName = "name_city_address_t:"+Double.toString(t)+"_w1:"+Double.toString(weights.get(0))+"_w2:"+Double.toString(weights.get(1))+
-                "_w3:"+Double.toString(weights.get(2))+"_remCity_clean_clean";
-        fileName = "yelp_schema_new";
+                "_w3:"+Double.toString(weights.get(2))+"_remCity_clean_unifyAddress";
         //simpleTemplate(schema,yelp,t,weights,prep,blocker,true,fileName);
         simpleTemplate02(schema,yelp,t,weights,prep,blocker,fileName);
 
-
-        // address & name: beginning of word more weight (number
-        // use token based and ngram based
-        // postal code comparator, number
-
-        /*
-        Ngram
-        Schema <-> Yelp
-        Precision: 1.0000
-        Recall: 0.6429
-        F1: 0.7826
-         */
-
-        /*
-        Tokenized
-        Schema <-> Yelp
-        Precision: 1.0000
-        Recall: 0.5000
-        F1: 0.6667
-         */
-
-        /*
-        Ngram, unify address, address ngram jaccard
-        Schema <-> Yelp
-        Precision: 1.0000
-        Recall: 0.6786
-        F1: 0.8085
-         */
-
-        /*
-        Ngram, unify address, address token jaccard
-        Schema <-> Yelp
-        Precision: 1.0000
-        Recall: 0.6071
-        F1: 0.7556
-        */
-
-        /*
-        with postal code
-
-         */
-
+        //testParameters()
     }
 
     public static void testParameters() throws Exception{
